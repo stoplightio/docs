@@ -129,9 +129,6 @@
     * Pages
     * Subpages
     * Blocks
-      * Overview
-      * Text
-      * ...
     * Referencing / Embedding Other Data Sources
       * Overview
       * OpenAPI Specifications
