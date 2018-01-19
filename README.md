@@ -2,11 +2,17 @@
 
 The time is nigh!
 
-All work should be done in the develop branch.
+## Workflow
+
+* All work should be done in a branch off of develop, and submitted via a PR upon completion.
 
 ## Templates
 
+TODO
+
 ## Articles
+
+TODO
 
 ## Assets
 
