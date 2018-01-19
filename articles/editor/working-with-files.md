@@ -1,5 +1,7 @@
 # Working with Files 
 
+![](../../assets/gifs/fileexplorer.gif)
+
 As part of our effort to make the Stoplight platform more flexible and familiar we added a file explorer to Stoplight NEXT. You can now see all your files sorted by filetype in one central location within Projects. File types include: 
 
 * .hub (Hub/Docs Files)
