@@ -1,3 +1,3 @@
 # Stoplight Organizations
 
-Testing a link to [projects](./articles/projects/overview.md).
+Testing a link to [projects](../projects/overview.md).
