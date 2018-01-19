@@ -2,6 +2,8 @@
 
 The time is nigh!
 
+All work should be done in the develop branch.
+
 ## Templates
 
 ## Articles
