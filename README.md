@@ -18,7 +18,7 @@ TODO
 
 Assets (like images) should be placed in the assets/images folder.
 
-JPEG, PNG, and GIF image formats are supported. Images can be included in markdown by using the path to the image.
+JPEG, PNG, and GIF image formats are supported. Images can be included in markdown by using the relative path to the image.
 
 For example:
 
@@ -27,7 +27,7 @@ For example:
 
 # Organization Overview
 
-![my image](./assets/images/my-image.jpg)
+![my image](../../assets/images/my-image.jpg)
 ```
 
 ## Linking
@@ -41,5 +41,5 @@ For example:
 
 # Organization Overview
 
-A link to [Projects Overview](./articles/projects/overview.md).
+A link to [Projects Overview](../projects/overview.md).
 ```
