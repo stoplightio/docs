@@ -1,18 +1,34 @@
-# Create An Organization 
+# Creating a Project  
 
-![](/assets/gifs/org-create.gif)
+![](/assets/gifs/project-create.gif)
 
 ## What 
-* Organizations are great for grouping people, data, and billing together in one convenient location 
+Projects are the workspace of the Stoplight Platform. Projects contain: 
+* File Explorer 
+* Project Governance 
+* Documentation Editor (Hubs)
+* Modeling Editor 
+* Testing (Scenarios) 
+* Mocking (Prism) 
+* Markdown Editor 
+
+<callout>Single Point of Truth All editors are now contained within a Project </>
 
 ## Who 
-* Only the Billing **Owner** or Organization **Administrator** can create organizations 
+Individual users can create Personal Projects. Organizations can create Org Projects. 
 
 ## How 
-1. Click on **+ New**  to the right of Organizations 
-2. Fill in **Name** 
-    * We recommend using your company’s name.
-3. Choose the path for your Organization (optional)    
-4. Add member by email (optional) 
-    * Input email accounts to add other members to your organization 
-        * You can also do this later 
+
+### Personal Project
+1. From the homepage select the **Personal Project** tab 
+
+### Organization Project 
+1. From the homepage select the **Organization** you want to create a Project within
+	* By default you will land on Organization Projects 
+
+### Create a Project
+2. Input a **Project Name**
+3. Input a custom **Project Path** (optional)
+4. Input a **Project Description** (optional)
+5. Select **Public** or **Private** 
+6. Select **Create Project** once complete 
