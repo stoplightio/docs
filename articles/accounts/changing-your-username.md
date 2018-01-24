@@ -3,7 +3,7 @@
 ![](/assets/gifs/account-info.gif)
 
 ## What 
-* You can change your username at any time 
+You can change your username at any time 
 
 ## How 
 1. Click on your current **username** in the top right 
