@@ -1,6 +1,8 @@
 
 # Routing 
 
+![](../../assets/gifs/routing-hubs.gif)
+
 ## What 
 Stoplight’s Hubs features an easy to use routing system to make sure your docs have identifiable and friendly URL’s. The routing system allows customization of the following objects: 
 
