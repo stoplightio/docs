@@ -1,5 +1,8 @@
 # Pages 
 
+![](../../assets/gifs/create-pages.gif)
+
+## What
 Pages are the macro level building blocks of a Hub. They function as the canvas on which all other Hubs objects reside. They are commonly used as a way to separate information based on the broadest topics. 
 
 ### Hubs Architecture from Top Down 
