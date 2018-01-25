@@ -1,4 +1,6 @@
 # Blocks 
+
+![](../../assets/gifs/Blocks.gif)
 Blocks are the micro-level building blocks of Hubs. They house multiple forms of content and allow for simple restructuring and modification. 
 
 <callout> Hovering over a Block reveals additional tooling including: Preview, Cut, Copy, Reference External Source, and Delete </>
