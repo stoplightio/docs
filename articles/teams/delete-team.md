@@ -5,7 +5,7 @@
 ## What 
 * Want to disband your team? Here's how: 
 ## Who 
-* Only the Team **Owner** or a Team **Administrator** can delete a team 
+* Only the Organization **Owner** or a Team **Owner** or **Administrator** can delete a team 
 ## How 
 1. Select the **Organization** associated with the team you wish to modify 
 2. Select **Teams** from the tab bar 
