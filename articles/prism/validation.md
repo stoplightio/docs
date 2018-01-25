@@ -20,18 +20,18 @@ _For this article we are validate a service that already exists. It is just a si
 
 1. Let's create a new project, create a new spec and name it `todos.oas2`, and paste the json from the spec above in the code editor.
 
-![](https://s3.amazonaws.com/hifs/contract/todos.contract.guide.gif)
+![](../../assets/gifs/validation-todos-contract-guide.gif)
 
 2. Create a new **Prism instance file** in the project. Name it `todos.contract.prism`.
 3. Prism instances are made up of APIs and Rules, you can learn more about them here. Add an API to the Prism instance, and connect the `todos.oas2` specification that you created earlier. Also, let's change the `id` to `todos`, and set the _Upstream URL_ to _http://todos.stoplight.io_. The Upstream URL is where the contract server will forward incoming requests.
 
-![](https://s3.amazonaws.com/hifs/contract/todos.prism.api.gif)
+![](../../assets/gifs/validation-todos-prism-api.gif)
 
 4. Next, add a **new rule** that you will setup to power the validation. Rules simply apply scenarios to HTTP traffic passing through the Prism instance.
 5. Once you have created a new rule, you need to connect it to the API we added earlier. To do that, click on the `apis` dropdown input, and select the previously created API. Connecting the rule to the API you defined earlier makes the OAS file available to scenarios in the rule.
 6. Finally, you need to add a **scenario** that will actually perform the validation. We have an official Stoplight validate scenario [here](https://next.stoplight.io/stoplight/prism?edit=%23%2Fscenarios%2validate), which makes it easy to get started. Add a scenario to the `after` section of your rule. Select `another project` in the first dropdown, and then search for `prism`. The file in that project you are looking for is `helpers.prism.yml`, and the specific scenario is called `validate`. This validate scenario should suit most of your needs it will check the request/response headers, request/response body, and request path parameters and query strings. It will add response headers to the HTTP request on the way back to the consumer with the results of the validation. For advanced use cases please send us a message and we would love to help out.
 
-![](https://s3.amazonaws.com/hifs/contract/todos.prism.rule.gif)
+![](../../assets/gifs/validation-todos-prism-rule.gif)
 
 7. Save, and let's verify that your contract server is working. Click on Home, and let's Send a Test Request to `GET /todos`.
 
@@ -50,12 +50,12 @@ _Stoplight's visual editior makes it really easy to debug reqeust/response, if y
 ];
 ```
 
-![](https://s3.amazonaws.com/hifs/contract/todos.prism.verify.gif)
+![](../../assets/gifs/validation-todos-prism-verify.gif)
 
 8. Let's get rid of this validation error, because we don't have control over the API implementation, we have to update our specification. Navigate to the `todos.oas2` file, and let's update the `Todo Full`, just delete the user property and hit save.
 9. Let's resend a request to `GET /todos` and inspect the results. This time `Sl-Valid` is `true`. Awesome, we now have a valid spec and API.
 
-![](https://s3.amazonaws.com/hifs/contract/todos.prism.done.gif)
+![](../../assets/gifs/validation-todos-prism-done.gif)
 
 # Running your prism server locally
 
@@ -67,11 +67,11 @@ In the previous section, you learned how to create a simple Prism instance that 
 2. Open up your terminal and log into Stoplight Next with the `prism login` command, and enter your Stoplight Next credentials. Once you are logged in, you will have access to your private and all public projects.
 3. Get the export link for the prism mock instance you created above.
 
-![](https://s3.amazonaws.com/hifs/contract/prism.install.gif)
+![](../../assets/gifs/prism-install.gif)
 
 4. Run `prism serve {export-link} --debug` and open this [link](http://localhost:4010/todos), you can inspect the result by opening the developer console for your browser.
 
-![](https://s3.amazonaws.com/hifs/contract/todos.prism.local.gif)
+![](../../assets/gifs/validation-todos-prism-local.gif)
 
 # Validating mock servers
 
