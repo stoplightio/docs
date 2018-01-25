@@ -22,7 +22,7 @@ Once you have your API design / documentation, how do you make sure that it rema
 You have your API designed and documented privately in the Stoplight app, and now you want to share all or part of it with 3rd parties (developers, customers, clients, etc). Stoplight makes it easy to publish your documentation to the world, with a single click.
 
 
-![](../../assets/images/hubs-overview.png)
+![](../../assets/images/HubsPreview.png)
 
 ## Mock Server
 Stoplight provides a complete mock server for every API described in the app. Run tests against this mock server, build consumers (like mobile apps, SDKS, etc) before the final API is ready, and more.
