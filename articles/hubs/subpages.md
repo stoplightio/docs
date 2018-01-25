@@ -1,4 +1,8 @@
 # Subpages 
+
+![](../../assets/gifs/create-subpages.gif)
+
+## What
 Subpages are the second tier macro building blocks of Hubs. They function as a canvas for blocks. They are commonly used to house content based on a specific topic.  Subpages can have more subpages nested underneath them, which gives you lots of flexibility to organize your hub as you see fit. If a subpage has subpages nested inside of it, it will be displayed as a collapsible group in the left sidebar
 
 ### Hubs Architecture Top Down
