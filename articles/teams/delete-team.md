@@ -1,6 +1,6 @@
 # Delete a Team 
 
-![](/assets/gifs/teamcustom.gif)
+![](../../assets/gifs/teamcustom.gif)
 
 ## What 
 * Want to disband your team? Here's how: 
