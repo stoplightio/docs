@@ -1,7 +1,8 @@
 
 # Managing Headers and Footers 
 
-![](../../assets/gifs/
+![](../../assets/gifs/headers-footers.gif)
+
 ## What 
 You can customize the headers and footers of your Hub to add additional navigation to your documentation. You can modify a header and footer: 
 
