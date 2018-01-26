@@ -13,7 +13,7 @@ Contract servers are a powerful tool in a developer's toolbox. They use your OAS
 
 If you aren't familiar with JSON Schema, we highly recommend you head [here](https://spacetelescope.github.io/understanding-json-schema/) first.
 
-If you are coming from Stoplight Classic (v2), you will notice that there is a little bit more setup involved, but not only a couple steps.
+If you are coming from Stoplight Classic (v2), you will notice that there is a little bit more setup involved, but  only a couple steps.
 
 ## Hosted Contract Server Steps
 
@@ -32,7 +32,8 @@ _For this article we will validate a service that already exists. It is just a s
 
 4. Next, add a **new rule** that you will setup to power the validation. Rules simply apply scenarios to HTTP traffic passing through the Prism instance.
 5. Once you have created a new rule, you need to connect it to the API we added earlier. To do that, click on the `apis` dropdown input and select the previously created API. Connecting the rule to the API you defined earlier makes the OAS file available to scenarios in the rule.
-6. Lastly, you need to add a **scenario** that will actually perform the validation. We have an official Stoplight validate scenario [here](https://next.stoplight.io/stoplight/prism?edit=%23%2Fscenarios%2validate), which makes it easy to get started. Add a scenario to the `after` section of your rule. Select `another project` in the first dropdown and then search for `prism`. The file you are looking for within that project is `helpers.prism.yml` and the specific scenario is called `validate`. This validate scenario should suit most of your needs. It will check the request/response headers, request/response body, request path parameters, and query strings. It will also add response headers to the HTTP request on the way back to the consumer with the results of the validation. For advanced use cases, please send us a [message](). We would love to help out!
+6. Lastly, you need to add a **scenario** that will actually perform the validation. We have an official Stoplight validate scenario [here](https://next.stoplight.io/stoplight/prism?edit=%23%2Fscenarios%2validate), which makes it easy to get started. 
+7. Add a scenario to the `after` section of your rule. Select `another project` in the first dropdown and then search for `prism`. The file you are looking for within that project is `helpers.prism.yml` and the specific scenario is called `validate`. This validate scenario should suit most of your needs. It will check the request/response headers, request/response body, request path parameters, and query strings. It will also add response headers to the HTTP request on the way back to the consumer with the results of the validation. For advanced use cases, please send us a [message](). We would love to help out!
 
 ![](../../assets/gifs/validation-todos-prism-rule.gif)
 
@@ -92,5 +93,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NjM4NDY5NV19
+eyJoaXN0b3J5IjpbLTEzMjEyMTU5MTNdfQ==
 -->
