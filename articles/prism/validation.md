@@ -74,12 +74,12 @@ In the previous section, you learned how to create a simple Prism instance that 
 ## Local Contract Server Steps
 
 1. Install [Prism](https://github.com/stoplightio/prism). Make sure to install Prism Next, the version should be >= `2.0.0-beta.x`.
-2. Open up your terminal and log into Stoplight Next with the `prism login` command, and enter your Stoplight Next credentials. Once you are logged in, you will have access to your private and all public projects.
+2. Open up your terminal and log into Stoplight Next with the `prism login` command and enter your Stoplight Next credentials. Once you are logged in, you will have access to your private and all public projects.
 3. Get the export link for the prism mock instance you created above.
 
 ![](../../assets/gifs/prism-install.gif)
 
-4. Run `prism serve {export-link} --debug` and open this [link](http://localhost:4010/todos), you can inspect the result by opening the developer console for your browser.
+4. Run `prism serve {export-link} --debug` and open this [link](http://localhost:4010/todos). You can inspect the results by opening the developer console for your browser.
 
 ![](../../assets/gifs/validation-todos-prism-local.gif)
 
@@ -99,5 +99,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NDEwMTAyNV19
+eyJoaXN0b3J5IjpbLTEyNTY4MzI5NjBdfQ==
 -->
