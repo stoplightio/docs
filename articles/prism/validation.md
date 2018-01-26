@@ -67,9 +67,9 @@ _Stoplight's visual editior makes it really easy to debug reqeust/response. If l
 
 ![](../../assets/gifs/validation-todos-prism-done.gif)
 
-# Running your prism server locally
+# Running your Prism Server Locally
 
-In the previous section, you learned how to create a simple Prism instance that is hosted with Stoplight. It is a powerful, accessible tool that allows your frontend and backend teams to work simultaneously. But the hosted prism instance might not work behind your company firewall, or you might want to run Prism locally on your desktop. Well you are in luck, prism is easy to install and run.
+In the previous section, you learned how to create a simple Prism instance that is hosted with Stoplight. It is a powerful, accessible tool that allows your frontend and backend teams to work simultaneously. But the hosted prism instance might not work behind your company firewall, or you might want to run Prism locally on your desktop. Well, you are in luck, Prism is easy to install and run.
 
 ## Local Contract Server Steps
 
@@ -99,5 +99,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNTMxNjg2N119
+eyJoaXN0b3J5IjpbLTc4NDEwMTAyNV19
 -->
