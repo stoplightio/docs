@@ -34,17 +34,17 @@ _For this article we will validate a service that already exists. It is just a s
 5. Once you have created a new rule, you need to connect it to the API we added earlier. To do that, click on the `apis` dropdown input and select the previously created API. Connecting the rule to the API you defined earlier makes the OAS file available to scenarios in the rule.
 6. Lastly, you need to add a **scenario** that will actually perform the validation. We have an official Stoplight validate scenario [here](https://next.stoplight.io/stoplight/prism?edit=%23%2Fscenarios%2validate), which makes it easy to get started. 
     1. Add a scenario to the `after` section of your rule. 
-    2. Select `another project` in the first dropdown  
-    3. search for `prism`. 
+    2. Select `another project` in the first dropdown.  
+    3. Search for `prism`. 
         1. The file you are looking for within that project is `helpers.prism.yml` and the specific scenario is called `validate`. 
-        2. 
+        
 This validate scenario should suit most of your needs. It will check the request/response headers, request/response body, request path parameters, and query strings. It will also add response headers to the HTTP request on the way back to the consumer with the results of the validation. For advanced use cases, please send us a [message](). We would love to help out!
 
 ![](../../assets/gifs/validation-todos-prism-rule.gif)
 
 7. Save and let's verify that your contract server is working. Click on Home and let's Send a Test Request to `GET /todos`.
 
-_Stoplight's visual editior makes it really easy to debug reqeust/response. If you go and look at the response headers, specifically `Sl-Valid` it should be `false`. This means that according to your api specification the reqeust/response isn't valid, aka the contract test failed. You can find out why by inspecting the `Sl-Validation-Messages`. For the purpose of this article the messages are below, and it looks like user is a requeired property and it is missing._
+_Stoplight's visual editior makes it really easy to debug reqeust/response. If look at the response headers, specifically `Sl-Valid` it should be `false`. This means that according to your api specification the reqeust/response isn't valid, aka the contract test failed. You can find out why by inspecting the `Sl-Validation-Messages`. For the purpose of this article the messages are below, and it looks like user is a requeired property and it is missing._
 
 ```js
 // Sl-Validation-Messages
@@ -98,5 +98,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODE2NzYyNzVdfQ==
+eyJoaXN0b3J5IjpbMTUwNjU4MDIyNV19
 -->
