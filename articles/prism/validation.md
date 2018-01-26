@@ -37,6 +37,7 @@ _For this article we will validate a service that already exists. It is just a s
     2. Select `another project` in the first dropdown  
     3. search for `prism`. 
         1. The file you are looking for within that project is `helpers.prism.yml` and the specific scenario is called `validate`. 
+        2. 
 This validate scenario should suit most of your needs. It will check the request/response headers, request/response body, request path parameters, and query strings. It will also add response headers to the HTTP request on the way back to the consumer with the results of the validation. For advanced use cases, please send us a [message](). We would love to help out!
 
 ![](../../assets/gifs/validation-todos-prism-rule.gif)
@@ -97,5 +98,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MTUzMzQ0MV19
+eyJoaXN0b3J5IjpbLTE1ODE2NzYyNzVdfQ==
 -->
