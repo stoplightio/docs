@@ -62,7 +62,7 @@ _Stoplight's visual editior makes it really easy to debug reqeust/response. If l
 ![](../../assets/gifs/validation-todos-prism-verify.gif)
 
 8. Let's get rid of this validation error. We don't have control over the API implementation so we have to update our specification.
-9. Navigate to the `todos.oas2` file and  update the `Todo Full`, just delete the user property and hit save.
+9. Navigate to the `todos.oas2` file and update the `Todo Full` hit save.
 10. Let's resend a request to `GET /todos` and inspect the results. This time `Sl-Valid` is `true`. Awesome, we now have a valid spec and API.
 
 ![](../../assets/gifs/validation-todos-prism-done.gif)
@@ -99,5 +99,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2Mzk2OTE1Ml19
+eyJoaXN0b3J5IjpbLTEzNTc2MjQ5NTVdfQ==
 -->
