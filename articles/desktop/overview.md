@@ -29,5 +29,5 @@ When you start the Stoplight desktop app, it will start an instance of Prism on 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTI3MzM3NjhdfQ==
+eyJoaXN0b3J5IjpbMTU3NDc5MjY0XX0=
 -->
