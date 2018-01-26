@@ -91,7 +91,7 @@ _Note: If you don't have an existing mock server, check out [this](https://next.
 
 ## Steps
 
-1. Repeat step 7 above. That is it. Know you will know when your examples are out of date, not only will your mock server be accurate, but this can help you catch any errors in examples in your documentation that you provide to users.
+1. Repeat step 7 above. That is it. Now you will know when your examples are out of date, not only will your mock server be accurate, but this can help you catch any errors in examples in your documentation that you provide to users.
 
 # Recap
 
@@ -99,5 +99,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NjI2NTU0OF19
+eyJoaXN0b3J5IjpbMTc2ODE0MTE3OV19
 -->
