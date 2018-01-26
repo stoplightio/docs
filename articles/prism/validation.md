@@ -44,7 +44,7 @@ This validate scenario should suit most of your needs. It will check the request
 
 7. Save and let's verify that your contract server is working. Click on Home and let's Send a Test Request to `GET /todos`.
 
-_Stoplight's visual editior makes it really easy to debug reqeust/response. If look at the response headers, specifically `Sl-Valid` it should be `false`. This means that according to your api specification the reqeust/response isn't valid, aka the contract test failed. You can find out why by inspecting the `Sl-Validation-Messages`. For the purpose of this article the messages are below, and it looks like user is a requeired property and it is missing._
+_Stoplight's visual editior makes it really easy to debug reqeust/response. If look at the response headers, specifically `Sl-Valid` , it should be `false`. This signifies that according to your api specification the request/response isn't valid, aka the contract test failed. You can find out why by inspecting the `Sl-Validation-Messages`. For the purpose of this article the messages are below, and it looks like user is a requeired property and it is missing._
 
 ```js
 // Sl-Validation-Messages
@@ -98,5 +98,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNjU4MDIyNV19
+eyJoaXN0b3J5IjpbLTE2MDEzMDAyMjBdfQ==
 -->
