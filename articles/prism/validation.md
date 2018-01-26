@@ -95,9 +95,9 @@ _Note: If you don't have an existing mock server, check out [this](https://next.
 
 # Recap
 
-You now have a fully functional prism contract server. We have created a public project full of useful prism resources. We encourage you to explore the other prism helpers which are located [here](https://next.stoplight.io/stoplight/prism/blob/master/helpers.scenarios.yml). Let us know what you think, we are excited to see what you do.
+You now have a fully functional Prism contract server. We have created a public project full of useful Prism resources. We encourage you to explore the other Prism helpers which are located [here](https://next.stoplight.io/stoplight/prism/blob/master/helpers.scenarios.yml). Let us know what you think, we are excited to see what you do.
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODU0NTA0MTZdfQ==
+eyJoaXN0b3J5IjpbLTQ3MDE5ODQxNl19
 -->
