@@ -85,7 +85,7 @@ In the previous section, you learned how to create a simple Prism instance that 
 
 # Validating Mock Servers
 
-Validating an existing service is powerful, but what happens if you are still implementing your api and all you have is a mock server. How do you keep the examples valid?
+Validating an existing service is powerful, but what happens if you are still implementing your API and all you have is a mock server. How do you keep the examples valid?
 
 _Note: If you don't have an existing mock server, check out [this](https://next.stoplight.io/stoplight/stoplight-next-docs/blob/master/prism.mock.server.md) article first and then continue reading._
 
@@ -99,5 +99,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MDE5MTEzOV19
+eyJoaXN0b3J5IjpbLTEyNzUxNDc3MTVdfQ==
 -->
