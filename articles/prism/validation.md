@@ -44,7 +44,7 @@ This validate scenario should suit most of your needs. It will check the request
 
 7. Save and let's verify that your contract server is working. Click on Home and let's Send a Test Request to `GET /todos`.
 
-_Stoplight's visual editior makes it really easy to debug reqeust/response. If look at the response headers, specifically `Sl-Valid` , it should be `false`. This signifies that (according to your API specification) the request/response isn't valid, aka the contract test failed. You can find out why by inspecting the `Sl-Validation-Messages`. For the purpose of this article the messages are below, and it looks like user is a requeired property and it is missing._
+_Stoplight's visual editior makes it really easy to debug reqeust/response. If look at the response headers, specifically `Sl-Valid` , it should be `false`. This signifies that (according to your API specification) the request/response isn't valid, aka the contract test failed. You can find out why by inspecting the `Sl-Validation-Messages`. For the purpose of this article, the messages are below, and it looks like user is a required property and it is missing._
 
 ```js
 // Sl-Validation-Messages
@@ -61,7 +61,7 @@ _Stoplight's visual editior makes it really easy to debug reqeust/response. If l
 
 ![](../../assets/gifs/validation-todos-prism-verify.gif)
 
-8. Let's get rid of this validation error, because we don't have control over the API implementation, we have to update our specification. Navigate to the `todos.oas2` file, and let's update the `Todo Full`, just delete the user property and hit save.
+8. Let's get rid of this validation error because we don't have control over the API implementation, we have to update our specification. Navigate to the `todos.oas2` file, and let's update the `Todo Full`, just delete the user property and hit save.
 9. Let's resend a request to `GET /todos` and inspect the results. This time `Sl-Valid` is `true`. Awesome, we now have a valid spec and API.
 
 ![](../../assets/gifs/validation-todos-prism-done.gif)
@@ -98,5 +98,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA5MTUyNTc3XX0=
+eyJoaXN0b3J5IjpbMTEyNTEzNTExNF19
 -->
