@@ -83,7 +83,7 @@ In the previous section, you learned how to create a simple Prism instance that 
 
 ![](../../assets/gifs/validation-todos-prism-local.gif)
 
-# Validating mock servers
+# Validating Mock servers
 
 Validating an existing service is powerful, but what happens if you are still implementing your api and all you have is a mock server. How do you keep the examples valid?
 
@@ -99,5 +99,5 @@ You now have a fully functional prism contract server. We have created a public 
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTY4MzI5NjBdfQ==
+eyJoaXN0b3J5IjpbMTQ1NDM5MzM3Nl19
 -->
