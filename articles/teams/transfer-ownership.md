@@ -1,6 +1,6 @@
 # Transfer Primary Ownership of a Team 
 
-![](/assets/gifs/team-transfer.md)
+![](../../assets/gifs/team-transfer.gif)
 
 ## What 
 * You can transfer Ownership of a Team to another member of the Team 
