@@ -1,14 +1,15 @@
 # Create a Team 
 
-![](/assets/gifs/team-create.gif)
+![](../../assets/gifs/team-create.gif)
 
 ## What 
 * Teams makes it easier for Organization Members to collaborate and allows additional control over permissions 
 
 ## Who
-* Only an Organization **Owner** or **Administrator** can create Teams
+* Only an Organization **Owner** or **Administrator** can create a Team
+
 ## How
-1. From the homepage select the **Organization** you would like to make a team for 
+1. From the homepage, select the **Organization** you would like to make a team for 
 2. Select the **Teams** tab from the tabs bar 
 3. Create Your First Team 
     * Input a **Team Name**(A department, project group, etc.)  
