@@ -1,9 +1,9 @@
 # Sign Out Of Stoplight 
 
-![](/assets/gifs/sign-out.gif)
+![](../../assets/gifs/sign-out.gif)
 
 ## What 
-* By default Stoplight remains open so if you wish to sign out follow these quick and easy steps 
+* By default, Stoplight remains open. If you wish to sign out follow these quick and easy steps 
 
 ## How
 1. Click on your **username** in the top right corner 
