@@ -1,25 +1,27 @@
 # Editor Configuration
 
-![](../../assets/gifs/editor-configuration.gif)
+The Stoplight editor includes an embedded configuration system that can be used to auto-populate variables (hostnames, ports, passwords, etc.) used by specifications and scenarios. These variables allow you to share commonly-used settings between members of your team directly from the Stoplight interface, and inject them into models and tests depending on the environment in use.
 
-The Stoplight editor includes an embedded configuration system that can be used to auto-populate environment information and other variables (hostnames, ports, passwords, etc.) utilized by specifications, scenarios, or collections. To setup the editor configuration, click the icon towards the top right of the editor screen immediately to the left of your username.
+### Updating and Using Variables
 
 ![](../../assets/images/editor-configuration.png)
 
-## Private Variables
-
-The left-half of the configuration window is dedicated to "Private Variables", which are variables that are _only_ stored locally on your system and are never sent to Stoplight. Private Variables should be reserved for secrets specific to you, such as user-specific passwords, API keys, and other pieces of sensitive data.
-
-## Resolved Variables 
-
-The right-half of the configuration window displays "Resolved Variables", which is a read-only view of the variables currently exposed to your editor based on your current environment. These variables are stored in the `.stoplight` file included in your project (under "Config" in the File Explorer). To update the default or environment-specific variables stored in Stoplight, click the "Manage Environments" button under the configuration window.
-
-![](../../assets/gifs/editor-configuration2.gif)
-
-Variables stored in your configuration are in JSON, and can be referenced using the following format:
+Configuration variables are stored in the `.stoplight` file included in your project. Variables stored in the configuration must be specified using JSON format, and can be referenced from specifications and scenarios using the following template format:
 
 ```
 {$$.env.myVariable}
 ```
 
 Where `myVariable` is the name of the variable in your configuration.
+
+### Variable Environments
+
+![](../../assets/images/editor-configuration2.png)
+
+All variables stored in the Stoplight editor are scoped by environment. The default environments for new projects are:
+
+* __Default__ - The __Default__ environment is is used by the Stoplight editor when first logging in, and if no other environment has been selected. This is commonly used for variables needed for development and prototyping.
+* __Staging__ - The __Staging__ environment is automatically created for storing of "staging" or "pre-production" variables and settings.
+* __Production__ - The __Production__ environment is automatically created for storing of production variables and settings.
+
+The environment names and variables are defined in the `.stoplight` file in your project, and can be customized by editing the `environments` key of the `.stoplight` file.
