@@ -18,7 +18,7 @@
 1. Click on **Join**
 2. Fill in your **Name** 
 3. Create a **Username** 
-4. Fill in the **Email** you want associated with this account 
+4. Input the **Email** you want associated with this account 
 5. Create a **Password**
     * Password must be more than 6 characters 
 6. Click **Join Stoplight**
