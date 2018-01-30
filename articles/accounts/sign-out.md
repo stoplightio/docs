@@ -1,4 +1,4 @@
-# Sign Out Of Stoplight 
+# Sign Out of Stoplight 
 
 ![](../../assets/gifs/sign-out.gif)
 
