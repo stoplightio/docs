@@ -17,7 +17,7 @@
       
    
 ## 	 Who 
-* Only Organization **Owner** and Org and/or Project **Administrators** have invite privileges 
+* Only the Organization **Owner** and Org and/or Project **Administrators** can modify member roles
 
 ## How
 1. From the Stoplight homepage select the **Project** you wish to modify 
