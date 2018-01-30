@@ -1,4 +1,4 @@
-# Change Your Email Address
+# Change your Email Address
 
 ![](/assets/gifs/account-info.gif)
 
