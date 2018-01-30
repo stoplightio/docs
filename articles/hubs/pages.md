@@ -24,7 +24,7 @@ Pages are the macro level building blocks of a Hub. They function as the canvas 
     2. Input a **Page Route** (optional) 
     3. **Power the Page** with an External Data Source (optional) 
 
-<callout> Did you know? After creating a new page; a header link will automatically be generated </callout> 
+<callout> Did you know? After creating a new page; a header link will automatically be generated </> 
 
-<callout> To add content to a page you must add a subpage or a content block </callout>   
+<callout> To add content to a page you must add a subpage or a content block </>   
 
