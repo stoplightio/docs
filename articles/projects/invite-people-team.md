@@ -1,6 +1,6 @@
 # Invite People & Teams to a Project
 
-![](/assets/gifs/project-member-invite.gif)
+![](../../assets/gifs/project-member-invite.gif)
  
 ## What 
 * You can invite people to a Project to grant them read or read/write permissions 
@@ -15,12 +15,13 @@
     * **Read Access**: Low-level permissions that allow you to: 
         * Read
       
+<callout>You can only invite people and Teams to a Project associated with an Organization</>
    
 ## 	 Who 
-* Only Organization **Owner** and Org and/or Project **Administrators** have invite privileges 
+* Only the Organization **Owner** and Org and/or Project **Administrators** have invite privileges 
 
 ## How
-1. From the Stoplight homepage select the **Project** you wish to modify 
+1. From your Organization's homepage, select the **Project** you wish to modify 
 2. By deafult, all members of the Organization the Project is associated with will have Read permission 
 3. To invite a single member, select the **Member icon** from the far left sidebar
     * Input their username in the search bar at the top of the Member sidebar
