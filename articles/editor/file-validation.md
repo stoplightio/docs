@@ -20,4 +20,4 @@ Different types of file validations are used throughout the Stoplight platform. 
 
 * __Correctness__ - Certain files stored within Stoplight must adhere to high-level specifications to ensure they are able to be read and processed correctly. The OAS/Swagger specification is one such standard. It is critical that every OAS document stored in Stoplight meet these standards. If an error is detected in any document, either an error or warning will be generated with a description of the issue.
 
-For more information about how OpenAPI documents are validated in Stoplight, see [here](../modeling/openapi-validation).
+For more information about how OpenAPI documents are validated in Stoplight, see [here](../modeling/openapi-validation.md).
