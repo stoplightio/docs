@@ -22,9 +22,9 @@ The environments and variables defined in the `.stoplight.yml` are shared amongs
 
 There are three environments included with a new project:
 
-* __Default__ - The __Default__ environment is used by the Stoplight editor when first logging in, and if no other environment has been selected. This is commonly used for variables needed for development and prototyping.
-* __Staging__ - The __Staging__ environment is automatically created for storing of "staging" or "pre-production" variables and settings.
-* __Production__ - The __Production__ environment is automatically created for storing of production variables and settings.
+* __Default__ - The __Default__ environment is used by the Stoplight editor when first logging in and if no other environment has been selected. This is commonly used for variables needed for development and prototyping.
+* __Staging__ - The __Staging__ environment is automatically created for the storing of"staging" or "pre-production" variables and settings.
+* __Production__ - The __Production__ environment is automatically created for the storing of production variables and settings.
 
 These environments can be customized by editing the `environments` key of the `.stoplight.yml` file. To add a new environment, simply add a new key to the `environments` property, and set the value to an empty object or an object with default variables to share amongst your team.
 
