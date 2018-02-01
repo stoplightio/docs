@@ -1,4 +1,4 @@
-# Configuration With the `.stoplight.yml` File
+# Configuration with the `.stoplight.yml` File
 
 This document describes the usage of `.stoplight.yml`, the file that is used by the Stoplight editor to manage its configuration.
 
@@ -16,7 +16,7 @@ You can make changes to the `.stoplight.yml` file by opening it:
 
 ![](../../assets/images/editor-configuration2.png)
 
-Environments make it easy to auto-populate variables (hostnames, ports, passwords, etc.) used by specifications and scenarios. Read more about them [here](LINK).
+Environments make it easy to auto-populate variables (hostnames, ports, passwords, etc.) used by specifications and scenarios. Read more about them [here](../testing/variables-environment.md).
 
 The environments and variables defined in the `.stoplight.yml` are shared amongst all users, which makes this a good place to define common or shared variables, such as the url host for a particular API + environment. 
 
@@ -27,3 +27,9 @@ There are three environments included with a new project:
 * __Production__ - The __Production__ environment is automatically created for storing of production variables and settings.
 
 These environments can be customized by editing the `environments` key of the `.stoplight.yml` file. To add a new environment, simply add a new key to the `environments` property, and set the value to an empty object or an object with default variables to share amongst your team.
+
+***
+
+**Related**
+
+* [Testing Environment Variables](../testing/variables-environment.md)
