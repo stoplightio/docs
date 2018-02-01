@@ -2,30 +2,28 @@
 
 While designing API's in Stoplight, it is common to have multiple endpoints
 share a common set of query parameters and API responses. To help reduce extra
-work (and the chance of introducing errors), it is important to identify
-endpoints with common parameters, and, instead of rewriting the properties for
-each individual endpoint, use _shared properties_ to reference the same property
-multiple times.
+work (and the chance of introducing errors), it is important to: 
+- Identify endpoints with common parameters 
+- Use _shared properties_ to reference the same property multiple times instead of rewriting the properties for
+each individual endpoint.
 
 Shared properties in Stoplight come in two forms:
 
 * __Parameters__ - These are shared parameters that can be applied to requests
   across multiple endpoints.
 
-* __Responses__ - These are shared responses that can be used for applying the
+* __Responses__ - These are shared responses that apply the
   same response object to multiple endpoints.
 
 ## Parameters
 
-Shared parameters provide a way to re-use request properties across multiple API
-endpoints without having to duplicate effort.
+Shared parameters provide a way to re-use request properties across multiple API endpoints without having to duplicate effort.
 
 ![](../../assets/gifs/shared-params-responses-param.gif)
 
 Shared parameters can be used as the following request properties:
 
-  * __path__ - Specifies that the shared parameter can only be used in an API
-    endpoint as a URL _path_
+  * __path__ - Specifies that the shared parameter can only be used in an API endpoint as a URL _path_
   * __query__ - Specifies that the shared parameter can only be used in an API
     endpoint as an [URL query
     string](https://en.wikipedia.org/wiki/Query_string)
