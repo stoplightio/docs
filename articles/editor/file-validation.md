@@ -16,7 +16,7 @@ Validation failures come in two levels:
 
 Different types of file validations are used throughout the Stoplight platform. At a high level, file validations aim to identify the following two groups of errors:
 
-* __Syntax__ - Most files stored in Stoplight in either JSON or YAML format, so they must always adhere to the JSON/YAML formatting standards. If anything typed into the editor does not meet the format criteria, then it will be rejected with a notification pointing to where the syntax error occurred. _Syntax errors will prevent the file from being saved until any errors are resolved._
+* __Syntax__ - Most files stored in Stoplight are either JSON or YAML format, so they must always adhere to the JSON/YAML formatting standards. If anything typed into the editor does not meet the format criteria, it will be rejected with a notification pointing to where the syntax error occurred. _Syntax errors will prevent the file from being saved until all errors are resolved._
 
 * __Correctness__ - Certain files stored within Stoplight must adhere to high-level specifications to ensure they are able to be read and processed correctly. The OAS/Swagger specification is one such standard. It is critical that every OAS document stored in Stoplight meet these standards. If an error is detected in any document, either an error or warning will be generated with a description of the issue.
 
