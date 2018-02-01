@@ -12,13 +12,13 @@ As part of our effort to make the Stoplight platform more flexible and familiar 
 
 ## File Explorer 
 
-WIthin the file explorer you can:
+Within the file explorer you can:
  
-* Search for Files
-	* Search for files using the search bar at the top of the file explorer 
-* Create Files 
-	* Hover to the right of the filetype headers and click the + to create a new file 
-* Export Files 
-	* Hover to the right of a file and click the arrow to export files into OAS
-* Delete Files 
-	* Hover to the right of a file and click the trash can to delete files
+* **Search for Files**
+	* Search for files using the **search bar** at the top of the file explorer 
+* **Create Files** 
+	* Hover to the right of the filetype headers and click the **+** to create a new file 
+* **Export Files** 
+	* Hover to the right of a file and click the **arrow** to export files into OAS
+* **Delete Files** 
+	* Hover to the right of a file and click the **trash can** to delete files

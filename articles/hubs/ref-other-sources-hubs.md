@@ -1,4 +1,8 @@
 # Reference Other Sources
+
+![](../../assets/gifs/ref-other-sources-hubs.gif)
+
+## What
 Hubs allows you to reference other sources to automatically populate your Hub with content. We call this “powering” a building block. You can power a building block with a file from the current file, a file from the current project, a file from another project, or a file from an external source. 
 
 ### What can I Power
