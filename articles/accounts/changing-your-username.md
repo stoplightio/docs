@@ -1,6 +1,6 @@
 # Change Your Username 
 
-![](/assets/gifs/account-info.gif)
+![](../../assets/gifs/account-info.gif)
 
 ## What 
 You can change your username at any time 

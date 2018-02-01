@@ -1,6 +1,6 @@
-## Making Your Project Private/Public
+## Making Your Project Private & Public
 
-![](/assets/gifs/project-privacy.gif)
+![](../../assets/gifs/project-privacy.gif)
 
 ## What 
 * You can choose to make your Project Public or Private 

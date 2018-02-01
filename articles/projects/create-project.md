@@ -1,6 +1,6 @@
 # Creating a Project  
 
-![](/assets/gifs/project-create.gif)
+![](../../assets/gifs/project-create-personal.gif)
 
 ## What 
 Projects are the workspace of the Stoplight Platform. Projects contain: 

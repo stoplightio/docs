@@ -1,4 +1,12 @@
-* Platform
+---
+title: Stoplight Help
+description: 'Bout time.
+theme: ./theme.css
+javascript: ./global.js
+nav: [['Platform'], [], ['Editor']]
+---
+
+* ![Platform](./logo.png "Platform")
   * Getting Started
     * [What is Stoplight?](./articles/getting-started/what-is-stoplight.md)
     * Getting started for new users
