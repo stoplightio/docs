@@ -34,8 +34,10 @@ exposed to your editor, based on:
 These variables (excluding your private variables) are stored in the
 `.stoplight` file of your project (under "Config" in the File Explorer). 
 
-To update the default or environment-specific variables stored in Stoplight,
-click the "Manage Environments" button under the configuration window.
+The Resolved Variables displayed in the editor will change depending on your
+current environment. To update the default or environment-specific variables
+stored in Stoplight, click the "Manage Environments" button under the
+configuration window.
 
 <!--(FIXME - SHOW GIF OF CLICKING MANAGE ENVIRONMENTS BUTTON)-->
 
