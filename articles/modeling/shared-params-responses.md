@@ -38,10 +38,9 @@ Shared parameters can be used as the following request properties:
     [`multipart/form-data`](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
     format 
 
-In addition to being able to specify the format of the shared parameter, you can
-also apply the same type and format validations available to typical request
-objects, including: the type, the default value, the minimum/maximum length, or
-applying a regular expression (regex).
+Similar to generic request parameters, restrictions on the parameter values can
+also be applied based on type, expected default value, minimum/maximum length,
+and regular expression (regex).
 
 ![](../../assets/images/shared-params-responses.png)
 
