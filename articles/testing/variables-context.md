@@ -64,19 +64,18 @@ To reference a context variable in a scenario, use the following syntax:
 
 Where:
 
-* `{...}` - Curly brackets signify that this is a variable reference. See the
-  [variables overview](./variables-overview.md) section for more information on
-  how variables are used.
+* `{...}` - Braces signify that this is a variable reference. See the [variables
+  overview](./variables-overview.md) section for more information on how
+  variables are used.
 * `$` - The "single dollar sign" syntax is a reference to the current scenario's
-  "context".
-* `ctx` - Every scenario context has an `ctx` property that signifies this being
-  a reference to the editor's environment.
-* `myVariable` - This is the variable being referenced, which comes from the
-  project's `.stoplight.yml` file. Substitute your own variable name when using
-  this in a scenario.
+  runtime scope.
+* `ctx` - Every scenario step has a `ctx` property that allows access to the
+  runtime context (where variables can be stored for later use).
+* `myVariable` - This is the variable being referenced within the context.
 
-When the scenario or step is run, any environment variable references will
-automatically be populated based on the editor's current environment.
+When the scenario or step is run, any context variable references will
+automatically be populated based on the contents of the scenario context at
+runtime.
 
 ### In Scripts
 
@@ -87,7 +86,7 @@ script, use the following syntax:
 $.ctx.get('myVariable');
 ```
 
-Where the curly brackets are absent, and we are using the `get()` method for
+Where the braces (`{}`) are absent, and we are using the `get()` method for
 retrieving the context variable under the `myVariable` key.
 
 ***
