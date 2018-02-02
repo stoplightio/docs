@@ -2,12 +2,11 @@
 
 <!--(FIXME - SHOW WRITING VARIABLE TO CONTEXT IN STEP)-->
 
-Context variables in Stoplight allow you to dynamically store and communicate
-data between various steps in a scenario, by storing data in the scenario
-"context". This makes it possible to initialize and store data in one step, and
-then use that data again in subsequent steps.
+Context variables allow you to dynamically store and communicate
+data between various steps in a scenario. Stoplight stores data in the scenarios "context", which makes it possible to initialize and store data in one step. This allows data to be used again in subsequent steps. 
 
-Data stored in the context is _not_ saved once a test has completed, so it is
+
+Data stored in the context is _not_ saved once a test has completed. Therefore, it is
 important to only store temporary data useful within the current test or
 scenario execution. At the start of a test run, the scenario context is emptied.
 Good examples of data to store in a context would be things like ID's,
@@ -23,7 +22,8 @@ By using a "capture" in a scenario step, data can be saved to the current
 context by referencing either the step output, the scenario response, the
 environment, or the step context.
 
-Multiple captures can be applied to the same step.
+<!-- theme: info --> 
+>Multiple captures can be applied to the same step.
 
 ### With Scripting
 
