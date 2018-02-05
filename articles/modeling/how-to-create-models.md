@@ -11,7 +11,7 @@ When you have several endpoints with the same structure, objects, and properties
 ### Use a Design First Approach
 A design first approach helps create neat and consistent models. It will take longer, but it ensures you built an effective API that is easy to understand and maintain. 
 
-# How to Create Models using the Stoplight Modeling Editor
+## How to Create Models using the Stoplight Modeling Editor
 1. Create a new API project (link on how to create a new  project goes here)
 2. For this example we will be referring to endpoints created for a fictional Pet Store as listed below
 - GET  /pets (return all pets)
