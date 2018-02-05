@@ -26,7 +26,7 @@ API keys, and other pieces of sensitive data.
 ## Resolved Variables
 
 Resolved Variables shows a read-only view of the variables that are currently
-exposed to your editor, based on:
+exposed to your editor. They are based on:
 
 * Your current environment
 * Your private variables
