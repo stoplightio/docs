@@ -7,7 +7,7 @@ data between various steps in a scenario. Stoplight stores data in the scenarios
 
 
 Data stored in the context is _not_ saved once a test has completed. Therefore, it is
-important to only store temporary data useful within the current test or
+important to only store useful temporary data within the current test or
 scenario execution. At the start of a test run, the scenario context is emptied.
 Good examples of data to store in a context would be things like ID's,
 usernames, and randomly generated tokens.
