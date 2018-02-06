@@ -13,7 +13,7 @@ approaches:
 * Starting Prism in the background to act as either a mock or
   contract/validation server
 * Having Prism conduct a scenario against a running server by running as a
-  dedicated test step (ie, added to the `script` section)
+  dedicated test step (i.e. added to the `script` section)
 
 ## Running Prism in the Background
 
