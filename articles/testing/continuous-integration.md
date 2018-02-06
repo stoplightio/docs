@@ -43,10 +43,12 @@ Prism's mock server allows Prism to behave like a
 fully-implemented server for a provided OpenAPI specification. This form of
 testing is useful for:
 
-* **Speeding Up Development Time** Tests can be run locally with nothing more
+* **Speeding Up Development Time** 
+    * Tests can be run locally with nothing more
   than an API specification. This allows a development team on the client or
   server side to work independently of one another.
-* **Validation Testing** Ensures that a client implementation meets all of the requirements set by an
+* **Validation Testing** 
+    * Ensures that a client implementation meets all of the requirements set by an
   OpenAPI specification.
 
 To start a mock server with Prism, use the `mock` command:
