@@ -3,7 +3,7 @@
 Integrating Prism into your [Jenkins](https://jenkins.io/) pipeline is easy.
 There are two ways to get started with Jenkins:
 
-* Running Prism in a pipeline step either natively or using Docker
+* Running Prism in a pipeline step natively or using Docker
 * Using the "Stoplight Report" Jenkins Plugin
 
 ## Adding Prism to a Pipeline
@@ -41,7 +41,7 @@ For more information on using Prism as a test server, see [here](./overview.md).
 
 ### Running Prism in the Foreground
 
-To run Prism in the foreground, you will to call Prism like you would any other
+To run Prism in the foreground, you will call Prism like you would any other
 test step. If running natively, use the command format:
 
 ```sh
@@ -58,7 +58,7 @@ When running `prism conduct`, you can:
 
 * Use the Scenario SRN
 * Include the Scenario JSON on your CI server, and pass in its absolute file path
-* Pass in the absolute URL to the scenario JSON served up via HTTP.
+* Pass in the absolute URL to the scenario JSON served up via HTTP
 
 <!-- theme: warning -->
 > Don't forget to pass in any required environment values with the --env command
