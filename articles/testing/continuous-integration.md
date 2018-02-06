@@ -8,9 +8,9 @@ component, giving developers confidence that the changes they are making are not
 breaking existing functionality or introducing new bugs.
 
 By integrating Prism into your CI process, your development team can be
-confident that any changes to a project do not violate an OpenAPI specification.
+confident that any changes made to a project do not violate an OpenAPI specification.
 This allows multiple teams with agreed-upon specifications to work independently
-of the other, while still being confident that any changes meet the
+of one another, while still remaining confident that any changes meet the
 specification throughout the lifetime of the project.
 
 There are a few different approaches to take when integrating Prism into a CI
