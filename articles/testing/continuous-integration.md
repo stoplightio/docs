@@ -3,18 +3,22 @@
 Continuous Integration (CI) is the practice of continuously merging developer
 work into a shared repository. By merging work frequently, developers can easily
 detect conflicts and stay up-to-date with other team members' changes. Since CI
-allows teams to maintain a high development velocity, testing becomes a crucial
-component, giving developers confidence that the changes they are making are not
-breaking existing functionality or introducing new bugs.
+allows teams to maintain a high development velocity, testing becomes an even
+more crucial component to the development process. By constantly testing all
+changes, developers can verify that they are not breaking existing functionality
+or introducing new bugs.
 
-By integrating Prism into your CI process, your development team can be
-confident that any changes made to a project do not violate an OpenAPI specification.
-This allows multiple teams with agreed-upon specifications to work independently
-of one another, while still remaining confident that any changes meet the
-specification throughout the lifetime of the project.
+By integrating Prism into your CI process, your development team can be certain
+that any changes made to a project do not violate an OpenAPI specification. This
+allows multiple teams with agreed-upon specifications to work independently of
+one another, while ensuring that any changes meet the specification throughout
+the lifetime of the project.
 
-There are a few different approaches to take when integrating Prism into a CI
-testing pipeline, each discussed below.
+There are a few different approaches available when integrating Prism into a CI
+testing pipeline: 
+testing with Stoplight [Scenarios](./scenarios-introduction.md), 
+testing with a mock server, and
+contract testing.
 
 ## Testing with Scenarios
 
@@ -33,10 +37,11 @@ prism conduct --spec open-api-spec.json --path my-scenario.json -e "myapikey=abc
 
 For more information on Scenarios, please see [here](./scenarios-introduction.md).
 
-## Mock Testing
+## Testing with a Mock Server
 
-Mock testing is when Prism behaves like a fully-implemented server for a
-provided OpenAPI specification. This form of testing is useful for:
+Prism's mock server functionality allows Prism to behave like a
+fully-implemented server for a provided OpenAPI specification. This form of
+testing is useful for:
 
 * Speeding up development time, as tests can be run locally with nothing more
   than an API specification. This allows a development team on the client or the
