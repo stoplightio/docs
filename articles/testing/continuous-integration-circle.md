@@ -1,17 +1,21 @@
 # Continuous Integration with CircleCI
 
 Integrating Prism into your Circle CI pipeline is easy. The simplest way to get
-started is by using [Stoplight's Prism Docker
-image](https://hub.docker.com/r/stoplight/prism/). In either the `build` or
-`test` portion of your Circle CI configuration file, the Prism image can be
-listed under the `docker` section.
+up and running is by using [Stoplight's Prism Docker
+image](https://hub.docker.com/r/stoplight/prism/). 
+
+To get started, you will need to reference the Prism Docker image in the
+`docker` section of either the `build` or `test` sections of your Circle CI
+configuration file. This file is typically located under the `.circleci`
+directory in the root of your repository.
 
 When integrating Prism into a CircleCI pipeline, there are two different
 approaches:
 
 * Starting Prism in the background to act as either a mock or
   contract/validation server
-* Having Prism conduct a scenario against a running server
+* Having Prism conduct a scenario against a running server by running as a
+  dedicated test step
 
 ## Running Prism in the Background
 
@@ -83,7 +87,7 @@ button of a scenario under "Trigger This Collection".
 
 **Related**
 
-* [Continous Integration Overview](./continuous-integration.md)
+* [Continuous Integration Overview](./continuous-integration.md)
 * [Continuous Integration with Travis CI](./continous-integration-travis)
 * [Continuous Integration with Jenkins](./continous-integration-jenkins)
 * [Prism Docker Image](https://hub.docker.com/r/stoplight/prism/)
