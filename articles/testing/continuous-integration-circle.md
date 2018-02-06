@@ -39,8 +39,8 @@ Once the Prism container is started, it will automatically start listening on
 
 ## Running Prism in the Foreground
 
-Below is a sample Circle CI configuration file (version 2) showing how to have
-Prism conduct a scenario:
+Below is a sample Circle CI configuration file (version 2) with
+Prism conducting a scenario:
 
 ```yaml
 version: 2
@@ -73,8 +73,9 @@ When running `prism conduct` you can:
 line flag (or you can provide the filepath to a json file with your environment
 variables)!
 
-For convenience, you can find the full command to run your scenario collection
-or individual scenario in the Stoplight application when clicking on the "Home"
+<!-- theme: info -->
+Did you know? You can find the full command to run your scenario collection
+or individual scenarios in the Stoplight application. Click on the "Home"
 button of a scenario under "Trigger This Collection".
 
 ***
