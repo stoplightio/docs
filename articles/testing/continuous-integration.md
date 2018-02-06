@@ -22,7 +22,7 @@ contract testing.
 
 ## Testing with Scenarios
 
-Stoplight [Scenarios](./scenarios-introduction.md) allow users to define
+Stoplight [Scenarios](./scenarios-introduction.md) allows users to define
 multiple steps for testing an OpenAPI specification. Scenarios provide a similar
 function to API's as [functional test
 cases](https://en.wikipedia.org/wiki/Functional_testing) do in software
@@ -39,14 +39,14 @@ For more information on Scenarios, please see [here](./scenarios-introduction.md
 
 ## Testing with a Mock Server
 
-Prism's mock server functionality allows Prism to behave like a
+Prism's mock server allows Prism to behave like a
 fully-implemented server for a provided OpenAPI specification. This form of
 testing is useful for:
 
-* Speeding up development time, as tests can be run locally with nothing more
-  than an API specification. This allows a development team on the client or the
-  server to work independently of one another.
-* Testing that a client implementation meets all of the requirements set by an
+* **Speeding Up Development Time** Tests can be run locally with nothing more
+  than an API specification. This allows a development team on the client or
+  server side to work independently of one another.
+* **Validation Testing** Ensures that a client implementation meets all of the requirements set by an
   OpenAPI specification.
 
 To start a mock server with Prism, use the `mock` command:
@@ -61,7 +61,7 @@ For more information on mock testing with Prism, see [here](FIXME).
 
 Contract testing is when Prism acts as a gateway between the client and a target
 upstream server. When Prism receives a request, it forwards it to the upstream
-server and validates the server response conforms to the provided OpenAPI
+server and validates that the server response conforms to the provided OpenAPI
 specification. This form of testing is useful for:
 
 * Verifying a _server_ implementation to ensure all _responses_ meet the
