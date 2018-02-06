@@ -1,6 +1,6 @@
 # Continuous Integration
 
-Continuous Integration (or CI) is the practice of continuously merging developer
+Continuous Integration (CI) is the practice of continuously merging developer
 work into a shared repository. By merging work frequently, developers can easily
 detect conflicts and stay up-to-date with other team members' changes. Since CI
 allows teams to maintain a high development velocity, testing becomes a crucial
