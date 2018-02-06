@@ -69,12 +69,13 @@ When running `prism conduct` you can:
 * Include the Scenario JSON on your CI server, and pass in its absolute file path
 * Pass in the absolute URL to the scenario JSON served up via HTTP.
 
+<!-- theme: warning -->
 > Don't forget to pass in any required environment values with the --env command
 line flag (or you can provide the filepath to a json file with your environment
 variables)!
 
 <!-- theme: info -->
-Did you know? You can find the full command to run your scenario collection
+> Did you know? You can find the full command to run your scenario collection
 or individual scenarios in the Stoplight application. Click on the "Home"
 button of a scenario under "Trigger This Collection".
 
