@@ -13,11 +13,9 @@ approaches:
   contract/validation server
 * Having Prism conduct a scenario against a running server
 
-Each described below.
-
 ## Running Prism in the Background
 
-Below is a sample Circle CI configuration file (version 2) for using Prism as a
+Below is a sample Circle CI configuration file (version 2) using Prism as a
 mock or contract/validation server:
 
 ```yaml
