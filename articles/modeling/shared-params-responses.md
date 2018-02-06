@@ -58,7 +58,7 @@ files, projects, and other external sources.
 ## Shared Responses
 
 Shared responses provide a way to re-use response objects across multiple API
-endpoints without having to duplicate effort. Similar to shared properties
+endpoints without having to duplicate effort. Similar to the shared properties
 discussed above, shared responses allow you to reference a single response
 multiple times without having to recreate each response manually. The added
 benefit of this approach is that updates to the shared response object are
