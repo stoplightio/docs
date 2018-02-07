@@ -6,8 +6,7 @@
 [Environments](../editor/environments.md) article before continuing.
 
 Environment variables in Stoplight allow you to dynamically retrieve information
-in a scenario using the editor's [environment
-configuration](../editor/editor-configuration.md). This makes it possible to
+in a scenario from the active environment. This makes it possible to
 switch between different environments with ease, having variables automatically
 populate based on the current environment.
 
@@ -15,21 +14,30 @@ populate based on the current environment.
 
 ### With the Editor Configuration
 
-For information on setting environment variables, please review the [environment
-configuration](../editor/editor-configuration.md) article.
+For information on managing project environments, please review the [environment](../editor/environments.md) article.
+
+### With Captures
+
+Captures make it easy to "capture" values from your step request or result, and save them back to an environment variable for later use. Simply switch to the `captures` tab in the scenario step, and choose $$.env as the target property.
+
+Say you have a scenario step that sends an HTTP request to authenticate a new user. The response from that request includes an apiKey that you want to use for other requests. You can easily save that apiKey to an environment variable, for later re-use, by adding a capture in the form `$$.env.apiKey = output.body.apiKey`. After running the step, check your current environment variables and note the newly added apiKey!
+
+> Environment variables set via captures are only added to the user's private
+  variables, and are not sent to Stoplight. See the [Environment
+  section](../editor/environments.md) for more information.
 
 ### With Scripting
 
 Scripting allows you to use more complicated logic in a scenario step. Scripts
-are executed either before or after a step request finishes. Scripts are plain
-Javascript and give you direct access to the scenario environment through the
+are executed either before or after a step finishes. Scripts are plain
+Javascript and give you direct access to the scenario environment through a
 global `$$.env` object.
 
 To add variables to the environment, use the following syntax:
 
 ```javascript
-// store the step output body's 'hostname' object in the environment
-$$.env.set('hostname', output.body.get('hostname'));
+// store the step output (response) body's 'username' property in the environment
+$$.env.set('username', output.body.get('username'));
 ```
 
 Where the `$$.env.set(x, y)` function adds the data referenced in the second
@@ -40,11 +48,11 @@ argument (`y`) to the environment under the string value of the first argument
   variables, and are not sent to Stoplight. See the [Environment
   section](../editor/environments.md) for more information.
 
-## Referencing Environment Variables
+## Using Environment Variables
 
 <!--(FIXME - SHOW USING A VARIABLE IN A SCENARIO STEP)-->
 
-To reference an environment variable in a scenario, use the following syntax:
+Use an environment variable in a scenario with the following syntax:
 
 ```
 {$$.env.myVariable}
@@ -52,19 +60,16 @@ To reference an environment variable in a scenario, use the following syntax:
 
 Where:
 
-* `{...}` - Braces signify that this is a variable reference. See the [variables
-  overview](./variables-overview.md) section for more information on how
-  variables are used.
-* `$$` - The "double dollar sign" syntax is a reference to the scenario's global
+* `{...}` - Braces signify that this is a variable.
+* `$$` - The "double dollar sign" syntax is a reference to the global
   scope.
-* `env` - Every scenario has a global `env` property that signifies this being a
-  reference to the editor's environment.
+* `env` - The `env` property holds the active environment's data.
 * `myVariable` - This is the variable being referenced, which comes from the
-  project's `.stoplight.yml` file. Substitute your own variable name when using
-  this in a scenario.
+  active environment's resolved variables. Substitute your own variable name when using
+  this in your scenarios.
 
-When the scenario or step is run, any environment variable references will
-automatically be populated based on the editor's current environment.
+When the scenario or step is run, any environment variables will
+automatically be populated based on the editor's active environment.
 
 ### In Scripts
 
