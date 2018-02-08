@@ -47,19 +47,20 @@ To accomplish this, open up the Captures tab of one of your steps and select $.c
 
 #### With Scripting
 
-When you need more complicated conditional logic or processing, scripting is the way to go. Scripts are plain javascript, and give you access to the $.ctx object. In the screenshot below, we are accomplishing the exact same thing as with the capture screenshot above.
+When you need more complicated conditional logic or processing, scripting is the way to go. Scripts are plain javascript, and give you access to the $.ctx object. You can achieve the same results as the capture screenshot above as seen in the screenshot below.
 
 ![](../../assets/images/$.ctx.todoId-Scripting.png)
 
 ### When to use ctx variables
 
-You can think of ctx variables as temporary state in your scenario. In general, we recommend using them for values that are created during the course of a single scenario, that need to be shared with subsequent steps. This includes things like ids, usernames, and randomly generated tokens.
+You can think of ctx variables as a temporary state in your scenario. In general, we recommend using them for values that are created during the course of a single scenario that need to be shared with subsequent steps. This includes things like ids, usernames, and randomly generated tokens.
 
-We do **NOT** recommend using ctx variables for more permanent values that need to persist across scenario runs. For this persisted value use case, we recommend using the $$.env object, which is explained in detail [here](variables-environment.md).
+<!-- theme: warning -->
+> We do **NOT** recommend using ctx variables for more permanent values that need to persist across scenario runs. For this persisted value use case, we recommend using the $$.env object, which is explained in detail [here](variables-environment.md).
 
 ### Debugging ctx variables
 
-$.ctx variables can be manually set when running a step. This is useful if you are trying to debug a single step in the middle of a scenario, that relies on a ctx value set in a previous step. Instead of having the run the entire scenario to generate the needed ctx value, you can set it in the UI manually. In the screenshot below, we can set the todoId ctx variable before running the step to debug what would happen with a particular todoId value.
+$.ctx variables can be manually set when running a step. This is useful if you are trying to debug a single step in the middle of a scenario that relies on a ctx value set in a previous step. Instead of running the entire scenario to generate the needed ctx value, you can set it in the UI manually. In the screenshot below, we can set the todoId ctx variable before running the step to debug what would happen with a particular todoId value.
 
 ![](../../assets/images/$.ctx.todoId-Manual.png)
 
