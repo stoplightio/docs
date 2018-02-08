@@ -52,6 +52,76 @@ parameter.
 Like other references in Stoplight, shared parameters can also be shared across
 files, projects, and other external sources.
 
+### Shared Parameters Example
+
+As an example of how to use shared parameters, let's say that you are creating
+an API to serve thousands of cooking recipes. When dealing with large volumes of
+data, you typically want to avoid sending _all_ data in a request. To help avoid
+sending more data than is necessary, most applications implement a "paging"
+feature that allows clients to retrieve a small portion of results (ie, a single
+page).
+
+There are multiple ways to approach a paging feature, but for this example we
+want to add two query string parameters to every request:
+
+* `limit` - The number of results to return when viewing a page. For example,
+  setting `limit` to `20` means that, at most, 20 results will be returned in the
+  request.
+* `offset` - The number of results to skip before returning results. For
+  example, setting an `offset` of `20` means that the API will discard the first
+  20 results.
+
+By using the two parameters above, a client can efficiently "page" through
+results, only returning items that are within the requested bounds. As a
+demonstration, let's use the parameters to display the first page of our recipe
+results:
+
+```
+GET /recipes?limit=20&offset=0
+```
+
+Since the `offset` is set to `0`, the API will no discard any results. Paired
+with a `limit` of `20`, we will only see the first 20 results (1 through 20). 
+
+And then
+to view the second page of recipes, we would use:
+
+```
+GET /recipes?limit=20&offset=20
+```
+
+By setting an `offset` of `20`, the API will discard the first 20 results. Paired
+again with a `limit` of `20`, we will see the second page of results (21 through
+40).
+
+Now that we know how we want the components to behave, let's create them in
+Stoplight. To get started, create a new shared parameter for an OpenAPI file
+under the "Shared" section of the menu.
+
+![](../../assets/images/shared-params-responses2.png)
+
+As shown in the image above, set the properties for each parameter based on our
+requirements:
+
+1. Be sure to set the display names for both components properly. In our
+   example, we only have two parameters, however if there are multiple shared
+   parameters with similar names, you may want to set a more descriptive name
+   (ie, 'recipe-limit' instead of 'limit').
+2. Since both components are query string parameters, set the property location
+   for each as 'query'.
+3. The name of the parameter, which is how it will be set in HTTP requests.
+4. Optional type restrictions can be applied to the values. In our case, since
+   both parameters are integer values, we can use the 'integer' format
+   restriction.
+5. Setting a default value can be useful if you don't need the client to specify
+   each parameter for every request. For our example, it makes sense to set
+   defaults that will return the first page (limit of 20, offset of 0).
+
+![](../../assets/images/shared-params-responses3.png)
+
+Once the shared parameters are created, reference them in any API endpoint under
+__Query Parameters__ block of the request section in the editor.
+
 ## Shared Responses
 
 Shared responses provide a way to re-use response objects across multiple API
@@ -81,6 +151,43 @@ create a reference to the shared response by choosing the _Type_ of the response
 as "Reference". Once the Response type is set to "Reference", you can then
 choose the shared response to use for that endpoint. Shared responses can also
 be shared across files, projects, and other external sources.
+
+### Shared Responses Example
+
+As an example of how to use shared responses, let's say that you have a set of
+API endpoints that should return the same error response when a failure occurs.
+Every time an error is returned from the API, you want to make sure the
+following properties are returned:
+
+* `error_message` - A descriptive error message about the failure in string format.
+* `error_code` - A code representing the category of the failure in integer format.
+* `tracking_id` - A tracking ID that can be used by the caller to follow-up with
+  an administrator for more information (ie, debug an issue with customer
+  support).
+
+Now that we know what should be returned, let's create a shared response in
+Stoplight. To get started, create a new shared response for an OpenAPI file
+under the "Shared" section of the menu.
+
+![](../../assets/images/shared-params-responses4.png)
+
+As shown in the image above, set the properties for each portion of the response
+based on our requirements:
+
+1. Set the name of the shared response. In our example, we only have one error
+   type, however if there are multiple error responses with similar names, you
+   may want to set a more descriptive name (ie, 'api-tracking-error' instead of
+   'error').
+2. A short description of the error response, such as why it is needed and how
+   it is used.
+3. The contents of the shared response object based on the three required
+   properties above.
+
+![](../../assets/images/shared-params-responses5.png)
+
+Once the shared response is created, it can be referenced in any API endpoint by
+using a _Reference_ type under a response. A shared response can also be used
+multiple times under the same endpoint.
 
 ***
 
