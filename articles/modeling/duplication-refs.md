@@ -9,7 +9,7 @@
 - You can reference a definition hosted at any location or server 
 - Apart from defining reusable definitions, you can also define reusable responses and parameters. You can store your reusable definitions, responses, and parameters in a common library. 
 
-<-- theme: info --> 
+<!-- theme: info --> 
 >Key Terms: A definition is a named schema object. A reference is a path to a declaration within an OAS file.
 
 ## How to Reference a Definition 
@@ -48,6 +48,7 @@ $ref: '#/definitions/section'
 ## Best Practices 
 - Only use $ref in locations specifed by the OpenAPI Specification 
 - Always enclose the value of your local reference in quotes (when using YAML syntax) to ensure it is not treated as a comment. For example:
+
 Good
 ```
 "#/definitions/todo-partial"
@@ -62,7 +63,7 @@ Bad
 
 ```
 {
-  "title": "**Todo Partial**",
+  "title": "Todo Partial",
   "type": "object",
   "properties": {
     "name": {
@@ -88,7 +89,7 @@ Bad
   "title": "Todo Full",
   "allOf": [
     {
-      **"$ref": "#/definitions/todo-partial"**
+      "$ref": "#/definitions/todo-partial" (Reference)
     },
     {
       "type": "object",
@@ -114,7 +115,7 @@ Bad
           "format": "date-time"
         },
         "user": {
-          **"$ref: "https://exporter.stoplight.io/4568/master/common.oas2.yml#/definitions/user"**
+          "$ref: "https://exporter.stoplight.io/4568/master/common.oas2.yml#/definitions/user" (Reference)
         }
       },
       "required": [
