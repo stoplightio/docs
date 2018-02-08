@@ -23,8 +23,7 @@ endpoints without having to duplicate effort.
 
 ![](../../assets/gifs/shared-params-responses-param.gif)
 
-<<<<<<< HEAD
-Shared parameters can be used as the following request properties:
+Shared parameters are supported in the following request property locations:
 
   * __path__ - The request URL _path_
   * __query__ - The request URL query string
@@ -35,24 +34,6 @@ Shared parameters can be used as the following request properties:
 <!-- theme: info -->
 > For more information the above properties, see the OpenAPIv2 Specification
   [here](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#parameter-object)
-=======
-Shared parameters can be used as the following request properties:
-
-  * __path__ - Specifies that the shared parameter can only be used in an API endpoint as a URL _path_
-  * __query__ - Specifies that the shared parameter can only be used in an API
-    endpoint as an [URL query
-    string](https://en.wikipedia.org/wiki/Query_string)
-  * __header__ - Specifies that the shared parameter can only be used in an API
-    endpoint as a [HTTP Header field
-    object](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
-  * __body__ - Specifies that the shared parameter can only be used in an API
-    endpoint as a [HTTP message
-    body](https://en.wikipedia.org/wiki/HTTP_message_body)
-  * __form-data__ - Specifies that the shared parameter can only be used in an
-    API endpoint as a HTTP body in the
-    [`multipart/form-data`](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
-    format 
->>>>>>> e6053aba82c6683bbb136fd84a89bd5acddc6ba0
 
 Similar to generic request parameters, restrictions on the parameter values can
 also be applied based on type, expected default value, minimum/maximum length,
@@ -74,11 +55,7 @@ files, projects, and other external sources.
 ## Shared Responses
 
 Shared responses provide a way to re-use response objects across multiple API
-<<<<<<< HEAD
 endpoints without having to duplicate effort. Similar to shared components
-=======
-endpoints without having to duplicate effort. Similar to the shared properties
->>>>>>> e6053aba82c6683bbb136fd84a89bd5acddc6ba0
 discussed above, shared responses allow you to reference a single response
 multiple times without having to recreate each response manually. The added
 benefit of this approach is that updates to the shared response object are
