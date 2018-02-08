@@ -61,7 +61,7 @@ For more information on mock testing with Prism, see [here](FIXME).
 
 ## Contract Testing
 
-Contract testing is when Prism acts as a gateway between the client and a target
+Contract testing is when Prism acts as a proxy between the client and a target
 upstream server. When Prism receives a request, it forwards it to the upstream
 server and validates that the server response conforms to the provided OpenAPI
 specification. This form of testing is useful for:
@@ -70,6 +70,8 @@ specification. This form of testing is useful for:
   appropriate requirements set by an OpenAPI specification.
 * Verifying a _client_ implementation to ensure all _requests_ meet the
   appropriate requirements set by an OpenAPI specification.
+* Augmenting existing test suites with very little extra work and almost no
+  workflow changes required.
 
 To start a contract/validation server with Prism, use the `validate` command:
 
