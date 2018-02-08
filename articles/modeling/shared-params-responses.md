@@ -54,14 +54,13 @@ files, projects, and other external sources.
 
 ### Shared Parameters Example
 
-As an example of how to use shared parameters, let's say that you are creating
-an API to serve thousands of cooking recipes. When dealing with large volumes of
+Let's say you are creating an API to serve thousands of cooking recipes. When dealing with large volumes of
 data, you typically want to avoid sending _all_ data in a request. To help avoid
 sending more data than is necessary, most applications implement a "paging"
-feature that allows clients to retrieve a small portion of results (ie, a single
+feature that allows clients to retrieve a small portion of results (i.e. a single
 page).
 
-There are multiple ways to approach a paging feature, but for this example we
+There are multiple ways to approach a paging feature. For this example, we
 want to add two query string parameters to every request:
 
 * `limit` - The number of results to return when viewing a page. For example,
@@ -72,19 +71,17 @@ want to add two query string parameters to every request:
   20 results.
 
 By using the two parameters above, a client can efficiently "page" through
-results, only returning items that are within the requested bounds. As a
-demonstration, let's use the parameters to display the first page of our recipe
+results, only returning items that are within the requested bounds. To demonstrate, let's use the parameters to display the first page of our recipe
 results:
 
 ```
 GET /recipes?limit=20&offset=0
 ```
 
-Since the `offset` is set to `0`, the API will no discard any results. Paired
+Since the `offset` is set to `0`, the API will not discard any results. Paired
 with a `limit` of `20`, we will only see the first 20 results (1 through 20). 
 
-And then
-to view the second page of recipes, we would use:
+To view the second page of recipes, we would use:
 
 ```
 GET /recipes?limit=20&offset=20
@@ -94,6 +91,7 @@ By setting an `offset` of `20`, the API will discard the first 20 results. Paire
 again with a `limit` of `20`, we will see the second page of results (21 through
 40).
 
+### How
 Now that we know how we want the components to behave, let's create them in
 Stoplight. To get started, create a new shared parameter for an OpenAPI file
 under the "Shared" section of the menu.
@@ -104,12 +102,12 @@ As shown in the image above, set the properties for each parameter based on our
 requirements:
 
 1. Be sure to set the display names for both components properly. In our
-   example, we only have two parameters, however if there are multiple shared
+   example, we only have two parameters, however, if there are multiple shared
    parameters with similar names, you may want to set a more descriptive name
-   (ie, 'recipe-limit' instead of 'limit').
+   (i.e. 'recipe-limit' instead of 'limit').
 2. Since both components are query string parameters, set the property location
    for each as 'query'.
-3. The name of the parameter, which is how it will be set in HTTP requests.
+3. Set the name of the parameter, which is how it will be set in HTTP requests.
 4. Optional type restrictions can be applied to the values. In our case, since
    both parameters are integer values, we can use the 'integer' format
    restriction.
@@ -119,13 +117,13 @@ requirements:
 
 ![](../../assets/images/shared-params-responses3.png)
 
-Once the shared parameters are created, reference them in any API endpoint under
+Once the shared parameters are created, reference them in any API endpoint under the
 __Query Parameters__ block of the request section in the editor.
 
 ## Shared Responses
 
-Shared responses provide a way to re-use response objects across multiple API
-endpoints without having to duplicate effort. Similar to shared components
+Shared responses provide a practical way to re-use response objects across multiple API
+endpoints without having to duplicate effort. Similar to the shared components
 discussed above, shared responses allow you to reference a single response
 multiple times without having to recreate each response manually. The added
 benefit of this approach is that updates to the shared response object are
@@ -141,7 +139,7 @@ Shared responses allow you to configure the following properties:
   modeling tool (or reference a pre-existing model)
 
 <!-- theme: info -->
-> For more information the above properties, see the OpenAPIv2 Specification
+> For more information on the above properties, see the OpenAPI v2 Specification
   [here](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#responseObject)
 
 ![](../../assets/gifs/shared-params-responses-response2.gif)
@@ -154,7 +152,7 @@ be shared across files, projects, and other external sources.
 
 ### Shared Responses Example
 
-As an example of how to use shared responses, let's say that you have a set of
+Let's say you have a set of
 API endpoints that should return the same error response when a failure occurs.
 Every time an error is returned from the API, you want to make sure the
 following properties are returned:
@@ -175,7 +173,7 @@ As shown in the image above, set the properties for each portion of the response
 based on our requirements:
 
 1. Set the name of the shared response. In our example, we only have one error
-   type, however if there are multiple error responses with similar names, you
+   type, however, if there are multiple error responses with similar names, you
    may want to set a more descriptive name (ie, 'api-tracking-error' instead of
    'error').
 2. A short description of the error response, such as why it is needed and how
