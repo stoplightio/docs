@@ -1,42 +1,39 @@
 # Shared Parameters and Responses
 
 While designing API's in Stoplight, it is common to have multiple endpoints
-share a common set of query parameters and API responses. To help reduce extra
+share a set of query parameters and API responses. To help reduce extra
 work (and the chance of introducing errors), it is important to: 
-- Identify endpoints with common parameters 
-- Use _shared properties_ to reference the same property multiple times instead of rewriting the properties for
-each individual endpoint.
 
-Shared properties in Stoplight come in two forms:
+* Identify endpoints with common parameters 
+* Use _shared components_ to reference the same property multiple times instead
+  of rewriting the properties for each individual endpoint.
+
+Shared components in Stoplight come in two forms:
 
 * __Parameters__ - These are shared parameters that can be applied to requests
   across multiple endpoints.
 
-* __Responses__ - These are shared responses that apply the
-  same response object to multiple endpoints.
+* __Responses__ - These are shared response objects that can be applied to
+  multiple endpoints.
 
 ## Parameters
 
-Shared parameters provide a way to re-use request properties across multiple API endpoints without having to duplicate effort.
+Shared parameters provide a way to use request properties across multiple API
+endpoints without having to duplicate effort.
 
 ![](../../assets/gifs/shared-params-responses-param.gif)
 
-Shared parameters can be used as the following request properties:
+Shared parameters are supported in the following request property locations:
 
-  * __path__ - Specifies that the shared parameter can only be used in an API endpoint as a URL _path_
-  * __query__ - Specifies that the shared parameter can only be used in an API
-    endpoint as an [URL query
-    string](https://en.wikipedia.org/wiki/Query_string)
-  * __header__ - Specifies that the shared parameter can only be used in an API
-    endpoint as a [HTTP Header field
-    object](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
-  * __body__ - Specifies that the shared parameter can only be used in an API
-    endpoint as a [HTTP message
-    body](https://en.wikipedia.org/wiki/HTTP_message_body)
-  * __form-data__ - Specifies that the shared parameter can only be used in an
-    API endpoint as a HTTP body in the
-    [`multipart/form-data`](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
-    format 
+  * __path__ - The request URL _path_
+  * __query__ - The request URL query string
+  * __header__ - The request HTTP Header field object
+  * __body__ - The request HTTP message body
+  * __form-data__ - The request HTTP message body in the `multipart/form-data` format 
+
+<!-- theme: info -->
+> For more information the above properties, see the OpenAPIv2 Specification
+  [here](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#parameter-object)
 
 Similar to generic request parameters, restrictions on the parameter values can
 also be applied based on type, expected default value, minimum/maximum length,
@@ -58,7 +55,7 @@ files, projects, and other external sources.
 ## Shared Responses
 
 Shared responses provide a way to re-use response objects across multiple API
-endpoints without having to duplicate effort. Similar to shared properties
+endpoints without having to duplicate effort. Similar to shared components
 discussed above, shared responses allow you to reference a single response
 multiple times without having to recreate each response manually. The added
 benefit of this approach is that updates to the shared response object are
@@ -69,12 +66,13 @@ required.
 
 Shared responses allow you to configure the following properties:
 
-* Headers - Customize the [HTTP
-  Headers](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields) returned in
-  the response
-* Response body - Customize the [HTTP message
-  body](https://en.wikipedia.org/wiki/HTTP_message_body) contents using the
-  Stoplight modeling tool (or reference a pre-existing model)
+* Headers - Customize the HTTP Headers returned in the response
+* Response body - Customize the HTTP message body contents using the Stoplight
+  modeling tool (or reference a pre-existing model)
+
+<!-- theme: info -->
+> For more information the above properties, see the OpenAPIv2 Specification
+  [here](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#responseObject)
 
 ![](../../assets/gifs/shared-params-responses-response2.gif)
 
@@ -88,7 +86,5 @@ be shared across files, projects, and other external sources.
 
 **Related**
 
-* [URL Query String Reference](https://en.wikipedia.org/wiki/Query_string)
-* [HTTP Header Reference](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
-* [HTTP Message Body Reference](https://en.wikipedia.org/wiki/HTTP_message_body)
-* [Form Data Reference](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
+* [OpenAPI v2 Parameter Objects Reference](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#parameter-object)
+* [OpenAPI v2 Response Objects Reference](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#responseObject)
