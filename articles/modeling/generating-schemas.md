@@ -56,6 +56,6 @@ As seen above, each object in the pets array contains the following properties: 
     }
   }
 }
-
+```
 ### Related Articles 
 - [JSON Schema](http://json-schema.org/specification.html) 
