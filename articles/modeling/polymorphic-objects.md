@@ -1,44 +1,42 @@
-# Polymorphic Objects 
+# Polymorphic Objects
 
-## What 
+## What
 
-- Resources in your API are polymorphic. They can be returned as XML or JSON and can have a flexible amount of fields. You can also have requests and responses in your API design that can be depicted by a number of alternative schemas. 
-- **Polymorphism** is the capacity to present the same interface for differing underlying forms. 
-- The **discriminator** keyword is used to designate the name of the property that decides which schema definition validates the structure of the model. 
+* Resources in your API are polymorphic. They can be returned as XML or JSON and can have a flexible amount of fields. You can also have requests and responses in your API design that can be depicted by a number of alternative schemas.
+* **Polymorphism** is the capacity to present the same interface for differing underlying forms.
+* The **discriminator** keyword is used to designate the name of the property that decides which schema definition validates the structure of the model.
 
-## Why 
-- Polymorphism permits combining and extending model definitions. 
+## Why
+
+* Polymorphism permits combining and extending model definitions.
 
 ## Best Practices
 
 <!-- theme: warning -->
->The discriminator property **must** be a mandatory or required field. When it is used, the value **must** be the name of the schema or any schema that inherits it. 
 
-### Example 
+> The discriminator property **must** be a mandatory or required field. When it is used, the value **must** be the name of the schema or any schema that inherits it.
 
-```
-{
-  definitions:
+### Example
+
+```yaml
+definitions:
   Vehicle:
-    type: object, 
-    discriminator: brand
+    type: object,
+    discriminator: model
     properties:
       model:
         type: string
       color:
         type: string
-      required:
-    model
-    
-  Sedan: # Sedan is used as the discriminator value 
-  
+    required:
+      -model
+  Sedan: # If Vehicle.model is Sedan then use Sedan model for validation.
     allOf:
-      $ref: '#/definitions/Vehicle'
-      type: object
-        properties:
-          dateManufactured: 
-            type: date
-          required: 
-            dateManufactured
-}
+      - $ref: '#/definitions/Vehicle'
+      - type: object
+          properties:
+            dateManufactured:
+              type: date
+          required:
+            - dateManufactured
 ```
