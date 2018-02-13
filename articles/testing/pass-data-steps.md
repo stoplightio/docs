@@ -1,4 +1,6 @@
-Most scenarios will involve more than one step, and oftentimes you will need to share data between the steps.
+# Pass Data Between Steps 
+
+Most scenarios will involve more than one step, and oftentimes you will need to share data between steps.
 
 For example, imagine a simple scenario that tests the CRUD operations on a "todos" model. It might involve 5 steps:
 
@@ -12,7 +14,7 @@ In order for this to work, steps 2-5 need to be able to access the `id` of the n
 
 ### The $.ctx object
 
-The $.ctx object makes it easy to store temporary data for use during the course of a single scenario run. It starts empty at the beginning of every run. Use it to share data between steps.
+The $.ctx object makes it easy to store temporary data for use during the course of a single scenario run. By default, the $.ctx object will be empty at the start of every run. Use it to share data between steps.
 
 ### Using the $.ctx object
 
@@ -24,7 +26,7 @@ When the step is run, `{$.ctx.todoId}` will be replaced by whatever $.ctx.todoId
 
 You can use variables anywhere in your step, including url, auth, headers, request body, assertions, captures, and scripting.
 
-To use environments in a before, after script, or step with type script:
+To use environments in a before script, after script, or step with type script:
 
 ```js
 // would print the postId
