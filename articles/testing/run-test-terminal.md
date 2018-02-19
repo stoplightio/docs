@@ -18,7 +18,7 @@ Download from https://github.com/stoplightio/prism/tree/2.x
 
 After installing, you should be able to run `prism -h` (or `prism.exe -h` in Windows) from your CLI and see the Prism help text.
 
-The Scenario app has a convenient display that gives you the exact command required to run the collection or scenario that you are viewing, taking into account your current environment variables. If you have the Scenario editor connected to a local file on your computer, it will use the path to that file, otherwise it will use the Scenario SRN (unique identifier).
+The Scenario app has a convenient display that gives you the exact command required to run the collection or scenario that you are viewing (taking into account your current environment variables). If you have the Scenario editor connected to a local file on your computer, it will use the path to that file, otherwise it will use the Scenario SRN (unique identifier).
 
 <!-- theme: warning -->
 
