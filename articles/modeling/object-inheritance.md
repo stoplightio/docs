@@ -9,8 +9,8 @@
 
 * **Inheritance** is when a model derives its properties from another model.
 
-* When a model inherits from another model, the model being inherited from is
-  known as a **base type** (or parent). Similarly, a model that is inheriting
+* When a model inherits properties from another model, the model being inherited from is
+  known as a **base type** (or parent). A model that is inheriting
   properties from a base type is known as a **derived type** (or child).
 
 * When a base type inherits properties from another model, any derived types
@@ -28,8 +28,7 @@
 ## Why
 
 * Inheritance makes your API design more compact. It helps avoid duplication of
-  common properties and fields, reducing the complexity of the specification and
-  reducing the chance of errors.
+  common properties and fields, reducing the complexity of the specification and the chance of errors.
 
 ## Best Practices
 
