@@ -29,6 +29,7 @@ BUILD_ID=dontKillMe nohup prism mock --spec ... &
 ```
 
 <!-- theme: warning -->
+
 > Please note that the trailing ampersand (`&`) is required
 
 If running in Docker, use the format:
@@ -56,19 +57,20 @@ docker run --rm stoplight/prism:latest prism conduct ...
 
 When running `prism conduct`, you can:
 
-* Use the Scenario SRN
 * Include the Scenario JSON on your CI server, and pass in its absolute file path
 * Pass in the absolute URL to the scenario JSON served up via HTTP
 
 <!-- theme: warning -->
+
 > Don't forget to pass in any required environment values with the --env command
-line flag (or you can provide the filepath to a json file with your environment
-variables)!
+> line flag (or you can provide the filepath to a json file with your environment
+> variables)!
 
 <!-- theme: info -->
+
 > Did you know? You can find the full command to run your scenario collection
-or individual scenarios in the Stoplight application. Click on the "Home"
-button of a scenario under "Trigger This Collection".
+> or individual scenarios in the Stoplight application. Click on the "Home"
+> button of a scenario under "Trigger This Collection".
 
 ## Using the Plugin
 
@@ -77,7 +79,7 @@ Report Plugin](https://github.com/jenkinsci/stoplightio-report-plugin), which is
 a Jenkins plugin that can be used to run tests with Prism. For more information
 on the plugin, see [here](https://plugins.jenkins.io/stoplightio-report).
 
-***
+---
 
 **Related**
 

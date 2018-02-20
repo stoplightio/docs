@@ -15,8 +15,8 @@ one another, while ensuring that any changes meet the specification throughout
 the lifetime of the project.
 
 There are a few different approaches available when integrating Prism into a CI
-testing pipeline: 
-testing with Stoplight [Scenarios](./scenarios-introduction.md), 
+testing pipeline:
+testing with Stoplight [Scenarios](./scenarios-introduction.md),
 testing with a mock server, and
 contract testing.
 
@@ -32,7 +32,7 @@ into a CI pipeline for validating a server's implementation of a specification.
 To run a scenario with Prism, use the `conduct` command:
 
 ```bash
-prism conduct --spec open-api-spec.json --path my-scenario.json -e "myapikey=abc123"
+prism conduct my-scenario.json --spec open-api-spec.json -e "myapikey=abc123"
 ```
 
 For more information on Scenarios, please see [here](./scenarios-introduction.md).
@@ -43,13 +43,13 @@ Prism's mock server allows Prism to behave like a
 fully-implemented server for a provided OpenAPI specification. This form of
 testing is useful for:
 
-* **Speeding Up Development Time** 
-    * Tests can be run locally with nothing more
-  than an API specification. This allows a development team on the client or
-  server side to work independently of one another.
-* **Validation Testing** 
-    * Ensures that a client implementation meets all of the requirements set by an
-  OpenAPI specification.
+* **Speeding Up Development Time**
+  * Tests can be run locally with nothing more
+    than an API specification. This allows a development team on the client or
+    server side to work independently of one another.
+* **Validation Testing**
+  * Ensures that a client implementation meets all of the requirements set by an
+    OpenAPI specification.
 
 To start a mock server with Prism, use the `mock` command:
 
@@ -81,7 +81,7 @@ prism validate --spec open-api-spec.json --upstream http://localhost:8080
 
 For more information on contract testing with Prism, see [here](FIXME).
 
-***
+---
 
 **Related**
 

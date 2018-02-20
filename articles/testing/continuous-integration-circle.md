@@ -2,7 +2,7 @@
 
 Integrating Prism into your Circle CI pipeline is easy. The simplest way to get
 up and running is by using [Stoplight's Prism Docker
-image](https://hub.docker.com/r/stoplight/prism/). 
+image](https://hub.docker.com/r/stoplight/prism/).
 
 To get started, you will need to reference the Prism Docker image in the
 `docker` section of either the `build` or `test` sections of your Circle CI
@@ -54,7 +54,7 @@ jobs:
       - image: your-normal-image:your-version
     steps:
       - checkout
-      - run: 
+      - run:
           name: Install prism
           command: curl https://raw.githubusercontent.com/pytlesk4/stoplight-todos/master/prism.sh | sh
       - run:
@@ -69,21 +69,22 @@ jobs:
 
 When running `prism conduct` you can:
 
-* Use the Scenario SRN
 * Include the Scenario JSON on your CI server, and pass in its absolute file path
 * Pass in the absolute URL to the scenario JSON served up via HTTP.
 
 <!-- theme: warning -->
+
 > Don't forget to pass in any required environment values with the --env command
-line flag (or you can provide the filepath to a json file with your environment
-variables)!
+> line flag (or you can provide the filepath to a json file with your environment
+> variables)!
 
 <!-- theme: info -->
-> Did you know? You can find the full command to run your scenario collection
-or individual scenarios in the Stoplight application. Click on the "Home"
-button of a scenario under "Trigger This Collection".
 
-***
+> Did you know? You can find the full command to run your scenario collection
+> or individual scenarios in the Stoplight application. Click on the "Home"
+> button of a scenario under "Trigger This Collection".
+
+---
 
 **Related**
 
