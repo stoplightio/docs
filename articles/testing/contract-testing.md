@@ -9,17 +9,6 @@ Scenarios makes it easy to incorporate your OAS / Swagger API specification into
 <!-- theme: info -->
 > If you don't have an API specification yet, you can create one using the Stoplight modeling tool!
 
-## Connecting The Spec
-
-The first thing you need to do to get started with contract testing is connect your API spec to the Scenarios Collection.
-
-1. Create a new (or open an existing) **Scenario file** in the Stoplight editor
-2. Select **Swagger/OAS Coverage** in the Scenarios menu to the left
-3. Open **Contract Test Settings**
-4. Click **+ Add Spec**
-5. Select a file from either **This Project** or an **External URL**
-6. You are all set! You can now test against an API spec. 
-
 ## Using the Coverage Report
 
 The coverage report gives you a quick overview of which parts of the connected specs are covered by test assertions in the current Scenario Collection.
