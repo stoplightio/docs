@@ -2,7 +2,7 @@
 
 References are a special type of step that allow you to include other scenarios in your scenario. This is a very powerful concept that can dramatically reduce the duplication in your scenarios.
 
-To use them, add a step and change it's type from "HTTP/Script" to "REF". This will expose a dropdown that lists all of the scenarios in your collection. Select a value from the dropdown to create the ref to that scenario.
+To reference another scenario, add a step to an existing scenario and change it's type from "HTTP/Script" to "REF". This will expose a dropdown that lists all of the scenarios in your collection. Select a value from the dropdown to create the ref to that scenario.
 
 In the screenshot below, [Todo: Utility CRUD](https://next.stoplight.io/stoplight/hub/blob/master/tests.scenarios.yml?edit=%23%2Fscenarios%2Ftodo-utility) and [User: Utility CRUD](https://next.stoplight.io/stoplight/hub/blob/master/tests.scenarios.yml?edit=%23%2Fscenarios%2Fuser-utility) scenario have one step that refrences [Entity CRUD](https://next.stoplight.io/stoplight/hub/blob/master/tests.scenarios.yml?edit=%23%2Futilities%2Fcrud) from Utilities. Entity CRUD does all the heavy lifting: it CREATES, GETS, UPDATES, DELETES, and repeats GETS (To verify entity was deleted) an entity.
 
