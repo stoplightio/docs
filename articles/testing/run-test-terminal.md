@@ -6,9 +6,13 @@ First, install Prism, our command line tool for running scenarios.
 
 _On macOS or Linux:_
 
-```
+```bash
 curl https://raw.githubusercontent.com/stoplightio/prism/2.x/install.sh | sh
 ```
+
+<!-- theme: info -->
+
+> When installed through the installation script, Prism will be installed to `/usr/local/bin/prism`
 
 _On Windows:_
 
@@ -26,7 +30,7 @@ The Scenario app has a convenient display that gives you the exact command requi
 
 See below for a screenshot of the "Run From Terminal" command generator. The command in this box will update live in response to environment, user, and scenario changes.
 
-![](http://i.imgur.com/mqpNanE.png)
+<!-- FIXME: image showing "Run from Terminal" option under a scenario -->
 
 ## Running Scenarios
 
@@ -36,7 +40,11 @@ Scenario `collection.json` file, you can run the Scenario using the following
 command:
 
 ```bash
+# Run a local scenario
 prism conduct /path/to/collection.json
+
+# Run a remote scenario by URL
+prism conduct "https://export.stoplight.io/1234/master/main.scenarios.yml"
 ```
 
 For more information on Scenarios and how they can be used, see [here](./scenarios-introduction.md).
