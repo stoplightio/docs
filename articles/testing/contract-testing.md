@@ -34,4 +34,4 @@ After linking your spec to the Scenario Collection, contract test assertions wil
 
 Stoplight will look through your API specification for a operation that matches the step's HTTP method + URL, and use the response status code returned from the API to look up the JSON schema. In the example below, we are testing the 200 response schema in our API spec for the GET /todos/{todoId} endpoint.
 
-When this step is run, the HTTP response structure will be validated against the matched JSON schema from our API spec, and any errors will be added to the test results.
+When this step is run, the HTTP response structure will be validated against the matched JSON schema from our API spec, and any errors will be added to the test results. 
