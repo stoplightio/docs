@@ -1,17 +1,16 @@
 # Viewing Changes
 
 As more users edit files within the same project, tracking changes over time
-becomes more and more difficult. To help make sure changes can be easily tracked
-and viewed, Stoplight provides the full history of changes.
+becomes increasingly difficult. To mitigate these effects, Stoplight provides the full history of changes, which allows you to view and track any changes made.
 
 To see the history of changes for a project, use the 'History' button on the
-navigation bar to the left of the project window (show below). When the history
+navigation bar to the left of the project window (shown below). When the history
 is being viewed, you will see a series of changes for the project, listed in
-date descending order.
+descending order by date.
 
 ![](../../assets/images/viewing-changes2.png)
 
-Each change event includes information, including:
+Each change event includes:
 
 * The date when the change was made
 
