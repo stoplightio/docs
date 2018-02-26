@@ -39,6 +39,11 @@ configuration/overview.
 
 ![](../../assets/images/run-test-stoplight2.png)
 
+<!-- theme: info -->
+
+> Scenarios can also be run directly from every step using the **Run Scenario**
+> button
+
 ## Running a Collection
 
 Once you have added created enough scenarios to compose a **collection**, you
@@ -46,6 +51,11 @@ can run the entire collection (all scenarios and steps within them) by using the
 **Run Collection** button available while viewing the collection home screen.
 
 ![](../../assets/images/run-test-stoplight3.png)
+
+<!-- theme: info -->
+
+> Collections can also be run from the scenario and step screens using the **Run
+> Collection** button
 
 ---
 
