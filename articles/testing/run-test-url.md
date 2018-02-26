@@ -5,7 +5,7 @@ scenarios can also be run by issuing a HTTP request.
 
 To trigger a scenario by URL, there are two methods:
 
-* Issuing a HTTP `GET` request, which runs the collection with project's default
+* Issuing a HTTP `GET` request, which runs the collection with the project's default
   settings and configuration.
 
 * Issuing a HTTP `POST` request, which runs the collection with variables
@@ -16,7 +16,7 @@ To trigger a scenario by URL, there are two methods:
 ## Finding the Scenario URL
 
 Every scenario has a unique URL that can be used to remotely trigger the
-scenario. To find this URL, go the scenario's summary in Stoplight. Below the
+scenario. To find this URL, go to the scenario's summary in Stoplight. Below the
 scenario summary is a "Trigger This Collection" section, within this section is
 a "Trigger by URL" containing the URL unique to this scenario.
 
@@ -39,9 +39,9 @@ $ curl 'https://oihdflk5hiyltnnsxelttmnsw4ylsnfxxgltznvwa.prism.stoplight.io/'
       ...
 ```
 
-To customize the scenario's variables (ie, to add passwords and other sensitive
+To customize the scenario's variables (i.e., to add passwords and other sensitive
 information), they can either be included as URL query parameters in the `GET`
-request or included within the request body of a `POST` request.
+request, or included within the request body of a `POST` request.
 
 ### Customizing Variables with Query String Parameters
 
