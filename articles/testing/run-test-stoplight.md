@@ -1,1 +1,56 @@
+# Running Scenarios
 
+Scenarios allow you to quickly and efficiently test APIs. Scenarios can be
+run in a variety of different ways, including from the [command-line with
+Prism](./run-test-terminal.md) or by [URL](./run-test-url), however the easiest
+way is through the Stoplight editor.
+
+<!-- theme: info -->
+
+> If you haven't created your first scenario yet, please [do so before
+> continuing](./scenarios-introduction.md)
+
+Scenarios in Stoplight are composed of three different levels:
+
+* **Steps**, which are the low-level building blocks that compose a scenario.
+  Steps allow you to easily chain individual actions (for example, performing a
+  web request) together, enabling for more complex testing workflows.
+* **Scenarios**, which are a series of **steps** that perform a high-level
+  action (for example, registering a new user).
+* **Collections**, which are a series of **scenarios** that encapsulate an
+  entire test suite. Collections are the highest-level build block for creating
+  a library of API interactions and tests.
+
+Each level above can be run individually or all together.
+
+## Running a Step
+
+Once you have created a scenario **step**, you can run a single step by using
+the **Run Step** button available towards the top of the editor while viewing
+that step.
+
+![](../../assets/images/run-test-stoplight.png)
+
+## Running a Scenario
+
+Once you have added enough steps to a **scenario**, you can run an single
+scenario using the **Run Scenario** button available while viewing the scenario
+configuration/overview.
+
+![](../../assets/images/run-test-stoplight2.png)
+
+## Running a Collection
+
+Once you have added created enough scenarios to compose a **collection**, you
+can run the entire collection (all scenarios and steps within them) by using the
+**Run Collection** button available while viewing the collection home screen.
+
+![](../../assets/images/run-test-stoplight3.png)
+
+---
+
+**Related**
+
+* [Scenarios Overview](./scenarios-introduction.md)
+* [Running Scenarios from the Command-Line](./run-test-terminal.md)
+* [Running Scenarios by URL](./run-test-url.md)
