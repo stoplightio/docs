@@ -1,22 +1,54 @@
 # Glossary 
 
-## File Types 
-
-**YAML**: YAML is a human friendly, unicode based, data serialization standard for all programming languages. Also referred to as 'YAML Ain't Markup Language' or 'Yet Another Markup Language.' 
-
-**.oas2**: File extension indicating the file is an OAS2 (Swagger 2) file. You can create an OAS2 file with the Design Editor in Stoplight NEXT. 
-
-**.hub**: File extension indicating file is a technical documentation file. Stoplight's Hubs is used to create technical documentation files. 
-
-**.prism**: File extension indicating file is a Prism file. 
-
-**.md**: File extension indicating file is a markdown file. 
-
 ## General Terms 
 
 **Reference**: A JSON Reference allows a JSON value to reference another value in another JSON document. 
 
 **Headers**: Carries information between a client and a server during a Request or a Response.
+
+**minLength**: An attribute used to constrain the length of a string. The length of a string instance must not be less that the minLength when used. 
+
+**maxLength**: The length of a string instance must not exceed maxLength when used. 
+
+**Pattern**: indicates that a string should be a valid regular expression. 
+
+**Allow empty value**: Indicates if an empty value is acceptable. 
+
+**Enum**: List of allowed values. 
+
+**Body**: Data transferred in HTTP message following the Header.
+
+**Validation**: A linter that checks the accuracy of JSON files and/or data. 
+
+**API key**: A special token used to indicate the origin of a request. 
+
+**Metadata**: Data that describes and gives information about data. 
+
+**String**: Double-quoted Unicode characters. 
+
+**Array**: An ordered sequence of values. 
+
+**Object**: An unordered collection of key:value pairs. Objects in JSON are surrounded by curly braces {}. 
+
+**Integer**: Digits from 0-9. Can be negative or positive. 
+
+**Boolean**: True or False 
+
+**Null**: A data type that indicates an empty value. Supported by JSON. 
+
+**Response Codes**: These are HTTP status codes made a server as a response to a client's request. 
+
+### Authorization 
+
+**Basic Auth**: An authentication scheme that utilizes HTTP headers to validate API consumers. Utilizes Base64 encoding. 
+
+**Digest Auth**: Similar to Basic Authentication, but applies a hash function to encrypt the username and password before sending them over the network. 
+
+**OAuth 1.0**: OAuth 1.0 makes use of digital signatures to authenticate and ensure the data originates from an expected source. It can be used with or without SSL. 
+
+**OAuth 2.0**: OAuth 2.0 authentication scheme expands upon 1.0 with a concentration on bearer tokens. It works with HTTPS/SSL for its security requirements. 
+
+**AWS Signature**: A digital security signature included in the authentication information send in a request. It is used by AWS to verify the identity of the requestor. 
 
 ## General Platform 
 
@@ -51,6 +83,18 @@
 **Shared Models**: Models that can be used in several APIs across your projects. 
 
 **Config**: Contains configuration details about the API and lists the version number. 
+
+### File Types 
+
+**YAML**: YAML is a human friendly, unicode based, data serialization standard for all programming languages. Also referred to as 'YAML Ain't Markup Language' or 'Yet Another Markup Language.' 
+
+**.oas2**: File extension indicating the file is an OAS2 (Swagger 2) file. You can create an OAS2 file with the Design Editor in Stoplight NEXT. 
+
+**.hub**: File extension indicating file is a technical documentation file. Stoplight's Hubs creates .hub files. 
+
+**.prism**: File extension indicating file is a Prism file. 
+
+**.md**: File extension indicating file is a markdown file. 
 
 ## Hubs 
 
@@ -192,6 +236,43 @@
 
 **Done**: Rules in the phase are executed after the rules for the incoming and outgoing traffic. 
 
+## JSON/OpenAPI Terms 
+
+**Swagger**: A specification for documenting and defining REST APIs (See OAS Specification) 
+
+**OAS**: Acronym for Open API Specification, previously known as Swagger, a psecification for documenting and defining REST APIs
+
+**OpenAPI**: Synonymous with OAS. Differences between v2 and v3 include: changes to the URL structure and extended JSON Schema support. v3 includes: "oneOf", "anyOf', "not", "nullable", "deprecated", and "writeOnly" properties. 
+
+**OAS Specification**: machine-readable interface files for descriging, designing, consuming, and visualizing RESTful APIs. 
+
+**REST**: Acronym for Representational State Transfer, an architectural style for developing web services. 
+
+**SOAP**: Acronym for Simple Object Access Protocol, a lightweight protocol for exchanging information in a decentralized, distributed environment. 
+
+**GraphQL**: A data query language for APIs 
+
+**JSON**: Acronym for JavaScript Object Notation, a simple data interchange format. 
+
+**Responses**: A server's reply to a request. Usually conists of a status code, reason phrase, and other elements. 
+
+**Schema**: A declarative format that describes the structure of other data. 
+
+**Required**: A value or a definition that is an absolute requirement and must be provided.
+
+**Endpoints**: An endpoint is an entity or resource that can be referenced and is usually represented as the URL of a server or service. 
+
+### Requests 
+
+**GET**: HTTP method used for requesting or retrieving data from a specific resource. 
+
+**PUT**: HTTP method for overwriting a representation of a specific resource or creating a new resource if it does not exist. 
+
+**POST**: HTTP method used to create a new resource. 
+
+**PATCH**: HTTP method for making partial updates to a resource. 
+
+**DELETE**: HTTP method for deleting a specific resource. 
 
 ## Formats 
 
@@ -214,4 +295,6 @@
 **Password**: String data type with masked format for UI to hide an input
 
 **Email**: String data type with email format
+
+
 
