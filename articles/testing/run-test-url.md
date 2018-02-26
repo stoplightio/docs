@@ -71,7 +71,7 @@ body will inject the variable into the scenario runtime.
 }
 ```
 
-To issue a `POST` request from the CLI, you can use the `curl` command, for
+To issue a `POST` request from the CLI, you can use the `curl` command. For
 example:
 
 ```bash
