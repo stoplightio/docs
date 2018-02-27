@@ -2,7 +2,7 @@
 
 Scenarios allow you to quickly and efficiently test APIs. Scenarios can be
 run in a variety of different ways, including from the [command-line with
-Prism](./run-test-terminal.md) or by [URL](./run-test-url), however the easiest
+Prism](./run-test-terminal.md) or by [URL](./run-test-url). However, the easiest
 way is through the Stoplight editor.
 
 <!-- theme: info -->
@@ -12,13 +12,13 @@ way is through the Stoplight editor.
 
 Scenarios in Stoplight are composed of three different levels:
 
-* **Steps**, which are the low-level building blocks that compose a scenario.
-  Steps allow you to easily chain individual actions (for example, performing a
+* **Steps**: low-level building blocks that compose a scenario.
+  Steps allow you to easily chain individual actions (e.g., performing a
   web request) together, enabling for more complex testing workflows.
-* **Scenarios**, which are a series of **steps** that perform a high-level
-  action (for example, registering a new user).
-* **Collections**, which are a series of **scenarios** that encapsulate an
-  entire test suite. Collections are the highest-level build block for creating
+* **Scenarios**: a series of **steps** that perform a high-level
+  action (e.g., registering a new user).
+* **Collections**: a series of **scenarios** that encapsulate an
+  entire test suite. Collections are the highest-level building blocks for creating
   a library of API interactions and tests.
 
 Each level above can be run individually or all together.
