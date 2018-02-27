@@ -15,8 +15,10 @@ Scenarios in Stoplight are composed of three different levels:
 * **Steps**: low-level building blocks that compose a scenario.
   Steps allow you to easily chain individual actions (e.g., performing a
   web request) together, enabling for more complex testing workflows.
+
 * **Scenarios**: a series of **steps** that perform a high-level
   action (e.g., registering a new user).
+
 * **Collections**: a series of **scenarios** that encapsulate an
   entire test suite. Collections are the highest-level building blocks for creating
   a library of API interactions and tests.
