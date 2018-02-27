@@ -25,17 +25,18 @@ Each level above can be run individually or all together.
 
 ## Running a Step
 
-Once you have created a scenario **step**, you can run a single step by using
-the **Run Step** button available towards the top of the editor while viewing
-that step.
+Once you have created a scenario **step**, use the **Run Step** button to
+execute that step. The **Run Step** button is available towards the top of the
+editor, as shown below.
 
 ![](../../assets/images/run-test-stoplight.png)
 
 ## Running a Scenario
 
-Once you have added enough steps to a **scenario**, you can run an single
-scenario using the **Run Scenario** button available while viewing the scenario
-configuration/overview.
+Once you have added enough steps to a **scenario**, use the **Run Scenario**
+button to execute that scenario. The **Run Scenario** button is available
+towards the top of the editor while viewing the scenario configuration/overview,
+as show below.
 
 ![](../../assets/images/run-test-stoplight2.png)
 
@@ -46,9 +47,10 @@ configuration/overview.
 
 ## Running a Collection
 
-Once you have added created enough scenarios to compose a **collection**, you
-can run the entire collection (all scenarios and steps within them) by using the
-**Run Collection** button available while viewing the collection home screen.
+Once you have added created enough scenarios to compose a **collection**, use
+the **Run Collection** button to run the entire collection (including all
+scenarios and steps). The **Run Collection** button is available towards the top
+of the editor while viewing the collection home screen, as shown below.
 
 ![](../../assets/images/run-test-stoplight3.png)
 
