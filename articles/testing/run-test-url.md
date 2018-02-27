@@ -16,9 +16,14 @@ To trigger a scenario by URL, there are two methods:
 ## Finding the Scenario URL
 
 Every scenario has a unique URL that can be used to remotely trigger the
-scenario. To find this URL, go to the scenario's summary in Stoplight. Below the
-scenario summary is a "Trigger This Collection" section, within this section is
-a "Trigger by URL" containing the URL unique to this scenario.
+scenario. To find this URL:
+
+* Go to the scenario's summary in Stoplight
+
+* Below the scenario summary is a "Trigger This Collection" section
+
+* Within this section is a "Trigger by URL" containing the URL unique to this
+  scenario
 
 ![](../../assets/images/run-test-url.png)
 
@@ -47,22 +52,22 @@ request, or included within the request body of a `POST` request.
 
 You can customize the variables included in the scenario at runtime by adding
 extra [query string parameters](https://en.wikipedia.org/wiki/Query_string) to
-the URL with the variable names to be updated within the scenario.
+the URL.
 
 For example, if you have an `api_token` variable that is required to run your
-scenario, it can be added to the scenario by appending the `?api_token=abc123`
+scenario, it can be added to the scenario by attaching the `?api_token=abc123`
 query string to the URL (where `abc123` is the value of the `api_token`
 variable).
 
 ### Customizing Variables with a HTTP POST Body
 
 In addition to adding a query string parameter, scenario variables can also be
-updated by using an HTTP `POST` request instead of a `GET` request. When using
+updated by using a HTTP `POST` request instead of a `GET` request. When using
 this method, the `POST` body must be composed of JSON with the JSON keys
 corresponding to the variables within the scenario.
 
 Similar to the example above, if you have an `api_token` variable that is
-required to run your scenario, issuing an HTTP `POST` with the following JSON
+required to run your scenario, issuing a HTTP `POST` with the following JSON
 body will inject the variable into the scenario runtime.
 
 ```json
