@@ -1,6 +1,6 @@
 # Sending HTTP Requests
 
-# PUT GIF HERE
+<!---Gif of simple request plus extending spec--->
 
 ## What
 
