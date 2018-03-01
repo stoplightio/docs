@@ -1,37 +1,82 @@
 # Contract Testing
 
-Scenarios makes it easy to incorporate your OAS / Swagger API specification into your testing process. A few benefits to doing this include:
+Scenarios makes it easier than ever to integrate your OpenAPI specification into
+your testing process. One of the easiest ways to do this is through a testing
+method called __contract testing__. Contract testing is a simple verification
+process where Stoplight verifies that the API responses match the "contract"
+within a connected OpenAPI specification.
 
-- **DRY**: Don't re-create test assertions that check for what is already described in your API contract.
-- **Governance**: Quickly figure out if the API that was created actually conforms to the API design that was initially agreed upon.
-- **Sync Manager**: Your API spec is the single point of truth that describes your API. From it, you might generate documentation, sdks, mock servers, etc. Incorporating your spec into your tests makes sure that your API spec accurately represents your API over time.
+Benefits of contract testing include:
+
+- **Don't Repeat Yourself**: Don't re-create test assertions that check for what
+  is already described in your API specification. Let your scenario do the heavy
+  lifting, validating that an API implementation matches the OpenAPI
+  specification.
+
+- **Governance**: Quickly figure out if an API implementation conforms to the
+  OpenAPI specification that was initially agreed upon. Run a contract test
+  scenario on a schedule to ensure the API never violates the specification.
+
+- **Single Source of Truth**: Your API specification is the single source of
+  truth that describes your API. From it, you can generate documentation, SDKs,
+  mock servers, and more. Incorporating the specification into your testing
+  pipeline ensures that the it accurately represents your API implementation
+  over time.
 
 <!-- theme: info -->
-> If you don't have an API specification yet, you can create one using the Stoplight modeling tool!
+> If you don't have an API specification yet, you can create one using the
+> [Stoplight modeling tool](../modeling/modeling-introduction.md)!
 
-## Connecting The Spec
+## Connecting a Spec
 
-The first thing you need to do to get started with contract testing is connect your API spec to the Scenarios Collection.
+<!-- FIXME - Show a gif of selecting spec in coverage screen, and clicking on different endpoints -->
 
-1. Create a new (or open an existing) **Scenario file** in the Stoplight editor
+To get started with contract testing, the first thing you will need to do is
+generate a scenario from an OpenAPI specification. To get started:
+
+1. Create a new (or open an existing) **scenario** in the Stoplight editor
 2. Select **Swagger/OAS Coverage** in the Scenarios menu to the left
-3. Open **Contract Test Settings**
-4. Click **+ Add Spec**
-5. Select a file from either **This Project** or an **External URL**
-6. You are all set! You can now test against an API spec. 
+3. Open the **Contract Test Settings** menu
+4. Click **Add Spec**, and select an OpenAPI specification to connect
+
+You are all set! Once the specification has been connected, you can
+automatically generate a contract testing scenario for your spec using the
+Coverge Report, described below.
 
 ## Using the Coverage Report
 
-The coverage report gives you a quick overview of which parts of the connected specs are covered by test assertions in the current Scenario Collection.
+The coverage report gives you a quick overview of which parts of the connected
+specs are covered by test assertions in the current Scenario Collection. 
 
-You can use the coverage report to quickly stub out a new scenario. Just click the status codes in the table matrix for the steps you want to add to your scenario (in order). Once you've added all the steps, click the "Create Scenario" button in the top right. This will create a scenario with as much setup as possible, using the connected spec for data. It will set your request body, set variables in a sensible way, automatically setup contract tests, and more.
+You can use the coverage report to quickly stub out a new scenario. To start:
 
-You will likely need to tweak the resulting scenario a little bit, but this process will usually get you most of the way to a complete scenario, with contract test assertions in place!
+1. Click the status codes in the table matrix for the steps you want to add to
+   your scenario. Note that the order in which the endpoints are clicked
+   determines the order in which they will appear in the scenario. For example,
+   if an API object needs to be created before it can be removed, then you will
+   want to choose the 'create object' endpoint before the 'delete object'
+   endpoint.
+
+2. Once all of the desired endpoints have been selected, click the __Create
+   Scenario__ button in the top right to generate the scenario.
+
+3. You will automatically be navigated to the new scenario, complete with
+   contract test assertions for each selected endpoint.
+
+<!-- theme: info -->
+> You will likely need to modify the resulting scenario to fit your use case
 
 ## Automatic Contract Test Assertion
 
-After linking your spec to the Scenario Collection, contract test assertions will be automatically added for step assertions.
+<!-- FIXME - Show a gif of running a scenario -->
 
-Stoplight will look through your API specification for a operation that matches the step's HTTP method + URL, and use the response status code returned from the API to look up the JSON schema. In the example below, we are testing the 200 response schema in our API spec for the GET /todos/{todoId} endpoint.
+After linking your spec to the Scenario Collection, contract test assertions will be automatically added for each step assertion.
 
-When this step is run, the HTTP response structure will be validated against the matched JSON schema from our API spec, and any errors will be added to the test results. 
+When the scenario is generated, Stoplight will look through the API
+specification for an operation that matches the step's HTTP method and URL. The
+response code returned from the API is then used to look up the corresponding
+JSON schema.
+
+When a contract assertion step is run, the HTTP response structure will be
+validated against the matched JSON schema from the connected API specification.
+Any validation errors will automatically be added to the test results.
