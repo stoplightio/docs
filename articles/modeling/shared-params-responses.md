@@ -32,8 +32,7 @@ Shared parameters are supported in the following request property locations:
   * __form-data__ - The request HTTP message body in the `multipart/form-data` format 
 
 <!-- theme: info -->
-> For more information the above properties, see the OpenAPI v2 Specification
-  [OpenAPI v2 Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#parameter-object)
+> For more information the above properties, see the [OpenAPI v2 Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#parameter-object)
 
 Similar to generic request parameters, restrictions on the parameter values can
 also be applied based on type, expected default value, minimum/maximum length,
