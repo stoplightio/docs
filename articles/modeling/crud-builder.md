@@ -1,9 +1,9 @@
 # Using the CRUD Builder
 
 Stoplight's CRUD builder allows you to easily design and model data structures
-used by your API. The CRUD builder is especially useful when:
+used by your API. The CRUD builder is especially useful for:
 
-* Drafting API request and response bodies under an API endpoint
+* Drafting API requests and response bodies under an API endpoint
 * Creating [models](./api-models.md) for your API
 * Creating [shared responses](./shared-params-responses.md#shared-responses) for
   re-use across multiple endpoints
