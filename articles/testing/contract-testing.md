@@ -20,7 +20,7 @@ Benefits of contract testing include:
 - **Single Source of Truth**: Your API specification is the single source of
   truth that describes your API. From it, you can generate documentation, SDKs,
   mock servers, and more. Incorporating the specification into your testing
-  pipeline ensures that the it accurately represents your API implementation
+  pipeline ensures that it accurately represents your API implementation
   over time.
 
 <!-- theme: info -->
