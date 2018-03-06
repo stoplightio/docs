@@ -53,7 +53,7 @@ You can use the coverage report to quickly stub out a new scenario. To start:
 1. Click the **status codes** in the table matrix for the steps you want to add to
    your scenario. 
    
-<-- theme:info -->
+<!-- theme:info -->
 > Note that the order in which the endpoints are clicked
 determines the order in which they will appear in the scenario. For example,
 if an API object needs to be created before it can be removed, then you will
