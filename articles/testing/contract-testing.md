@@ -2,28 +2,29 @@
 
 Scenarios makes it easier than ever to integrate your OpenAPI specification into
 your testing process. One of the easiest ways to do this is through a testing
-method called __contract testing__. Contract testing is a simple verification
+method called **contract testing**. Contract testing is a simple verification
 process where Stoplight verifies that the API responses match the "contract"
 within a connected OpenAPI specification.
 
 Benefits of contract testing include:
 
-- **Don't Repeat Yourself**: Don't re-create test assertions that check for what
+* **Don't Repeat Yourself**: Don't re-create test assertions that check for what
   is already described in your API specification. Let your scenario do the heavy
   lifting, validating that an API implementation matches the OpenAPI
   specification.
 
-- **Governance**: Quickly figure out if an API implementation conforms to the
+* **Governance**: Quickly figure out if an API implementation conforms to the
   OpenAPI specification that was initially agreed upon. Run a contract test
   scenario on a schedule to ensure the API never violates the specification.
 
-- **Single Source of Truth**: Your API specification is the single source of
+* **Single Source of Truth**: Your API specification is the single source of
   truth that describes your API. From it, you can generate documentation, SDKs,
   mock servers, and more. Incorporating the specification into your testing
-  pipeline ensures that the it accurately represents your API implementation
+  pipeline ensures that the spec accurately represents your API implementation
   over time.
 
 <!-- theme: info -->
+
 > If you don't have an API specification yet, you can create one using the
 > [Stoplight modeling tool](../modeling/modeling-introduction.md)!
 
@@ -34,10 +35,10 @@ Benefits of contract testing include:
 To get started with contract testing, the first thing you will need to do is
 generate a scenario from an OpenAPI specification. To get started:
 
-1. Create a new (or open an existing) **scenario** in the Stoplight editor
-2. Select **Swagger/OAS Coverage** in the Scenarios menu to the left
-3. Open the **Contract Test Settings** menu
-4. Click **Add Spec**, and select an OpenAPI specification to connect
+1.  Create a new (or open an existing) **scenario** in the Stoplight editor
+2.  Select **Swagger/OAS Coverage** in the Scenarios menu to the left
+3.  Open the **Contract Test Settings** menu
+4.  Click **Add Spec**, and select an OpenAPI specification to connect
 
 You are all set! Once the specification has been connected, you can
 automatically generate a contract testing scenario for your spec using the
@@ -46,31 +47,33 @@ Coverge Report, described below.
 ## Using the Coverage Report
 
 The coverage report gives you a quick overview of which parts of the connected
-specs are covered by test assertions in the current Scenario Collection. 
+specs are covered by test assertions in the current Scenario Collection.
 
 You can use the coverage report to quickly stub out a new scenario. To start:
 
-1. Click the status codes in the table matrix for the steps you want to add to
-   your scenario. Note that the order in which the endpoints are clicked
-   determines the order in which they will appear in the scenario. For example,
-   if an API object needs to be created before it can be removed, then you will
-   want to choose the 'create object' endpoint before the 'delete object'
-   endpoint.
+1.  Click the status codes in the table matrix for the steps you want to add to
+    your scenario. Note that the order in which the endpoints are clicked
+    determines the order in which they will appear in the scenario. For example,
+    if an API object needs to be created before it can be removed, then you will
+    want to choose the 'create object' endpoint before the 'delete object'
+    endpoint.
 
-2. Once all of the desired endpoints have been selected, click the __Create
-   Scenario__ button in the top right to generate the scenario.
+2.  Once all of the desired endpoints have been selected, click the **Create
+    Scenario** button in the top right to generate the scenario.
 
-3. You will automatically be navigated to the new scenario, complete with
-   contract test assertions for each selected endpoint.
+3.  You will automatically be navigated to the new scenario, complete with
+    contract test assertions for each selected endpoint.
 
 <!-- theme: info -->
+
 > You will likely need to modify the resulting scenario to fit your use case
 
 ## Automatic Contract Test Assertion
 
 <!-- FIXME - Show a gif of running a scenario -->
 
-After linking your spec to the Scenario Collection, contract test assertions will be automatically added for each step assertion.
+After linking your spec to the Scenario Collection, contract test assertions
+will be automatically added as steps within your scenario.
 
 When the scenario is generated, Stoplight will look through the API
 specification for an operation that matches the step's HTTP method and URL. The
