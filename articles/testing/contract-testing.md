@@ -42,7 +42,7 @@ generate a scenario from an OpenAPI specification. To get started:
 
 You are all set! Once the specification has been connected, you can
 automatically generate a contract testing scenario for your spec using the
-Coverge Report, described below.
+Coverge Report, as described below.
 
 ## Using the Coverage Report
 
@@ -51,12 +51,16 @@ specs are covered by test assertions in the current Scenario Collection.
 
 You can use the coverage report to quickly stub out a new scenario. To start:
 
-1.  Click the status codes in the table matrix for the steps you want to add to
-    your scenario. Note that the order in which the endpoints are clicked
-    determines the order in which they will appear in the scenario. For example,
-    if an API object needs to be created before it can be removed, then you will
-    want to choose the 'create object' endpoint before the 'delete object'
-    endpoint.
+1.  Click the **status codes** in the table matrix for the steps you want to add to
+    your scenario.
+
+<!-- theme:info -->
+
+> Note that the order in which the endpoints are clicked
+> determines the order in which they will appear in the scenario. For example,
+> if an API object needs to be created before it can be removed, then you will
+> want to choose the 'create object' endpoint before the 'delete object'
+> endpoint.
 
 2.  Once all of the desired endpoints have been selected, click the **Create
     Scenario** button in the top right to generate the scenario.
