@@ -29,8 +29,8 @@ Stoplight provides a complete mock server for every API described in the app. Ru
 
 Spinning up your own mock server is as simple as:
 
-# install prism on macOS
+### install prism on macOS
 curl https://raw.githubusercontent.com/stoplightio/prism/master/install.sh | sh
 
-# run a fake petstore api on http://localhost:4010
+### run a fake petstore api on http://localhost:4010
 prism run --mock --list --spec http://petstore.swagger.io/v2/swagger.json
