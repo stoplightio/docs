@@ -24,7 +24,7 @@ Once you have your API described in the Stoplight design module, you can:
 
 ## Getting Started 
 
-There are a few ways to get started designing your API with the Stoplight design module, depending on how developed your API is.
+There are a few ways to get started designing your API with the Stoplight design module, depending on how developed your API is:
 
 - Create an API from scratch [Using the CRUD Builder]()
 - [Reference another API Spec]()
