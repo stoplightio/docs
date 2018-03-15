@@ -12,9 +12,9 @@ Stoplight’s Hubs features an easy to use routing system to make sure your docs
 - Headers + Footers (link)
 - Links 
 
-<callout>Tips for Friendly URL’s 
 
-Friendly URLs are links that are easily readable, rememberable, and relevant to the content.
+<!-- theme: info -->
+>Friendly URLs are links that are easily readable, rememberable, and relevant to the content.
 Take a look at the URL for this page. Instead of something like https://help.stoplight.io/docs/fnIenof/123, it is https://help.stoplight.io/docs/hosted-documentation/create-friendly-urls, which is much nicer. </>
 
 ## How 
