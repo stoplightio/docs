@@ -3,7 +3,8 @@
 ![](../../assets/gifs/team-create.gif)
 
 ## What 
-* Teams makes it easier for Organization Members to collaborate and allows additional control over permissions 
+
+Teams makes it easier for Organization Members to collaborate and allows additional control over permissions 
 
 ## Who
 * Only an Organization **Owner** or **Administrator** can create a Team
