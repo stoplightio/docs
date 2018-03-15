@@ -18,12 +18,11 @@ You can invite people to a Project to grant them read or read/write permissions.
 ## 	 Who 
 * Only the Organization **Owner** and Org and/or Project **Administrators** can modify member roles
 
+<!-- theme: info -->
+>By deafult, all members of the Organization and/or the Project will have Read permission
+
 ## How
 1. From the Stoplight homepage select the **Project** you wish to modify 
-2. By deafult, all members of the Organization the Project is associated with will have Read permission 
-3. To invite a single member, select the **Member icon** from the far left sidebar
-    * Input their username in the search bar at the top of the Member sidebar
-    * Once located, press enter 
-4. To invite a team, select the **Team icon** from the far left sidebar
-    * Input the Team name in the search bar at the top of the Team sidebar 
-    * Once located, press enter 
+2. Click on **Member Access Icon** or **Team Access Icon** in the far left sidebar 
+3. Find the user you wish to modify in the list and select them
+4. From the **dropdown menu**, select the preferred role 
