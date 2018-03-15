@@ -21,17 +21,17 @@ Take a look at the URL for this page. Instead of something like https://help.sto
 
 ### Pages & Subpages 
 
-1. Select the Hub you wish to modify 
-2. Add a new page or subpage (link) 
-   a. Select a page title to auto-fill the Page Route or 
-   b. Input a custom page route 
-3. Select an existing page or subpage 
-4. Select the gear icon at the top of the Hub in the center of the page or subpage you wish to modify  
-   a. Input a new URL under Page Route  
+1. Select the **Hub** you wish to modify 
+2. Add a new **page** or **subpage** (link) 
+   1. Select a **page title** to auto-fill the **Page Route** or 
+   2. Input a **custom page route** 
+3. Select an **existing page** or **subpage** 
+4. Select the **gear icon** at the top of the Hub in the center of the page or subpage you wish to modify  
+   1. Input a **new UR**L under Page Route  
 
 ### Headers & Footers 
 
-1. Select the Hub you wish to modify 
-2. Add a new header or footer (link) or
-3. Hover over an existing header or footer and click the gear icon 
-    a. Input a Path to Page or image URL  
+1. Select the **Hub** you wish to modify 
+2. Add a new **header or footer** (link) or
+3. Hover over an existing header or footer and click the **gear icon** 
+    a. Input a **Path to Page** or **image URL**  
