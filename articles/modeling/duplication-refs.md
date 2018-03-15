@@ -7,7 +7,7 @@
 - Similar features can be created as reusable definitions and utilized with references
 - These definitions can be hosted on the same server as your OAS file or on a different server 
 - You can reference a definition hosted at any location or server 
-- Apart from defining reusable definitions, you can also define reusable responses and parameters. You can store your reusable definitions, responses, and parameters in a common library. 
+- Apart from defining reusable definitions, you can also define reusable responses and parameters. You can store your reusable definitions, responses, and parameters in a common library
 
 <!-- theme: info --> 
 >Key Terms: A definition is a named schema object. A reference is a path to a declaration within an OAS file.
