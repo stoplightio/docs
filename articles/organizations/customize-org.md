@@ -3,11 +3,12 @@
 ![](../../assets/gifs/org-settings.gif)
 
 ## What 
-* Want to modify your Organization? In Stoplight you can modify your Organization's: 
-    * Name 
-    * Org Path 
-    * Add a Description 
-    * Add an Org Image 
+
+Want to modify your Organization? In Stoplight you can modify your Organization's: 
+* Name 
+* Org Path 
+* Add a Description 
+* Add an Org Image 
     
 ## Who 
 * Only an Organization **Owner** or **Administrator** can modify Organizations  
