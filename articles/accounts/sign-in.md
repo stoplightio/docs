@@ -1,9 +1,9 @@
 # Sign In To Stoplight 
 
 ## What
-* There are two separate options for creating your snazzy new Stoplight account: 
-    * Login with GitHub 
-    * Create a new account 
+There are two separate options for creating your snazzy new Stoplight account: 
+* Login with GitHub 
+* Create a new account 
   
 ## How
 
