@@ -14,8 +14,8 @@
         * Read/Write 
     * **Read Access**: Low-level permissions that allow you to: 
         * Read
-      
-<callout>You can only invite people and Teams to a Project associated with an Organization</>
+<!-- theme: info -->
+>You can only invite people and Teams to a Project associated with an Organization
    
 ## 	 Who 
 * Only the Organization **Owner** and Org and/or Project **Administrators** have invite privileges 
