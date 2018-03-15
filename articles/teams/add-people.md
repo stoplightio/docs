@@ -4,7 +4,7 @@
 
 ## What 
 
-* Adding people to a team lets you collaborate on projects while allowing an additional level of control over permissions.
+Adding people to a team lets you collaborate on projects while allowing an additional level of control over permissions.
 
 ## Who 
 
