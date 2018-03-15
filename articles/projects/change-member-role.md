@@ -3,17 +3,16 @@
 ![](/assets/gifs/project-member-invite.gif)
  
 ## What 
-* You can invite people to a Project to grant them read or read/write permissions 
-* There are three tiers of read/write permissions 
-    * **Admin Access**: Upper level permissions that allow you to:
-        * Read/Write
-        * Invite and Manage Members and Teams
-        * Manage Project Settings
-        * Delete the project 
-    * **Write Access**: Mid-level permissions that allow you to: 
-        * Read/Write 
-    * **Read Access**: Low-level permissions that allow you to: 
-        * Read
+You can invite people to a Project to grant them read or read/write permissions. There are three tiers of read/write permissions: 
+* **Admin Access**: Upper level permissions that allow you to:
+    * Read/Write
+    * Invite and Manage Members and Teams
+    * Manage Project Settings
+    * Delete the project 
+* **Write Access**: Mid-level permissions that allow you to: 
+    * Read/Write 
+* **Read Access**: Low-level permissions that allow you to: 
+    * Read
       
    
 ## 	 Who 
