@@ -1,4 +1,4 @@
-# Referencing another API Specification
+# Referencing Another API Specification
 
 <!-- REFBUILDER GIF/VIDEO-->
 
@@ -33,21 +33,11 @@ Referencing another specification allows for cleaner and more organized code. So
 
 4.  View the referenced specification by clicking the book icon
 
-## Related Links
-
-Documentation
+---
+**Related Links**
 
 * [Reference other Sources](../hubs/ref-other-sources-hubs.md)
-
-Modeling
-
 * [Creating Models](../modeling/how-to-create-models.md#How-to-Create-Models-using-the-Stoplight-Modeling-Editor)
 * [Shared Parameters and Responses](../modeling/shared-params-responses.md)
-
-Testing
-
 * [Contract Testing](../testing/contract-testing.md#connecting-the-spec)
-
-Mocking
-
 * [Setting Up a Prism Mock Server](../prism/mocking.md)
