@@ -12,7 +12,8 @@ Projects are the workspace of the Stoplight Platform. Projects contain:
 * Mocking (Prism) 
 * Markdown Editor 
 
-<callout>Single Point of Truth All editors are now contained within a Project </>
+<!-- theme: info -->
+>Single Point of Truth All editors are now contained within a Project
 
 ## Who 
 Individual users can create Personal Projects. Organizations can create Org Projects. 
