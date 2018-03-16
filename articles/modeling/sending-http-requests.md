@@ -28,3 +28,7 @@ Use the HTTP Request Maker to send requests to the endpoints defined in your spe
 * To add variable path parameters, wrap the parameter name in the path in curly braces like so `/path/{param}` and then fill in the value in the Variables tab.
 
 * To use environment variables in your request, enter `{$$.env.variable_name}` as the value and the populated value can be viewed or changed in the variables tab.
+
+---
+**Related Articles**
+[Using Environment Variables](./variables-environment.md)
