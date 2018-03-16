@@ -7,7 +7,8 @@ Publishing your documentation has never been easier. Stoplight has added:
 - New **Authorizations** to make sure your documentation is secure at all times. This includes basic user/password authentication and SSO provider integration, powered by Auth0, SAML, and more.
 - New **Builds** section for tracking published Hubs, including when a Hub was published, who published it, and under what domain.
 
-Take that Gutenberg! 
+<!-- theme: info -->
+>Take that Gutenberg! 
 
 ## Who 
 
