@@ -9,29 +9,29 @@ If you are trying to create a new Organization then you are in the right place. 
 ## Organization 
 Organizations function as a shared space for you and your co-workers. Members of an Organization have access to a centralized Activity Feed, Project Repository, and an Issues (link) discussion tool. Organization Owners can also assign varying levels of Permissions to other members of the Organization.  
  
-* Create an Organization (link)
-* Invite People to Organization (link) 
-* Remove People from your Organization (link) 
-* Member Roles and Permissions (link)
-* Customize your Organization (link) 
-* Transfer Primary Ownership (link) 
-* Delete an Organization (link)
+* [Create an Organization](./create-org.md)
+* [Invite People to Organization](./managing-people.md) 
+* [Remove People from your Organization](./remove-people.md) 
+* [Member Roles and Permissions](./roles.md)
+* [Customize your Organization](./customize-org.md) 
+* [Transfer Primary Ownership](./transferring-ownership.md) 
+* [Delete an Organization](./delete-org.md)
 
 ## Teams 
 If you are managing a large Organization with multiple teams you can use Teams to group Organization members together. 
 
-* Create a Team (link)
-* Add People to a Team (link)
-* Remove People from a Team (link)
-* Member Roles and Permissions (link) 
-* Customize a Team (link) 
-* Transfer Primary Ownership (link) 
-* Delete a Team (link) 
+* [Create a Team](./create-team.md)
+* [Add People to a Team](./add-people.md)
+* [Remove People from a Team](./remove-people.md)
+* [Member Roles and Permissions](./member-roles.md) 
+* [Customize a Team](./customize-team.md) 
+* [Transfer Primary Ownership](./transfer-ownership.md) 
+* [Delete a Team](./delete-team.md) 
 
 ## Projects 
 Projects are the workspaces you can create for your Organization. 
 
-* Creating a Project (link) 
-* Invite People & Teams to a Project (link)
-* Change a Project Member’s Role (link) 
-* Make Your Project Private/Public (link) 
+* [Creating a Project](./create-project.md) 
+* [Invite People & Teams to a Project](./invite-people-team.md)
+* [Change a Project Member’s Role](./change-member-role.md) 
+* [Make Your Project Private/Public](./visibility.md) 
