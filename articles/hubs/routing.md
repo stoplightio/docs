@@ -7,9 +7,9 @@
 Stoplight’s Hubs features an easy to use routing system to make sure your docs have identifiable and friendly URL’s. The routing system allows customization of the following objects: 
 
 - Your Hub 
-- Pages within a Hub (link) 
-- Subpages within a Hub (link) 
-- Headers + Footers (link)
+- [Pages within a Hub](./pages.md) 
+- [Subpages within a Hub](./subpages.md) 
+- [Headers + Footers](./managing-headers-footers.md)
 - Links 
 
 
@@ -35,3 +35,9 @@ Take a look at the URL for this page. Instead of something like https://help.sto
 2. Add a new **header or footer** (link) or
 3. Hover over an existing header or footer and click the **gear icon** 
     a. Input a **Path to Page** or **image URL**  
+
+---
+**Related Articles**
+- [Pages within a Hub](./pages.md) 
+- [Subpages within a Hub](./subpages.md) 
+- [Headers + Footers](./managing-headers-footers.md)
