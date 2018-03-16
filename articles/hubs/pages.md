@@ -27,5 +27,10 @@ Pages are the macro level building blocks of a Hub. They function as the canvas 
 <!-- theme: info -->
  >Did you know? After creating a new page; a header link will automatically be generated
 
+---
+**Related Articlers**
+- [Subpages](./subpages.md)
+- [Blocks](./blocks.md)
+- [Routing](./routing.md)
 
 
