@@ -14,8 +14,7 @@ First things first, are you using Stoplight for Personal Projects or as part of 
 1. [Sign In](./sign-in.md)
 2. [Create an Organization](./create-org.md) 
 3. [Invite Members](./managing-people.md) 
-4. Accept an Organization Invite 
-5. [Create a Project](./create-project.md) 
+4. [Create a Project](./create-project.md) 
 
 ## Web App or Download 
 * You can log in to the Web App at [next.stoplight.io](http://next.stoplight.io) or 
