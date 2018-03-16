@@ -28,5 +28,11 @@ Subpages are the second tier macro building blocks of Hubs. They function as a c
     4. **Power the Subpage** with an External Data Source (optional) 
 
 <!-- theme: info --> 
->Just like pages, subpages can have blocks. Any blocks added to a subpage will be displayed when a reader navigates to that subpage in your hub
+>Just like pages, subpages can have blocks. Any blocks added to a subpage will be displayed when a reader navigates to that subpage in your Hub
 
+---
+**Related Articles**
+- [Pages](./pages.md)
+- [Headers & Footers](./managing-headers-footers.md)
+- [Routing](./routing.md)
+- [Publishing](./publishing.md)
