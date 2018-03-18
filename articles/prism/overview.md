@@ -1,62 +1,97 @@
-# Prism Introduction 
+# Introduction
 
-Prism is a performant, dependency free server, built specifically to work with web APIs. 
+Prism is a runtime orchestration engine built to help technical teams make modern APIs. We rebuilt Prism from the ground up to be performant, powerful and programmable while still being approachable. Prism enables teams to work in parallel and iterate faster with less errors. The Stoplight Platform integrates tightly with prism to generate test coverage of your api automatically, build tests visually, and create mock and contract servers instantly.
 
-### Features 
-- Act as a mock server, routing incoming requests to example repsonses, or dynamically generating examples on the fly. 
-- Act as a transformation layer, manipulating incoming requests and outgoing responses. 
-- Act as a validation layer, validating incoming requests and outgoing responses. 
-- Contract test your APIs, given an OAS(Swagger 2) file. 
-- Log all or a subset of traffic to configurable locations. 
-- Extend existing APIs with new endpoints or capabilites. 
-- Act as a system-wide proxy, blocking traffic to particular websites or endpoints. 
+Prism has first class support for the Open API Specfiction(aka OAS) and Stoplight Scenarios. OAS is machine readable documenation of your API that Prism can read and understand. Scenarios tell Prism how to orchestrate your API. When you use them together you can easily assert, transform and validate your API against your OAS. Also, while the backend team implements your api, your front end teams can implmeent against a mock server that can return static examples, dynamic data or replay actual traffic from your API.
 
-### Simplicity Redefined 
-Run it anywhere. It runs on OS X, Windows, and Linux, with no external dependencies. It is a single, self-contained binary file, that you can easily run from your terminal with a single command.  
+### Features
 
-## Getting Started 
+* Act as a mock server, routing incoming requests to example repsonses, or dynamically generating examples on the fly.
+* Act as a transformation layer, manipulating incoming requests and outgoing responses.
+* Act as a validation layer, validating incoming requests and outgoing responses.
+* Contract test your APIs, given an OAS(Swagger 2) file.
+* Log all or a subset of traffic to configurable locations.
+* Extend existing APIs with new endpoints or capabilites.
+* Act as a system-wide proxy, blocking traffic to particular websites or endpoints.
 
-#### macOS and Linux 
+## Conduct vs Serve
 
-```# Install Prism 
-curl https://raw.githubusercontent.com/stoplightio/prism/master.install.sh | sh
-```
+Conduct and Serve are important concepts to understand when using Prism. Conduct is a isolated scenario run. You tell prism what scenarios you want to run, give it an environment to run against and prism will give you a generate report of the run. On the other hand, serving is a long running instance of prism that applies scenarios to http traffic.
 
-#### Windows 
-Download the appropriate binary from [here](https://github.com/stoplightio/prism/releases). Unzip the binary file, then navigate in your terminal to the folder where you extracted Prism. 
+[Diagram?]
 
-### Run a Simple Mock Server 
-Prism understands OAS(Swagger 2), so let's get started by spinning up a quick mock server for the popular Petstore API. To do this, run the following command in your terminal: 
+### Conduct Use Cases
 
-```# os x / linux
-prism run --mock --list --spec http://petstore.swagger.io/v2/swagger.json
+1.  Debugging your API implementation or specfication.
+2.  Integrating with your CI/CD Environment. Catch bugs before they get to your actual API Consumers.
+3.  Webhooks. Generate your OAS from code, automatically upload it Stoplight.
 
-# windows 
-path/to/prism.exe run --mock --list --spec http://petstore.swagger.io/v2/swagger.json
-```
+#### Testing
 
-Here, you are using the "run" command to run a server based on the spec file passed in via the --spec argument. The spec location can be the filepath to a file on your computer, or the URL to a publicly hosted file. The --mock argument tells Prism to mock all incoming requests, instead of forwarding them to the API host described in the spec file. The --list argument is a convenience, and tells Prism to print out the endpoints in the spec on startup. 
+TODO: Figure out if we can report the number of assertions from a contract test? For example, contract testing counts as only one assertion, but in reality if you have big response, each property is tested, and the value is asserted against.
 
-Prism starts on port 4010 by default - try visiting ```http://localhost:4010/v2/pet/findByStatus``` in your browser. This is one of the endpoints described in the petstore spec you passed in. You'll notice that it returns an error about a required query string parameter "status". This is the automatic request validation at work! The swagger spec specifies that a query string parameter names "status" is required for this endpoint so Prism simulates a 400 response for you. Reload the page with a query string parameter, and you will see the dynamically generated mock response ```http://localhost:4010/v2/pet/findByStatus?status=available```.
+Monoliths, microservices and serverless. Java, Javascript, Go, Python, and Erlang.
 
-Tada! With a single command you have started a validating, dynamically mocking version of the Swagger petstore API. 
+Stop writting unit tests in code and replace them with scenarios.
 
-### Run some Contract Tests
+Sceanrios are powerful, fast and flexible way to test your API.
 
-Prism consumes OAS(Swagger 2) files. OAS provides the contract for your API. If your OAS file contains the x-tests extension (generated automatically if you use the Stoplight app to manage your OAS and tests) then you can run tests with Prism.
+Run thousands of assertions in seconds, without writting any code. You already defined
 
-Check out [this specification](https://goo.gl/jniYmw). If you scroll past all the regular OAS properties, you will notice a ```x-tests``` extension near the bottom of the file. Inside of that property, we have a few test cases defined. This OAS file, along with its tests, is managed in the Stoplight app (we export our API from within the app to produce this file). 
+Overview + links to all the testing related articles.
 
-#### To Run the Contract Tests 
-```
-# os x / linux 
-prism test --spec https://goo.gl/jniYmw
+#### Orchestration? Some word.
 
-# windows
-path/to/prism.exe test --spec https://goo.gl/jniYmw
-```
+Very short on this one. IFTT type use cases for conduct or triggered conduct. Callbacks
 
-You should see some nice output to your terminal detailing the tests and assertions that are run. These tests take our OAS contract and apply it to your API. They act as a sort of sync manager. 
+### Serve Use Cases?
 
-<!-- theme: info -->
-> If a test fails, it means one of two things - your API is broken or, our OAS contract is out of date / incorrect 
+Mostly just high level overview and links to other articles.
+
+## Continuous Integration
+
+… mostly just links to the relevant running prism in x situation articles and the CI articles.
+
+---
+
+**Further Reading**
+
+One
+Two
+
+What
+Scenarios
+OAS
+Instances
+Mapping / Pointer System
+Hosted vs. Binary
+
+# Use Cases
+
+Testing
+
+Language independent
+
+Easy assertions / transforms and powerful scripting
+
+Automatic contract testing
+
+Environments / Context
+
+Javascript
+
+Coverage Reports
+
+Performant
+
+Mocking / Validation / Rec-Repl Servers
+
+What / Why
+
+CI/CD Pipeline - Run Scenarios / Spin up instances
+
+Your heart, Your desires
+
+Orchestration engine first
+
+Which brings flexibiity
