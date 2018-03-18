@@ -7,11 +7,11 @@ Now that you have the basics on what the [Stoplight Next Platform](../what-is-st
 First things first, are you using Stoplight for Personal Projects or as part of an Organization?
 
 ## Personal Projects 
-1. [Sign In](./sign-in.md)
+1. [Sign In](/platform/getting-started/accountbasics/sigin)
 2. [Create a Project](./create-project.md) 
 
 ## Organization 
-1. [Sign In](./sign-in.md)
+1. [Sign In](/platform/getting-started/accountbasics/sigin)
 2. [Create an Organization](./create-org.md) 
 3. [Invite Members](./managing-people.md) 
 4. [Create a Project](./create-project.md) 
