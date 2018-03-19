@@ -34,8 +34,6 @@ For example, to retrieve pet details for a pet store which has different kinds o
 * `/pets` (Good)
 * `/getAllPets` (Bad)
 
-<!-- theme: info -->
-
 > A good resource URL contains resources (nouns) and not actions or verbs. Ensure that the resource is in the plural form at the API endpoint.
 
 ### Use HTTP methods to operate on resources
@@ -44,8 +42,6 @@ To add, delete, or update information, use the HTTP methods GET, POST, DELETE, P
 
 * `GET /pets` (returns the list of all pets)
 * `GET /pets/5` (returns details of pet 5)
-
-<!-- theme: info -->
 
 > A successful GET method normally returns a HTTP status code of 200 (OK) and 404 (Not found) if the resource cannot be located.
 
@@ -78,11 +74,11 @@ A user should know the status of request made through an API. This might include
   * Request: method `GET /pets?type=feline`
   * Response:
 
-```
-   //This is an invalid request.
-    {
-    "message": "Invalid Pet Type please enter a valid pet category",
-    }
+```json
+//This is an invalid request.
+{
+  "message": "Invalid Pet Type please enter a valid pet category"
+}
 ```
 
 ### Executing search, sort, filter and pagination operations
@@ -103,8 +99,6 @@ A user should know the status of request made through an API. This might include
 
   * `GET /pets?type=canine&age=7`
 
-<!-- theme: info -->
-
 > If too many query parameters are used in GET methods and the URL becomes too long, the server may return a ‘414 URL too long’ HTTP status. Parameters might be passed to the request body of a POST request as a solution to this challenge.
 
 ### Versioning
@@ -115,5 +109,5 @@ It is good practice to version an API to describe the available features and res
 
 **Related**
 
-* [API Models](./api-models.md)
-* [Sending HTTP Requests](./sending-http-requests.md)
+* [API Models](/modeling/introduction/modeling-with-openapi/api-models)
+* [Sending HTTP Requests](/modeling/introduction/modeling-with-openapi/sending-http-requests)
