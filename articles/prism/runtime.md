@@ -1,10 +1,18 @@
 # Introduction
 
-Prism is really good at mocking and testing APIs. It is fast, flexible and easy to use. The scenarios and oas specifications have their limits, which is why Prism has a Javascript Runtime. Most of the time you won't need to jump into the runtime, and you should ask yourself before doing so if you have too use it. The runtime is powerful, and we chose javascript because of its flexibility and familiarity. It is perfect if you need to get/set/add/del(/eat?) cookies, loop over a http response body or seed your tests with some data.
+Prism is a fast, flexible, and easy-to-use application for mocking and testing HTTP API's. To help improve API testing effectiveness and bypass limitations in the OpenAPI specification, Prism comes with a full ES5-compatible Javascript runtime capable of supercharging your API workflow.
+
+Some example use cases for the Prism Javascript runtime include:
+
+* Getting, setting, removing cookies on requests
+* Manipulating HTTP request content, including slicing and dicing response bodies or manipulating headers
+* Seeding your tests with randomized data that conforms to a regex
+
+Anything that can be done in Javascript can now be done within a Scenario step.
 
 ## Execution State
 
-The current state of prism dictates what is made available in the runtime. At the end of the day, Prism isn't really a proxy or a test runner. It is an orchestration engine, so when we are talking about state, we are talking about what is currently being orchestrated. Today Prism can orchestrate http, javascript and reffed scenarios.
+Prism is an orchestration engine as much as it is a proxy and test runner. When we talk about execution state, we are talking about what is currently being orchestrated. At this time, Prism can orchestrate HTTP, Javascript, other and referenced scenarios.
 
 ## Execution Order of Scenario Steps
 
@@ -14,19 +22,17 @@ The current state of prism dictates what is made available in the runtime. At th
 
 ### Refs
 
-# Javascript Specification
+## Javascript Specification
 
-EMacs 5/5.1
+The Prism Javascript Runtime is compliant with the ECMAScript 5/5.1 specification, with full ECMAScript 6 support coming soon.
 
-Full ES 6 comming soon.
+## Globals
 
-# Globals
-
-#### Lodash
+### Lodash
 
 [Lodash v4.17.4](https://lodash.com/) - It is always loaded in the runtime as `_`.
 
-#### Console
+### Console
 
 The console objects gives you access to the Scenario Collection Logs. Use it to debug your sceanrios.
 
@@ -54,7 +60,7 @@ console.warn(object [, object, ...]);
 console.error(object [, object, ...]);
 ```
 
-#### Base64
+### Base64
 
 Base-64 to help with encoding and decoding strings of data.
 
@@ -76,38 +82,104 @@ Base64.encode(string);
 Base64.decode(string);
 ```
 
-# Stoplight
+## Stoplight Object (SL)
+
+#### Sleep
 
 ```js
 /**
+ * Sleep the current running Scenario step.
+ *
+ * @param {integer} ms - Time to sleep in milliseconds.
+ */
+SL.sleep(ms);
+```
+
+#### Validate
+
+```js
+/**
+ * Validate that a given object conforms to a given contract (JSON Schema).
+ *
+ * @typedef {Object} Message
+ * @property {string} error
+ * @property {string} details
+ *
+ * @param {*} object - The object to validate.
+ * @param {Object} contract - JSON Schema to validate object against.
+ *
+ * @returns {Message[]} - Array of validation errors, if validation passes then msgs will be empty.
+ */
+var msgs = SL.schema.validate(object, contract);
+```
+
+#### Generate
+
+```js
+/**
+* Generate random data based on a contract (JSON Schema).
 *
+* @param {Object} contract - JSON Schema to use for dynamic data generation.
+*
+* @returns {*} - Generated data.
 */
-SL.sleep => function(ms)
+var data = SL.schema.generate => function(contract)
 ```
 
 ```js
 /**
 *
-*/
-SL.schema.validate => function(object, schema)
-```
-
-```js
-/**
+* This describes the Stoplight representation of an HTTP operation. It is loosely based on OAS 3. You can find more descriptions of some of the properties described below here: https://swagger.io/specification/#operationObject.
 *
-*/
-SL.schema.generate => function(schema)
-```
-
-```js
-/**
+* @typedef {Object} Operation
+* @property {string} method
+* @property {string} path
+* @property {array} [tags]
+* @property {string} [summary]
+* @property {string} [description]
+* @property {array} [security] - As described here: https://swagger.io/specification/#securitySchemeObject. For OAS2, if the operation defines security requirements, we need to look up the security definition and inline it here. If it is for oauth, should include the scopes property from the original operation security property.
+* @property {array} [servers]
+* @property {object} [params] - The path parameters. For OAS2, these are a combination of the parameters defined at the operation, AND at the operation's path (one level up from the operation in the spec).
+* @property {object} .schema - A JSON Schema.
+* @property {object} [.example] - Generate this from defaults set in OAS 2.0
+* @property {object} [query] - The query parameters. For OAS2, these are a combination of the query parameters defined at the operation, AND at the operation's path (one level up from the operation in the spec).
+* @property {object} .schema - A JSON Schema.
+* @property {object} [.example] - Generate this from defaults set in OAS 2.0
+* @property {object} [headers] - The header parameters. For OAS2, these are a combination of the header parameters defined at the operation, AND at the operation's path (one level up from the operation in the spec).
+* @property {object} .schema - A JSON Schema.
+* @property {object} [.example] - Generate this from defaults set in OAS 2.0
+* @property {object} [body]
+* @property {string} [.description]
+* @property {object} [.content]
+* @property {object} [.[\w\/-]+] - Each key is usually a mime type (ie application/json), but can be any string.
+For OAS 2.0, this should come from the consumes key.
+* @property {object} [.schema]
+* @property {object} [.examples]
+* @property {object} [.[\w\/-]+]
+* @property {string} [.summary]
+* @property {string} [.description]
+* @property {string|object} .value
+* @property {object} [responses]
+* @property {object} [.[\w\/-]+] - Each key is a response code or the string "default".
+* @property {string} [.description]
+* @property {object} [.headers]
+* @property {object} [.schema]
+* @property {object} [.example]
+* @property {object} [.content]
+* @property {object} [.[\w\/-]+] - Each key is usually a mime type (ie application/json), but can be any string.
+* @property {object} [.schema]
+* @property {object} [.examples]
+* @property {object} [.[\w\/-]+]
+* @property {string} [.summary]
+* @property {string} [.description]
+* @property {string|object} .value
 *
+* @param {string} path - Request URL Path to search for in OAS connected Specification.
+* @param {string} method - Reqeust method to search for in OAS connected Specfication.
+*
+* @returns {Operation} - Stoplight opeartion that matches given path and method.
 */
-// TODO: Support default responses
-// TODO: Check to see if options is hooked up
-// TODO: If hooked up document it.
-// Returns HTTPOperation -> https://next.stoplight.io/stoplight/hubs-spec#/definitions/HTTP_Operation
-SL.specs.findOperation => function(path, method, options)
+var operation = SL.specs.findOperation => function(path, method)
 ```
 
 # Double Dollar - $$
