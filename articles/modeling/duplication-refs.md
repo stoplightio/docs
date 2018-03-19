@@ -124,7 +124,7 @@ Bad
     }
   ]
 }
-    
+```
 ---
 **Related Articles** 
 - [Referencing Another API Spec](/modeling/modeling-with-openapi/referencing-another-api-spec)
