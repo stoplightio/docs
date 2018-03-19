@@ -1,7 +1,5 @@
 # Modeling Introduction 
 
-![video/gif]()
-
 ## What is API Design? 
 
 Designing (also known as Modeling) your API involves describing all of the inputs and outputs across the footprint of your entire service. Your API design will answer questions like: 
@@ -26,7 +24,7 @@ Once you have your API described in the Stoplight design module, you can:
 
 There are a few ways to get started designing your API with the Stoplight design module, depending on how developed your API is:
 
-- Create an API from scratch [Using the CRUD Builder]()
-- [Reference another API Spec]()
-- [Send HTTP Requests]() to an existing API Spec 
-- [Validate your API Spec]()
+- Create an API from scratch [Using the CRUD Builder](/modeling/modeling-with-openapi/using-the-crud-builder)
+- [Reference another API Spec](/modeling/modeling-with-openapi/referencing-another-api-spec)
+- [Send HTTP Requests](/modeling/modeling-with-openapi/sending-http-requests) to an existing API Spec 
+- [Validate your API Spec](/modeling/modeling-with-openapi/validating-your-api-sec)
