@@ -9,8 +9,7 @@
 - You can reference a definition hosted at any location or server 
 - Apart from defining reusable definitions, you can also define reusable responses and parameters. You can store your reusable definitions, responses, and parameters in a common library
 
-<!-- theme: info --> 
->Key Terms: A definition is a named schema object. A reference is a path to a declaration within an OAS file.
+>Key Terms: A definition is a named schema object. A reference is a path to a declaration within an OAS file
 
 ## How to Reference a Definition 
 To invoke a reference to a definition, use the **$ref** keyword. For example:
@@ -126,4 +125,8 @@ Bad
   ]
 }
     
+---
+**Related Articles** 
+- [Referencing Another API Spec](/modeling/modeling-with-openapi/referencing-another-api-spec)
+- [JSON Introduction](/modeling/json-best-practices/introduction)
 
