@@ -30,21 +30,21 @@ describe a (fictional) person:
 There are many benefits to using JSON, some of which include:
 
 * It can be used to represent a wide array of objects in a simple and
-  easy-to-read format, making it useful for just about anything.
+  easy-to-read format, making it useful for just about anything
 
 * It is widely used and supported across web browsers and programming languages,
-  making it very easy to develop for.
+  making it very easy to develop for
 
 * It is easy to read and write by humans (as well as computers), making it a
-  great choice for specifications like [OpenAPI](https://github.com/OAI/OpenAPI-Specification#the-openapi-specification).
+  great choice for specifications like [OpenAPI](https://github.com/OAI/OpenAPI-Specification#the-openapi-specification)
 
 * It is a subset of another syntax called
   [YAML](https://en.wikipedia.org/wiki/YAML). Documents written in JSON can also
-  be written in YAML, so either format can be used to write OpenAPI documents.
+  be written in YAML, so either format can be used to write OpenAPI documents
 
 * It can be used to link files together through [JSON
   references](/modeling/introduction/modeling-with-openapi/referencing-another-api-spec), making it easy to break up large documents
-  into smaller, more focused documents.
+  into smaller, more focused documents
 
 Whether you are modeling an API, creating a Prism Collection, or writing
 documentation in Stoplight, behind the scenes you are actually updating a JSON
