@@ -81,7 +81,7 @@ Feasible tests you can execute include:
 
 **Related**
 
-* [Modeling Introduction](./modeling-introduction.md)
-* [Object Inheritance](./object-inheritance.md)
-* [Testing Overview](../testing/overview.md)
-* [Mock Testing with Prism](../prism/mocking.md)
+* [Modeling Introduction](/modeling/introduction)
+* [Object Inheritance](/modeling/json-best-practices/object-inheritance)
+* [Testing Overview](/testing/introduction)
+* [Mock Testing with Prism](/mocking/introduction)
