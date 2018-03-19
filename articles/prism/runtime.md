@@ -187,7 +187,7 @@ var request = $$.request.get();
  *
  * @param {string} string - The path to fetch on the request object.
  *
- * @returns {(Object|undefined)} - The current request coming into prism. If path isn't found, then undefined is returned.
+ * @returns {(Object|undefined)} - The value at the given path for the current Prism request. If path isn't found, then undefined is returned.
  */
 var value = $$.request.get(string);
 
@@ -205,7 +205,7 @@ $$.request.set(request);
 /**
  * Set a value on the request object at a given path.
  *
- * @param {string} string - The path to set on the request object. Will try to create appropriate
+ * @param {string} string - The path to set on the request object. Will try to create appropriate objects along the path if it doesn't exist.
  * @param {Object} object - The object to set at given path.
  */
 $$.request.set(string, object);
@@ -217,14 +217,14 @@ $$.request.set(string, object);
 /**
  * Get the current request's method.
  *
- * @returns {string} method - The HTTP method for Double Dollar Sign Request.
+ * @returns {string} - The HTTP method for Double Dollar Sign request.
  */
 var method = $$.request.method.get();
 
 /**
  * Set the current request's method.
  *
- * @param {string} method - The new HTTP method for Double Dollar Sign Request.
+ * @param {string} method - The new HTTP method for Double Dollar Sign request.
  */
 $$.request.method.set(method);
 ```
@@ -235,14 +235,14 @@ $$.request.method.set(method);
 /**
  * Get the current request's url.
  *
- * @returns {string} url - The HTTP url for Double Dollar Sign Request.
+ * @returns {string} - The HTTP url for Double Dollar Sign request.
  */
 var url = $$.request.url.get();
 
 /**
  * Set the current request's url.
  *
- * @param {string} url - The new url for Double Dollar Sign Request.
+ * @param {string} url - The new url for Double Dollar Sign request.
  */
 $$.request.url.set(url);
 ```
@@ -253,14 +253,14 @@ $$.request.url.set(url);
 /**
  * Get the current request's path.
  *
- * @returns {string} path - The HTTP path for Double Dollar Sign Request.
+ * @returns {string} - The HTTP path for Double Dollar Sign request.
  */
 var path = $$.request.path.get();
 
 /**
  * Set the current request's path.
  *
- * @param {string} path - The new path for Double Dollar Sign Request.
+ * @param {string} path - The new path for Double Dollar Sign request.
  */
 $$.request.path.set(path);
 ```
@@ -271,14 +271,14 @@ $$.request.path.set(path);
 /**
  * Get the current request's scheme.
  *
- * @returns {string} scheme - The HTTP scheme for Double Dollar Sign Request.
+ * @returns {string} - The HTTP scheme for Double Dollar Sign request.
  */
 var scheme = $$.request.scheme.get();
 
 /**
  * Set the current request's scheme.
  *
- * @param {string} scheme - The new scheme for Double Dollar Sign Request.
+ * @param {string} scheme - The new scheme for Double Dollar Sign request.
  */
 $$.request.scheme.set(scheme);
 ```
@@ -289,14 +289,14 @@ $$.request.scheme.set(scheme);
 /**
  * Get the current request's host.
  *
- * @returns {string} host - The HTTP host for Double Dollar Sign Request.
+ * @returns {string} - The HTTP host for Double Dollar Sign request.
  */
 var host = $$.request.host.get();
 
 /**
  * Set the current request's host.
  *
- * @param {string} host - The new host for Double Dollar Sign Request.
+ * @param {string} host - The new host for Double Dollar Sign request.
  */
 $$.request.host.set(host);
 ```
@@ -309,7 +309,7 @@ $$.request.host.set(host);
  *
  * @typedef {name:string, value:string} Query
  *
- * @returns {Object.<Query>} - The HTTP query object for Double Dollar Sign Request.
+ * @returns {Object.<Query>} - The HTTP query object for Double Dollar Sign request.
  */
 var query = $$.request.query.get();
 
@@ -318,7 +318,7 @@ var query = $$.request.query.get();
  *
  * @param {string} key - The key of the query value to get.
  *
- * @returns {string} value - The HTTP query value at the given key for Double Dollar Sign Request.
+ * @returns {string} - The HTTP query value at the given key for Double Dollar Sign request.
  */
 var value = $$.request.query.get(key);
 
@@ -327,7 +327,7 @@ var value = $$.request.query.get(key);
  *
  * @typedef {name:string, value:string} Query
  *
- * @param {Object.<Query>} query - The new HTTP query object for Double Dollar Sign Request.
+ * @param {Object.<Query>} query - The new HTTP query object for Double Dollar Sign request.
  */
 $$.request.query.set(query);
 
@@ -363,7 +363,7 @@ $$.request.query.del(key);
  *
  * @typedef {name:string, value:string} Header
  *
- * @returns {Object.<Header>} - The HTTP headers object for Double Dollar Sign Request.
+ * @returns {Object.<Header>} - The HTTP headers object for Double Dollar Sign request.
  */
 var headers = $$.request.headers.get();
 
@@ -372,7 +372,7 @@ var headers = $$.request.headers.get();
  *
  * @param {string} key - The key of the headers value to get.
  *
- * @returns {string} - The HTTP headers value at the given key for Double Dollar Sign Request.
+ * @returns {string} - The HTTP headers value at the given key for Double Dollar Sign request.
  */
 var value = $$.request.headers.get(key);
 
@@ -381,7 +381,7 @@ var value = $$.request.headers.get(key);
  *
  * @typedef {name:string, value:string} Header
  *
- * @param {Object.<Header>} headers - The new HTTP headers object for Double Dollar Sign Request.
+ * @param {Object.<Header>} headers - The new HTTP headers object for Double Dollar Sign request.
  */
 $$.request.headers.set(headers);
 
@@ -453,7 +453,7 @@ var cookies = $$.request.cookies.get();
  *
  * @param {string} name - The name of the HTTP Cookie to get.
  *
- * @returns {(Cookie|undefinded)}  - The HTTP Cookie for the given name. If the cookie doesn't exist then cookie will be undefined.
+ * @returns {(Cookie|undefinded)} - The HTTP Cookie for the given name. If the cookie doesn't exist then cookie will be undefined.
  */
 var cookie = $$.request.cookies.get(name);
 
@@ -494,7 +494,7 @@ $$.request.cookies.set(name, value);
  *
  * @param {string} name - The name of the cookie to set.
  * @param {string} value - The value of the cookie to set.
- * @param {Options} options - Additional values to set on the cookie.
+ * @param {Options} [options] - Additional values to set on the cookie.
  */
 $$.request.cookies.set(name, value, options);
 ```
@@ -561,29 +561,29 @@ var response = $$.response.get();
  *
  * @param {string} string - The path to fetch on the response object.
  *
- * Returns
- *  value (object) | undefined - The current value at the path on the response. If path isn't found, then undefined is returned.
+ * @returns {*} - The current value at the path on the response. If path isn't found, then undefined is returned.
  */
 var value = $$.response.get(string);
 
 /**
  * Set the whole response object.
  *
- *   object ({
- *     status: int,
- *     headers: {
- *       key: value,
- *     },
- *     body: object
- *   }) - Set the current response object.
+ * @typedef {name:string, value:string} Header
+ *
+ * @typedef {Object} Response
+ * @property {integer} status
+ * @property {Object.<Header>} headers
+ * @property {*} body
+ *
+ * @param {Resposne} response  - Set the current response object.
  */
-$$.response.set(object);
+$$.response.set(response);
 
 /**
  * Set a value on the response object at a given path.
  *
  * @param {string} string - The path to set on the response object. Will try to create appropriate objects at path if it doesn't exist.
- *   object - The object to set at given path.
+ * @param {*} object - The object to set at given path.
  */
 $$.response.set(string, object);
 ```
@@ -593,15 +593,15 @@ $$.response.set(string, object);
 ```js
 /**
  * Get the current response's status code.
- *   Returns
- *   status (int) - The HTTP status code for the current response.
+ *
+ * @returns {integer} - The HTTP status code for the current response.
  */
 var status = $$.response.status.get();
 
 /**
  * Set the current response's status code.
  *
- *   status (int) - The new HTTP status code for the current response.
+ * @param {integer} status - The new HTTP status code for the current response.
  */
 $$.response.status.set(status);
 ```
@@ -612,8 +612,7 @@ $$.response.status.set(status);
 /**
  * Get round trip time.
  *
- * Returns
- *   roundTrip (int) - The time it took for the current reqeust to respond in milliseconds.
+ * @returns {integer} - The time it took for the current reqeust to respond in milliseconds.
  */
 var roundTrip = $$.response.time.get();
 ```
@@ -624,53 +623,50 @@ var roundTrip = $$.response.time.get();
 /**
  * Get the current response's headers.
  *
- * Returns
- *   headers ({
- *     key: value
- *   }) - The HTTP headers object for the current response.
+ * @typedef {name:string, value:string} Header
+ *
+ * @returns {Object.<Header>} - The HTTP headers object for the current response.
  */
 var headers = $$.response.headers.get();
 
 /**
  * Get the current response's headers.
  *
- *   key (string) - The key of the headers value to get.
+ * @param {string} key - The key of the headers value to get.
  *
- * Returns
- *   value (string) - The HTTP headers value at the given key for the current response.
+ * @returns {string} - The HTTP headers value at the given key for the current response.
  */
 var value = $$.response.headers.get(key);
 
 /**
  * Set the current response's headers.
  *
- * Returns
- *   headers ({
- *     key: value
- *   }) - The new HTTP headers object for the current response.
+ * @typedef {name:string, value:string} Header
+ *
+ * @param {Object.<Header>} - The new HTTP headers object for the current response.
  */
 $$.response.headers.set(headers);
 
 /**
  * Set the current response's headers.
  *
- *   key (string) - The key of the headers value to set.
- *   value (string) - The HTTP headers value to set at the given key.
+ * @param {string} key - The key of the headers value to set.
+ * @param {string} value - The HTTP headers value to set at the given key.
  */
 $$.response.headers.set(key, value);
 
 /**
  * Add the give value to the current key. If key isn't defined behaves like $$.response.headers.set.
  *
- *   key (string) - The key of the headers value to add to.
- *   value (string) - The HTTP headers value to add at the given key.
+ * @param {string} key - The key of the headers value to add to.
+ * @param {string} value - The HTTP headers value to add at the given key.
  */
 $$.response.headers.add(key, value);
 
 /**
  * Del the current response's headers at key.
  *
- *   key (string) - The key to delete on the headers string.
+ * @param {string} key - The key to delete on the headers string.
  */
 $$.response.headers.del(key);
 ```
@@ -681,77 +677,75 @@ $$.response.headers.del(key);
 /**
  * Get all HTTP Cookies on response.
  *
- * Returns
- *   cookies ({
- *     name: {
- *       value: string,
- *       path: string,
- *       domain: string,
- *       expires: date,
- *       secure: bool,
- *       httponly: bool,
- *       maxage: int
- *     }
- *   }) - A map of cookies on $$.response.
+ * @typedef {Object} Cookie
+ * @property {string} value
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
+ *
+ * @returns {Object.<name:string, Cookie>} - A map of cookies on $$.response.
  */
 var cookies = $$.response.cookies.get();
 
 /**
  * Get the HTTP Cookie at given name on the current response.
  *
- *   name (string) - The name of the HTTP Cookie to get.
+ * @typedef {Object} Cookie
+ * @property {string} value
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
  *
- * Returns
- *   cookie ({
- *     value: string,
- *     path: string,
- *     domain: string,
- *     expires: date,
- *     secure: bool,
- *     httponly: bool,
- *     maxage: int
- *   }) | undefined - The HTTP Cookie for the given name. If the cookie doesn't exist then cookie will be undefined.
+ * @param {string} name - The name of the HTTP Cookie to get.
+ *
+ * @returns {(Cookie|undefined)} - The HTTP Cookie for the given name. If the cookie doesn't exist then cookie will be undefined.
  */
 var cookie = $$.response.cookies.get(name);
 
 /**
  * Set all HTTP Cookies on response.
  *
- *   cookies ({
- *     name: {
- *       value: string,
- *       path: string,
- *       domain: string,
- *       expires: date,
- *       secure: bool,
- *       httponly: bool,
- *       maxage: int
- *     }
- *   }) - A map of new cookies to set on $$.response.
+ * @typedef {Object} Cookie
+ * @property {string} value
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
+ *
+ * @param {Object.<name:string, Cookie>} cookies - A map of new cookies to set on $$.response.
  */
 $$.response.cookies.set(cookies);
 
 /**
  * Set HTTP Cookie on response.
  *
- *   name (string) - The name of the cookie to set.
- *   value (string) - The value of the cookie to set.
+ * @param {string} name - The name of the cookie to set.
+ * @param {string} value - The value of the cookie to set.
  */
 $$.response.cookies.set(name, value);
 
 /**
  * Set HTTP Cookie on response.
  *
- *   name (string) - The name of the cookie to set.
- *   value (string) - The value of the cookie to set.
- *   options ({
- *     path: string,
- *     domain: string,
- *     expires: date,
- *     secure: bool,
- *     httponly: bool,
- *     maxage: int
- *   }) - Additional values to set on the cookie.
+ * @typedef {Object} Options
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
+ *
+ * @param {string} name - The name of the cookie to set.
+ * @param {string} value - The value of the cookie to set.
+ * @param {Options} [options] - Additional values to set on the cookie.
  */
 $$.response.cookies.set(name, value, options);
 ```
@@ -762,33 +756,31 @@ $$.response.cookies.set(name, value, options);
 /**
  * Get the current response body.
  *
- * Returns
- *   body (object) | undefined - The current response body, if there is no body on the response then undefined is returned.
+ * @returns {*} - The current response body, if there is no body on the response then undefined is returned.
  */
 var body = $$.response.body.get();
 
 /**
  * Get the value on the current response body at the given path.
  *
- *   path (string) - Path is the location of the value to return from the current response body.
+ * @param {string} path - Path is the location of the value to return from the current response body.
  *
- * Returns
- *   value (object) | undefined - The value at the given path on the response body. If the value doesn't exist then undefined is returned.
+ * @returns {*} - The value at the given path on the response body. If the value doesn't exist then undefined is returned.
  */
 var value = $$.response.body.get(path);
 
 /**
  * Set the current response body.
  *
- *   body (object) - The new response body to set.
+ * @param {*} body - The new response body to set.
  */
 $$.response.body.set(body);
 
 /**
  * Set the value at the given path on the current response body.
  *
- *   path (string) - Path is the location of the value to set on the current response. If path doesn't exist then try to create it.
- *   value (object) - The value to set at the given path.
+ * @param {string} path - Path is the location of the value to set on the current response. If path doesn't exist then try to create it.
+ * @param {*} value - The value to set at the given path.
  */
 $$.response.body.set(path, value);
 ```
@@ -839,15 +831,13 @@ tests => object;
 /**
  * Get the whole request object.
  *
- * Returns
- *   object ({
- *     method: string,
- *     url: string,
- *     headers: {
- *       key: value,
- *     },
- *     body: object
- *   }) - The current request coming into prism.
+ * @typedef {name:string, value:string} Header
+ *
+ * @returns {Object} request - The current request for a Scenario step.
+ * @returns {string} request.method
+ * @returns {string} request.url
+ * @returns {Object.<Header.name, Header.value>} request.headers
+ * @returns {*} request.body
  */
 var request = input.get();
 
@@ -856,8 +846,7 @@ var request = input.get();
  *
  * @param {string} string - The path to fetch on the request object.
  *
- * Returns
- *  value (object) | undefined - The current request coming into prism. If path isn't found, then undefined is returned.
+ * @returns {(Object|undefined)} - The value at given path for the current Scenario step request.  If path isn't found, then undefined is returned.
  */
 var value = input.get(string);
 
@@ -871,15 +860,15 @@ var value = input.get(string);
  *       key: value,
  *     },
  *     body: object
- *   }) - Set the current request coming into Prism.
+ *   }) - Set the current Scneario step request.
  */
 input.set(object);
 
 /**
  * Set a value on the request object at a given path.
  *
- * @param {string} string - The path to set on the request object. Will try to create appropriate
- *   object - The object to set at given path.
+ * @param {string} string - The path to set on the request current Scenario step. Will try to create appropriate objects along the path if it doesn't exist.
+ * @param {Object} object - The object to set at given path.
  */
 input.set(string, object);
 ```
@@ -890,15 +879,14 @@ input.set(string, object);
 /**
  * Get the current request's method.
  *
- * Returns
- *   method (string) - The HTTP method for Double Dollar Sign Request.
+ * @returns {string} method - The HTTP method for the current Scenario step request.
  */
 var method = input.method.get();
 
 /**
  * Set the current request's method.
  *
- *   method (string) - The new HTTP method for Double Dollar Sign Request.
+ * @param {string} method  - The new HTTP method for the current Scenario step request.
  */
 input.method.set(method);
 ```
@@ -909,15 +897,14 @@ input.method.set(method);
 /**
  * Get the current request's url.
  *
- * Returns
- *   url (string) - The HTTP url for Double Dollar Sign Request.
+ * @returns {string} url - The HTTP url for the current Scenario step request.
  */
 var url = input.url.get();
 
 /**
  * Set the current request's url.
  *
- *   url (string) - The new url for Double Dollar Sign Request.
+ * @param {string} url - The new url for the current Scenario step request.
  */
 input.url.set(url);
 ```
@@ -928,15 +915,14 @@ input.url.set(url);
 /**
  * Get the current request's path.
  *
- * Returns
- *   path (string) - The HTTP path for Double Dollar Sign Request.
+ * @returns {string} - The HTTP path for the current Scenario Step request.
  */
 var path = input.path.get();
 
 /**
  * Set the current request's path.
  *
- *   path (string) - The new path for Double Dollar Sign Request.
+ * @param {string} path - The new path for the current Scenario Step request.
  */
 input.path.set(path);
 ```
@@ -947,15 +933,14 @@ input.path.set(path);
 /**
  * Get the current request's scheme.
  *
- * Returns
- *   scheme (string) - The HTTP scheme for Double Dollar Sign Request.
+ * @returns {string} - The HTTP scheme for the current Scenario Step request.
  */
 var scheme = input.scheme.get();
 
 /**
  * Set the current request's scheme.
  *
- *   scheme (string) - The new scheme for Double Dollar Sign Request.
+ * @param {string} scheme - The new scheme for the current Scenario Step request.
  */
 input.scheme.set(scheme);
 ```
@@ -966,15 +951,14 @@ input.scheme.set(scheme);
 /**
  * Get the current request's host.
  *
- * Returns
- *   host (string) - The HTTP host for Double Dollar Sign Request.
+ * @returns {string} - The HTTP host for the current Scenario Step request.
  */
 var host = input.host.get();
 
 /**
  * Set the current request's host.
  *
- *   host (string) - The new host for Double Dollar Sign Request.
+ * @param {string} host - The new host for the current Scenario Step request.
  */
 input.host.set(host);
 ```
@@ -985,53 +969,50 @@ input.host.set(host);
 /**
  * Get the current request's query.
  *
- * Returns
- *   query ({
- *     key: value
- *   }) - The HTTP query object for Double Dollar Sign Request.
+ * @typedef {name:string, value:string} Query
+ *
+ * @returns {Object.<Query>} - The HTTP query object for the current Scenario Step request.
  */
 var query = input.query.get();
 
 /**
  * Get the current request's query.
  *
- *   key (string) - The key of the query value to get.
+ * @param {string} key - The key of the query value to get.
  *
- * Returns
- *   value (string) - The HTTP query value at the given key for Double Dollar Sign Request.
+ * @returns {string} - The HTTP query value at the given key for the current Scenario Step request.
  */
 var value = input.query.get(key);
 
 /**
  * Set the current request's query.
  *
- * Returns
- *   query ({
- *     key: value
- *   }) - The new HTTP query object for Double Dollar Sign Request.
+ * @typedef {name:string, value:string} Query
+ *
+ * @param {Object.<Query>} query - The new HTTP query object for the current Scenario Step request.
  */
 input.query.set(query);
 
 /**
  * Set the current request's query.
  *
- *   key (string) - The key of the query value to set.
- *   value (string) - The HTTP query value to set at the given key.
+ * @param {string} key - The key of the query value to set.
+ * @param {string} value - The HTTP query value to set at the given key.
  */
 input.query.set(key, value);
 
 /**
  * Add the give value to the current key. If key isn't defined behaves like input.query.set.
  *
- *   key (string) - The key of the query value to add to.
- *   value (string) - The HTTP query value to add at the given key.
+ * @param {string} key - The key of the query value to add to.
+ * @param {string} value - The HTTP query value to add at the given key.
  */
 input.query.add(key, value);
 
 /**
  * Del the current request's query at key.
  *
- *   key (string) - The key to delete on the query string.
+ * @param {string} key - The key to delete on the query string.
  */
 input.query.del(key);
 ```
@@ -1042,53 +1023,50 @@ input.query.del(key);
 /**
  * Get the current request's headers.
  *
- * Returns
- *   headers ({
- *     key: value
- *   }) - The HTTP headers object for Double Dollar Sign Request.
+ * @typedef {name:string, value:string} Header
+ *
+ * @returns {Object.<Header>} - The HTTP headers object for the current Scenario Step request.
  */
 var headers = input.headers.get();
 
 /**
  * Get the current request's headers.
  *
- *   key (string) - The key of the headers value to get.
+ * @param {string} key - The key of the headers value to get.
  *
- * Returns
- *   value (string) - The HTTP headers value at the given key for Double Dollar Sign Request.
+ * @returns {string} - The HTTP headers value at the given key for the current Scenario Step request.
  */
 var value = input.headers.get(key);
 
 /**
  * Set the current request's headers.
  *
- * Returns
- *   headers ({
- *     key: value
- *   }) - The new HTTP headers object for Double Dollar Sign Request.
+ * @typedef {name:string, value:string} Header
+ *
+ * @param {Object.<Header>} headers - The new HTTP headers object for the current Scenario Step request.
  */
 input.headers.set(headers);
 
 /**
  * Set the current request's headers.
  *
- *   key (string) - The key of the headers value to set.
- *   value (string) - The HTTP headers value to set at the given key.
+ * @param {string} key - The key of the headers value to set.
+ * @param {string} value - The HTTP headers value to set at the given key.
  */
 input.headers.set(key, value);
 
 /**
  * Add the give value to the current key. If key isn't defined behaves like input.headers.set.
  *
- *   key (string) - The key of the headers value to add to.
- *   value (string) - The HTTP headers value to add at the given key.
+ * @param {string} key - The key of the headers value to add to.
+ * @param {string} value - The HTTP headers value to add at the given key.
  */
 input.headers.add(key, value);
 
 /**
  * Del the current request's headers at key.
  *
- *   key (string) - The key to delete on the headers string.
+ * @param {string} key - The key to delete on the headers string.
  */
 input.headers.del(key);
 ```
@@ -1099,8 +1077,7 @@ input.headers.del(key);
 /**
  * Parses the Accept header and returns an ordered list of mime types that the client will accept.
  *
- * Returns
- *   accepts ([string]) - The types that the request accepts, in the order of the client's preference (most preferred first).
+ * @returns {string[]} - The types that the request accepts, in the order of the client's preference (most preferred first).
  */
 var accepts = input.accepts.contentTypes.get();
 ```
@@ -1111,77 +1088,75 @@ var accepts = input.accepts.contentTypes.get();
 /**
  * Get all HTTP Cookies on request.
  *
- * Returns
- *   cookies ({
- *     name: {
- *       value: string,
- *       path: string,
- *       domain: string,
- *       expires: date,
- *       secure: bool,
- *       httponly: bool,
- *       maxage: int
- *     }
- *   }) - A map of cookies on input.
+ * @typedef {Object} Cookie
+ * @property {string} value
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
+ *
+ * @returns {Object.<name:string, Cookie>} - A map of cookies on the current Scenario Step request.
  */
 var cookies = input.cookies.get();
 
 /**
  * Get the HTTP Cookie at given name on the current request.
  *
- *   name (string) - The name of the HTTP Cookie to get.
+ * @typedef {Object} Cookie
+ * @property {string} value
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
  *
- * Returns
- *   cookie ({
- *     value: string,
- *     path: string,
- *     domain: string,
- *     expires: date,
- *     secure: bool,
- *     httponly: bool,
- *     maxage: int
- *   }) | undefined - The HTTP Cookie for the given name. If the cookie doesn't exist then cookie will be undefined.
+ * @param {string} name - The name of the HTTP Cookie to get.
+ *
+ * @returns {(Cookie|undefinded)} - The HTTP Cookie for the given name. If the cookie doesn't exist then cookie will be undefined.
  */
 var cookie = input.cookies.get(name);
 
 /**
  * Set all HTTP Cookies on request.
  *
- *   cookies ({
- *     name: {
- *       value: string,
- *       path: string,
- *       domain: string,
- *       expires: date,
- *       secure: bool,
- *       httponly: bool,
- *       maxage: int
- *     }
- *   }) - A map of new cookies to set on input.
+ * @typedef {Object} Cookie
+ * @property {string} value
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
+ *
+ * @param {Object.<name:string, Cookie>} cookies - A map of new cookies to set on input.
  */
 input.cookies.set(cookies);
 
 /**
  * Set HTTP Cookie on request.
  *
- *   name (string) - The name of the cookie to set.
- *   value (string) - The value of the cookie to set.
+ * @param {string} key - The name of the cookie to set.
+ * @param {string} value - The value of the cookie to set.
  */
 input.cookies.set(name, value);
 
 /**
  * Set HTTP Cookie on request.
  *
- *   name (string) - The name of the cookie to set.
- *   value (string) - The value of the cookie to set.
- *   options ({
- *     path: string,
- *     domain: string,
- *     expires: date,
- *     secure: bool,
- *     httponly: bool,
- *     maxage: int
- *   }) - Additional values to set on the cookie.
+ * @typedef {Object} Options
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
+ *
+ * @param {string} name - The name of the cookie to set.
+ * @param {string} value - The value of the cookie to set.
+ * @param {Options} [options] - Additional values to set on the cookie.
  */
 input.cookies.set(name, value, options);
 ```
@@ -1192,33 +1167,31 @@ input.cookies.set(name, value, options);
 /**
  * Get the current request body.
  *
- * Returns
- *   body (object) | undefined - The current request body, if there is no body on the request then undefined is returned.
+ * @returns {*} - The current Scenario Step request body, if there is no body on the request then undefined is returned.
  */
 var body = input.body.get();
 
 /**
  * Get the value on the current request body at the given path.
  *
- *   path (string) - Path is the location of the value to return from the current request body.
+ * @param {string} path - Path is the location of the value to return from the current request body.
  *
- * Returns
- *   value (object) | undefined - The value at the given path on the request body. If the value doesn't exist then undefined is returned.
+ * @returns {*} - The value at the given path on the request body. If the value doesn't exist then undefined is returned.
  */
 var value = input.body.get(path);
 
 /**
  * Set the current request body.
  *
- *   body (object) - The new request body to set.
+ * @param {*} body - The new request body to set.
  */
 input.body.set(body);
 
 /**
  * Set the value at the given path on the current request body.
  *
- *   path (string) - Path is the location of the value to set on the current request. If path doesn't exist then try to create it.
- *   value (object) - The value to set at the given path.
+ * @param {string} path - Path is the location of the value to set on the current request. If path doesn't exist then try to create it.
+ * @param {*} value  - The value to set at the given path.
  */
 input.body.set(path, value);
 ```
@@ -1248,15 +1221,15 @@ TODO: Description, should talk about how output is different from $$.response.
 /**
  * Get the whole response object.
  *
- * Returns
- *   object ({
- *     status: int,
- *     time: int,
- *     headers: {
- *       key: value,
- *     },
- *     body: object
- *   }) - The current response object.
+ * @typedef {name:string, value:string} Header
+ *
+ * @typedef {Object} Response
+ * @property {integer} status
+ * @property {integer} time
+ * @property {Object.<Header>} headers
+ * @property {*} body
+ *
+ * @returns {Response} - The current response object.
  */
 var response = output.get();
 
@@ -1265,21 +1238,19 @@ var response = output.get();
  *
  * @param {string} string - The path to fetch on the response object.
  *
- * Returns
- *  value (object) | undefined - The current value at the path on the response. If path isn't found, then undefined is returned.
+ * @returns {*} - The current value at the path on the response. If path isn't found, then undefined is returned.
  */
 var value = output.get(string);
 
 /**
  * Set the whole response object.
  *
- *   object ({
- *     status: int,
- *     headers: {
- *       key: value,
- *     },
- *     body: object
- *   }) - Set the current response object.
+ * @typedef {Object} Response
+ * @property {integer} status
+ * @property {Object.<Header>} headers
+ * @property {*} body
+ *
+ * @param {Resposne} response - Set the current response object.
  */
 output.set(object);
 
@@ -1287,7 +1258,7 @@ output.set(object);
  * Set a value on the response object at a given path.
  *
  * @param {string} string - The path to set on the response object. Will try to create appropriate objects at path if it doesn't exist.
- *   object - The object to set at given path.
+ * @param {*} object - The object to set at given path.
  */
 output.set(string, object);
 ```
@@ -1298,15 +1269,14 @@ output.set(string, object);
 /**
  * Get the current response's status code.
  *
- * Returns
- *   status (int) - The HTTP status code for the current response.
+ * @returns {integer} - The HTTP status code for the current response.
  */
 var status = output.status.get();
 
 /**
  * Set the current response's status code.
  *
- *   status (int) - The new HTTP status code for the current response.
+ * @param {integer} status - The new HTTP status code for the current response.
  */
 output.status.set(status);
 ```
@@ -1317,8 +1287,7 @@ output.status.set(status);
 /**
  * Get round trip time.
  *
- * Returns
- *   roundTrip (int) - The time it took for the current reqeust to respond in milliseconds.
+ * @returns {integer} - The time it took for the current reqeust to respond in milliseconds.
  */
 var roundTrip = output.time.get();
 ```
@@ -1329,53 +1298,50 @@ var roundTrip = output.time.get();
 /**
  * Get the current response's headers.
  *
- * Returns
- *   headers ({
- *     key: value
- *   }) - The HTTP headers object for the current response.
+ * @typedef {name:string, value:string} Header
+ *
+ * @returns {Object.<Header>} - The HTTP headers object for the current response.
  */
 var headers = output.headers.get();
 
 /**
  * Get the current response's headers.
  *
- *   key (string) - The key of the headers value to get.
+ * @param {string} key - The key of the headers value to get.
  *
- * Returns
- *   value (string) - The HTTP headers value at the given key for the current response.
+ * @returns {string} - The HTTP headers value at the given key for the current response.
  */
 var value = output.headers.get(key);
 
 /**
  * Set the current response's headers.
  *
- * Returns
- *   headers ({
- *     key: value
- *   }) - The new HTTP headers object for the current response.
+ * @typedef {name:string, value:string} Header
+ *
+ * @param {Object.<Header>} - The new HTTP headers object for the current response.
  */
 output.headers.set(headers);
 
 /**
  * Set the current response's headers.
  *
- *   key (string) - The key of the headers value to set.
- *   value (string) - The HTTP headers value to set at the given key.
+ * @param {string} key - The key of the headers value to set.
+ * @param {string} value - The HTTP headers value to set at the given key.
  */
 output.headers.set(key, value);
 
 /**
  * Add the give value to the current key. If key isn't defined behaves like output.headers.set.
  *
- *   key (string) - The key of the headers value to add to.
- *   value (string) - The HTTP headers value to add at the given key.
+ * @param {string} key - The key of the headers value to add to.
+ * @param {string} value - The HTTP headers value to add at the given key.
  */
 output.headers.add(key, value);
 
 /**
  * Del the current response's headers at key.
  *
- *   key (string) - The key to delete on the headers string.
+ * @param {string} key - The key to delete on the headers string.
  */
 output.headers.del(key);
 ```
@@ -1386,77 +1352,75 @@ output.headers.del(key);
 /**
  * Get all HTTP Cookies on response.
  *
- * Returns
- *   cookies ({
- *     name: {
- *       value: string,
- *       path: string,
- *       domain: string,
- *       expires: date,
- *       secure: bool,
- *       httponly: bool,
- *       maxage: int
- *     }
- *   }) - A map of cookies on output.
+ * @typedef {Object} Cookie
+ * @property {string} value
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
+ *
+ * @returns {Object.<name:string, Cookie>} - A map of cookies on output.
  */
 var cookies = output.cookies.get();
 
 /**
  * Get the HTTP Cookie at given name on the current response.
  *
- *   name (string) - The name of the HTTP Cookie to get.
+ * @typedef {Object} Cookie
+ * @property {string} value
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
  *
- * Returns
- *   cookie ({
- *     value: string,
- *     path: string,
- *     domain: string,
- *     expires: date,
- *     secure: bool,
- *     httponly: bool,
- *     maxage: int
- *   }) | undefined - The HTTP Cookie for the given name. If the cookie doesn't exist then cookie will be undefined.
+ * @param {string} name - The name of the HTTP Cookie to get.
+ *
+ * @returns {(Cookie|undefined)} - The HTTP Cookie for the given name. If the cookie doesn't exist then cookie will be undefined.
  */
 var cookie = output.cookies.get(name);
 
 /**
  * Set all HTTP Cookies on response.
  *
- *   cookies ({
- *     name: {
- *       value: string,
- *       path: string,
- *       domain: string,
- *       expires: date,
- *       secure: bool,
- *       httponly: bool,
- *       maxage: int
- *     }
- *   }) - A map of new cookies to set on output.
+ * @typedef {Object} Cookie
+ * @property {string} value
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
+ *
+ * @param {Object.<name:string, Cookie>} cookies - A map of new cookies to set on output.
  */
 output.cookies.set(cookies);
 
 /**
  * Set HTTP Cookie on response.
  *
- *   name (string) - The name of the cookie to set.
- *   value (string) - The value of the cookie to set.
+ * @param {string} name - The name of the cookie to set.
+ * @param {string} value - The value of the cookie to set.
  */
 output.cookies.set(name, value);
 
 /**
  * Set HTTP Cookie on response.
  *
- *   name (string) - The name of the cookie to set.
- *   value (string) - The value of the cookie to set.
- *   options ({
- *     path: string,
- *     domain: string,
- *     expires: date,
- *     secure: bool,
- *     httponly: bool,
- *     maxage: int
- *   }) - Additional values to set on the cookie.
+ * @typedef {Object} Options
+ * @property {string} path
+ * @property {string} domain
+ * @property {date} expires
+ * @property {boolean} secure
+ * @property {boolean} httponly
+ * @property {integer} maxage
+ *
+ * @param {string} name - The name of the cookie to set.
+ * @param {string} value - The value of the cookie to set.
+ * @param {Options} [options] - Additional values to set on the cookie.
  */
 output.cookies.set(name, value, options);
 ```
@@ -1468,36 +1432,31 @@ output.cookies.set(name, value, options);
  * Get the current response body.
  *
  * Returns
- *   body (object) | undefined - The current response body, if there is no body on the response then undefined is returned.
+ * @returns {*} - The current response body, if there is no body on the response then undefined is returned.
  */
 var body = output.body.get();
 
 /**
  * Get the value on the current response body at the given path.
  *
- *   path (string) - Path is the location of the value to return from the current response body.
+ * @param {string} path - Path is the location of the value to return from the current response body.
  *
- * Returns
- *   value (object) | undefined - The value at the given path on the response body. If the value doesn't exist then undefined is returned.
+ * @returns {*} - The value at the given path on the response body. If the value doesn't exist then undefined is returned.
  */
 var value = output.body.get(path);
 
 /**
  * Set the current response body.
  *
- *   body (object) - The new response body to set.
+ * @param {*} body - The new response body to set.
  */
 output.body.set(body);
 
 /**
  * Set the value at the given path on the current response body.
  *
- *   path (string) - Path is the location of the value to set on the current response. If path doesn't exist then try to create it.
- *   value (object) - The value to set at the given path.
+ * @param {string} path - Path is the location of the value to set on the current response. If path doesn't exist then try to create it.
+ * @param {*} value - The value to set at the given path.
  */
 output.body.set(path, value);
-```
-
-```
-
 ```
