@@ -20,7 +20,7 @@ You can promote another Member of your Organization to the role of Owner
 
 ---
 **Related Articles**
-- [Transfer Primary Ownership of a Team](/platform/organizations/teams/transfer-ownership)
+- [Transfer Ownership of a Team](/platform/organizations/teams/transfer-ownership)
 - [Invite People to Organization](/platform/organizations/invite-people)
 - [Remove People from Your Organizations](/platform/organizations/remove-members)
 - [Organization Member Roles and Permissions](/platform/organizations/roles)
