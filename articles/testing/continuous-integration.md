@@ -57,7 +57,7 @@ To start a mock server with Prism, use the `mock` command:
 prism mock --spec open-api-spec.json
 ```
 
-For more information on mock testing with Prism, see [here](FIXME).
+For more information on mock testing with Prism, see [Mocking Introduction](FIXME).
 
 ## Contract Testing
 
@@ -67,11 +67,11 @@ server and validates that the server response conforms to the provided OpenAPI
 specification. This form of testing is useful for:
 
 * Verifying a _server_ implementation to ensure all _responses_ meet the
-  appropriate requirements set by an OpenAPI specification.
+  appropriate requirements set by an OpenAPI specification
 * Verifying a _client_ implementation to ensure all _requests_ meet the
-  appropriate requirements set by an OpenAPI specification.
+  appropriate requirements set by an OpenAPI specification
 * Augmenting existing test suites with very little extra work and almost no
-  workflow changes required.
+  workflow changes required
 
 To start a contract/validation server with Prism, use the `validate` command:
 
@@ -79,7 +79,7 @@ To start a contract/validation server with Prism, use the `validate` command:
 prism validate --spec open-api-spec.json --upstream http://localhost:8080
 ```
 
-For more information on contract testing with Prism, see [here](FIXME).
+For more information on contract testing with Prism, see [Mocking Introduction](FIXME).
 
 ---
 
