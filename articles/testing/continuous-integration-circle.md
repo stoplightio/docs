@@ -70,7 +70,7 @@ jobs:
 When running `prism conduct` you can:
 
 * Include the Scenario JSON on your CI server, and pass in its absolute file path
-* Pass in the absolute URL to the scenario JSON served up via HTTP.
+* Pass in the absolute URL to the scenario JSON served up via HTTP
 
 <!-- theme: warning -->
 
