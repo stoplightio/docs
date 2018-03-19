@@ -2,7 +2,7 @@
 
 ![](https://github.com/stoplightio/docs/blob/develop/assets/images/stoplight-crew.jpg?raw=true)
 
-Now that you have the basics on what the [Stoplight Next Platform](../what-is-stoplight.md) is, we can go over how to get started. 
+Now that you have the basics on what the [Stoplight Next Platform](/platform/introduction) is, we can go over how to get started. 
 
 First things first, are you using Stoplight for Personal Projects or as part of an Organization?
 
