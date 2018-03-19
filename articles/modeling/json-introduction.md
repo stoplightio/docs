@@ -55,7 +55,7 @@ document.
 
 ---
 
-**Related**
+**Related Articles**
 
 * [JSON Overview - Wikipedia](https://en.wikipedia.org/wiki/JSON)
 * [YAML Overview - Wikipedia](https://en.wikipedia.org/wiki/YAML)
