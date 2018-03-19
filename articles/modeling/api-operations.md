@@ -107,7 +107,10 @@ It is good practice to version an API to describe the available features and res
 
 ---
 
-**Related**
+**Related Articles**
+- [Modeling Introduction](/modeling/introduction)
+- [Using the CRUD Builder](/modeling/modeling-with-openapi/using-the-crud-builder)
+- [API Models](/modeling/modeling-with-openapi/api-models)
+- [Security Schemes](/modeling/modeling-with-openapi/security-schemes)
+- [Shared Parameters and Responses](/modeling/modeling-with-openapi/shared-parameters-and-responses)
 
-* [API Models](/modeling/introduction/modeling-with-openapi/api-models)
-* [Sending HTTP Requests](/modeling/introduction/modeling-with-openapi/sending-http-requests)
