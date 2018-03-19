@@ -11,19 +11,19 @@ The following characteristics are true of well-designed APIs:
 
 ## Key Terms
 
-* A **resource** is an entity or object that has data linked to it, relationships to other objects or entities, and a set of methods that operate on it to access, use, or manipulate the associated data. When resources are grouped together, it is called a collection.
+* A **resource** is an entity or object that has data linked to it, relationships to other objects or entities, and a set of methods that operate on it to access, use, or manipulate the associated data. When resources are grouped together, it is called a collection
 
-* A **Uniform Resource Locator (URL)** is used to indicate and identify the location of an API resource and perform some actions to it. Note that the base URL is the constant part of this location.
+* A **Uniform Resource Locator (URL)** is used to indicate and identify the location of an API resource and perform some actions to it. Note that the base URL is the constant part of this location
 
-* **GET** method requests data from a resource and the body of the response message holds the information requested.
+* **GET** method requests data from a resource and the body of the response message holds the information requested
 
-* **PUT** method requests the server to update the resource or create it (if it does not exist) and the body of the request message indicates the resource to be updated or created.
+* **PUT** method requests the server to update the resource or create it (if it does not exist) and the body of the request message indicates the resource to be updated or created
 
-* **PATCH** method performs a partial update on a resource and the body of the request message indicates the change to be applied. This can occasionally be more efficient than PUT because the client forwards changes required and not the entire details about the resource.
+* **PATCH** method performs a partial update on a resource and the body of the request message indicates the change to be applied. This can occasionally be more efficient than PUT because the client forwards changes required and not the entire details about the resource
 
-* **POST** creates a new resource and the body of the request message indicates the details of the new resource to be created. This method can be used to activate operations that will not create a resource.
+* **POST** creates a new resource and the body of the request message indicates the details of the new resource to be created. This method can be used to activate operations that will not create a resource
 
-* **DELETE** method requests that the specified resource be removed.
+* **DELETE** method requests that the specified resource be removed
 
 ## Best Practices
 
@@ -69,7 +69,7 @@ A user should know the status of request made through an API. This might include
 | 204 No Content (Request successfully processed but returns not content) |                       | 403 Forbidden    |                           |
 |                                                                         |                       | 404 Not Found    |                           |
 
-* Be wary of using too many status codes and confusing the API user.
+* Be wary of using too many status codes and confusing the API user
 * It is good to provide an additional description of the status code in the body of the HTTP Response. For example:
   * Request: method `GET /pets?type=feline`
   * Response:
