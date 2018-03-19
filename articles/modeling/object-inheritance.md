@@ -139,3 +139,9 @@ properties), the derived SUV model will have the following JSON properties:
   }
 }
 ```
+---
+**Related Articles** 
+- [JSON Introduction](/modeling/json-best-practices/introduction)
+- [Adding Validations](/modeling/json-best-practices/adding-validations)
+- [Reducing Duplication with $refs](/modeling/json-best-practices/reducing-duplication-with-refs)
+- [Generating Schemas](/modeling/json-best-practices/generating-schemas)
