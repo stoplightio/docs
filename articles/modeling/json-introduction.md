@@ -43,14 +43,12 @@ There are many benefits to using JSON, some of which include:
   be written in YAML, so either format can be used to write OpenAPI documents.
 
 * It can be used to link files together through [JSON
-  references](./reference-spec.md), making it easy to break up large documents
+  references](/modeling/introduction/modeling-with-openapi/referencing-another-api-spec), making it easy to break up large documents
   into smaller, more focused documents.
 
 Whether you are modeling an API, creating a Prism Collection, or writing
 documentation in Stoplight, behind the scenes you are actually updating a JSON
 document.
-
-<!-- theme: info -->
 
 > You can see the underlying JSON document of any object being updated in
 > Stoplight using the editor's **Code** button at the top of the screen.
@@ -62,4 +60,4 @@ document.
 * [JSON Overview - Wikipedia](https://en.wikipedia.org/wiki/JSON)
 * [YAML Overview - Wikipedia](https://en.wikipedia.org/wiki/YAML)
 * [OpenAPI Specification Format Reference](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#format)
-* [Referencing Another API Specification](./reference-spec.md)
+* [Referencing Another API Specification](/modeling/introduction/modeling-with-openapi/referencing-another-api-spec)
