@@ -1,6 +1,6 @@
 # Welcome to Stoplight NEXT! 
 
-![](https://github.com/stoplightio/docs/blob/develop/assets/images/stoplight-crew.jpg?raw=true)
+![The Original Three](https://github.com/stoplightio/docs/blob/develop/assets/images/stoplight-crew.jpg?raw=true)
 
 Now that you have the basics on what the [Stoplight Next Platform](/platform/introduction) is, we can go over how to get started. 
 
