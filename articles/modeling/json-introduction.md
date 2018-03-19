@@ -60,4 +60,4 @@ document.
 * [JSON Overview - Wikipedia](https://en.wikipedia.org/wiki/JSON)
 * [YAML Overview - Wikipedia](https://en.wikipedia.org/wiki/YAML)
 * [OpenAPI Specification Format Reference](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#format)
-* [Referencing Another API Specification](/modeling/introduction/modeling-with-openapi/referencing-another-api-spec)
+* [Referencing Another API Specification](/modeling/modeling-with-openapi/referencing-another-api-spec)
