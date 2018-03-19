@@ -1,4 +1,4 @@
-# Welcome to Stoplight NEXT! 
+# Welcome to Stoplight Next! 
 
 ![The Original Three](https://github.com/stoplightio/docs/blob/develop/assets/images/stoplight-crew.jpg?raw=true)
 
