@@ -31,4 +31,4 @@ Use the HTTP Request Maker to send requests to the endpoints defined in your spe
 
 ---
 **Related Articles**
-[Using Environment Variables](./variables-environment.md)
+[Using Environment Variables](/testing/using-variables/environment)
