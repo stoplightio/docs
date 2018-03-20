@@ -22,3 +22,10 @@ Within the file explorer you can:
 	* Hover to the right of a file and click the **arrow** to export files into OAS
 * **Delete Files** 
 	* Hover to the right of a file and click the **trash can** to delete files
+
+---
+**Related Articles**
+- [Change History](/platform/editor-basics/change-history)
+- [Editor Configuration](/platform/editor-basics/editor-configuration)
+- [Environments](/platform/editor-basics/environments)
+- [File Validation](/platform/editor-basics/file-validation)
