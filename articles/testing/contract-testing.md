@@ -54,7 +54,6 @@ You can use the coverage report to quickly stub out a new scenario. To start:
 1.  Click the **status codes** in the table matrix for the steps you want to add to
     your scenario.
 
-<!-- theme:info -->
 
 > Note that the order in which the endpoints are clicked
 > determines the order in which they will appear in the scenario. For example,
@@ -67,8 +66,6 @@ You can use the coverage report to quickly stub out a new scenario. To start:
 
 3.  You will automatically be navigated to the new scenario, complete with
     contract test assertions for each selected endpoint.
-
-<!-- theme: info -->
 
 > You will likely need to modify the resulting scenario to fit your use case
 
