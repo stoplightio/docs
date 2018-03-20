@@ -3,7 +3,7 @@
 <!--(FIXME - SHOW CLICKING THROUGH ENVIRONMENTS IN UI)-->
 
 > If you have not already done so, we recommend reviewing the
-[Environments](../editor/environments.md) article before continuing.
+[Environments](/platform/editor-basics/environments) article before continuing.
 
 Environment variables in Stoplight allow you to dynamically retrieve information
 in a scenario from the active environment. This makes it possible to
@@ -14,7 +14,7 @@ populate based on the current environment.
 
 ### With the Editor Configuration
 
-For information on managing project environments, please review the [environment](../editor/environments.md) article.
+For information on managing project environments, please review the [environment](/platform/editor-basics/editor-configuration) article.
 
 ### With Captures
 
@@ -24,7 +24,7 @@ Say you have a scenario step that sends an HTTP request to authenticate a new us
 
 > Environment variables set via captures are only added to the user's private
   variables, and are not sent to Stoplight. See the [Environment
-  section](../editor/environments.md) for more information.
+  section](/platform/editor-basics/environments) for more information.
 
 ### With Scripting
 
@@ -46,7 +46,7 @@ argument (`y`) to the environment under the string value of the first argument
 
 > Environment variables set via script are only added to the user's private
   variables, and are not sent to Stoplight. See the [Environment
-  section](../editor/environments.md) for more information.
+  section](/platform/editor-basics/environments) for more information.
 
 ## Using Environment Variables
 
@@ -84,10 +84,9 @@ Where the braces (`{}`) are absent, and we are using the `get()` method for
 retrieving the environment variable under the `myVariable` key.
 
 ***
+**Related Articles**
+- [Editor Configuration](/platform/editor-basics/editor-configuration)
+- [Environments](/platform/editor-basics/environments)
+- [Using Variables Overview](/testing/using-variables/overview)
+- [$.ctx(Context)](/testing/using-variables/context)
 
-**Related**
-
-* [Environment Overview](../editor/environments.md)
-* [Environment Configuration](../editor/editor-configuration.md)
-* [Variables Overview](./variables-overview.md)
-* [Context Variables](./variables-context.md)
