@@ -16,13 +16,13 @@ the lifetime of the project.
 
 There are a few different approaches available when integrating Prism into a CI
 testing pipeline:
-testing with Stoplight [Scenarios](./scenarios-introduction.md),
+testing with Stoplight [Scenarios](/testing/introduction),
 testing with a mock server, and
 contract testing.
 
 ## Testing with Scenarios
 
-Stoplight [Scenarios](./scenarios-introduction.md) allows users to define
+Stoplight [Scenarios](/testing/introduction) allows users to define
 multiple steps for testing an OpenAPI specification. Scenarios provide a similar
 function to API's as [functional test
 cases](https://en.wikipedia.org/wiki/Functional_testing) do in software
@@ -35,7 +35,7 @@ To run a scenario with Prism, use the `conduct` command:
 prism conduct my-scenario.json --spec open-api-spec.json -e "myapikey=abc123"
 ```
 
-For more information on Scenarios, please see [here](./scenarios-introduction.md).
+For more information on Scenarios, please see [here](/testing/introduction).
 
 ## Testing with a Mock Server
 
@@ -57,7 +57,7 @@ To start a mock server with Prism, use the `mock` command:
 prism mock --spec open-api-spec.json
 ```
 
-For more information on mock testing with Prism, see [Mocking Introduction](FIXME).
+For more information on mock testing with Prism, see [Mocking Introduction](/mocking/introduction).
 
 ## Contract Testing
 
@@ -79,14 +79,14 @@ To start a contract/validation server with Prism, use the `validate` command:
 prism validate --spec open-api-spec.json --upstream http://localhost:8080
 ```
 
-For more information on contract testing with Prism, see [Mocking Introduction](FIXME).
+>For more information on contract testing with Prism, see [Mocking Introduction](/mocking/introduction).
 
 ---
 
 **Related**
+- [Mocking Introduction](/mocking/introduction)
+- [Testing Introduction](/testing/introduction)
+- [Integrating with Jenkins](/testing/continuous-integration/jenkins)
+- [Integrating with Travis](/testing/continuous-integration/travis)
+- [Integrating with CircleCI](/testing/continuous-integration/circle-ci)
 
-* [Testing Overview](./overview.md)
-* [Scenarios Introduction](./scenarios-introduction.md)
-* [Continuous Integration with Circle CI](./continous-integration-circle.md)
-* [Continuous Integration with Travis CI](./continous-integration-travis.md)
-* [Continuous Integration with Jenkins](./continous-integration-jenkins.md)
