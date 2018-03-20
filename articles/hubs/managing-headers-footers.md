@@ -30,3 +30,13 @@ You can customize the headers and footers of your Hub to add additional navigati
 2. Click on the **Editing toggle**
 3. Hover over the left or right edge of the header or footer 
     1. Click on the **+** button 
+
+---
+**Related Articles**
+- [Documentation with Hubs](/documentation/introduction)
+- [Routing](/documentation/getting-started/routing)
+- [Pages](/documentation/getting-started/pages)
+- [Subpages](/documentation/getting-started/subpages)
+- [Blocks](/documentation/blocks)
+- [Referencing Other Data Sources](/documentation/referencing-other-data-sources)
+- [Publishing](/documentation/publishing)
