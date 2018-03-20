@@ -2,36 +2,39 @@
 
 ![](/assets/gifs/org-create.gif)
 
-## Welcome to Stoplight NEXT!
+## Welcome to Stoplight Next!
 
-If you are trying to create a new Organization then you are in the right place. Stoplight NEXT was designed with large scale collaboration and governance as a central principle. The following guide will take you through the process of creating and populating an Organization, and offer an overview of the governance tools within Stoplight NEXT. 
+If you are trying to create a new Organization then you are in the right place. Stoplight Next was designed with large scale collaboration and governance as a central principle. The following guide will take you through the process of creating and populating an Organization, and offer an overview of the governance tools within Stoplight Next. 
 
 ## Organization 
-Organizations function as a shared space for you and your co-workers. Members of an Organization have access to a centralized Activity Feed, Project Repository, and an Issues (link) discussion tool. Organization Owners can also assign varying levels of Permissions to other members of the Organization.  
+Organizations function as a shared space for you and your co-workers. Members of an Organization have access to a centralized Activity Feed, Project Repository, and an Issues discussion tool. Organization Owners can also assign varying levels of Permissions to other members of the Organization.  
  
-* [Create an Organization](./create-org.md)
-* [Invite People to Organization](./managing-people.md) 
-* [Remove People from your Organization](./remove-people.md) 
-* [Member Roles and Permissions](./roles.md)
-* [Customize your Organization](./customize-org.md) 
-* [Transfer Primary Ownership](./transferring-ownership.md) 
-* [Delete an Organization](./delete-org.md)
+- [Create an Organization](/platform/organizations/create-org)
+- [Invite People to Organization](/platform/organizations/invite-people)
+- [Remove People from Your Organizations](/platform/organizations/remove-members)
+- [Organization Member Roles and Permissions](/platform/organizations/roles)
+- [Customize Your Organization](/platform/organizations/customize)
+- [Transfer Primary Ownership of an Organization](/platform/organizations/transfer-ownership)
+- [Delete an Organization](/platform/organizations/delete-org)
+
 
 ## Teams 
 If you are managing a large Organization with multiple teams you can use Teams to group Organization members together. 
 
-* [Create a Team](./create-team.md)
-* [Add People to a Team](./add-people.md)
-* [Remove People from a Team](./remove-people.md)
-* [Member Roles and Permissions](./member-roles.md) 
-* [Customize a Team](./customize-team.md) 
-* [Transfer Primary Ownership](./transfer-ownership.md) 
-* [Delete a Team](./delete-team.md) 
+- [Create a Team](/platform/organizations/teams/create-team)
+- [Add People to a Team](/platform/organizations/teams/add-people)
+- [Remove People for a Team](/platform/organizations/teams/remove-people)
+- [Team Member Roles and Permissions](/platform/organizations/teams/roles)
+- [Customize a Team](/platform/organizations/teams/create-team)
+- [Transfer Ownership of a Team](/platform/organizations/teams/transfer-ownership)
+- [Delete a Team](/platform/organizations/teams/delete)
+
 
 ## Projects 
-Projects are the workspaces you can create for your Organization. 
+Projects are the workspaces you can create for your Organization.
 
-* [Creating a Project](./create-project.md) 
-* [Invite People & Teams to a Project](./invite-people-team.md)
-* [Change a Project Member’s Role](./change-member-role.md) 
-* [Make Your Project Private/Public](./visibility.md) 
+- [Creating a Project](/platform/projects/creating-a-project)
+- [Invite People & Teams](/platform/projects/invite-people)
+- [Change a Project Member's Role](/platform/projects/change-a-members-role)
+- [Make Your Project Private/Public](/platform/projects/visibility)
+
