@@ -12,7 +12,6 @@ Projects are the workspace of the Stoplight Platform. Projects contain:
 * Mocking (Prism) 
 * Markdown Editor 
 
-<!-- theme: info -->
 >Single Point of Truth: All editors are now contained within a Project
 
 ## Who 
