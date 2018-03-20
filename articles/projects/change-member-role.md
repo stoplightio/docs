@@ -18,7 +18,6 @@ You can invite people to a Project to grant them read or read/write permissions.
 ## 	 Who 
 * Only the Organization **Owner** and Organization or Project **Administrators** can modify member roles
 
-<!-- theme: info -->
 >By deafult, all members of the Organization and the Project will have Read permission
 
 ## How
