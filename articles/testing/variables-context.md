@@ -92,8 +92,9 @@ retrieving the context variable under the `myVariable` key.
 
 ---
 **Related Articles**
+- [Using Variables Overview](/testing/using-variables/overview)
 - [$$.env (Environment)](/testing/using-variables/environment)
-- [$.ctx(Context)](/testing/using-variables/context)
+
 
 
 
