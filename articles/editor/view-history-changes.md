@@ -26,7 +26,5 @@ See the image below for an overview of the contents of the change view.
 ![](../../assets/images/viewing-changes.png)
 
 ---
-
-**Related**
-
-* [Working with Files](./working-with-files.md)
+**Related Articles**
+- [Working with Files](/platform/editor-basics/working-with-files)
