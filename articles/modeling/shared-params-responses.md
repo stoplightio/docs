@@ -31,7 +31,6 @@ Shared parameters are supported in the following request property locations:
   * __body__ - The request HTTP message body
   * __form-data__ - The request HTTP message body in the `multipart/form-data` format 
 
-<!-- theme: info -->
 > For more information the above properties, see the [OpenAPI v2 Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#parameter-object)
 
 Similar to generic request parameters, restrictions on the parameter values can
@@ -137,7 +136,7 @@ Shared responses allow you to configure the following properties:
 * Response body - Customize the HTTP message body contents using the Stoplight
   modeling tool (or reference a pre-existing model)
 
-<!-- theme: info -->
+
 > For more information on the above properties, see the OpenAPI v2 Specification
   [here](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#responseObject)
 
