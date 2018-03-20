@@ -1,6 +1,6 @@
 # Creating a Project  
 
-![](../../assets/gifs/project-create-personal.gif)
+![Create a Project](https://github.com/stoplightio/docs/blob/develop/assets/gifs/project-create-personal.gif?raw=true)
 
 ## What 
 Projects are the workspace of the Stoplight Platform. Projects contain: 
@@ -12,10 +12,11 @@ Projects are the workspace of the Stoplight Platform. Projects contain:
 * Mocking (Prism) 
 * Markdown Editor 
 
-<callout>Single Point of Truth All editors are now contained within a Project </>
+<!-- theme: info -->
+>Single Point of Truth: All editors are now contained within a Project
 
 ## Who 
-Individual users can create Personal Projects. Organizations can create Org Projects. 
+Individual users can create Personal Projects. Organizations can create Organization Projects. 
 
 ## How 
 
@@ -32,3 +33,10 @@ Individual users can create Personal Projects. Organizations can create Org Proj
 4. Input a **Project Description** (optional)
 5. Select **Public** or **Private** 
 6. Select **Create Project** once complete 
+
+---
+**Related Articles**
+- [Invite People & Teams](/platform/projects/invite-people)
+- [Change a Project Member's Role](/platform/projects/change-a-members-role)
+- [Make Your Project Private/Public](/platform/projects/visibility)
+- [Create an Organization](/platform/organizations/create-org)

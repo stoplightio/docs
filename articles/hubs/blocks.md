@@ -5,7 +5,8 @@
 ## What
 Blocks are the micro-level building blocks of Hubs. They house multiple forms of content and allow for simple restructuring and modification. 
 
-<callout> Hovering over a Block reveals additional tooling including: Preview, Cut, Copy, Reference External Source, and Delete </>
+<!-- theme: info -->
+>Hovering over a Block reveals additional tooling including: Preview, Cut, Copy, Reference External Source, and Delete
 
 ## Block Types 
 ### Text Block 
@@ -31,3 +32,8 @@ Blocks are the micro-level building blocks of Hubs. They house multiple forms of
 ### HTML 
 * Include arbitrary HTML in your hubs when the other base block types don't quite do the trick
 
+---
+**Related Articles**
+- [Pages](./pages.md)
+- [Subpages](./subpages.md)
+- [Reference Other Sources](./ref-other-sources-hubs.md)

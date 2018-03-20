@@ -5,7 +5,6 @@
 ## What
 OpenAPI validation is the process of verifying the underlying OpenAPI file syntax by making sure it conforms to the [OpenAPI Specification requirements](https://github.com/OAI/OpenAPI-Specification#the-openapi-specification) provided by the [OpenAPI Initiative](https://www.openapis.org/). Stoplight immediately validates any changes done to a spec to ensure they are in the correct format prior to being saved.
 
-<!-- theme: info -->
 > Stoplight currently supports the OpenAPI v2 specification. We are working on support for OpenAPI v3, and should have more information in the coming months.
 
 ## Why 
@@ -18,7 +17,6 @@ OpenAPI validation is the process of verifying the underlying OpenAPI file synta
 - Assign a default value to optional properties or parameters with missing values. The server will use the default value when a value is missing or not provided 
 - You can use the keyword **ReadOnly** to designate a property that can be sent in a response and should not be sent in a request
 
-<!-- theme: info -->
 > Using a default value is not recommended when a property or parameter is mandatory
 
 - An API can comsume different media types, the accepted media type can be specified using the **consume** keyword at the operational level or root level to define acceptable media types. For example: 
@@ -31,8 +29,13 @@ consumes:
 application/json
 ```
 - An HTTP response containing a user friendly error description is useful when validation fails
-***
 
-**Related**
 
-* [File Validation](../editor/file-validation.md)
+---
+**Related Articles**
+- [Modeling Introduction](/modeling/introduction)
+- [Using the CRUD Builder](/modeling/modeling-with-openapi/using-the-crud-builder)
+- [API Operations](/modeling/modeling-with-openapi/api-operations)
+- [API Models](/modeling/modeling-with-openapi/api-models)
+- [Security Schemes](/modeling/modeling-with-openapi/security-schemes)
+
