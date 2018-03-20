@@ -58,5 +58,4 @@ path/to/prism.exe test --spec https://goo.gl/jniYmw
 
 You should see some nice output to your terminal detailing the tests and assertions that are run. These tests take our OAS contract and apply it to your API. They act as a sort of sync manager. 
 
-<!-- theme: info -->
 > If a test fails, it means one of two things - your API is broken or, our OAS contract is out of date / incorrect 
