@@ -28,7 +28,6 @@ To accomplish this, we would capture/set the `$.ctx.userId` property to `output.
 
 The capture UI in the step editor makes it easy to set `$.ctx` values. You can use values from the step output or input, including headers, response bodies, etc.
 
-<!-- theme: info --> 
 > Multiple captures can be applied to the same step, to set multiple `$.ctx` values.
 
 ### With Scripting
@@ -91,11 +90,10 @@ $.ctx.get('myVariable');
 Where the braces (`{}`) are absent, and we are using the `get()` method for
 retrieving the context variable under the `myVariable` key.
 
-***
+---
+**Related Articles**
+- [$$.env (Environment)](/testing/using-variables/environment)
+- [$.ctx(Context)](/testing/using-variables/context)
 
-**Related**
 
-* [Environment Overview](../editor/environments.md)
-* [Environment Configuration](../editor/editor-configuration.md)
-* [Variables Overview](./variables-overview.md)
-* [Context Variables](./variables-context.md)
+
