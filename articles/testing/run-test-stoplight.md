@@ -2,13 +2,12 @@
 
 Scenarios allow you to quickly and efficiently test APIs. Scenarios can be
 run in a variety of different ways, including from the [command-line with
-Prism](./run-test-terminal.md) or by [URL](./run-test-url). However, the easiest
+Prism](/testing/running-tests/in-the-terminal) or by [URL](/testing/running-tests/triggering-by-url). However, the easiest
 way is through the Stoplight editor.
 
-<!-- theme: info -->
 
 > If you haven't created your first scenario yet, please [do so before
-> continuing](./scenarios-introduction.md)
+> continuing](testing/introduction)
 
 Scenarios in Stoplight are composed of three different levels:
 
@@ -42,7 +41,6 @@ as show below.
 
 ![](../../assets/images/run-test-stoplight2.png)
 
-<!-- theme: info -->
 
 > Scenarios can also be run directly from every step using the **Run Scenario**
 > button
@@ -56,15 +54,14 @@ of the editor while viewing the collection home screen, as shown below.
 
 ![](../../assets/images/run-test-stoplight3.png)
 
-<!-- theme: info -->
 
 > Collections can also be run from the scenario and step screens using the **Run
 > Collection** button
 
 ---
 
-**Related**
+**Related Articles**
+- [Testing Introduction](/testing/introduction)
+- [Running Tests in the Terminal](/testing/running-tests/in-the-terminal)
+- [Running Tests Triggered by URL](/testing/running-tests/triggering-by-url)
 
-* [Scenarios Overview](./scenarios-introduction.md)
-* [Running Scenarios from the Command-Line](./run-test-terminal.md)
-* [Running Scenarios by URL](./run-test-url.md)
