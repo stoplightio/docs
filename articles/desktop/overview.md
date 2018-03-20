@@ -21,3 +21,7 @@ When you start the Stoplight desktop app, it will start an instance of Prism on 
 
 * The Stoplight desktop app can read/write specification files on your local file system. This is perfect for generating specification outside of Stoplight (like from code), want to use version control systems like Git, or want to use your favorite IDE to work on a spec. 
 * This feature is **NOT** available in the web app 
+
+---
+**Related Articles**
+- [Mocking Introduction](/mocking/introduction) 

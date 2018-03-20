@@ -5,7 +5,7 @@
 * A **model** contains properties that can be reused and referenced by endpoint
   definitions, shared objects, and other models. For more information on what
   models are and how they can be used, please see the API model overview
-  [here](./api-models.md).
+  [here](/modeling/modeling-with-openapi/api-models).
 
 * **Inheritance** is when a model derives its properties from another model.
 
@@ -31,8 +31,6 @@
   common properties and fields, reducing the complexity of the specification and the chance of errors.
 
 ## Best Practices
-
-<!-- theme: info -->
 
 > Avoid using contradictory declarations such as declaring properties with the
 > same name but dissimilar data type in your base model and derived model.
@@ -141,3 +139,9 @@ properties), the derived SUV model will have the following JSON properties:
   }
 }
 ```
+---
+**Related Articles** 
+- [JSON Introduction](/modeling/json-best-practices/introduction)
+- [Adding Validations](/modeling/json-best-practices/adding-validations)
+- [Reducing Duplication with $refs](/modeling/json-best-practices/reducing-duplication-with-refs)
+- [Generating Schemas](/modeling/json-best-practices/generating-schemas)

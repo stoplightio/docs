@@ -4,8 +4,8 @@ Stoplight's CRUD builder allows you to easily design and model data structures
 used by your API. The CRUD builder is especially useful for:
 
 * Drafting API requests and response bodies under an API endpoint
-* Creating [models](./api-models.md) for your API
-* Creating [shared responses](./shared-params-responses.md#shared-responses) for
+* Creating [models](/modeling/modeling-with-openapi/api-models) for your API
+* Creating [shared responses](/modeling/modeling-with-openapi/shared-parameters-and-responses) for
   re-use across multiple endpoints
 
 There are three different methods for generating a CRUD model:
@@ -36,13 +36,13 @@ To start utilizing the editor:
 
 * Click the **+** (plus) icon next to the root **object** to start adding fields
   to the data structure. The plus icon can also be used on nested objects to
-  create a hierarchy of arbitrarily-nested data structures.
+  create a hierarchy of arbitrarily-nested data structures
 
 * Set the **field name** (or _key_) of a data field by clicking the text label
   to the left of the newly-created field. Field names can be composed of any
   alpha-numeric characters, but can only be specified once. You will receive an
   error if you try to re-use field names multiple times on the same level
-  (though they can be re-used on nested objects).
+  (though they can be re-used on nested objects)
 
 * Set the **type** of a field by clicking the _string_ label to the right of
   the field name. The default type for a newly-created field is 'string',
@@ -54,12 +54,12 @@ To start utilizing the editor:
   * integers
   * booleans
   * nulls
-  * [references](./duplication-refs.md)
+  * [references](/modeling/json-best-practices/reducing-duplication-with-refs)
 
   Field types can also include _Combination Types_, which include 'allOf',
   'oneOf', and 'anyOf'. These special types allow for object inheritance from
   other data structures and models, and discussed in more detail
-  [here](./object-inheritance.md).
+  [here](/modeling/json-best-practices/object-inheritance).
 
 * Optionally, you can set extra validations on the field, for example:
 
@@ -101,8 +101,6 @@ And that's it! The JSON document will automatically be converted into a
 Stoplight data structure, able to be included as models, request/response
 bodies, and shared responses.
 
-<!-- theme: info -->
-
 > The result of a **Generate from JSON** can also be edited using the CRUD
 > editor once it is generated, so you can still modify and add validations
 > afterwards.
@@ -124,7 +122,7 @@ to update the data structure.
 
 **Related**
 
-* [API Modeling Overview](./api-models.md)
-* [Shared Parameters and Responses Overview](./shared-params-responses.md)
-* [References Overview](./duplication-refs.md)
-* [Object Inheritance](./object-inheritance.md)
+* [API Modeling Overview](/modeling/introduction)
+* [Shared Parameters and Responses Overview](/modeling/modeling-with-openapi/shared-parameters-and-responses)
+* [References Overview](/modeling/json-best-practices/reducing-duplication-with-refs)
+* [Object Inheritance](/modeling/json-best-practices/object-inheritance)

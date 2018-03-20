@@ -36,8 +36,7 @@ Referencing another specification allows for cleaner and more organized code. So
 ---
 **Related Links**
 
-* [Reference other Sources](../hubs/ref-other-sources-hubs.md)
-* [Creating Models](../modeling/how-to-create-models.md#How-to-Create-Models-using-the-Stoplight-Modeling-Editor)
-* [Shared Parameters and Responses](../modeling/shared-params-responses.md)
-* [Contract Testing](../testing/contract-testing.md#connecting-the-spec)
-* [Setting Up a Prism Mock Server](../prism/mocking.md)
+* [Reference other Sources](/documentation/referencing-other-data-sources)
+* [API Models](/modeling/modeling-with-openapi/api-models)
+* [Shared Parameters and Responses](/modeling/modeling-with-openapi/shared-parameters-and-responses)
+

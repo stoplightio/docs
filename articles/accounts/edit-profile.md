@@ -19,4 +19,11 @@ In your profile you can edit things like:
 4. Upload a profile image 
 5. Make your edits in Change Password then click **Change Password** 
     * Password must be at least 6 characters 
- 
+
+---
+**Related Articles**
+- [Sign In to Stoplight](/platform/getting-started/account-basics/sign-in) 
+- [Manage Your Password](/platform/getting-started/account-basics/manage-password)
+- [Change Your Username](/platform/getting-started/account-basics/change-username) 
+- [Change Your Email Address](/platform/getting-started/account-basics/change-email) 
+- [Sign Out of Stoplight](/platform/getting-started/account-basics/sign-out) 
