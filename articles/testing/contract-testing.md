@@ -23,10 +23,8 @@ Benefits of contract testing include:
   pipeline ensures that the spec accurately represents your API implementation
   over time.
 
-<!-- theme: info -->
-
 > If you don't have an API specification yet, you can create one using the
-> [Stoplight modeling tool](../modeling/modeling-introduction.md)!
+> [Stoplight modeling tool](/modeling/introduction)!
 
 ## Connecting a Spec
 
@@ -84,3 +82,16 @@ JSON schema.
 When a contract assertion step is run, the HTTP response structure will be
 validated against the matched JSON schema from the connected API specification.
 Any validation errors will automatically be added to the test results.
+
+---
+**Related Articles**
+- [Testing Introduction](/testing/introduction)
+- [Passing Data Between Steps](/testing/getting-started/passing-data-between-steps)
+- [Running Tests In Stoplight](/testing/running-tests/in-stoplight)
+- [Running Tests in the Terminal](/testing/running-tests/in-the-terminal)
+- [Running Tests Triggered by URL](/testing/running-tests/triggering-by-url)
+- [Using Variables Overview](/testing/using-variables/overview)
+- [$$.env (Environment)](/testing/using-variables/environment)
+- [$.ctx(Context)](/testing/using-variables/context)
+- [Sending HTTP Requests](/testing/sending-http-requests/overview)
+- [Referencing other Scenarios](/testing/referencing-other-scenarios/overview)
