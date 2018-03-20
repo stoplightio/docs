@@ -1,5 +1,7 @@
 # Modeling Introduction 
 
+![Design Abstract](https://github.com/stoplightio/docs/blob/develop/assets/images/design.png?raw=true)
+
 ## What is API Design? 
 
 Designing (also known as Modeling) your API involves describing all of the inputs and outputs across the footprint of your entire service. Your API design will answer questions like: 
