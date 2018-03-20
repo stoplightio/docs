@@ -24,13 +24,13 @@ Pages are the macro level building blocks of a Hub. They function as the canvas 
     2. Input a **Page Route** (optional) 
     3. **Power the Page** with an External Data Source (optional) 
 
-<!-- theme: info -->
  >Did you know? After creating a new page; a header link will automatically be generated
 
 ---
-**Related Articlers**
-- [Subpages](./subpages.md)
-- [Blocks](./blocks.md)
-- [Routing](./routing.md)
+**Related Articles**
+- [Pages](/documentation/getting-started/pages)
+- [Subpages](/documentation/getting-started/subpages)
+- [Blocks](/documentation/blocks)
+
 
 
