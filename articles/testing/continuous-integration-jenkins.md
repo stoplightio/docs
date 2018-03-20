@@ -28,7 +28,6 @@ off your tests. If running natively, use the command format:
 BUILD_ID=dontKillMe nohup prism mock --spec ... &
 ```
 
-<!-- theme: warning -->
 
 > Please note that the trailing ampersand (`&`) is required
 
@@ -38,7 +37,7 @@ If running in Docker, use the format:
 docker run -d --rm -p 4010:4010 stoplight/prism:latest mock --spec ...
 ```
 
-For more information on using Prism as a test server, see [here](./overview.md).
+For more information on using Prism as a test server, see [here](/mocking/introduction).
 
 ### Running Prism in the Foreground
 
