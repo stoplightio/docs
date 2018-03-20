@@ -31,6 +31,11 @@ application/json
 - An HTTP response containing a user friendly error description is useful when validation fails
 ***
 
+---
 **Related Articles**
+- [Modeling Introduction](/modeling/introduction)
+- [Using the CRUD Builder](/modeling/modeling-with-openapi/using-the-crud-builder)
+- [API Operations](/modeling/modeling-with-openapi/api-operations)
+- [API Models](/modeling/modeling-with-openapi/api-models)
+- [Security Schemes](/modeling/modeling-with-openapi/security-schemes)
 
-* [File Validation](../editor/file-validation.md)
