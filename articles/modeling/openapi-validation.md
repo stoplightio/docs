@@ -29,7 +29,7 @@ consumes:
 application/json
 ```
 - An HTTP response containing a user friendly error description is useful when validation fails
-***
+
 
 ---
 **Related Articles**
