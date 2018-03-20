@@ -7,13 +7,12 @@
 Stoplight’s Hubs features an easy to use routing system to make sure your docs have identifiable and friendly URL’s. The routing system allows customization of the following objects: 
 
 - Your Hub 
-- [Pages within a Hub](./pages.md) 
-- [Subpages within a Hub](./subpages.md) 
-- [Headers + Footers](./managing-headers-footers.md)
+- [Pages within a Hub](/documentation/getting-started/pages) 
+- [Subpages within a Hub](/documentation/getting-started/subpages) 
+- [Headers + Footers](/documentation/getting-started/header-footer)
 - Links 
 
 
-<!-- theme: info -->
 >Friendly URLs are links that are easily readable, rememberable, and relevant to the content.
 
 
@@ -22,7 +21,7 @@ Stoplight’s Hubs features an easy to use routing system to make sure your docs
 ### Pages & Subpages 
 
 1. Select the **Hub** you wish to modify 
-2. Add a new **page** or **subpage** (link) 
+2. Add a new **page** or **subpage**  
    1. Select a **page title** to auto-fill the **Page Route** or 
    2. Input a **custom page route** 
 3. Select an **existing page** or **subpage** 
@@ -32,12 +31,13 @@ Stoplight’s Hubs features an easy to use routing system to make sure your docs
 ### Headers & Footers 
 
 1. Select the **Hub** you wish to modify 
-2. Add a new **header or footer** (link) or
+2. Add a new **[header or footer](/documentation/getting-started/header-footer)** or
 3. Hover over an existing header or footer and click the **gear icon** 
     a. Input a **Path to Page** or **image URL**  
 
 ---
 **Related Articles**
-- [Pages within a Hub](./pages.md) 
-- [Subpages within a Hub](./subpages.md) 
-- [Headers + Footers](./managing-headers-footers.md)
+- [Headers & Footers](/documentation/getting-started/header-footer)
+- [Pages](/documentation/getting-started/pages)
+- [Subpages](/documentation/getting-started/subpages)
+
