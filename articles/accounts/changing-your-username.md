@@ -1,13 +1,13 @@
 # Change Your Username 
 
-![](../../assets/gifs/account-info.gif)
+![Change your Username](https://github.com/stoplightio/docs/blob/develop/assets/gifs/platform-account.gif?raw=true)
 
 ## What 
 You can change your username at any time 
 
 ## How 
-1. Click on your current **username** in the top right 
-2. Click on **Account** 
+1. Hover over your current **username** in the top right 
+2. Click on your **username** in the dropdown menu
 3. Under **Basic Info**, input a new username 
 4. Click **Save** 
 
