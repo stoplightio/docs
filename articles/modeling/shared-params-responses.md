@@ -21,7 +21,7 @@ Shared components in Stoplight come in two forms:
 Shared parameters provide a way to use request properties across multiple API
 endpoints without having to duplicate effort.
 
-![](../../assets/gifs/shared-params-responses-param.gif)
+![How to create a shared parameter](https://github.com/stoplightio/docs/blob/develop/assets/gifs/shared-params-responses-param.gif?raw=true)
 
 Shared parameters are supported in the following request property locations:
 
@@ -37,7 +37,7 @@ Similar to generic request parameters, restrictions on the parameter values can
 also be applied based on type, expected default value, minimum/maximum length,
 and regular expression (regex).
 
-![](../../assets/images/shared-params-responses.png)
+![Create a reference to a shared parameter](https://github.com/stoplightio/docs/blob/develop/assets/images/shared-params-responses.png?raw=true)
 
 To use a shared parameter, navigate to an API endpoint's _Request_ section and
 create a reference to the shared parameter using the "chain" button as shown in
@@ -45,7 +45,7 @@ the image above. Once the parameter has been referenced, any updates to the
 shared parameter will automatically be propagated to every endpoint using that
 parameter.
 
-![](../../assets/gifs/shared-params-responses-param2.gif)
+![Reference as a query parameter](https://github.com/stoplightio/docs/blob/develop/assets/gifs/shared-params-responses-param2.gif?raw=true)
 
 Like other references in Stoplight, shared parameters can also be shared across
 files, projects, and other external sources.
@@ -94,7 +94,7 @@ Now that we know how we want the components to behave, let's create them in
 Stoplight. To get started, create a new shared parameter for an OpenAPI file
 under the "Shared" section of the menu.
 
-![](../../assets/images/shared-params-responses2.png)
+![Instructions below](https://github.com/stoplightio/docs/blob/develop/assets/images/shared-params-responses2.png?raw=true)
 
 As shown in the image above, set the properties for each parameter based on our
 requirements:
@@ -113,7 +113,7 @@ requirements:
    each parameter for every request. For our example, it makes sense to set
    defaults that will return the first page (limit of 20, offset of 0).
 
-![](../../assets/images/shared-params-responses3.png)
+![Linking a shared parameter](https://github.com/stoplightio/docs/blob/develop/assets/images/shared-params-responses3.png?raw=true)
 
 Once the shared parameters are created, reference them in any API endpoint under the
 __Query Parameters__ block of the request section in the editor.
@@ -128,7 +128,7 @@ benefit of this approach is that updates to the shared response object are
 automatically propagated to any endpoint using that object, no extra changes
 required.
 
-![](../../assets/gifs/shared-params-responses-response.gif)
+![How to create a shared response](https://github.com/stoplightio/docs/blob/develop/assets/gifs/shared-params-responses-response.gif)
 
 Shared responses allow you to configure the following properties:
 
@@ -140,7 +140,7 @@ Shared responses allow you to configure the following properties:
 > For more information on the above properties, see the OpenAPI v2 Specification
   [here](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#responseObject)
 
-![](../../assets/gifs/shared-params-responses-response2.gif)
+![](../../assets/gifs/shared-params-responses-response2.gif?raw=true)
 
 To use a shared response, navigate to an API endpoint's __Response__ section and
 create a reference to the shared response by choosing the _Type_ of the response
@@ -165,7 +165,7 @@ Now that we know what should be returned, let's create a shared response in
 Stoplight. To get started, create a new shared response for an OpenAPI file
 under the "Shared" section of the menu.
 
-![](../../assets/images/shared-params-responses4.png)
+![](https://github.com/stoplightio/docs/blob/develop/assets/images/shared-params-responses4.png?raw=true)
 
 As shown in the image above, set the properties for each portion of the response
 based on our requirements:
@@ -179,7 +179,7 @@ based on our requirements:
 3. The contents of the shared response object based on the three required
    properties above.
 
-![](../../assets/images/shared-params-responses5.png)
+![](https://github.com/stoplightio/docs/blob/develop/assets/images/shared-params-responses5.png?raw=true)
 
 Once the shared response is created, it can be referenced in any API endpoint by
 using a _Reference_ type under a response. A shared response can also be used

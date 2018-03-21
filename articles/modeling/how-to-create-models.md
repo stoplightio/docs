@@ -60,26 +60,26 @@ A design first approach helps create neat and consistent models. It will take lo
 
 6. To create a model click on the + sign next to the Model section.
 
-![](../../assets/images/create-model.png)
+![Create model button](https://github.com/stoplightio/docs/blob/develop/assets/images/create-model.png?raw=true)
 
 7. Enter the details for the key, title, and description fields
 
-![](../../assets/images/editor-details.png)
+![Model details](https://github.com/stoplightio/docs/blob/develop/assets/images/editor-details.png?raw=true)
 
 8. Click on the Editor Tab to create the object and specify the properties you want in the model (You can also copy and paste the JSON Schema from an endpoint into the Raw Schema section of the model)
 
-![](../../assets/images/create-object.png)
+![Create object](https://github.com/stoplightio/docs/blob/develop/assets/images/create-object.png?raw=true)
 
-![](../../assets/images/model-design.png)
+![Example model design](https://github.com/stoplightio/docs/blob/develop/assets/images/model-design.png?raw=true)
 
 9. Click the Save button to save the changes you have made in the editor 
 10. Select the GET  /pets {petid} (or any endpoint)  and navigate to Responses→ Editor 
 11. To reference the model in your endpoint, click on the object and select $ref as the array item type. Select the model you created from the drop down list
 
-![](../../assets/images/ref-model.png)
+![Referencing model](https://github.com/stoplightio/docs/blob/develop/assets/images/ref-model.png?raw=true)
 
 12. Select the Viewer section to see the changes you have made
 
-![](../../assets/images/viewer-ref-model.png)
+![Viewer view of model](https://github.com/stoplightio/docs/blob/develop/assets/images/viewer-ref-model.png?raw=true)
 
 13. All changes made to the properties of the object in the model are now automatically updated in all endpoints that make a reference to the model
