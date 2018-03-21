@@ -8,7 +8,7 @@ Designing (also known as Modeling) your API involves describing all of the input
 
 - What are the different resources and operations available in your API?
 - How does your API authenticate requests? 
-- What are the different data models assoicated with your service? 
+- What are the different data models associated with your service? 
 - How does your API handle errors? 
 
 ## How does it fit into Stoplight? 
@@ -17,14 +17,15 @@ The Stoplight design module is where you and your team will maintain the single 
 
 Once you have your API described in the Stoplight design module, you can: 
 
-- Publish all or part of your API in our Documentation service 
+- Publish all or part of your API with Hubs 
 - Create API tests from your designs 
 - Send requests to your API to debug it 
+- Create a mock API based on your design
 - ...and much more 
 
 ## Getting Started 
 
-There are a few ways to get started designing your API with the Stoplight design module, depending on how developed your API is:
+There are a few ways to get started designing your API with the Stoplight design module:
 
 - Create an API from scratch [Using the CRUD Builder](/modeling/modeling-with-openapi/using-the-crud-builder)
 - [Reference another API Spec](/modeling/modeling-with-openapi/referencing-another-api-spec)
