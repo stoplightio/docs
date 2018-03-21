@@ -27,7 +27,7 @@ The Scenario app has a convenient display that gives you the exact command requi
 
 See below for a screenshot of the "Run From Terminal" command generator. The command in this box will update live in response to environment, user, and scenario changes.
 
-<!-- FIXME: image showing "Run from Terminal" option under a scenario -->
+![Running Test from Terminal](https://github.com/stoplightio/docs/blob/develop/assets/images/testing-run-from-terminal.png?raw=true)
 
 ## Running Scenarios
 
