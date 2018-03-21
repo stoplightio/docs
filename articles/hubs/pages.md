@@ -10,7 +10,7 @@ Pages are the macro level building blocks of a Hub. They function as the canvas 
 - Pages 
     - Subpages 
         - Blocks
-    - Header and Footer 
+    - Header
     - Blocks 
 
 ## How 
@@ -18,9 +18,10 @@ Pages are the macro level building blocks of a Hub. They function as the canvas 
 ### Create a New Page
 
 1. Select the Hub you wish to modify 
-2. Click on **Toggle Editor** 
-3. Select **+** Page in the editor toolbar 
-    1. Input a **Page Title** 
+2. Click on the **Design** toggle at the top of the page 
+3. Hover over **+ Add** at the top of the page 
+4. Click on **Page**
+    1. Input a **Page Title**
     2. Input a **Page Route** (optional) 
     3. **Power the Page** with an External Data Source (optional) 
 
