@@ -30,7 +30,7 @@ Once you have created a scenario **step**, use the **Run Step** button to
 execute that step. The **Run Step** button is available towards the top of the
 editor, as shown below.
 
-![](../../assets/images/run-test-stoplight.png)
+![Running a Step](https://github.com/stoplightio/docs/blob/develop/assets/images/testing-run-step.png?raw=true)
 
 ## Running a Scenario
 
@@ -39,7 +39,7 @@ button to execute that scenario. The **Run Scenario** button is available
 towards the top of the editor while viewing the scenario configuration/overview,
 as show below.
 
-![](../../assets/images/run-test-stoplight2.png)
+![Running a Scenario](https://github.com/stoplightio/docs/blob/develop/assets/images/testing-run-scenario.png?raw=true)
 
 
 > Scenarios can also be run directly from every step using the **Run Scenario**
@@ -52,7 +52,7 @@ the **Run Collection** button to run the entire collection (including all
 scenarios and steps). The **Run Collection** button is available towards the top
 of the editor while viewing the collection home screen, as shown below.
 
-![](../../assets/images/run-test-stoplight3.png)
+![Running a Collection](https://github.com/stoplightio/docs/blob/develop/assets/images/testing-run-collection.png?raw=true)
 
 
 > Collections can also be run from the scenario and step screens using the **Run
