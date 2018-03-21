@@ -1,7 +1,7 @@
 # Manage Your Password 
 
 ## What 
-If you’ve forgotten the password you use to sign in to Stoplight; you can easily reset it at any time
+If you’ve forgotten the password you use to sign in to Stoplight, you can easily reset it at any time.
 
 ## What
 1. At the login page, select **Forgot Password?**
