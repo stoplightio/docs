@@ -1,6 +1,6 @@
 ## Making Your Project Private & Public
 
-![](../../assets/gifs/project-privacy.gif)
+![Project Visibility](https://github.com/stoplightio/docs/blob/develop/assets/images/project-make-public.png?raw=true)
 
 ## What 
 
