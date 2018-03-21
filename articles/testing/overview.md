@@ -1,6 +1,6 @@
 # Testing with Scenarios
 
-Following the rise of APIs, it has become increasingly important to develop highly flexible, performant, and powerful testing roadmaps to catch bugs faster and rapidly iterate without breaking existing features. A thorough test suite is essential for: 
+It has become increasingly important to develop highly flexible, performant, and powerful testing roadmaps to catch bugs faster and rapidly iterate without breaking existing features. A thorough test suite is essential for: 
 - Assessing the health of an API
 - Providing valuable documentation 
 - Driving design and implementation 
@@ -16,7 +16,7 @@ APIs require maintenance like any other software. To ensure that your API is fun
 
 API tests provide insight into how your API behaves under certain scenarios and can drive design if created early enough in the design process. Test/Behavior-driven development (TDD/BDD) encourages you to think about design requirements before writing any code. 
 
->Stoplight further promotes this design first principle by providing [Contract Testing](/testing/leveraging-openapi/contract-testing); an integration between your tests and your OpenAPI Specification. This allows for immediate validation and verification that your API responses match the “Contract” specified in your OpenAPI spec.
+>Stoplight further promotes this design-first principle by providing [Contract Testing](/testing/leveraging-openapi/contract-testing); an integration between your tests and your OpenAPI Specification. This allows for immediate validation and verification that your API responses match the “Contract” specified in your OpenAPI spec.
 
 ## Managing Technical Debt 
 
