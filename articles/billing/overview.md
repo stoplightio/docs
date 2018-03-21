@@ -1,4 +1,4 @@
-# Billing Overview 
+# Personal Billing Overview 
 
 ![Billing Overview](https://github.com/stoplightio/docs/blob/develop/assets/images/billing.png?raw=true)
 
