@@ -1,7 +1,5 @@
 # Manage Your Password 
 
-![](../../assets/gifs/account-info.gif)
-
 ## What 
 If you’ve forgotten the password you use to sign in to Stoplight; you can easily reset it at any time
 
