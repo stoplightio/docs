@@ -1,5 +1,7 @@
 # Documentation with Hubs
 
+![Hubs Preview](https://github.com/stoplightio/docs/blob/develop/assets/images/hubs-intro.png?raw=true)
+
 Documenting your API is critical to its success. The methods of creation and languages and libraries utilized to create APIs differ dramatically across the API landscape. To ensure that consumers of your API are successful, you must provide robust documentation. To that end, Stoplight has created Hubs, our new documentation editor and generator. 
 
 Hubs allows users to:
