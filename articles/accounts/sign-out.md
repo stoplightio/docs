@@ -1,6 +1,6 @@
 # Sign Out of Stoplight 
 
-![Sign Out of Stoplight](https://github.com/stoplightio/docs/blob/develop/assets/gifs/sign-out.gif?raw=true)
+![Sign Out of Stoplight](https://github.com/stoplightio/docs/blob/develop/assets/gifs/log-out.gif?raw=true)
 
 ## What 
 * By default, Stoplight remains open. If you wish to sign out follow these quick and easy steps 
