@@ -6,7 +6,7 @@ It is placed in the root of your project and allows you to configure editor sett
 
 You can make changes to the `.stoplight.yml` file by opening it:
 
-![](../../assets/images/editor-configuration.png)
+![Editor Configuration Location](https://github.com/stoplightio/docs/blob/develop/assets/images/editor-configuration.png?raw=true)
 
 ### Editor Configuration
 
@@ -14,7 +14,7 @@ You can make changes to the `.stoplight.yml` file by opening it:
 
 ### Environments
 
-![](../../assets/images/editor-configuration2.png)
+![Environments](https://github.com/stoplightio/docs/blob/develop/assets/images/editor-configuration2.png?raw=true)
 
 Environments make it easy to auto-populate variables (hostnames, ports, passwords, etc.) used by specifications and scenarios. Read more about them [here](/testing/using-variables/environment).
 
