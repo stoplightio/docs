@@ -78,6 +78,7 @@ is vital to conduct robust tests to reveal any inconsistencies or defects in
 the API before it is shipped to a production server or interfaced with other
 platforms.
 
+![Testing with HTTP Requests](https://github.com/stoplightio/docs/blob/develop/assets/images/testing-http-request.png?raw=true)
 ### GET
 
 * Test the GET method to confirm it returns the correct data
