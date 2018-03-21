@@ -1,5 +1,7 @@
 # API Models
 
+![API Models](https://github.com/stoplightio/docs/blob/develop/assets/images/modeling-models.png?raw=true)
+
 Models are used to describe common structures in your API design. Use models to
 describe common structures in your API design. Models help reduce duplication in
 your API definitions, and increase future maintainability.
