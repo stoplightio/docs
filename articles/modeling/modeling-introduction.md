@@ -1,6 +1,6 @@
 # Modeling Introduction 
 
-![Design Abstract](https://github.com/stoplightio/docs/blob/develop/assets/images/design.png?raw=true)
+![Modeling Preview](https://github.com/stoplightio/docs/blob/develop/assets/images/modeling-intro.png?raw=true)
 
 ## What is API Design? 
 
