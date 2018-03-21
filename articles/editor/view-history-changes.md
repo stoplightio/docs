@@ -8,7 +8,7 @@ navigation bar to the left of the project window (shown below). When the history
 is being viewed, you will see a series of changes for the project, listed in
 descending order by date.
 
-![](../../assets/images/viewing-changes2.png)
+![Viewing Changes](https://github.com/stoplightio/docs/blob/develop/assets/images/viewing-changes2.png?raw=true)
 
 Each change event includes:
 
@@ -23,7 +23,7 @@ Each change event includes:
 
 See the image below for an overview of the contents of the change view.
 
-![](../../assets/images/viewing-changes.png)
+![Viewing Changes Alt](https://github.com/stoplightio/docs/blob/develop/assets/images/viewing-changes.png?raw=true)
 
 ---
 **Related Articles**
