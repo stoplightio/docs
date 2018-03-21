@@ -1,6 +1,6 @@
 # Working with Files 
 
-![](../../assets/gifs/fileexplorer.gif)
+![File Explorer](https://github.com/stoplightio/docs/blob/develop/assets/gifs/file-explorer.gif?raw=true)
 
 As part of our effort to make the Stoplight platform more flexible and familiar we added a file explorer to Stoplight Next. You can now see all your files sorted by filetype in one central location within Projects. File types include: 
 
