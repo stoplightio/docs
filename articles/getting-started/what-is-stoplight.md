@@ -8,12 +8,12 @@ Stoplight promotes a design-first philosophy. Developing good design-first pract
 ## API Modeling & Design
 At Stoplight, everything starts with design. Our visual designer makes it easy for anybody in your organization to model and document APIs, no matter the complexity.
 
-Whether you have an existing OpenAPI (Swagger) or are creating a new API design from scratch, we've got you covered.
+Whether you have an existing OpenAPI Specification (fka Swagger) or are creating a new API design from scratch, we've got you covered.
 
 ![Modeling Overview](https://github.com/stoplightio/docs/blob/develop/assets/images/modeling-overview.png?raw=true)
 
 ## API Testing
-Once you have your API design / documentation, how do you make sure that it remains accurate over time? Stoplight contract testing, powered by Prism, makes it trivial to create a full suite of tests that apply your API documentation (your contract) to your API. Run these tests from the Stoplight app, and standalone in your CI process or elsewhere.
+Once you have your API design / documentation, how do you make sure that it remains accurate over time? Stoplight contract testing, powered by Prism, makes it seamless to create a full suite of tests that apply your API documentation (your contract) to your API. Run these tests from the Stoplight app, and standalone in your CI process or elsewhere.
 
 ![Scenarios Overview](https://github.com/stoplightio/docs/blob/develop/assets/images/testing-overview.png?raw=true)
 
