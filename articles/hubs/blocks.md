@@ -1,6 +1,6 @@
 # Blocks 
 
-![](../../assets/gifs/Blocks.gif)
+![Blocks](https://github.com/stoplightio/docs/blob/develop/assets/gifs/blocks.gif?raw=true)
 
 ## What
 Blocks are the micro-level building blocks of Hubs. They house multiple forms of content and allow for simple restructuring and modification. 
