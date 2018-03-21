@@ -1,5 +1,7 @@
 # Testing with Scenarios
 
+![Testing Preview](https://github.com/stoplightio/docs/blob/develop/assets/images/testing-intro.png?raw=true)
+
 It has become increasingly important to develop highly flexible, performant, and powerful testing roadmaps to catch bugs faster and rapidly iterate. A thorough test suite is essential for: 
 - Assessing the health of an API
 - Providing valuable documentation 
