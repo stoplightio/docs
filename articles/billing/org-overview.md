@@ -1,5 +1,6 @@
 # Organization Plan Overview 
 
+![Organization Billing Overview](https://github.com/stoplightio/docs/blob/develop/assets/images/org-billing.png?raw=true)
 ## Platform Plans 
 
 ### Open Source 
