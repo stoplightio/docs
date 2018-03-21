@@ -94,7 +94,7 @@ Now that we know how we want the components to behave, let's create them in
 Stoplight. To get started, create a new shared parameter for an OpenAPI file
 under the "Shared" section of the menu.
 
-![Instructions below](https://github.com/stoplightio/docs/blob/develop/assetsassets/images/shared-params-responses2.png?raw=true)
+![Instructions below](https://github.com/stoplightio/docs/blob/develop/assets/images/shared-params-responses2.png?raw=true)
 
 As shown in the image above, set the properties for each parameter based on our
 requirements:
