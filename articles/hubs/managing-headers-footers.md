@@ -1,7 +1,7 @@
 
 # Managing Headers 
 
-![](../../assets/gifs/headers-footers.gif)
+![Headers](https://github.com/stoplightio/docs/blob/develop/assets/gifs/headers.gif?raw=true)
 
 ## What 
 You can customize the headers of your Hub to add additional navigation to your documentation. You can modify a header's: 
