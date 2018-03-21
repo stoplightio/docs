@@ -1,6 +1,6 @@
 # Invite People & Teams to a Project
 
-![](../../assets/gifs/project-member-invite.gif)
+![Invite People and Teams to a Project](https://github.com/stoplightio/docs/blob/develop/assets/gifs/project-invite-people-teams.gif?raw=true)
  
 ## What 
 * You can invite people to a Project to grant them read or read/write permissions 
