@@ -1,5 +1,7 @@
 # Publishing 
 
+![Publishing](https://github.com/stoplightio/docs/blob/develop/assets/gifs/documentation-publishing.gif?raw=true)
+
 ## What 
 
 Publishing your documentation has never been easier. Stoplight has added: 
