@@ -28,7 +28,7 @@ Benefits of contract testing include:
 
 ## Connecting a Spec
 
-<!-- FIXME - Show a gif of selecting spec in coverage screen, and clicking on different endpoints -->
+![Connecting a Spec](https://github.com/stoplightio/docs/blob/develop/assets/gifs/contract-test-add-spec.gif?raw=true)
 
 To get started with contract testing, the first thing you will need to do is
 generate a scenario from an OpenAPI specification. To get started:
@@ -69,7 +69,7 @@ You can use the coverage report to quickly stub out a new scenario. To start:
 
 ## Automatic Contract Test Assertion
 
-<!-- FIXME - Show a gif of running a scenario -->
+![Running a Collection](https://github.com/stoplightio/docs/blob/develop/assets/gifs/testing-run-results.gif?raw=true)
 
 After linking your spec to the Scenario Collection, contract test assertions
 will be automatically added as steps within your scenario.
