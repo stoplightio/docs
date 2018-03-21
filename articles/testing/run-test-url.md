@@ -25,7 +25,7 @@ scenario. To find this URL:
 * Within this section is a "Trigger by URL" containing the URL unique to this
   scenario
 
-![](../../assets/images/run-test-url.png)
+![Trigger by URL](https://github.com/stoplightio/docs/blob/develop/assets/images/testing-trigger-by-url.png?raw=true)
 
 ## Triggering Scenarios
 
