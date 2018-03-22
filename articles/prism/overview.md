@@ -35,7 +35,7 @@ prism run --mock --list --spec http://petstore.swagger.io/v2/swagger.json
 path/to/prism.exe run --mock --list --spec http://petstore.swagger.io/v2/swagger.json
 ```
 
-Here, you are using the "run" command to run a server based on the spec file passed in via the --spec argument. The spec location can be the filepath to a file on your computer, or the URL to a publicly hosted file. The --mock argument tells Prism to mock all incoming requests, instead of forwarding them to the API host described in the spec file. The --list argument is a convenience, and tells Prism to print out the endpoints in the spec on startup. 
+Here, you are using the "run" command to run a server based on the spec file passed in via the --spec argument. The spec location can be the filepath to a file on your computer, or the URL to a publicly hosted file. The mock argument tells Prism to mock all incoming requests, instead of forwarding them to the API host described in the spec file. The list argument is a convenience, and tells Prism to print out the endpoints in the spec on startup. 
 
 Prism starts on port 4010 by default - try visiting ```http://localhost:4010/v2/pet/findByStatus``` in your browser. This is one of the endpoints described in the petstore spec you passed in. You'll notice that it returns an error about a required query string parameter "status". This is the automatic request validation at work! The swagger spec specifies that a query string parameter names "status" is required for this endpoint so Prism simulates a 400 response for you. Reload the page with a query string parameter, and you will see the dynamically generated mock response ```http://localhost:4010/v2/pet/findByStatus?status=available```.
 
