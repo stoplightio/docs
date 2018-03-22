@@ -1,6 +1,6 @@
 # Sending HTTP Requests
 
-<!---Gif of simple request plus extending spec--->
+![Sending HTTP Requests](https://github.com/stoplightio/docs/blob/develop/assets/gifs/modeling-send-http-request.gif?raw=true)
 
 ## What
 
