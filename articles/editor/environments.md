@@ -2,7 +2,7 @@
 
 An environment is simply a container for data, represented as a list of key-value pairs (behind the scenes, this is a JSON object). Every Stoplight project has one or more environments associated with it. The data stored in an environment can be used in many places within the Stoplight editor.
 
-![How to open the Environments window](https://github.com/stoplightio/docs/raw/ross-images/assets/images/environments.png)
+![How to open the Environments window](https://github.com/stoplightio/docs/blob/develop/assets/images/environments.png?raw=true)
 
 Environments, and their default data, are defined in the [Stoplight configuration file](/platform/editor-basics/editor-configuration).
 
@@ -11,7 +11,7 @@ Environments, and their default data, are defined in the [Stoplight configuratio
 * **Do** use environment default data to store shared information like hostnames, ports, passwords, etc.
 * **Don't** use environments to store fixture/seed/temporary data.
 
-![The Environments Window](https://github.com/stoplightio/docs/raw/ross-images/assets/images/environments2.png)
+![The Environments Window](https://github.com/stoplightio/docs/blob/develop/assets/images/environments2.png?raw=true)
 
 For more information on environment variables and how they can be used during API testing, please
 see [here](/testing/using-variables/environment).
