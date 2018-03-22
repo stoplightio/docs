@@ -128,7 +128,7 @@ benefit of this approach is that updates to the shared response object are
 automatically propagated to any endpoint using that object, no extra changes
 required.
 
-![How to create a shared response](https://github.com/stoplightio/docs/blob/develop/assets/gifs/shared-params-responses-response.gif)
+![How to create a shared response](https://github.com/stoplightio/docs/blob/develop/assets/gifs/shared-params-responses-response.gif?raw=true)
 
 Shared responses allow you to configure the following properties:
 
@@ -140,7 +140,7 @@ Shared responses allow you to configure the following properties:
 > For more information on the above properties, see the OpenAPI v2 Specification
   [here](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#responseObject)
 
-![](../../assets/gifs/shared-params-responses-response2.gif?raw=true)
+![Shared Responses](https://github.com/stoplightio/docs/blob/develop/assets/gifs/shared-params-responses-response2.gif?raw=true)
 
 To use a shared response, navigate to an API endpoint's __Response__ section and
 create a reference to the shared response by choosing the _Type_ of the response
@@ -165,7 +165,7 @@ Now that we know what should be returned, let's create a shared response in
 Stoplight. To get started, create a new shared response for an OpenAPI file
 under the "Shared" section of the menu.
 
-![](https://github.com/stoplightio/docs/blob/develop/assets/images/shared-params-responses4.png?raw=true)
+![Shared Resonses](https://github.com/stoplightio/docs/blob/develop/assets/images/shared-params-responses4.png?raw=true)
 
 As shown in the image above, set the properties for each portion of the response
 based on our requirements:
@@ -179,7 +179,7 @@ based on our requirements:
 3. The contents of the shared response object based on the three required
    properties above.
 
-![](https://github.com/stoplightio/docs/blob/develop/assets/images/shared-params-responses5.png?raw=true)
+![Shared Responses](https://github.com/stoplightio/docs/blob/develop/assets/images/shared-params-responses5.png?raw=true)
 
 Once the shared response is created, it can be referenced in any API endpoint by
 using a _Reference_ type under a response. A shared response can also be used
