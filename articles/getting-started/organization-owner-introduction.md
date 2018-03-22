@@ -1,7 +1,5 @@
 # Organization Owner Introduction 
 
-![](/assets/gifs/org-create.gif)
-
 ## Welcome to Stoplight Next!
 
 If you are trying to create a new Organization then you are in the right place. Stoplight Next was designed with large scale collaboration and governance as a central principle. The following guide will take you through the process of creating and populating an Organization, and offer an overview of the governance tools within Stoplight Next. 
