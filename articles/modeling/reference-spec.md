@@ -1,13 +1,13 @@
 # Referencing Another API Specification
 
-<!-- REFBUILDER GIF/VIDEO-->
+![Referencing Another API Specification](https://github.com/stoplightio/docs/blob/develop/assets/gifs/modeling-ref-other-spec.gif?raw=true)
 
 ## What
 
 Referencing another specification allows for cleaner and more organized code. Some use cases are as follows:
 
 * Generate API documentaion in Hubs
-* Deduplicate common structures like responses or shared parameters in Modeling
+* De-duplicate common structures like responses or shared parameters in Modeling
 * Test a connected API specification in Scenarios
 * Setup a mock server for an API in Prism
 
