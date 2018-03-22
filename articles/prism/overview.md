@@ -1,4 +1,4 @@
-# Prism Introduction 
+# Mocking with Prism 
 
 Prism is a performant, dependency free server, built specifically to work with web APIs. 
 
