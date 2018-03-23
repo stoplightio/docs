@@ -1,6 +1,6 @@
 # Pages 
 
-![](../../assets/gifs/create-pages.gif)
+![Creating a Page](https://github.com/stoplightio/docs/blob/develop/assets/gifs/hubs-create-page.gif?raw=true)
 
 ## What
 Pages are the macro level building blocks of a Hub. They function as the canvas on which all other Hubs objects reside. They are commonly used as a way to separate information based on the broadest topics. 
@@ -25,7 +25,7 @@ Pages are the macro level building blocks of a Hub. They function as the canvas 
     2. Input a **Page Route** (optional) 
     3. **Power the Page** with an External Data Source (optional) 
 
- >Did you know? After creating a new page, a header link will automatically be generated
+
 
 ---
 **Related Articles**
