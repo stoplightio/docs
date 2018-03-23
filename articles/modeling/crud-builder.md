@@ -26,7 +26,7 @@ shared responses.
 
 ## Using the Editor
 
-<!-- FIXME: Insert GIF of using the editor, creating objects, setting their type, etc -->
+![](https://s3.amazonaws.com/user-content.stoplight.io/1564/1521751297046)
 
 We created the CRUD builder editor to make data structure creation as simple as
 possible. You can find the CRUD builder editor under the **Editor** tab under
@@ -87,7 +87,7 @@ If you have a pre-existing JSON document that you would like to convert to a
 Stoplight data structure, the **Generate from JSON** button available towards
 the top of the CRUD editor allows you to do just that.
 
-<!-- FIXME: Insert GIF of the generate from json feature -->
+![](https://s3.amazonaws.com/user-content.stoplight.io/1564/1521751321588)
 
 To start:
 
@@ -107,7 +107,7 @@ bodies, and shared responses.
 
 ## Editing the Raw JSON Schema
 
-<!-- FIXME: Insert GIF of clicking the 'raw schema' button and editing the json -->
+![](https://s3.amazonaws.com/user-content.stoplight.io/1564/1521751310398)
 
 While not for the faint hearted, you can also edit the raw JSON schema directly
 if you are familiar with the format, or have a pre-existing JSON schema
