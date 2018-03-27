@@ -1,6 +1,6 @@
 # Delete an Organization 
 
-![Delete an Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-settings.gif?raw=true)
+![Delete an Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-delete.gif?raw=true)
 
 ## What 
 
