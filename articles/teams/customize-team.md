@@ -1,6 +1,6 @@
 # Customize a Team 
 
-![Customize a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/teamcustom.gif?raw=true)
+![Customize a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/team-customize.gif?raw=true)
 
 ## What 
 
