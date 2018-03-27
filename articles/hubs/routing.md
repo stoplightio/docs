@@ -1,7 +1,7 @@
 
 # Routing 
 
-![](../../assets/gifs/routing-hubs.gif)
+![Routing](https://github.com/stoplightio/docs/blob/develop/assets/gifs/hubs-routing.gif?raw=true)
 
 ## What 
 Stoplight’s Hubs features an easy to use routing system to make sure your docs have identifiable and friendly URL’s. The routing system allows customization of the following objects: 
@@ -28,7 +28,7 @@ Stoplight’s Hubs features an easy to use routing system to make sure your docs
 4. Select the **Page Settings & TOC** at the top of the Hub in the center of the page or subpage you wish to modify  
    1. Input a **new URL** under the page path  
 
-### Headers & Footers 
+### Headers
 
 1. Select the **Hub** you wish to modify 
 2. Click on **Hub Settings** in the top right 
