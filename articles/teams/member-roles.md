@@ -1,6 +1,6 @@
 # Team Member Roles and Permissions
 
-![Team Roles and Permissions](https://github.com/stoplightio/docs/blob/develop/assets/gifs/team-member-remove.gif?raw=true)
+![Team Roles and Permissions](https://github.com/stoplightio/docs/blob/develop/assets/gifs/teams-change-role.gif?raw=true)
 
  ## What 
 Roles and Permissions for Team members can be managed and modified within Stoplight to control access to the Team’s functions and features. 
