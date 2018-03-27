@@ -1,6 +1,6 @@
 # Remove People from Your Organization 
 
-![Remove Members from Your Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-member-remove.gif?raw=true)
+![Remove Members from Your Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-remove-member.gif?raw=true)
 
 ## What 
 * Removing a person for your organization is as easy as 123...4...5...6
