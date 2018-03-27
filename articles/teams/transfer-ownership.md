@@ -1,6 +1,6 @@
 # Transfer Primary Ownership of a Team 
 
-![Transfer Ownership of a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/team-transfer.gif?raw=true)
+![Transfer Ownership of a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/team-ownership.gif?raw=true)
 
 ## What 
 You can transfer Ownership of a Team to another member of the Team. 
