@@ -1,6 +1,6 @@
 # Delete a Team 
 
-![Delete a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/teamcustom.gif?raw=true)
+![Delete a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/team-delete.gif?raw=true)
 
 ## What 
 * Want to disband your team? Here's how: 
