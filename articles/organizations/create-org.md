@@ -1,6 +1,6 @@
 # Create An Organization 
 
-![Create an Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-create.gif?raw=true)
+![Create an Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-create-org.gif?raw=true)
 
 ## What 
 Organizations are great for grouping people, data, and billing together in one convenient location. 
