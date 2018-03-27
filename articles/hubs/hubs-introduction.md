@@ -25,7 +25,7 @@ One of the most common issues we wanted to solve with Hubs was outdated and inco
 ---
 **Related Articles**
 - [Routing](/documentation/getting-started/routing)
-- [Headers & Footers](/documentation/getting-started/header-footer)
+- [Headers](/documentation/getting-started/header-footer)
 - [Pages](/documentation/getting-started/pages)
 - [Subpages](/documentation/getting-started/subpages)
 - [Blocks](/documentation/blocks)
