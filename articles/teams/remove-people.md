@@ -1,6 +1,6 @@
 # Remove People from a Team
 
-![Remove People from a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/team-member-remove.gif?raw=true)
+![Remove People from a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/teams-remove-member.gif?raw=true)
  
 ## What 
 
