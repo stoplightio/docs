@@ -1,6 +1,6 @@
 # Invite People to an Organization
 
-![Invite People to an Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/people-invite.gif?raw=true)
+![Invite People to an Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-invite-members.gif?raw=true)
 
 ## What 
 Adding people to your Organization is the first step towards collaboration within Stoplight.
