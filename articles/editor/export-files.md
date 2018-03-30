@@ -7,14 +7,14 @@
 You can export any files in Stoplight to use as you see fit. Exported files are served up in a unique domain in its raw format. Current exported file formats include: 
 
 ### YAML
--Documentation 
--Modeling 
--Testing 
--Prism 
--Config
+- Documentation 
+- Modeling 
+- Testing 
+- Prism 
+- Config
 
 ### Markdown  
--Markdown 
+- Markdown 
 
 ## How
 1. Select the **project** the file you wish to export is contained within 
