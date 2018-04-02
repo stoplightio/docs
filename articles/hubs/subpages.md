@@ -1,18 +1,16 @@
 # Subpages 
 
-![](../../assets/gifs/create-subpages.gif)
+![Create Subpage](https://github.com/stoplightio/docs/blob/develop/assets/gifs/hubs-create-subpage.gif?raw=true)
 
 ## What
-Subpages are the second tier macro building blocks of Hubs. They function as a canvas for blocks. They are commonly used to house content based on a specific topic.  Subpages can have more subpages nested underneath them, which gives you lots of flexibility to organize your Hub as you see fit. If a subpage has subpages nested inside of it, it will be displayed as a collapsible group in the left sidebar.
+Subpages are the second tier macro building blocks of Hubs. They function as a canvas for blocks and the backbone of navigation. They are commonly used to house content based on a specific topic.  Subpages can have more subpages nested underneath them, which gives you lots of flexibility to organize your Hub as you see fit. If a subpage has subpages nested inside of it, it will be displayed as a collapsible group (if it contains content) or a header (if it does not contain content) in the left navigational sidebar. 
 
-<!-- theme: info -->
 >Subpages populate the navigational sidebar of a page.
 
 ### Hubs Architecture Top Down
 - Pages 
     - Subpages 
         - Blocks
-    - Header and Footer 
     - Blocks  
 
 ## How 
@@ -20,13 +18,18 @@ Subpages are the second tier macro building blocks of Hubs. They function as a c
 ### Create a New Subpage 
 
 1. Select the Hub you wish to modify 
-2. Click on **Toggle Editor** 
-3. Select **+ Subpage** in the editor toolbar
+2. Select the **design** view 
+3. Hover over **+ Add** and select **Subpage**
     1. Input a **Subpage Name** 
     2. Modify the **Subpage Route** (optional) 
-    3. Give the Subpage a **Sidebar Token** (optional) 
-    4. **Power the Subpage** with an External Data Source (optional) 
+    3. **Power the Subpage** with an External Data Source (optional) 
 
-<!-- theme: info --> 
->Just like pages, subpages can have blocks. Any blocks added to a subpage will be displayed when a reader navigates to that subpage in your hub
 
+>Just like pages, subpages can have blocks. Any blocks added to a subpage will be displayed when a reader navigates to that subpage in your Hub
+
+---
+**Related Articles**
+- [Routing](/documentation/getting-started/routing)
+- [Headers](/documentation/getting-started/header-footer)
+- [Pages](/documentation/getting-started/pages)
+- [Publishing](/documentation/publishing)

@@ -1,6 +1,6 @@
 # Remove People from a Team
 
-![](../../assets/gifs/team-member-remove.gif)
+![Remove People from a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/teams-remove-member.gif?raw=true)
  
 ## What 
 
@@ -20,3 +20,11 @@
 6. In the dropdown menu select **Remove Member** 
 7. A popup window will ask you to confirm your removal 
     * Click Ok  
+
+---
+**Related Articles**
+- [Remove People from Your Organizations](/platform/organizations/remove-members)
+- [Team Member Roles and Permissions](/platform/organizations/teams/roles)
+- [Customize a Team](/platform/organizations/teams/create-team)
+- [Transfer Ownership of a Team](/platform/organizations/teams/transfer-ownership)
+- [Delete a Team](/platform/organizations/teams/delete)

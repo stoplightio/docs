@@ -23,14 +23,12 @@ Benefits of contract testing include:
   pipeline ensures that the spec accurately represents your API implementation
   over time.
 
-<!-- theme: info -->
-
 > If you don't have an API specification yet, you can create one using the
-> [Stoplight modeling tool](../modeling/modeling-introduction.md)!
+> [Stoplight modeling tool](/modeling/introduction)!
 
 ## Connecting a Spec
 
-<!-- FIXME - Show a gif of selecting spec in coverage screen, and clicking on different endpoints -->
+![Connecting a Spec](https://github.com/stoplightio/docs/blob/develop/assets/gifs/contract-test-add-spec.gif?raw=true)
 
 To get started with contract testing, the first thing you will need to do is
 generate a scenario from an OpenAPI specification. To get started:
@@ -54,7 +52,6 @@ You can use the coverage report to quickly stub out a new scenario. To start:
 1.  Click the **status codes** in the table matrix for the steps you want to add to
     your scenario.
 
-<!-- theme:info -->
 
 > Note that the order in which the endpoints are clicked
 > determines the order in which they will appear in the scenario. For example,
@@ -68,13 +65,11 @@ You can use the coverage report to quickly stub out a new scenario. To start:
 3.  You will automatically be navigated to the new scenario, complete with
     contract test assertions for each selected endpoint.
 
-<!-- theme: info -->
-
 > You will likely need to modify the resulting scenario to fit your use case
 
 ## Automatic Contract Test Assertion
 
-<!-- FIXME - Show a gif of running a scenario -->
+![Running a Collection](https://github.com/stoplightio/docs/blob/develop/assets/gifs/testing-run-results.gif?raw=true)
 
 After linking your spec to the Scenario Collection, contract test assertions
 will be automatically added as steps within your scenario.
@@ -87,3 +82,16 @@ JSON schema.
 When a contract assertion step is run, the HTTP response structure will be
 validated against the matched JSON schema from the connected API specification.
 Any validation errors will automatically be added to the test results.
+
+---
+**Related Articles**
+- [Testing Introduction](/testing/introduction)
+- [Passing Data Between Steps](/testing/getting-started/passing-data-between-steps)
+- [Running Tests In Stoplight](/testing/running-tests/in-stoplight)
+- [Running Tests in the Terminal](/testing/running-tests/in-the-terminal)
+- [Running Tests Triggered by URL](/testing/running-tests/triggering-by-url)
+- [Using Variables Overview](/testing/using-variables/overview)
+- [$$.env (Environment)](/testing/using-variables/environment)
+- [$.ctx(Context)](/testing/using-variables/context)
+- [Sending HTTP Requests](/testing/sending-http-requests/overview)
+- [Referencing other Scenarios](/testing/referencing-other-scenarios/overview)

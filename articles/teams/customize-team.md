@@ -1,10 +1,10 @@
 # Customize a Team 
 
-![](../../assets/gifs/teamcustom.gif)
+![Customize a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/team-customize.gif?raw=true)
 
 ## What 
 
-* You can customize the Team Name, Path, and Team Description 
+You can customize the Team Name, Path, and Team Description. 
 
 ## Who 
 
@@ -19,3 +19,9 @@
           * Input a new Team Name in the textarea under **Team Name**
           * Input a new Team URL in the textarea under **Path**
           * Input a new Team Description in the textarea under **Description**   
+
+---
+**Related Articles**
+- [Customize Your Organization](/platform/organizations/customize)
+- [Create a Team](/platform/organizations/teams/create-team)
+- [Delete a Team](/platform/organizations/teams/delete)

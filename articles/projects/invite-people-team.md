@@ -1,6 +1,6 @@
 # Invite People & Teams to a Project
 
-![](../../assets/gifs/project-member-invite.gif)
+![Invite People and Teams to a Project](https://github.com/stoplightio/docs/blob/develop/assets/gifs/project-invite-people-teams.gif?raw=true)
  
 ## What 
 * You can invite people to a Project to grant them read or read/write permissions 
@@ -14,11 +14,11 @@
         * Read/Write 
     * **Read Access**: Low-level permissions that allow you to: 
         * Read
-<!-- theme: info -->
+        
 >You can only invite people and Teams to a Project associated with an Organization
    
 ## 	 Who 
-* Only the Organization **Owner** and Org and/or Project **Administrators** have invite privileges 
+* Only the Organization **Owner** and Org and Project **Administrators** have invite privileges 
 
 ## How
 1. From your Organization's homepage, select the **Project** you wish to modify 
@@ -29,3 +29,11 @@
 4. To invite a team, select the **Team icon** from the far left sidebar
     * Input the Team name in the search bar at the top of the Team sidebar 
     * Once located, press enter 
+    
+---
+**Related Articles**
+- [Creating a Project](/platform/projects/creating-a-project)
+- [Change a Project Member's Role](/platform/projects/change-a-members-role)
+- [Make Your Project Private/Public](/platform/projects/visibility)
+- [Invite People to Organization](/platform/organizations/invite-people)
+- [Add People to a Team](/platform/organizations/teams/add-people)

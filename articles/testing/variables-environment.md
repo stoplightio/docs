@@ -1,20 +1,20 @@
 # Using Environment Variables
 
-<!--(FIXME - SHOW CLICKING THROUGH ENVIRONMENTS IN UI)-->
-
 > If you have not already done so, we recommend reviewing the
-[Environments](../editor/environments.md) article before continuing.
+> [Environments](/platform/editor-basics/environments) article before continuing.
 
 Environment variables in Stoplight allow you to dynamically retrieve information
 in a scenario from the active environment. This makes it possible to
 switch between different environments with ease, having variables automatically
 populate based on the current environment.
 
+![](https://s3.amazonaws.com/user-content.stoplight.io/1564/1521753220632)
+
 ## Setting Environment Variables
 
 ### With the Editor Configuration
 
-For information on managing project environments, please review the [environment](../editor/environments.md) article.
+For information on managing project environments, please review the [environment](/platform/editor-basics/editor-configuration) article.
 
 ### With Captures
 
@@ -23,8 +23,8 @@ Captures make it easy to "capture" values from your step request or result, and 
 Say you have a scenario step that sends an HTTP request to authenticate a new user. The response from that request includes an apiKey that you want to use for other requests. You can easily save that apiKey to an environment variable, for later re-use, by adding a capture in the form `$$.env.apiKey = output.body.apiKey`. After running the step, check your current environment variables and note the newly added apiKey!
 
 > Environment variables set via captures are only added to the user's private
-  variables, and are not sent to Stoplight. See the [Environment
-  section](../editor/environments.md) for more information.
+> variables, and are not sent to Stoplight. See the [Environment
+> section](/platform/editor-basics/environments) for more information.
 
 ### With Scripting
 
@@ -45,12 +45,10 @@ argument (`y`) to the environment under the string value of the first argument
 (`x`).
 
 > Environment variables set via script are only added to the user's private
-  variables, and are not sent to Stoplight. See the [Environment
-  section](../editor/environments.md) for more information.
+> variables, and are not sent to Stoplight. See the [Environment
+> section](/platform/editor-basics/environments) for more information.
 
 ## Using Environment Variables
-
-<!--(FIXME - SHOW USING A VARIABLE IN A SCENARIO STEP)-->
 
 Use an environment variable in a scenario with the following syntax:
 
@@ -83,11 +81,11 @@ $$.env.get('myVariable');
 Where the braces (`{}`) are absent, and we are using the `get()` method for
 retrieving the environment variable under the `myVariable` key.
 
-***
+---
 
-**Related**
+**Related Articles**
 
-* [Environment Overview](../editor/environments.md)
-* [Environment Configuration](../editor/editor-configuration.md)
-* [Variables Overview](./variables-overview.md)
-* [Context Variables](./variables-context.md)
+* [Editor Configuration](/platform/editor-basics/editor-configuration)
+* [Environments](/platform/editor-basics/environments)
+* [Using Variables Overview](/testing/using-variables/overview)
+* [$.ctx(Context)](/testing/using-variables/context)

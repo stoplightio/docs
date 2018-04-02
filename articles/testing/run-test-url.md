@@ -1,6 +1,6 @@
 # Triggering Scenarios by URL
 
-In addition to being able to run tests [through Stoplight](./run-test-stoplight.md) and [the terminal](./run-test-terminal.md),
+In addition to being able to run tests [through Stoplight](/testing/running-tests/in-stoplight) and [the terminal](/testing/running-tests/in-the-terminal),
 scenarios can also be run by issuing a HTTP request.
 
 To trigger a scenario by URL, there are two methods:
@@ -25,7 +25,7 @@ scenario. To find this URL:
 * Within this section is a "Trigger by URL" containing the URL unique to this
   scenario
 
-![](../../assets/images/run-test-url.png)
+![Trigger by URL](https://github.com/stoplightio/docs/blob/develop/assets/images/testing-trigger-by-url.png?raw=true)
 
 ## Triggering Scenarios
 
@@ -107,14 +107,12 @@ it to be used to authenticate with the Stoplight API. For example:
 $ curl -H 'Private-Token: H4BTDASDf5sGHMWJSfE32' ...
 ```
 
-<!-- theme: warning -->
-
 > Be sure to keep all private tokens safe! They can be used to authenticate
 > requests with any project that your account has access to.
 
 ---
 
-**Related**
+**Related Articles**
+- [Running Tests In Stoplight](/testing/running-tests/in-stoplight)
+- [Running Tests in the Terminal](/testing/running-tests/in-the-terminal)
 
-* [Running Scenarios through Stoplight](./run-test-stoplight.md)
-* [Running Scenarios from the Terminal](./run-test-terminal.md)
