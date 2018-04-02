@@ -12,7 +12,7 @@ Anything that can be done in Javascript can now be done within a Scenario step.
 
 ## Execution State
 
-Prism is an orchestration engine as much as it is a proxy and test runner. When we talk about execution state, we are talking about what is currently being orchestrated. At this time, Prism can orchestrate HTTP, Javascript, other and referenced scenarios.
+Prism is an orchestration engine as much as it is a proxy and test runner. When we talk about execution state, we are talking about what is currently being orchestrated. Prism can orchestrate HTTP calls, Javascript programs, and other referenced scenarios.
 
 ## Javascript Specification
 
@@ -26,7 +26,7 @@ The Prism Javascript Runtime is compliant with the ECMAScript 5/5.1 specificatio
 
 ### Console
 
-The console objects gives you access to the Scenario Collection Logs. Use it to debug your sceanrios.
+The console objects gives you access to the Scenario Collection Logs. Use it to debug your scenarios.
 
 ```js
 /**
@@ -74,7 +74,7 @@ Base64.encode(string);
 Base64.decode(string);
 ```
 
-## Stoplight Object (SL)
+### Stoplight Object (SL)
 
 #### Sleep
 
@@ -109,14 +109,16 @@ var msgs = SL.schema.validate(object, contract);
 
 ```js
 /**
-* Generate random data based on a contract (JSON Schema).
-*
-* @param {Object} contract - JSON Schema to use for dynamic data generation.
-*
-* @returns {*} - Generated data.
-*/
-var data = SL.schema.generate => function(contract)
+ * Generate random data based on a contract (JSON Schema).
+ *
+ * @param {Object} contract - JSON Schema to use for dynamic data generation.
+ *
+ * @returns {*} - Generated data.
+ */
+var data = SL.schema.generate(contract);
 ```
+
+#### Find Operation
 
 ```js
 /**
@@ -171,14 +173,14 @@ For OAS 2.0, this should come from the consumes key.
 *
 * @returns {Operation} - Stoplight opeartion that matches given path and method.
 */
-var operation = SL.specs.findOperation => function(path, method)
+var operation = SL.specs.findOperation(path, method);
 ```
 
-# Double Dollar - $$
+### Double Dollar - $$
 
-Double dollar sign is the collection object.
+The double dollar sign variable represents the currently running collection object.
 
-##### Stop
+#### Stop
 
 ```js
 /**
@@ -191,7 +193,7 @@ $$.stop();
 
 Current environment for a Scenario Collection Run.
 
-##### Get / Set
+#### Get / Set
 
 ```js
 /**
@@ -230,7 +232,7 @@ $$.env.set(string, object);
 
 The request object on double dollar sign is a special object to help with Prism Instances. Anytime a request is sent through Prism and a Prism instance is being served, that incoming request will be parsed and set on the double dollar sign request method. Double Dollar Request is defined in Prism Conductor Instances, but it won't have any affect on the Scenario Collection run.
 
-##### Get / Set
+#### Get / Set
 
 ```js
 /**
@@ -275,7 +277,7 @@ $$.request.set(request);
 $$.request.set(string, object);
 ```
 
-##### Method Get / Set
+#### Method Get / Set
 
 ```js
 /**
@@ -293,7 +295,7 @@ var method = $$.request.method.get();
 $$.request.method.set(method);
 ```
 
-##### URL Get / Set
+#### URL Get / Set
 
 ```js
 /**
@@ -311,7 +313,7 @@ var url = $$.request.url.get();
 $$.request.url.set(url);
 ```
 
-##### Path Get / Set
+#### Path Get / Set
 
 ```js
 /**
@@ -329,7 +331,7 @@ var path = $$.request.path.get();
 $$.request.path.set(path);
 ```
 
-##### Scheme Get / Set
+#### Scheme Get / Set
 
 ```js
 /**
@@ -347,7 +349,7 @@ var scheme = $$.request.scheme.get();
 $$.request.scheme.set(scheme);
 ```
 
-##### Host Get / Set
+#### Host Get / Set
 
 ```js
 /**
@@ -365,7 +367,7 @@ var host = $$.request.host.get();
 $$.request.host.set(host);
 ```
 
-##### Query Get / Set / Add / Del
+#### Query Get / Set / Add / Del
 
 ```js
 /**
@@ -419,7 +421,7 @@ $$.request.query.add(key, value);
 $$.request.query.del(key);
 ```
 
-##### Headers Get / Set / Add / Del
+#### Headers Get / Set / Add / Del
 
 ```js
 /**
@@ -473,7 +475,7 @@ $$.request.headers.add(key, value);
 $$.request.headers.del(key);
 ```
 
-##### Content Type / Content Negotiation
+#### Content Type / Content Negotiation
 
 ```js
 /**
@@ -484,7 +486,7 @@ $$.request.headers.del(key);
 var accepts = $$.request.accepts.contentTypes.get();
 ```
 
-##### Cookies Get / Set
+#### Cookies Get / Set
 
 ```js
 /**
@@ -563,7 +565,7 @@ $$.request.cookies.set(name, value);
 $$.request.cookies.set(name, value, options);
 ```
 
-##### Body Get / Set
+#### Body Get / Set
 
 ```js
 /**
@@ -600,9 +602,9 @@ $$.request.body.set(path, value);
 
 #### Response
 
-Double dollar response is what is returned by Prism. There is a catch though, conducting scenarios outside of the Stoplight app if double dollar response isn't set, then the result of the scenario run is returned.
+Double dollar response is what is returned by Prism.
 
-##### Get / Set
+#### Get / Set
 
 ```js
 /**
@@ -652,7 +654,7 @@ $$.response.set(response);
 $$.response.set(string, object);
 ```
 
-##### Status Code Get / Set
+#### Status Code Get / Set
 
 ```js
 /**
@@ -670,7 +672,7 @@ var status = $$.response.status.get();
 $$.response.status.set(status);
 ```
 
-##### Time Get
+#### Time Get
 
 ```js
 /**
@@ -681,7 +683,7 @@ $$.response.status.set(status);
 var roundTrip = $$.response.time.get();
 ```
 
-##### Headers Get / Set / Add / Del
+#### Headers Get / Set / Add / Del
 
 ```js
 /**
@@ -735,7 +737,7 @@ $$.response.headers.add(key, value);
 $$.response.headers.del(key);
 ```
 
-##### Cookies Get / Set
+#### Cookies Get / Set
 
 ```js
 /**
@@ -814,7 +816,7 @@ $$.response.cookies.set(name, value);
 $$.response.cookies.set(name, value, options);
 ```
 
-##### Body Get / Set
+#### Body Get / Set
 
 ```js
 /**
@@ -855,7 +857,7 @@ $$.response.body.set(path, value);
 
 Each scenario in your collection has it's own set of context variables. Context is especially useful for passing data between steps in a scenario.
 
-##### Get / Set
+#### Get / Set
 
 ```js
 /**
@@ -890,7 +892,7 @@ $.ctx.set(object);
 $.ctx.set(string, object);
 ```
 
-##### Stop
+#### Stop
 
 ```js
 /**
@@ -901,7 +903,7 @@ $.stop();
 
 # Steps
 
-##### Stop
+#### Stop
 
 ```js
 /**
@@ -910,7 +912,7 @@ $.stop();
 stop();
 ```
 
-##### Tests
+#### Tests
 
 The test object is useful for when you need a litt bit more power. For example you need to loop over an object, check to see if a property exists and if it does assert that is greater than 1.
 
@@ -934,7 +936,7 @@ _.forEach(body, function(value, key) {
 
 #### Step Request
 
-##### Get / Set
+#### Get / Set
 
 ```js
 /**
@@ -982,7 +984,7 @@ input.set(object);
 input.set(string, object);
 ```
 
-##### Method Get / Set
+#### Method Get / Set
 
 ```js
 /**
@@ -1000,7 +1002,7 @@ var method = input.method.get();
 input.method.set(method);
 ```
 
-##### URL Get / Set
+#### URL Get / Set
 
 ```js
 /**
@@ -1018,7 +1020,7 @@ var url = input.url.get();
 input.url.set(url);
 ```
 
-##### Path Get / Set
+#### Path Get / Set
 
 ```js
 /**
@@ -1036,7 +1038,7 @@ var path = input.path.get();
 input.path.set(path);
 ```
 
-##### Scheme Get / Set
+#### Scheme Get / Set
 
 ```js
 /**
@@ -1054,7 +1056,7 @@ var scheme = input.scheme.get();
 input.scheme.set(scheme);
 ```
 
-##### Host Get / Set
+#### Host Get / Set
 
 ```js
 /**
@@ -1072,7 +1074,7 @@ var host = input.host.get();
 input.host.set(host);
 ```
 
-##### Query Get / Set / Add / Del
+#### Query Get / Set / Add / Del
 
 ```js
 /**
@@ -1126,7 +1128,7 @@ input.query.add(key, value);
 input.query.del(key);
 ```
 
-##### Headers Get / Set / Add / Del
+#### Headers Get / Set / Add / Del
 
 ```js
 /**
@@ -1180,7 +1182,7 @@ input.headers.add(key, value);
 input.headers.del(key);
 ```
 
-##### Content Types Content Negotiation
+#### Content Types Content Negotiation
 
 ```js
 /**
@@ -1191,7 +1193,7 @@ input.headers.del(key);
 var accepts = input.accepts.contentTypes.get();
 ```
 
-##### Cookies Get / Set
+#### Cookies Get / Set
 
 ```js
 /**
@@ -1270,7 +1272,7 @@ input.cookies.set(name, value);
 input.cookies.set(name, value, options);
 ```
 
-##### Body Get / Set
+#### Body Get / Set
 
 ```js
 /**
@@ -1307,7 +1309,7 @@ input.body.set(path, value);
 
 #### Step Response
 
-##### Get / Set
+#### Get / Set
 
 ```js
 /**
@@ -1355,7 +1357,7 @@ output.set(object);
 output.set(string, object);
 ```
 
-##### Status Code Get / Set
+#### Status Code Get / Set
 
 ```js
 /**
@@ -1373,7 +1375,7 @@ var status = output.status.get();
 output.status.set(status);
 ```
 
-##### Time Get
+#### Time Get
 
 ```js
 /**
@@ -1384,7 +1386,7 @@ output.status.set(status);
 var roundTrip = output.time.get();
 ```
 
-##### Headers Get / Set / Add / Del
+#### Headers Get / Set / Add / Del
 
 ```js
 /**
@@ -1438,7 +1440,7 @@ output.headers.add(key, value);
 output.headers.del(key);
 ```
 
-##### Cookies Get / Set
+#### Cookies Get / Set
 
 ```js
 /**
@@ -1517,7 +1519,7 @@ output.cookies.set(name, value);
 output.cookies.set(name, value, options);
 ```
 
-##### Body Get / Set
+#### Body Get / Set
 
 ```js
 /**
