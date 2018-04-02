@@ -1,4 +1,4 @@
-# Introduction
+# Prism Javascript Runtime Reference
 
 Prism is a fast, flexible, and easy-to-use application for mocking and testing HTTP API's. To help improve API testing effectiveness and bypass limitations in the OpenAPI specification, Prism comes with a full ES5-compatible Javascript runtime capable of supercharging your API workflow.
 
@@ -13,14 +13,6 @@ Anything that can be done in Javascript can now be done within a Scenario step.
 ## Execution State
 
 Prism is an orchestration engine as much as it is a proxy and test runner. When we talk about execution state, we are talking about what is currently being orchestrated. At this time, Prism can orchestrate HTTP, Javascript, other and referenced scenarios.
-
-## Execution Order of Scenario Steps
-
-### HTTP
-
-### Scripts
-
-### Refs
 
 ## Javascript Specification
 
@@ -139,40 +131,40 @@ var data = SL.schema.generate => function(contract)
 * @property {string} [description]
 * @property {array} [security] - As described here: https://swagger.io/specification/#securitySchemeObject. For OAS2, if the operation defines security requirements, we need to look up the security definition and inline it here. If it is for oauth, should include the scopes property from the original operation security property.
 * @property {array} [servers]
-* @property {object} [params] - The path parameters. For OAS2, these are a combination of the parameters defined at the operation, AND at the operation's path (one level up from the operation in the spec).
-* @property {object} .schema - A JSON Schema.
-* @property {object} [.example] - Generate this from defaults set in OAS 2.0
-* @property {object} [query] - The query parameters. For OAS2, these are a combination of the query parameters defined at the operation, AND at the operation's path (one level up from the operation in the spec).
-* @property {object} .schema - A JSON Schema.
-* @property {object} [.example] - Generate this from defaults set in OAS 2.0
-* @property {object} [headers] - The header parameters. For OAS2, these are a combination of the header parameters defined at the operation, AND at the operation's path (one level up from the operation in the spec).
-* @property {object} .schema - A JSON Schema.
-* @property {object} [.example] - Generate this from defaults set in OAS 2.0
-* @property {object} [body]
+* @property {Object} [params] - The path parameters. For OAS2, these are a combination of the parameters defined at the operation, AND at the operation's path (one level up from the operation in the spec).
+* @property {Object} .schema - A JSON Schema.
+* @property {Object} [.example] - Generate this from defaults set in OAS 2.0
+* @property {Object} [query] - The query parameters. For OAS2, these are a combination of the query parameters defined at the operation, AND at the operation's path (one level up from the operation in the spec).
+* @property {Object} .schema - A JSON Schema.
+* @property {Object} [.example] - Generate this from defaults set in OAS 2.0
+* @property {Object} [headers] - The header parameters. For OAS2, these are a combination of the header parameters defined at the operation, AND at the operation's path (one level up from the operation in the spec).
+* @property {Object} .schema - A JSON Schema.
+* @property {Object} [.example] - Generate this from defaults set in OAS 2.0
+* @property {Object} [body]
 * @property {string} [.description]
-* @property {object} [.content]
-* @property {object} [.[\w\/-]+] - Each key is usually a mime type (ie application/json), but can be any string.
+* @property {Object} [.content]
+* @property {Object} [.[\w\/-]+] - Each key is usually a mime type (ie application/json), but can be any string.
 For OAS 2.0, this should come from the consumes key.
-* @property {object} [.schema]
-* @property {object} [.examples]
-* @property {object} [.[\w\/-]+]
+* @property {Object} [.schema]
+* @property {Object} [.examples]
+* @property {Object} [.[\w\/-]+]
 * @property {string} [.summary]
 * @property {string} [.description]
-* @property {string|object} .value
-* @property {object} [responses]
-* @property {object} [.[\w\/-]+] - Each key is a response code or the string "default".
+* @property {string|Object} .value
+* @property {Object} [responses]
+* @property {Object} [.[\w\/-]+] - Each key is a response code or the string "default".
 * @property {string} [.description]
-* @property {object} [.headers]
-* @property {object} [.schema]
-* @property {object} [.example]
-* @property {object} [.content]
-* @property {object} [.[\w\/-]+] - Each key is usually a mime type (ie application/json), but can be any string.
-* @property {object} [.schema]
-* @property {object} [.examples]
-* @property {object} [.[\w\/-]+]
+* @property {Object} [.headers]
+* @property {Object} [.schema]
+* @property {Object} [.example]
+* @property {Object} [.content]
+* @property {Object} [.[\w\/-]+] - Each key is usually a mime type (ie application/json), but can be any string.
+* @property {Object} [.schema]
+* @property {Object} [.examples]
+* @property {Object} [.[\w\/-]+]
 * @property {string} [.summary]
 * @property {string} [.description]
-* @property {string|object} .value
+* @property {string|Object} .value
 *
 * @param {string} path - Request URL Path to search for in OAS connected Specification.
 * @param {string} method - Reqeust method to search for in OAS connected Specfication.
@@ -184,7 +176,7 @@ var operation = SL.specs.findOperation => function(path, method)
 
 # Double Dollar - $$
 
-Double Dollar sign is the collection object.
+Double dollar sign is the collection object.
 
 ##### Stop
 
@@ -236,7 +228,7 @@ $$.env.set(string, object);
 
 #### Request
 
-The request object on double dollar sign is a special object to help with Prism Instances. Anytime a request is sent through prism and a prism instance is being served, that incoming request will be parsed and set on the double dollar sign request method. Double Dollar Request is defined in Prism Conductor Instances, but it won't have any affect on the Scenario Collection run.
+The request object on double dollar sign is a special object to help with Prism Instances. Anytime a request is sent through Prism and a Prism instance is being served, that incoming request will be parsed and set on the double dollar sign request method. Double Dollar Request is defined in Prism Conductor Instances, but it won't have any affect on the Scenario Collection run.
 
 ##### Get / Set
 
@@ -481,7 +473,7 @@ $$.request.headers.add(key, value);
 $$.request.headers.del(key);
 ```
 
-##### Content Types Content Negotiation
+##### Content Type / Content Negotiation
 
 ```js
 /**
@@ -608,7 +600,7 @@ $$.request.body.set(path, value);
 
 #### Response
 
-TODO: Description. What does it mean for the conductor and prism instances.
+Double dollar response is what is returned by Prism. There is a catch though, conducting scenarios outside of the Stoplight app if double dollar response isn't set, then the result of the scenario run is returned.
 
 ##### Get / Set
 
@@ -859,43 +851,88 @@ $$.response.body.set(path, value);
 
 # Dollar Sign - $
 
+#### Context
+
+Each scenario in your collection has it's own set of context variables. Context is especially useful for passing data between steps in a scenario.
+
+##### Get / Set
+
 ```js
 /**
-*
-*/
-$.ctx.get => function()
-$.ctx.get => function(path)
+ * Get all your context variables.
+ *
+ * @returns {Object} - The current context varibles.
+ */
+var ctx = $.ctx.get();
 
-$.ctx.set => function(obj)
-$.ctx.set => function(path, obj)
+/**
+ * Get the value of an context variable.
+ *
+ * @param {string} string - The path to an context variables.
+ *
+ * @returns {(Object|undefined)} value - The value at the given path. If path isn't found then undefined is returned.
+ */
+var value = $.ctx.get(string);
+
+/**
+ * Set all your context variables.
+ *
+ * @param {Object} object - The value to replace your current context variables with.
+ */
+$.ctx.set(object);
+
+/**
+ * Set the value of an context variable.
+ *
+ * @param {string} string - The path to set. Will try to create appropriate objects if path doesn't exist.
+ * @param {Object} object - The value to set at the given path on your context.
+ */
+$.ctx.set(string, object);
 ```
 
+##### Stop
+
 ```js
 /**
-*
-*/
-$.stop => function()
+ * Stops the current Scenario run.
+ */
+$.stop();
 ```
 
 # Steps
 
-```js
-/**
-*
-/
-stop => function()
-```
+##### Stop
 
 ```js
 /**
- *
+ * Stops the current Step.
  */
-tests => object;
+stop();
+```
+
+##### Tests
+
+The test object is useful for when you need a litt bit more power. For example you need to loop over an object, check to see if a property exists and if it does assert that is greater than 1.
+
+```js
+/**
+ * Tests is just a global object in the runtime, the key's are a message and the value is a boolean.
+ */
+
+// Example
+var body = $$.request.body.get();
+var count = 0;
+_.forEach(body, function(value, key) {
+  if (key === "foo") {
+    tests["[Count " + count + "] foo should be greater than one"] = value > 1;
+    count++;
+  }
+});
 ```
 
 ## HTTP
 
-#### Step Request aka input
+#### Step Request
 
 ##### Get / Set
 
@@ -1268,24 +1305,7 @@ input.body.set(body);
 input.body.set(path, value);
 ```
 
-#### Authentication
-
-```js
-/**
-*
-*/
-// TODO: Should link them to the scenario specification auth object
-// TODO: Verify that the auth api works like below.
-input.auth.get => function()
-input.auth.get => function(path)
-
-input.auth.set => function(value)
-input.auth.set => function(path, value)
-```
-
 #### Step Response
-
-TODO: Description, should talk about how output is different from $$.response.
 
 ##### Get / Set
 
