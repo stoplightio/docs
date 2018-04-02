@@ -17,6 +17,6 @@ You can export any files in Stoplight to use as you see fit. Exported files are 
 - Markdown 
 
 ## How
-1. Select the **project** the file you wish to export is contained within 
-2. Hover over the file you wish to export and click on the **right arrow**
+1. Select the **project** that contains the file you wish to export 
+2. Hover over the file you wish to export and click on the **right facing arrow**
 3. A new tab will open containing your exported file 
