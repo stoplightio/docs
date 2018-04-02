@@ -1,5 +1,7 @@
 # Publishing 
 
+![Publishing](https://github.com/stoplightio/docs/blob/develop/assets/gifs/documentation-publishing.gif?raw=true)
+
 ## What 
 
 Publishing your documentation has never been easier. Stoplight has added: 
@@ -7,7 +9,6 @@ Publishing your documentation has never been easier. Stoplight has added:
 - New **Authorizations** to make sure your documentation is secure at all times. This includes basic user/password authentication and SSO provider integration, powered by Auth0, SAML, and more.
 - New **Builds** section for tracking published Hubs, including when a Hub was published, who published it, and under what domain.
 
-<!-- theme: info -->
 >Take that Gutenberg! 
 
 ## Who 
@@ -31,3 +32,12 @@ Publishing your documentation has never been easier. Stoplight has added:
 11. Once a Hub is published, it will appear under **Builds** 
 12. To unpublish a Hub, select **Unpublish** in the **Danger Zone** underneath **Builds**
     - If you wish to delete all builds and release the domain you are currently using, select **Remove Domain**
+
+---
+**Related Articles**
+- [Documentation with Hubs](/documentation/introduction)
+- [Routing](/documentation/getting-started/routing)
+- [Headers](/documentation/getting-started/header-footer)
+- [Pages](/documentation/getting-started/pages)
+- [Subpages](/documentation/getting-started/subpages)
+- [Blocks](/documentation/blocks)

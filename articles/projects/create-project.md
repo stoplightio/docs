@@ -1,6 +1,6 @@
 # Creating a Project  
 
-![Create a Project](https://github.com/stoplightio/docs/blob/develop/assets/gifs/project-create-personal.gif?raw=true)
+![Create a Project in an Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/project-create-org-project.gif?raw=true)
 
 ## What 
 Projects are the workspace of the Stoplight Platform. Projects contain: 
@@ -12,7 +12,6 @@ Projects are the workspace of the Stoplight Platform. Projects contain:
 * Mocking (Prism) 
 * Markdown Editor 
 
-<!-- theme: info -->
 >Single Point of Truth: All editors are now contained within a Project
 
 ## Who 

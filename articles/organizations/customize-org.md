@@ -1,6 +1,6 @@
 # Customize Your Organization 
 
-![Customize Your Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-settings.gif?raw=true)
+![Customize Your Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-customize.gif?raw=true)
 
 ## What 
 

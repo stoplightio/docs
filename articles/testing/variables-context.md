@@ -1,8 +1,6 @@
 # Using Context Variables
 
-<!--(FIXME - SHOW WRITING VARIABLE TO CONTEXT IN STEP)-->
-
-Context variables allow you to dynamically store and share data between steps in a scenario. Contrary to environment variables, context variables are _not_ saved once a test has completed. Therefore, context variables are only suitable for temporary data. 
+Context variables allow you to dynamically store and share data between steps in a scenario. Contrary to environment variables, context variables are _not_ saved once a test has completed. Therefore, context variables are only suitable for temporary data.
 
 Context variables are scoped to the scenario, _not_ the collection. This means that two scenarios can both read/write the same context variable `myVar`, and not conflict with each other. Environment variables, on the other hand, are shared amongst all scenarios, and are scoped to the collection.
 
@@ -12,9 +10,9 @@ At the start of a test run, the context object is empty. Good examples of data t
 
 Context variables make it possible to chain related steps together. For example, say we have the following set of actions to perform:
 
-1. Create User, `POST /users`. Returns a new user object, with an `id` property.
-2. Get User, `GET /users/{$.ctx.userId}`.
-3. Delete User, `DELETE /users/{$.ctx.userId}`.
+1.  Create User, `POST /users`. Returns a new user object, with an `id` property.
+2.  Get User, `GET /users/{$.ctx.userId}`.
+3.  Delete User, `DELETE /users/{$.ctx.userId}`.
 
 Somehow we need to use the `id` property for the user created in step #1 to build the request in steps #2 and #3. This is a great case for context variables, since the data is temporary (the new user's id changes every test run, and is only needed in this single scenario).
 
@@ -24,16 +22,13 @@ To accomplish this, we would capture/set the `$.ctx.userId` property to `output.
 
 ### With Captures
 
-<!--(FIXME - SHOW USING THE CAPTURE MENU IN A SCENARIO STEP)-->
-
 The capture UI in the step editor makes it easy to set `$.ctx` values. You can use values from the step output or input, including headers, response bodies, etc.
 
-<!-- theme: info --> 
+![](https://s3.amazonaws.com/user-content.stoplight.io/1564/1521752669324)
+
 > Multiple captures can be applied to the same step, to set multiple `$.ctx` values.
 
 ### With Scripting
-
-<!--(FIXME - SHOW SCREENSHOT OF SCRIPT IN STEP)-->
 
 Scripting allows you to use more complicated logic in a scenario step. Scripts
 are executed either before or after a step request finishes. Scripts are plain
@@ -49,7 +44,7 @@ $.ctx.set('userId', output.body.get('id'));
 
 Where the `$.ctx.set(x, y)` function adds the data referenced in the second
 argument (`y`) to the context under the string value of the first argument
-(`x`). 
+(`x`).
 
 Here is another example that just sets `myVariable` to the hardcoded value `123`:
 
@@ -58,8 +53,6 @@ $.ctx.set('myVariable', 123);
 ```
 
 ## Using Context Variables
-
-<!--(FIXME - SHOW USING A CONTEXT VARIABLE IN A SCENARIO STEP)-->
 
 To use a context variable in a scenario, use the following syntax:
 
@@ -91,11 +84,9 @@ $.ctx.get('myVariable');
 Where the braces (`{}`) are absent, and we are using the `get()` method for
 retrieving the context variable under the `myVariable` key.
 
-***
+---
 
-**Related**
+**Related Articles**
 
-* [Environment Overview](../editor/environments.md)
-* [Environment Configuration](../editor/editor-configuration.md)
-* [Variables Overview](./variables-overview.md)
-* [Context Variables](./variables-context.md)
+* [Using Variables Overview](/testing/using-variables/overview)
+* [$$.env (Environment)](/testing/using-variables/environment)

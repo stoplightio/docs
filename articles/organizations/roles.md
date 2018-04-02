@@ -1,6 +1,6 @@
 # Organization Member Roles and Permissions 
 
-![Organization Member Roles and Permissions](https://github.com/stoplightio/docs/blob/develop/assets/gifs/people-invite.gif?raw=true)
+![Organization Member Roles and Permissions](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-member-role-change.gif?raw=true)
 
 ## What 
 Roles and Permissions for members of Organizations can be managed and modified within Stoplight to control access to the Organization's functions and features. 

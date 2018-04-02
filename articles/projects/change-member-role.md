@@ -1,6 +1,6 @@
 # Change a Project Member's Role
 
-![](/assets/gifs/project-member-invite.gif)
+![Change a Project Member's Role](https://github.com/stoplightio/docs/blob/develop/assets/gifs/project-change-role.gif?raw=true)
  
 ## What 
 You can invite people to a Project to grant them read or read/write permissions. There are three tiers of read/write permissions: 
@@ -15,10 +15,9 @@ You can invite people to a Project to grant them read or read/write permissions.
     * Read
       
    
-## 	 Who 
+## Who 
 * Only the Organization **Owner** and Organization or Project **Administrators** can modify member roles
 
-<!-- theme: info -->
 >By deafult, all members of the Organization and the Project will have Read permission
 
 ## How

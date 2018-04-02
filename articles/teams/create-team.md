@@ -1,6 +1,6 @@
 # Create a Team 
 
-![Create a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/team-create.gif?raw=true)
+![Create a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/teams-create-team.gif?raw=true)
 
 ## What 
 

@@ -49,13 +49,11 @@ When running `prism conduct` you can:
 * Include the Scenario JSON on your CI server, and pass in its absolute file path
 * Pass in the absolute URL to the scenario JSON served up via HTTP
 
-<!-- theme: warning -->
 
 > Don't forget to pass in any required environment values with the --env command
 > line flag (or you can provide the filepath to a json file with your environment
 > variables)!
 
-<!-- theme: info -->
 
 > Did you know? You can find the full command to run your scenario collection
 > or individual scenarios in the Stoplight application. Click on the "Home"
@@ -63,9 +61,9 @@ When running `prism conduct` you can:
 
 ---
 
-**Related**
+**Related Articles**
 
-* [Continuous Integration Overview](./continuous-integration.md)
-* [Continuous Integration with Circle CI](./continous-integration-circle)
-* [Continuous Integration with Jenkins](./continous-integration-jenkins)
-* [Prism Docker Image](https://hub.docker.com/r/stoplight/prism/)
+- [Integrating in Continuous Integration](/testing/continuous-integration/overview)
+- [Integrating with Jenkins](/testing/continuous-integration/jenkins)
+- [Integrating with CircleCI](/testing/continuous-integration/circle-ci)
+- [Prism Docker Image](https://hub.docker.com/r/stoplight/prism/)

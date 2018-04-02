@@ -1,6 +1,6 @@
 # Transfer Primary Ownership of Your Organization
 
-![Transfer Ownership of Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-transfer.gif?raw=true)
+![Transfer Ownership of Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-transfer-owner.gif?raw=true)
  
 ## What 
 You can promote another Member of your Organization to the role of Owner

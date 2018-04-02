@@ -15,7 +15,7 @@ started, the section below outlines some common schemes in use.
 * Should not be used without SSL, or some other data-in-transit encryption mechanism
 * Can easily be combined with other security methods
 
-> **Note**, basic authentication is susceptible to hijacks and man-in-the-middle
+> **Note**: basic authentication is susceptible to hijacks and man-in-the-middle
 > attacks when no encryption is in use. Due to this limitation, this method of
 > authentication is only recommended when paired with SSL.
 
@@ -89,4 +89,4 @@ identify potential security risks.
 **Related**
 
 * [Additional Information on HTTP Status and Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
-* [API Operations](/modeling/introduction/modeling-with-openapi/api-operations)
+* [API Operations](/modeling/modeling-with-openapi/api-operations)

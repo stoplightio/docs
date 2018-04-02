@@ -1,5 +1,7 @@
 # Introduction
 
+It is clear that APIs are consuming the world. They are everywhere and no one really knows it, which is a beautiful thing.
+
 Prism is a runtime orchestration engine built to help technical teams make modern APIs. We rebuilt Prism from the ground up to be performant, powerful, and programmable while still being practical. Prism enables teams to work in parallel and iterate faster with less errors. The Stoplight Platform integrates tightly with Prism to generate test coverage of your API automatically, build tests visually, and create mock and contract servers instantly.
 
 Prism has first class support for the Open API Specfiction (aka OAS) and Stoplight Scenarios. OAS is machine readable documenation of your API that Prism can read and understand. Scenarios tell Prism how to orchestrate your API. When you use them together you can easily assert, transform, and validate your API against your OAS. Also, while the back-end team implements your API, your front-end teams can implement against a mock server that can return static examples, dynamic data, or replay actual traffic from your API.

@@ -42,6 +42,10 @@ different types of vehicles. To begin working on the API, you will need a base
 "car" model with a few attributes that are common across all vehicles. This
 might look similar to:
 
+![](https://s3.amazonaws.com/user-content.stoplight.io/1564/1521752009372)
+
+The JSON schema will be:
+
 ```javascript
 // the car base type
 {
@@ -67,11 +71,13 @@ might look similar to:
 }
 ```
 
-<!--FIXME Insert image of creating model from UI -->
-
 Now that we have a base type model, we now need a derived type that extends the
 base type. Since we're dealing with cars, let's create a model that defines a
 SUV type (or a Sport Utility Vehicle):
+
+![](https://s3.amazonaws.com/user-content.stoplight.io/1564/1521751959590)
+
+The JSON schema will be:
 
 ```javascript
 // the SUV model
@@ -99,14 +105,16 @@ SUV type (or a Sport Utility Vehicle):
 }
 ```
 
-<!--FIXME Insert image of creating derived model in UI -->
-
 As shown above, by wrapping our SUV model inside of an `allOf` block, we are
 able to include all of the properties that are included in the car base model
 above.
 
 When fully de-referenced (the car reference is replaced with the car
 properties), the derived SUV model will have the following JSON properties:
+
+![](https://s3.amazonaws.com/user-content.stoplight.io/1564/1521752155156)
+
+The JSON schema will be:
 
 ```javascript
 {
@@ -139,9 +147,12 @@ properties), the derived SUV model will have the following JSON properties:
   }
 }
 ```
+
 ---
-**Related Articles** 
-- [JSON Introduction](/modeling/json-best-practices/introduction)
-- [Adding Validations](/modeling/json-best-practices/adding-validations)
-- [Reducing Duplication with $refs](/modeling/json-best-practices/reducing-duplication-with-refs)
-- [Generating Schemas](/modeling/json-best-practices/generating-schemas)
+
+**Related Articles**
+
+* [JSON Introduction](/modeling/json-best-practices/introduction)
+* [Adding Validations](/modeling/json-best-practices/adding-validations)
+* [Reducing Duplication with $refs](/modeling/json-best-practices/reducing-duplication-with-refs)
+* [Generating Schemas](/modeling/json-best-practices/generating-schemas)

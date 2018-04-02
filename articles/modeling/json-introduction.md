@@ -40,7 +40,7 @@ There are many benefits to using JSON, some of which include:
 
 * It is a subset of another syntax called
   [YAML](https://en.wikipedia.org/wiki/YAML). Documents written in JSON can also
-  be written in YAML, so either format can be used to write OpenAPI documents
+  be written in YAML, so either format can be used to write OpenAPI specifications
 
 * It can be used to link files together through [JSON
   references](/modeling/introduction/modeling-with-openapi/referencing-another-api-spec), making it easy to break up large documents

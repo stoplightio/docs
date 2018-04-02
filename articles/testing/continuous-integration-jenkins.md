@@ -28,7 +28,6 @@ off your tests. If running natively, use the command format:
 BUILD_ID=dontKillMe nohup prism mock --spec ... &
 ```
 
-<!-- theme: warning -->
 
 > Please note that the trailing ampersand (`&`) is required
 
@@ -38,7 +37,7 @@ If running in Docker, use the format:
 docker run -d --rm -p 4010:4010 stoplight/prism:latest mock --spec ...
 ```
 
-For more information on using Prism as a test server, see [here](./overview.md).
+For more information on using Prism as a test server, see [here](/mocking/introduction).
 
 ### Running Prism in the Foreground
 
@@ -60,13 +59,11 @@ When running `prism conduct`, you can:
 * Include the Scenario JSON on your CI server, and pass in its absolute file path
 * Pass in the absolute URL to the scenario JSON served up via HTTP
 
-<!-- theme: warning -->
 
 > Don't forget to pass in any required environment values with the --env command
 > line flag (or you can provide the filepath to a json file with your environment
 > variables)!
 
-<!-- theme: info -->
 
 > Did you know? You can find the full command to run your scenario collection
 > or individual scenarios in the Stoplight application. Click on the "Home"
@@ -83,10 +80,10 @@ on the plugin, see [here](https://plugins.jenkins.io/stoplightio-report).
 
 **Related**
 
-* [Jenkins Website](https://jenkins.io/)
-* [Continuous Integration Overview](./continuous-integration.md)
-* [Continuous Integration with Circle CI](./continous-integration-circle)
-* [Continuous Integration with Travis CI](./continous-integration-travis)
-* [Prism Docker Image](https://hub.docker.com/r/stoplight/prism/)
-* [Stoplight Report Plugin Homepage](https://plugins.jenkins.io/stoplightio-report)
-* [Stoplight Report Plugin Github](https://github.com/jenkinsci/stoplightio-report-plugin)
+- [Jenkins Website](https://jenkins.io/)
+- [Integrating in Continuous Integration](/testing/continuous-integration/overview)
+- [Integrating with Travis](/testing/continuous-integration/travis)
+- [Integrating with CircleCI](/testing/continuous-integration/circle-ci)
+- [Prism Docker Image](https://hub.docker.com/r/stoplight/prism/)
+- [Stoplight Report Plugin Homepage](https://plugins.jenkins.io/stoplightio-report)
+- [Stoplight Report Plugin Github](https://github.com/jenkinsci/stoplightio-report-plugin)
