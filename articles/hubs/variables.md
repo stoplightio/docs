@@ -30,3 +30,9 @@ You can specify variables in your docs by adding them at the specification level
 4. Click **Add Header** 
 5. Input a **header name**
 6. Input a **header value** 
+
+***
+
+**Related**
+
+* [Security Schemes Overview](/modeling/modeling-with-openapi/security-schemes)
