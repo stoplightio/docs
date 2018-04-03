@@ -2,7 +2,7 @@
 
 ## What 
 
-Inputting variables in API documentation whenever you consume them can quickly become a tedious time sink. The same pain point applies to people consuming your documentation. Inputting an apiKey everytime you want to send HTTP Requests to test endpoints.  Stoplight removes this obstacle by storing variables in your local browser. Once you input a variable, it populates the rest of your docs, no duplication, no problems. 
+Inputting variables in API documentation whenever you consume them can quickly become a tedious time sink. The same pain point applies to people consuming your documentation. Inputting an API key everytime you want to send HTTP Requests to test endpoints is a snipe hunt.  Stoplight removes this obstacle by storing variables in your local browser. Once you input a variable, it populates the rest of your docs, no duplication, no problems. 
 
 ## How
 
