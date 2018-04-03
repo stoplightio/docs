@@ -21,10 +21,13 @@ Texture applies a texture to your header.
 ## How
 1. Select the **Hub** you wish to modify
 2. Select the **Design View** 
-3. Click on **Settings** at the top of the screen 
-4. Select **Theme** in the sidebar 
-5. Select a pre-selected color or choose your own color with the eyedropper 
-6. Select a texture 
+3. Click on **Theme** at the top of the screen 
+4. Select a pre-selected color or choose your own color with the eyedropper 
+5. Select a texture 
 
+---
+
+**Related Links**
+- [Custom CSS](/documentation/design/custom-css)
 
 
