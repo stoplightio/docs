@@ -2,7 +2,7 @@
 
 ## What 
 
-Inputting variables in API documentation whenever you consume them can quickly become a tedious time sink. Stoplight removes this obstacle by storing variables in your local browser. Once you input a variable, it populates the rest of your docs, no duplication, no problems. 
+Inputting variables in API documentation whenever you consume them can quickly become a tedious time sink. The same pain point applies to people consuming your documentation. Inputting an apiKey everytime you want to send HTTP Requests to test endpoints.  Stoplight removes this obstacle by storing variables in your local browser. Once you input a variable, it populates the rest of your docs, no duplication, no problems. 
 
 ## How
 
@@ -22,7 +22,7 @@ You can specify variables in your docs by adding them at the specification level
 
 ### Hubs Method 
 
-![Adding variables to HTTP Request Maker](https://github.com/stoplightio/docs/blob/develop/assets/images/hubs-variables-hubs.png?raw=true)
+![Adding variables to HTTP Request Maker](https://github.com/stoplightio/docs/blob/develop/assets/images/hubs-variables-tryitout.png?raw=true)
 
 1. Select the Hub you wish to modify 
 2. Create a **HTTP Request Maker** block 
