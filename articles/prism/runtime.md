@@ -1,14 +1,14 @@
 # Prism Javascript Runtime Reference
 
-Prism is a fast, flexible, and easy-to-use application for mocking and testing HTTP API's. To help improve API testing effectiveness and bypass limitations in the OpenAPI specification, Prism comes with a full ES5-compatible Javascript runtime capable of supercharging your API workflow.
+Prism is a fast, flexible, and easy-to-use application for mocking and testing HTTP APIs. To help improve API testing effectiveness and bypass limitations in the OpenAPI specification, Prism comes with a full ES5-compatible Javascript runtime capable of supercharging your API workflow.
 
-Some example use cases for the Prism Javascript runtime include:
+Example use cases for the Prism Javascript runtime include:
 
-* Getting, setting, removing cookies on requests
+* Getting, setting, and removing cookies on requests
 * Manipulating HTTP request content, including slicing and dicing response bodies or manipulating headers
 * Seeding your tests with randomized data that conforms to a regex
 
-Anything that can be done in Javascript can now be done within a Scenario step.
+> Anything that can be done in Javascript can now be done within a Scenario step.
 
 ## Execution State
 
@@ -230,7 +230,7 @@ $$.env.set(string, object);
 
 #### Request
 
-The request object on double dollar sign is a special object to help with Prism Instances. Anytime a request is sent through Prism and a Prism instance is being served, that incoming request will be parsed and set on the double dollar sign request method. Double Dollar Request is defined in Prism Conductor Instances, but it won't have any affect on the Scenario Collection run.
+The request object on double dollar sign is a special object that assists Prism Instances. Anytime a request is sent through Prism and a Prism instance is being served, that incoming request will be parsed and set on the double dollar sign request method. Double dollar request is defined in Prism Conductor Instances, but it won't have any effect on the Scenario Collection run.
 
 #### Get / Set
 
