@@ -33,6 +33,22 @@ Conduct and Serve are important concepts to understand when using Prism.
 2.  Validating live traffic between your client/backend.
 3.  Your API, your workflow, your prism. Prism is really flexible, you can easily create an instance that will record your api traffic and save it to S3 and then create another one that will replay that API traffic.
 
+### Stoplight Prism Helpers
+
+The [Prism Helpers](https://next.stoplight.io/stoplight/prism) project is a collection of scenarios, specifications, and prism isntances that illustrate how to use Prism effectively. Please go [here](https://community.stoplight.io) and let us know what you would like to see.
+
 ---
 
-**Further Reading**
+**Related Articles**
+
+* [Passing Data Between Steps](/testing/getting-started/passing-data-between-steps)
+* [Running Tests In Stoplight](/testing/running-tests/in-stoplight)
+* [Running Tests in the Terminal](/testing/running-tests/in-the-terminal)
+* [Running Tests Triggered by URL](/testing/running-tests/triggering-by-url)
+* [Using Variables Overview](/testing/using-variables/overview)
+* [$$.env (Environment)](/testing/using-variables/environment)
+* [$.ctx(Context)](/testing/using-variables/context)
+* [Sending HTTP Requests](/testing/sending-http-requests/overview)
+* [Referencing other Scenarios](/testing/referencing-other-scenarios/overview)
+* [Contract Testing](testing/leveraging-openapi/contract-testing)
+* [Integrating in Continuous Integration](/testing/continuous-integration/overview)
