@@ -23,7 +23,8 @@ OAuth provides a level of security to your documentation to restrict access to i
 6. Select an **authorization url**
 7. Select a **token url** 
 8. **Add Scope** (optional) 
-9. Add a **Security scheme description** (optional) 
+9. Add a **Security scheme description** (optional)
+10. Add a **refresh url** (optional)
 
 ### Hubs 
 
