@@ -34,12 +34,18 @@ OAuth provides a level of security to your documentation to restrict access to i
 3. Add the following lines of code to your Hub:
 
 ```
+
 "config": {
-    "http": {
-      "oauth2": {
-        "credentials": {
-          "authorize_url": "insert authorize url here",
-          "access_token_url": "insert access token url here",
+  "http": {
+    "oauth2": {
+      "credentials": {
+        "authorize_url": "insert authorize url here",
+        "access_token_url": "insert access token url here",
+      }
+    }
+  }
+}
+
 ```
 
 ---
