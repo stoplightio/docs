@@ -4,7 +4,7 @@
 
 ## What 
 
-Want to add some style and flair to your documentation? Add your own custom CSS to enhance your Hub’s look and feel. Below are the classes you can modify: 
+Want to add some style and flair to your documentation? Add your own custom CSS to enhance your Hub’s look and feel. Below are some of the classes you can modify: 
 
 ```
 .Hub
