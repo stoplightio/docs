@@ -25,6 +25,7 @@ Want to add some style and flair to your documentation? Add your own custom CSS 
             .HubPageCrumbs
               .HubPageCrumb 
             .HubPageBody 
+              .HubBlock
             .HubPageFooter
 ```
 
