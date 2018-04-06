@@ -4,6 +4,8 @@ Prism is a proxy and API server toolkit that helps you test, mock, validate, and
 
 Prism has first class support for the OpenAPI Specification (aka OAS) and Stoplight Scenarios. OAS is machine readable documentation of your API that Prism can read and understand. Scenarios tell Prism how to orchestrate your API. When you use them together you can easily assert, transform, and validate your API against your OAS. Prism also allows your front-end team to work in tandem with your back-end team. While the back-end team implements your API, your front-end teams can implement against a mock server that can return static examples, dynamic data, or replay actual traffic from your API.
 
+![](../../assets/images/prism-introduction-help.png)
+
 ## Features
 
 * Act as a mock server, routing incoming requests to example responses, or dynamically generating examples on the fly
@@ -27,11 +29,15 @@ Conduct and Serve are important concepts to understand when using Prism.
 2.  Integrating with your CI/CD Environment: Catch bugs before they get to your actual API Consumers
 3.  Webhooks: Generate your OAS from code, automatically upload it to Stoplight
 
+![](../../assets/gifs/prism-introduction-conduct.gif)
+
 ### Serve Use Cases
 
 1.  Mocking back one or more specifications: Useful to help teams work in parallel and simplify testing dependencies.
 2.  Validating live traffic between your client/backend.
 3.  Your API, your workflow, your Prism. Prism is very flexible. You can easily create an instance that will record your API traffic, save it to S3, and then create another instance that will replay that API traffic.
+
+![](../../assets/gifs/prism-introduction-mock.gif)
 
 ### Stoplight Prism Helpers
 
@@ -41,6 +47,7 @@ The [Prism Helpers](https://next.stoplight.io/stoplight/prism) project is a coll
 
 **Related Articles**
 
+* [Javascript Runtime Refrence](/runtime.md)
 * [Passing Data Between Steps](/testing/getting-started/passing-data-between-steps)
 * [Running Tests In Stoplight](/testing/running-tests/in-stoplight)
 * [Running Tests in the Terminal](/testing/running-tests/in-the-terminal)
