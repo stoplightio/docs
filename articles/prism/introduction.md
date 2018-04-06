@@ -37,7 +37,7 @@ Conduct and Serve are important concepts to understand when using Prism.
 2.  Validating live traffic between your client/backend.
 3.  Your API, your workflow, your Prism. Prism is very flexible. You can easily create an instance that will record your API traffic, save it to S3, and then create another instance that will replay that API traffic.
 
-![](../../assets/gifs/prism-introduction-mock.gif)
+![Mock Server](https://github.com/stoplightio/docs/blob/develop/assets/gifs/prism-introduction-mock.gif?raw=true)
 
 ### Stoplight Prism Helpers
 
