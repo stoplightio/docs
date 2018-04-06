@@ -4,7 +4,7 @@ Stoplight's Fair Billing Policy means you will only be charged for active users 
 
 ## Active User 
 To be considered an active user, you must perform on of the following actions: 
-- Make a commit 
+- Push a commit 
 - Write or modify a file 
 - Publish documentation 
 
