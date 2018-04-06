@@ -4,7 +4,7 @@ Prism is a proxy and API server toolkit that helps you test, mock, validate, and
 
 Prism has first class support for the OpenAPI Specification (aka OAS) and Stoplight Scenarios. OAS is machine readable documentation of your API that Prism can read and understand. Scenarios tell Prism how to orchestrate your API. When you use them together you can easily assert, transform, and validate your API against your OAS. Prism also allows your front-end team to work in tandem with your back-end team. While the back-end team implements your API, your front-end teams can implement against a mock server that can return static examples, dynamic data, or replay actual traffic from your API.
 
-![](../../assets/images/prism-introduction-help.png)
+![Prism Overivew](https://github.com/stoplightio/docs/blob/develop/assets/images/prism-introduction-help.png?raw=true)
 
 ## Features
 
@@ -29,7 +29,7 @@ Conduct and Serve are important concepts to understand when using Prism.
 2.  Integrating with your CI/CD Environment: Catch bugs before they get to your actual API Consumers
 3.  Webhooks: Generate your OAS from code, automatically upload it to Stoplight
 
-![](../../assets/gifs/prism-introduction-conduct.gif)
+![Prism Conduct](https://github.com/stoplightio/docs/blob/develop/assets/gifs/prism-introduction-conduct.gif?raw=true)
 
 ### Serve Use Cases
 
@@ -57,5 +57,5 @@ The [Prism Helpers](https://next.stoplight.io/stoplight/prism) project is a coll
 * [$.ctx(Context)](/testing/using-variables/context)
 * [Sending HTTP Requests](/testing/sending-http-requests/overview)
 * [Referencing other Scenarios](/testing/referencing-other-scenarios/overview)
-* [Contract Testing](testing/leveraging-openapi/contract-testing)
+* [Contract Testing](/testing/leveraging-openapi/contract-testing)
 * [Integrating in Continuous Integration](/testing/continuous-integration/overview)
