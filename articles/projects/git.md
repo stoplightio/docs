@@ -8,6 +8,8 @@
 
 ## How
 
+You can clone your projects Git repository from Stoplight. 
+
 Under the Settings section in your Stoplight account, find the “Access Tokens” section. 
 
 ![Access Tokens](https://github.com/stoplightio/docs/blob/develop/assets/images/access-tokens.png?raw=true)
