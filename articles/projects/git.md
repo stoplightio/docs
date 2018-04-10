@@ -10,7 +10,7 @@
 
 Under the Settings section in your Stoplight account, find the “Access Tokens” section. 
 
-[image]
+![Access Tokens]((https://github.com/stoplightio/docs/blob/develop/assets/images/access-tokens.png?raw=true))
 
 You will create a token to access projects that your Stoplight account has proper permissions for. These permissions match the ones in the Stoplight UI. 
 
