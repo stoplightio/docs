@@ -12,7 +12,7 @@ Under the Settings section in your Stoplight account, find the â€œAccess Tokensâ
 
 [image]
 
-You will create an token to access projects that your Stoplight account has proper permissions for. These permissions match the ones in the Stoplight UI. 
+You will create a token to access projects that your Stoplight account has proper permissions for. These permissions match the ones in the Stoplight UI. 
 
 If you have write access to a project, you will be able to:
 * Pull projects via git
@@ -22,13 +22,13 @@ If you have write access to a project, you will be able to:
 If you have read access to a project, you will be able to:
 * Pull your project via git
 
-You can name the token whatever you want. Once you have created an Access Token, copy it and only store it in safe location. Once you close the window, you will not see it again.
+You can name your token whatever you want. Once you have created the token, copy it and only store it in a safe location. Once you close the window, you will not see it again.
 
 We recommend to store it as an environmental variable. For example, on Mac/Linux:
 
 `export STOPLIGHT_TOKEN="1234567890"`
 
-You can then `git clone` the repo: 
+You can then `git clone` the repo, replace `{stoplight-username}`, `{username}`, and `{project-name}` with the appropriate information: 
 
 `git clone https://{stoplight-username}:$STOPLIGHT_TOKEN@git.stoplight.io/{username}/{project-name}.git`
 
@@ -38,9 +38,9 @@ For example:
 
 If it is a project from an organization and not a personal project, replace `username` with `organization-name`. 
 
-Now you can make changes to your files, commit, and push to your master branch. These changes will then be seen in the Stoplight UI as well as the "History of Changes." 
+Now you can make changes to your files, commit, and push to your master branch. You can see these changes in the Stoplight UI as well as the "History of Changes." 
 
-Remember: Only changes on the master branch will be seen in the UI at this time. 
+Remember: You will only see changes on the master branch in the UI at this time. 
 
     
 ---
