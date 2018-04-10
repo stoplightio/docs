@@ -4,6 +4,7 @@ Documenting an API is crucial to its success but can be extremely time consuming
  
 - Documenting Endpoints 
 - Testing Endpoints 
+- Creating Non-Reference Documentation 
 - Managing Content
 - External and Internal Referencing 
 - Design and Style 
@@ -14,6 +15,9 @@ The most key component to API Documentation are its endpoints. To that end, we c
 
 ## Testing Endpoints 
 Testing endpoints is a valuable tool for anyone who wants to consumer your API. Users want to know that your API functions properly before they commit to using it. To address this problem, we created [“Try it Out,” an HTTP Request Maker](/modeling/modeling-with-openapi/sending-http-requests). Try it Out allows you to send HTTP Requests to your API to test out its endpoints under any number of different conditions. You can customize Try it Out with security schemes, variables, headers, queries, and it even provides Code Generation. 
+
+## Creating Non-Reference Documentation 
+Great documentation is more than just API endpoints. Guides, tutorials, and other supplemental information enhance your users experience by providing them with all the information they need to access your API and your product. We broadened Hubs scope to accomodate all product documentation needs. You can easily build out your content within [Blocks](/documentation/blocks), a number of flexible content structures that can house a number of different forms of content including markdown, images, code snippets, and much more. 
 
 ## Managing Content 
 Organizing a complex APIs endpoints and supplemental information can be a challenging task. Some specification can have hundreds of endpoints with supplemental information throughout. To assist with organizing content, we created an overview of all your pages, subpages, and their connections called “Table of Contents”. With a bird’s eye view of your content, you can easily organize and manage your content through drag drop functionality. 
