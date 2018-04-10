@@ -1,8 +1,7 @@
 # Git Repositories
-
  
 ## What 
-* Stoplight is built on top of git
+* The Stoplight Platform is built on top of git
 * All Stoplight projects are a git repository
 * You can use Access Tokens to access the Stoplight API, authenticate Prism in a continuous integration environment, and access the underlying git repositories for projects
 * You can make this part of your git workflow, add it to scripts, or your CI/CD process
@@ -27,7 +26,7 @@ You can name the token whatever you want. Once you have created an Access Token,
 
 We recommend to store it as an environmental variable. For example, on Mac/Linux:
 
-export STOPLIGHT_TOKEN="1234567890"
+`export STOPLIGHT_TOKEN="1234567890"`
 
 You can then `git clone` the repo: 
 
@@ -36,6 +35,8 @@ You can then `git clone` the repo:
 For example: 
 
 `git clone https://taylor:$STOPLIGHT_TOKEN@git.stoplight.io/taylor/test-new.git`
+
+If it is a project from an organization and not a personal project, replace `username` with `organization-name`. 
 
 Now you can make changes to your files, commit, and push to your master branch. These changes will then be seen in the Stoplight UI as well as the "History of Changes." 
 
