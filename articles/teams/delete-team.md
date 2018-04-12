@@ -19,4 +19,4 @@
 **Related Articles**
 - [Delete an Organization](/platform/organizations/delete-org)
 - [Transfer Ownership of a Team](/platform/organizations/teams/transfer-ownership)
-- [Delete a Team](/platform/organizations/teams/delete)
+
