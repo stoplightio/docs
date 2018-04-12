@@ -47,8 +47,6 @@ The [Prism Helpers](https://next.stoplight.io/stoplight/prism) project is a coll
 
 **Related Articles**
 
-* [Javascript Runtime Refrence](/runtime.md)
-* [Passing Data Between Steps](/testing/getting-started/passing-data-between-steps)
 * [Running Tests In Stoplight](/testing/running-tests/in-stoplight)
 * [Running Tests in the Terminal](/testing/running-tests/in-the-terminal)
 * [Running Tests Triggered by URL](/testing/running-tests/triggering-by-url)
@@ -56,6 +54,5 @@ The [Prism Helpers](https://next.stoplight.io/stoplight/prism) project is a coll
 * [$$.env (Environment)](/testing/using-variables/environment)
 * [$.ctx(Context)](/testing/using-variables/context)
 * [Sending HTTP Requests](/testing/sending-http-requests/overview)
-* [Referencing other Scenarios](/testing/referencing-other-scenarios/overview)
 * [Contract Testing](/testing/leveraging-openapi/contract-testing)
 * [Integrating in Continuous Integration](/testing/continuous-integration/overview)
