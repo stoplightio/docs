@@ -24,11 +24,10 @@ API tests provide insight into how your API behaves under certain scenarios and 
 
 Microservices and serverless architecture have made it easier than ever to iterate quickly. The downside of rapid development is an increase in bugs and technical debt, making projects harder to manage without a proper testing solution. It is critical to have a comprehensive test suite to allow teams to test the API during development. 
 
->Stoplight makes it easy to create a full suite of tests by providing [Environment](/testing/using-variables/environment) and [Context variables](/testing/using-variables/context), and the ability to [reference other scenarios](/testing/referencing-other-scenarios/overview) to accelerate test generation and reduce duplication. 
+>Stoplight makes it easy to create a full suite of tests by providing [Environment](/testing/using-variables/environment) and [Context variables](/testing/using-variables/context), and the ability to reference other scenarios to accelerate test generation and reduce duplication. 
 
 ---
 **Related Articles**
-- [Passing Data Between Steps](/testing/getting-started/passing-data-between-steps)
 - [Running Tests In Stoplight](/testing/running-tests/in-stoplight)
 - [Running Tests in the Terminal](/testing/running-tests/in-the-terminal)
 - [Running Tests Triggered by URL](/testing/running-tests/triggering-by-url)
@@ -36,8 +35,7 @@ Microservices and serverless architecture have made it easier than ever to itera
 - [$$.env (Environment)](/testing/using-variables/environment)
 - [$.ctx(Context)](/testing/using-variables/context)
 - [Sending HTTP Requests](/testing/sending-http-requests/overview)
-- [Referencing other Scenarios](/testing/referencing-other-scenarios/overview)
-- [Contract Testing](testing/leveraging-openapi/contract-testing)
+- [Contract Testing](/testing/leveraging-openapi/contract-testing)
 - [Integrating in Continuous Integration](/testing/continuous-integration/overview)
 - [Integrating with Jenkins](/testing/continuous-integration/jenkins)
 - [Integrating with Travis](/testing/continuous-integration/travis)
