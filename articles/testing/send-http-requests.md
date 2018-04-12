@@ -110,7 +110,6 @@ platforms.
   ---
   **Related Articles**
 - [Testing Introduction](/testing/introduction)
-- [Passing Data Between Steps](/testing/getting-started/passing-data-between-steps)
 - [Running Tests In Stoplight](/testing/running-tests/in-stoplight)
 - [Running Tests in the Terminal](/testing/running-tests/in-the-terminal)
 - [Running Tests Triggered by URL](/testing/running-tests/triggering-by-url)
