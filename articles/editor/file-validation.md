@@ -22,4 +22,4 @@ Different types of file validations are used throughout the Stoplight platform. 
 
 **Related Articles**
 
-* [Validating Your API Spec](/modeling/modeling-with-openapi/validating-your-api-sec)
+* [Validating Your API Spec](/modeling/modeling-with-openapi/validating-your-api-spec)
