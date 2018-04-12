@@ -63,11 +63,11 @@ You can also run a contract test against a specific upstream URL with the
 prism validate --spec /path/to/my/spec.json --upstream http://localhost:8080
 ```
 
-For more information on contract testing and how it can be used, see [here](testing/leveraging-openapi/contract-testing).
+For more information on contract testing and how it can be used, see [here](/testing/leveraging-openapi/contract-testing).
 
 ---
 **Related Articles**
 
 - [Testing Introduction](/testing/introduction)
-- [Contract Testing](testing/leveraging-openapi/contract-testing)
+- [Contract Testing](/testing/leveraging-openapi/contract-testing)
 - [Integrating in Continuous Integration](/testing/continuous-integration/overview)
