@@ -43,7 +43,7 @@ There are many benefits to using JSON, some of which include:
   be written in YAML, so either format can be used to write OpenAPI specifications
 
 * It can be used to link files together through [JSON
-  references](/modeling/introduction/modeling-with-openapi/referencing-another-api-spec), making it easy to break up large documents
+  references](/modeling/modeling-with-openapi/referencing-another-api-spec), making it easy to break up large documents
   into smaller, more focused documents
 
 Whether you are modeling an API, creating a Prism Collection, or writing
