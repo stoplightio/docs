@@ -1,6 +1,6 @@
 # Welcome to Stoplight Next! 
 
-Now that you have the basics on what the [Stoplight Next Platform](/platform/introduction) is, we can go over how to get started. 
+Now that you have the basics on what the [Stoplight Next Platform](/platform/what-is-stoplight) is, we can go over how to get started. 
 
 First things first, are you using Stoplight for Personal Projects or as part of an Organization?
 
