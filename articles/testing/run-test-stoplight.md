@@ -7,7 +7,7 @@ way is through the Stoplight editor.
 
 
 > If you haven't created your first scenario yet, please [do so before
-> continuing](testing/introduction)
+> continuing](/testing/introduction)
 
 Scenarios in Stoplight are composed of three different levels:
 
