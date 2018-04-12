@@ -47,6 +47,7 @@ The [Prism Helpers](https://next.stoplight.io/stoplight/prism) project is a coll
 
 **Related Articles**
 
+* [Javascript Runtime](/mocking/javascript-runtime)
 * [Running Tests In Stoplight](/testing/running-tests/in-stoplight)
 * [Running Tests in the Terminal](/testing/running-tests/in-the-terminal)
 * [Running Tests Triggered by URL](/testing/running-tests/triggering-by-url)
