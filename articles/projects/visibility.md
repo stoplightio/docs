@@ -1,4 +1,4 @@
-## Making Your Project Private & Public
+# Making Your Project Private & Public
 
 ![Project Visibility](https://github.com/stoplightio/docs/blob/develop/assets/images/project-make-public.png?raw=true)
 
