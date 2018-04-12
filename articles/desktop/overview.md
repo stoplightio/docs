@@ -1,7 +1,7 @@
 # Web & Desktop App
 
 
-Stoplight has a desktop app! Download the appropriate version [here](https://stoplight.io/download) .
+Stoplight has a desktop app! Download the appropriate version [here]((https://github.com/stoplightio/desktop/releases/latest) .
 
 
 ## Web or Local?
