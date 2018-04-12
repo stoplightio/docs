@@ -1,18 +1,18 @@
 # The Stoplight API
 
-The __API__ component powers the Stoplight backend, connecting the UI to the datastore and other miscellaneous Stoplight services.
+The **API** component powers the Stoplight backend, connecting the UI to the datastore and other miscellaneous Stoplight services.
 
 > #### Networking Details
 >
-> The default port for the API component is TCP port __3030__. The port can be customized using the `PORT` environment variable.
-> 
-> Be sure that the Gitlab component is available __before__ starting the API service.
+> The default port for the API component is TCP port **3030**. The port can be customized using the `PORT` environment variable.
+>
+> Make sure that the GitLab component is available **before** starting the API service.
 
 ## Installation
 
 The Stoplight API can be installed with Docker or via RPM package.
 
-> Before starting, be sure to complete the Gitlab installation.
+> Before starting, be sure to complete the GitLab installation.
 
 ### RPM Package
 
@@ -35,7 +35,6 @@ sudo rpm -Uvh https://rpm.nodesource.com/pub_8.x/el/7/x86_64/nodejs-8.9.4-1nodes
 ```
 
 Once the installation has completed, verify the version installed with the command:
-
 
 ```bash
 $ node --version
@@ -83,7 +82,8 @@ To install the API component with Docker, run the command below:
 docker pull quay.io/stoplight/api
 ```
 
-> Note, if you have not already authenticated with the Stoplight container registry, you will be prompted for credentials
+> Note, if the system you are using has not already authenticated with the
+> Stoplight container registry, you will be prompted for credentials
 
 ## Configuring and Running
 
@@ -105,7 +105,7 @@ The above file should contain the following entries:
 # Secret used to encrypt cookies and other secrets used by the Stoplight API.
 SIGN_SECRET="CHANGE_ME_TO_SOMETHING_RANDOM"
 
-# Full URL to the Gitlab postgres instance.
+# Full URL to the GitLab postgres instance.
 POSTGRES_URL="postgres://username:password@example.com:5432"
 
 # Domain that Stoplight is being served from. For example, if
@@ -122,7 +122,7 @@ SL_API_HOST="http://localhost:3030"
 # SL_EXPORTER_HOST is the full URL to the Stoplight exporter component.
 SL_EXPORTER_HOST="http://localhost:3031"
 
-# SL_GITLAB_HOST is the full URL to the Stoplight Gitlab instances HTTP port.
+# SL_GITLAB_HOST is the full URL to the Stoplight GitLab instances HTTP port.
 SL_GITLAB_HOST="http://localhost:8080"
 
 # SL_REDIS_URL is the full URL to a Redis instance.
@@ -131,7 +131,7 @@ SL_REDIS_URL="redis://:password@exampl.com:6379"
 
 > Please note that the `SIGN_SECRET` environment variable must remain static between service restarts
 
-Be sure to customize any variable above as needed.
+Be sure to customize any of the variables above as needed.
 
 #### Starting the Service
 
@@ -157,7 +157,7 @@ The Stoplight API container requires the following environment variables be expo
 # Secret used to encrypt cookies and other secrets used by the Stoplight API.
 SIGN_SECRET="CHANGE_ME_TO_SOMETHING_RANDOM"
 
-# Full URL to the Gitlab postgres instance.
+# Full URL to the GitLab postgres instance.
 POSTGRES_URL="postgres://username:password@example.com:5432"
 
 # Domain that Stoplight is being served from. For example, if
@@ -174,7 +174,7 @@ SL_API_HOST="http://localhost:3030"
 # SL_EXPORTER_HOST is the full URL to the Stoplight exporter component.
 SL_EXPORTER_HOST="http://localhost:3031"
 
-# SL_GITLAB_HOST is the full URL to the Stoplight Gitlab instances HTTP port.
+# SL_GITLAB_HOST is the full URL to the Stoplight GitLab instances HTTP port.
 SL_GITLAB_HOST="http://localhost:8080"
 
 # SL_REDIS_URL is the full URL to a Redis instance.

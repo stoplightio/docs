@@ -1,10 +1,10 @@
 # Stoplight Pubs
 
-The __Pubs__ component serves and catalogs hubs published through Stoplight.
+The **Pubs** component serves and catalogs hubs published through Stoplight.
 
 > #### Networking Details
 >
-> The default ports for the Pubs component are TCP ports __8080__ (HTTP), __8443__ (HTTPS), and __9098__ (HTTPS optional). All ports can be configured via configuration (see below).
+> The default ports for the Pubs component are TCP ports **8080** (HTTP), **8443** (HTTPS), and **9098** (HTTPS optional). All ports can be configured via configuration (see below).
 
 ## Installation
 
@@ -12,7 +12,7 @@ Pubs can be installed with Docker or via RPM package.
 
 ### RPM Package
 
-Prior to installing the RPM package, you will need to have the Stoplight package repository installed and configured with your user-specific credentials. 
+Prior to installing the RPM package, you will need to have the Stoplight package repository installed and configured with your user-specific credentials.
 
 You can do this by copying-and-pasting the contents below into a terminal:
 
@@ -87,8 +87,8 @@ admin_bind: "127.0.0.1:9098"
 admin_ssl_enabled: no
 # If SSL is enabled for the management API, a certificate and key must be
 # provided
-admin_ssl_cert_path: 
-admin_ssl_key_path: 
+admin_ssl_cert_path:
+admin_ssl_key_path:
 
 # If set, only requests with the following IPs will be responded to by the admin
 # API
@@ -100,7 +100,7 @@ admin_ip_whitelist:
 data_dir: /var/lib/pubs
 ```
 
-Be sure to customize any variable above as needed.
+Be sure to customize any of the variables above as needed.
 
 #### Starting the Service
 

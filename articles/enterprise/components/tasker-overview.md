@@ -1,13 +1,13 @@
 # Stoplight Tasker
 
-The __Tasker__ component runs scheduled and on-demand tasks for the Stoplight platform.
+The **Tasker** component runs scheduled and on-demand tasks for the Stoplight platform.
 
 > #### Networking Details
 >
-> The default port for the Tasker component is TCP port __9432__. 
-> 
+> The default port for the Tasker component is TCP port **9432**.
+>
 > The port and bind address can be configured via the `TASKER_HTTP_BIND` environment variable or the `--listen` CLI flag.
-> 
+>
 > Tasker requires a Redis instance to be available when starting. Be sure to setup Redis before installing Tasker.
 
 ## Installation
@@ -16,7 +16,7 @@ Tasker can be installed with Docker or via RPM package.
 
 ### RPM Package
 
-Prior to installing the RPM package, you will need to have the Stoplight package repository installed and configured with your user-specific credentials. 
+Prior to installing the RPM package, you will need to have the Stoplight package repository installed and configured with your user-specific credentials.
 
 You can do this by copying-and-pasting the contents below into a terminal:
 
@@ -90,7 +90,7 @@ TASKER_REDIS_DATABASE="0"
 TASKER_REDIS_NAMESPACE=""
 ```
 
-Be sure to customize any variable above as needed.
+Be sure to customize any of the variables above as needed.
 
 #### Starting the Service
 

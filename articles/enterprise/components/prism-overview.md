@@ -1,10 +1,10 @@
 # Stoplight Prism
 
-The __Prism__ component powers scenarios and API orchestration.
+The **Prism** component powers scenarios and API orchestration.
 
 > #### Networking Details
 >
-> The default port for the Prism component is TCP port __4050__ (HTTP). The port can be configured via configuration (see below).
+> The default port for the Prism component is TCP port **4050** (HTTP). The port can be configured via configuration (see below).
 
 ## Installation
 
@@ -12,7 +12,7 @@ Prism can be installed with Docker or via RPM package.
 
 ### RPM Package
 
-Prior to installing the RPM package, you will need to have the Stoplight package repository installed and configured with your user-specific credentials. 
+Prior to installing the RPM package, you will need to have the Stoplight package repository installed and configured with your user-specific credentials.
 
 You can do this by copying-and-pasting the contents below into a terminal:
 
@@ -71,7 +71,7 @@ SL_HOST="http://localhost:3100"
 # URL to the Stoplight Exporter
 SL_EXPORTER_HOST="http://localhost:3031"
 
-# the following variables should be kept as the 
+# the following variables should be kept as the
 # default unless needed otherwise
 ENV_NAME="production"
 MAX_QUEUE_SIZE=500
@@ -80,7 +80,7 @@ MAX_WORKERS=25
 PRISM_LOG_LEVEL="ERROR"
 ```
 
-Be sure to customize any variable above as needed.
+Be sure to customize any of the variables above as needed.
 
 #### Starting the Service
 

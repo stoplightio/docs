@@ -1,26 +1,26 @@
-# Gitlab CE
+# GitLab CE
 
-Gitlab CE powers the Stoplight backend, including file storage and database.
+GitLab CE powers the Stoplight backend, including file storage and database.
 
 > ### Requirements
-> 
+>
 > #### Storage
-> 
-> Gitlab requires persistent storage in order to store Stoplight file data (in git), and optionally PostgreSQL data (when using the omnibus package).
-> 
+>
+> GitLab requires persistent storage in order to store Stoplight file data (in git), and optionally PostgreSQL data (when using the omnibus package).
+>
 > #### Networking
 >
-> The default port for Gitlab's HTTP API is TCP port 8080. The port can be customized via the Gitlab configuration file. The Gitlab process must also be able to initiate communication to PostgreSQL and Redis.
-> 
-> _If not using the omnibus package, make sure that Redis and PostgreSQL are up and available prior to starting Gitlab_
+> The default port for GitLab's HTTP API is TCP port 8080. The port can be customized via the GitLab configuration file. The GitLab process must also be able to initiate communication to PostgreSQL and Redis.
+>
+> _If not using the omnibus package, make sure that Redis and PostgreSQL are up and available prior to starting GitLab_
 
 ## Installation
 
-Gitlab can be installed with Docker or via RPM package.
+GitLab can be installed with Docker or via RPM package.
 
 ### RPM Package
 
-Prior to installing the RPM package, you will need to have the Stoplight package repository installed and configured with your user-specific credentials. 
+Prior to installing the RPM package, you will need to have the Stoplight package repository installed and configured with your user-specific credentials.
 
 You can do this by copying-and-pasting the contents below into a terminal:
 
@@ -41,9 +41,9 @@ gpgkey=https://pkg.stoplight.io/stoplight.key
 EOF
 ```
 
-> Be sure to set your repository credentials before issuing the `cat` command
+> Make sure that the repository credentials are set before issuing the `cat` command
 
-Once the repository is configured properly, you can install the Gitlab component using the command:
+Once the repository is configured properly, you can install the GitLab component using the command:
 
 ```bash
 sudo yum install stoplight-gitlab -y
@@ -61,25 +61,25 @@ docker pull quay.io/stoplight/gitlab
 
 ## Configuring and Running
 
-To configure the Stoplight Gitlab component, you will need to provide connection details to the other necessary components.
+To configure the Stoplight GitLab component, you will need to provide connection details to the other necessary components.
 
 ### Package-based Installations
 
 #### Configuring the Service
 
-The Stoplight Gitlab configuration is located at:
+The Stoplight GitLab configuration is located at:
 
 ```bash
 /etc/gitlab/gitlab.rb
 ```
 
-The above file encompasses all of the different configuration options exposed by Gitlab. This guide only covers those specific to Stoplight.
+The above file encompasses all of the different configuration options exposed by GitLab. This guide only covers those specific to Stoplight.
 
-> For documentation on other Gitlab configuration options, please see the official documentation [here](https://docs.gitlab.com/omnibus/README.html#configuring)
+> For documentation on other GitLab configuration options, please see the official documentation [here](https://docs.gitlab.com/omnibus/README.html#configuring)
 
 #### Starting the Service
 
-To start Gitlab for the first time, run the commands:
+To start GitLab for the first time, run the commands:
 
 ```bash
 # one-time configuration (needed on new installs and upgrades)
@@ -99,7 +99,7 @@ sudo gitlab-ctl status
 
 #### Configuring the Container
 
-The Gitlab container should be configured nearly identically to the package installation described above, via file. The easiest way to do this is to mount the Gitlab configuration directory inside the container.
+The GitLab container should be configured nearly identically to the package installation described above, via file. The easiest way to do this is to mount the GitLab configuration directory inside the container.
 
 To mount the configuration inside the container, use the `-v` argument to the `docker run` command:
 
@@ -109,7 +109,7 @@ docker run -v /data/gitlab-config:/etc/gitlab ...
 
 Where `/data/gitlab-config` is a directory containing your `gitlab.rb` configuration file.
 
-> See [here](https://docs.gitlab.com/omnibus/README.html#configuring) for more information on how to configure Gitlab
+> See [here](https://docs.gitlab.com/omnibus/README.html#configuring) for more information on how to configure GitLab
 
 #### Starting the Container
 
@@ -127,11 +127,11 @@ If started properly, the container should be marked with a healthy status within
 
 ## Post-install Validations
 
-Once the Gitlab component is running, you can verify the installation was successful by using the methods below.
+Once the GitLab component is running, you can verify the installation was successful by using the methods below.
 
-### Gitlab Environment Check
+### GitLab Environment Check
 
-Gitlab comes with it's own check that can be useful for catching any improperly configured components. To run this check, use the command:
+GitLab comes with it's own check that can be useful for catching any improperly configured components. To run this check, use the command:
 
 ```bash
 sudo gitlab-rake gitlab:check RAILS_ENV=production
@@ -143,20 +143,19 @@ If you are using a from-source installation, the command is modified to:
 sudo -u git -H bundle exec rake gitlab:check RAILS_ENV=production
 ```
 
-### Gitlab UI
+### GitLab UI
 
-If the environment check is successful, then you are ready to load up the Gitlab UI. In a web browser, visit the host and port that you are running Gitlab's HTTP port on.
+If the environment check is successful, then you are ready to load up the GitLab UI. In a web browser, visit the host and port that you are running GitLab's HTTP port on.
 
-For example, if you are running Gitlab on host `gitlab.example.com` on port `8080`, you can visit the following URL in a web browser to see the Gitlab UI:
+For example, if you are running GitLab on host `gitlab.example.com` on port `8080`, you can visit the following URL in a web browser to see the GitLab UI:
 
 [http://gitlab.example.com:8080/](http://gitlab.example.com:8080/)
 
-If the installation was successful, you will be greeted by a Gitlab-branded login screen similar to what is displayed on their [hosted login screen](https://gitlab.com/users/sign_in).
+If the installation was successful, you will be greeted by a GitLab-branded login screen similar to what is displayed on their [hosted login screen](https://gitlab.com/users/sign_in).
 
-> If you have enabled SSL, be sure to use `https://` when typing the Gitlab URL.
+> If you have enabled SSL, make sure to use `https://` when typing the GitLab URL.
 
 ## FAQ
-
 
 #### Can I use the embedded Redis or PostgreSQL for other services?
 
@@ -176,6 +175,6 @@ postgresql['port'] = 5432
 
 Once the configuration changes are made, issue a `gitlab-ctl reconfigure` for the changes to take effect.
 
-> If running Gitlab in Docker, be sure to expose the Redis/PostgreSQL ports with the `-p` command-line option
+> If running GitLab in Docker, be sure to expose the Redis/PostgreSQL ports with the `-p` command-line option
 
-For more information on configuring Redis, please see the official Gitlab documentation [here](https://docs.gitlab.com/omnibus/settings/redis.html).
+For more information on configuring Redis, please see the official GitLab documentation [here](https://docs.gitlab.com/omnibus/settings/redis.html).

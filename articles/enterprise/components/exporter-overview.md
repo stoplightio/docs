@@ -1,11 +1,11 @@
 # The Stoplight Exporter
 
-The __Exporter__ component de-references JSON specifications to ensure all referenced files and external data sources are resolved when needed.
+The **Exporter** component de-references JSON specifications to ensure all referenced files and external data sources are resolved when needed.
 
 > #### Networking Details
 >
-> The default port for the API component is TCP port __3031__. The port can be customized using the `PORT` environment variable.
-> 
+> The default port for the API component is TCP port **3031**. The port can be customized using the `PORT` environment variable.
+>
 > The Exporter service is stateless and relies on no other components for operation.
 
 ## Installation
@@ -105,14 +105,14 @@ SL_APP_HOST="https://stoplight.example.com"
 # SL_API_HOST is the URL to the Stoplight API
 SL_API_HOST="https://stoplight-api.internal.example.com:3030"
 
-# SL_EXPORTER_HOST is the full URL to the Stoplight Gitlab instance
+# SL_EXPORTER_HOST is the full URL to the Stoplight GitLab instance
 SL_EXPORTER_HOST="https://stoplight-exporter.internal.example.com"
 
 # SL_PREVIEW_HOST is the full URL to the Stoplight Preview instance
 SL_PREVIEW_HOST="https://stoplight-preview.internal.example.com"
 ```
 
-Be sure to customize any variable above as needed.
+Be sure to customize any of the variables above as needed.
 
 #### Starting the Service
 
@@ -141,7 +141,7 @@ SL_APP_HOST="https://stoplight.example.com"
 # SL_API_HOST is the URL to the Stoplight API
 SL_API_HOST="https://stoplight-api.internal.example.com:3030"
 
-# SL_EXPORTER_HOST is the full URL to the Stoplight Gitlab instance
+# SL_EXPORTER_HOST is the full URL to the Stoplight GitLab instance
 SL_EXPORTER_HOST="https://stoplight-exporter.internal.example.com"
 
 # SL_PREVIEW_HOST is the full URL to the Stoplight Preview instance

@@ -1,24 +1,24 @@
 # The Stoplight App
 
-The __app__ component powers the Stoplight user interface by connecting users to the Stoplight API and other services.
+The **app** component powers the Stoplight user interface by connecting users to the Stoplight API and other services.
 
 > ### Requirements
-> 
+>
 > #### Storage
-> 
+>
 > There are no storage requirements for this component.
-> 
+>
 > #### Networking
 >
-> The default port for the app component is TCP port __3100__. The port can be customized using the `PORT` environment variable.
-> 
-> _Be sure that both API and Gitlab components are available __before__ starting the app service_
+> The default port for the app component is TCP port **3100**. The port can be customized using the `PORT` environment variable.
+>
+> _Be sure that both API and GitLab components are available **before** starting the app service_
 
 ## Installation
 
 The Stoplight app can be installed with Docker or via RPM package.
 
-> Before starting, be sure to complete the Gitlab and API installations.
+> Before starting, be sure to complete the GitLab and API installations.
 
 ### RPM Package
 
@@ -41,7 +41,6 @@ sudo rpm -Uvh https://rpm.nodesource.com/pub_8.x/el/7/x86_64/nodejs-8.9.4-1nodes
 ```
 
 Once the installation has completed, verify the version installed with the command:
-
 
 ```bash
 $ node --version
@@ -114,10 +113,10 @@ SL_APP_HOST="https://stoplight.example.com"
 # SL_API_HOST is the URL to the Stoplight API
 SL_API_HOST="https://stoplight-api.internal.example.com:3030"
 
-# SL_GITLAB_HOST is the full URL to the Stoplight Gitlab instance
+# SL_GITLAB_HOST is the full URL to the Stoplight GitLab instance
 SL_GITLAB_HOST="https://gitlab.internal.example.com:8080"
 
-# SL_EXPORTER_HOST is the full URL to the Stoplight Gitlab instance
+# SL_EXPORTER_HOST is the full URL to the Stoplight GitLab instance
 SL_EXPORTER_HOST="https://stoplight-exporter.internal.example.com"
 
 # SL_PRISM_HOST is the full URL to the Stoplight Prism instance
@@ -130,7 +129,7 @@ SL_PUBS_HOST="docs.example.com"
 SL_PUBS_INGRESS="https://pubs.example.com:9098"
 ```
 
-Be sure to customize any variable above as needed.
+Be sure to customize any of the variables above as needed.
 
 #### Starting the Service
 
@@ -159,10 +158,10 @@ SL_APP_HOST="https://stoplight.example.com"
 # SL_API_HOST is the URL to the Stoplight API
 SL_API_HOST="https://stoplight-api.internal.example.com:3030"
 
-# SL_GITLAB_HOST is the full URL to the Stoplight Gitlab instance
+# SL_GITLAB_HOST is the full URL to the Stoplight GitLab instance
 SL_GITLAB_HOST="https://gitlab.internal.example.com:8080"
 
-# SL_EXPORTER_HOST is the full URL to the Stoplight Gitlab instance
+# SL_EXPORTER_HOST is the full URL to the Stoplight GitLab instance
 SL_EXPORTER_HOST="https://stoplight-exporter.internal.example.com"
 
 # SL_PRISM_HOST is the full URL to the Stoplight Prism instance
