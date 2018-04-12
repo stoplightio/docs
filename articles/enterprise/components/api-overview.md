@@ -224,3 +224,19 @@ curl -v http://localhost:3030/health
 ```
 
 If the API was installed and configured properly, you will receive an HTTP 200 response back.
+
+## Other Configuration Options
+
+### Disabling Registration
+
+New users can be prevented from registering with Stoplight by exposing a
+`DISABLE_REGISTRATION=true` variable either through the environment or
+configuration.
+
+If this option is enabled, new user registration requests will receive the
+following error when attempting to register:
+
+> User registration has been temporarily disabled. Please contact your administrator.
+
+_Please note_, enabling this feature does not prevent existing users from
+inviting new users.

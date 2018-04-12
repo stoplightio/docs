@@ -81,7 +81,7 @@ TASKER_MODE="shell"
 CORE_ROOT="/opt/stoplight-hub-builder"
 
 # Redis host:port to connect to (must be available before starting service)
-TASKER_REDIS_HOSTPORT="redis:6379"
+TASKER_REDIS_HOSTPORT="redis://redis:6379"
 # Redis password, if any
 TASKER_REDIS_PASSWORD=""
 # Redis database
@@ -122,7 +122,7 @@ TASKER_MODE="shell"
 CORE_ROOT="/opt/stoplight-hub-builder"
 
 # Redis host:port to connect to (must be available before starting service)
-TASKER_REDIS_HOSTPORT="redis:6379"
+TASKER_REDIS_HOSTPORT="redis://redis:6379"
 # Redis password, if any
 TASKER_REDIS_PASSWORD=""
 # Redis database
