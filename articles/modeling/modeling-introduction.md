@@ -30,4 +30,4 @@ There are a few ways to get started designing your API with the Stoplight design
 - Create an API from scratch [Using the CRUD Builder](/modeling/modeling-with-openapi/using-the-crud-builder)
 - [Reference another API Spec](/modeling/modeling-with-openapi/referencing-another-api-spec)
 - [Send HTTP Requests](/modeling/modeling-with-openapi/sending-http-requests) to an existing API Spec 
-- [Validate your API Spec](/modeling/modeling-with-openapi/validating-your-api-sec)
+- [Validate your API Spec](/modeling/modeling-with-openapi/validating-your-api-spec)
