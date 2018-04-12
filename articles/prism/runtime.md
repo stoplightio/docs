@@ -120,10 +120,11 @@ var data = SL.schema.generate(contract);
 
 #### Find Operation
 
+The code snippet below describes the Stoplight representation of an HTTP operation. It is loosely based on OAS 3. You can find more descriptions of some of the properties described below [here](https://swagger.io/specification/#operationObject).
+
 ```js
 /**
 *
-* This describes the Stoplight representation of an HTTP operation. It is loosely based on OAS 3. You can find more descriptions of some of the properties described below here: https://swagger.io/specification/#operationObject.
 *
 * @typedef {Object} Operation
 * @property {string} method
