@@ -4,7 +4,7 @@
 Documentation is a principal driving force for great UX. APIs require basic referential material for consumption, but great UX comes from all of the supplementary information you provide your users.  To support the creation of any number of different supplementary documents, images, videos, etc. we created Hubs, our documentation tool. We pushed the limits of API documentation beyond specifications and models to accommodate all of the secondary and tertiary information that can help drive good UX. 
 
 ## Referencing Other Files/ Git Repo for Open Sourcing Docs  
-Open sourcing your documentation can provide a number of advantages including more engagement and content. Users and businesses often create their own supplemental documents supporting their own unique use cases. By providing a Github repo, these users and companies can contribute their unique documentation to your docs enhancing your UX. Stoplight’s Hubs has a ref builder that allows you to directly reference any markdown and YAML files. Create and store your markdown files in a Github Repo or other file sharing platform and directly reference them in Hubs. This workflow also gives the added benefit of changes made to any markdown files to be automatically reflected in your documentation.  
+Open sourcing your documentation can provide a number of advantages including more engagement and content. Users and businesses often create their own supplemental documents supporting their own unique use cases. By providing a Github repo, these users and companies can contribute their unique documentation to your docs enhancing your UX. Stoplight’s Hubs has a ref builder that allows you to directly reference any markdown and YAML files. Create and store your markdown files in a Github Repo or other file sharing platform and directly reference them in Hubs. This workflow also gives the added benefit of changes made to any markdown files being automatically reflected in your documentation.  
 
 ## Structure 
 
@@ -28,3 +28,17 @@ Routing ties into SEO but is also an important aspect of a well structured and o
 
 ## Design
 Documentation design is not just a pretty package for your content. It impacts a number of different aspects of your business including marketing, branding, and UX. Use theming for marketing and branding purposes to make simple global style adjustments. Most businesses have 2-3 primary colors that can be applied to your docs through theming. For more advanced design, use Custom CSS to have complete control of the style of your documentation. 
+
+---
+**Related Links**
+- [Documentation with Hubs](/documentation/introduction)
+- [Routing](/documentation/getting-started/routing)
+- [Headers](/documentation/getting-started/header-footer)
+- [Pages](/documentation/getting-started/pages)
+- [Subpages](/documentation/getting-started/subpages)
+- [Blocks](/documentation/blocks)
+- [Referencing Other Data Sources](/documentation/referencing-other-data-sources)
+- [Publishing](/documentation/publishing)
+- [Theming](/documentation/design/theming)
+- [Custom CSS](/documentation/design/custom-css)
+
