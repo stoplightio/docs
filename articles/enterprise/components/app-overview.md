@@ -107,40 +107,6 @@ either by configuration file or through the environment.
 > The same configuration variables can be used regardless of installation type
 > (container or package-based).
 
-### RPM Package
-
-The Stoplight App configuration is located at the location:
-
-```bash
-/etc/stoplight-app/stoplight-app.cfg
-```
-
-Be sure to customize any variables as needed to match your environment before
-starting the API service.
-
-> Any changes to the API configuration require a service restart in order to
-> take effect.
-
-### Docker
-
-To expose configuration variables to the Docker runtime, either write them to a
-file and use the `--env-file` argument:
-
-```bash
-cat <<EOF>app-env-vars
-SL_API_HOST="..."
-...
-EOF
-
-docker run --env-file app-env-vars ...
-```
-
-Or you can expose them one at a time with the `-e` flag:
-
-```bash
-docker run -e SL_API_HOST=https://stoplight-api.example.com ...
-```
-
 ### Variables
 
 #### SL_APP_HOST
@@ -197,6 +163,40 @@ The `SL_PUBS_INGRESS` variable is the URL to the Stoplight Pubs instance admin A
 
 ```
 SL_PUBS_INGRESS="https://pubs.example.com:9098"
+```
+
+### RPM Package
+
+The Stoplight App configuration is located at the location:
+
+```bash
+/etc/stoplight-app/stoplight-app.cfg
+```
+
+Be sure to customize any variables as needed to match your environment before
+starting the API service.
+
+> Any changes to the API configuration require a service restart in order to
+> take effect.
+
+### Docker
+
+To expose configuration variables to the Docker runtime, either write them to a
+file and use the `--env-file` argument:
+
+```bash
+cat <<EOF>app-env-vars
+SL_API_HOST="..."
+...
+EOF
+
+docker run --env-file app-env-vars ...
+```
+
+Or you can expose them one at a time with the `-e` flag:
+
+```bash
+docker run -e SL_API_HOST=https://stoplight-api.example.com ...
 ```
 
 ## Running

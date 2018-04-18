@@ -116,40 +116,6 @@ API can be configured either by configuration file or through the environment.
 > The same configuration variables can be used regardless of installation type
 > (container or package-based).
 
-### RPM Package
-
-The Stoplight API configuration file is located at the location:
-
-```bash
-/etc/stoplight-api/stoplight-api.cfg
-```
-
-Be sure to customize any variables as needed to match your environment before
-starting the API service.
-
-> Any changes to the API configuration require a service restart in order to
-> take effect.
-
-### Docker
-
-To expose configuration variables to the Docker runtime, either write them to a
-file and use the `--env-file` argument:
-
-```bash
-cat <<EOF>api-env-vars
-SL_APP_HOST="..."
-...
-EOF
-
-docker run --env-file api-env-vars ...
-```
-
-Or you can expose them one at a time with the `-e` flag:
-
-```bash
-docker run -e SL_APP_HOST=https://stoplight.example.com ...
-```
-
 ### Variables
 
 #### SIGN_SECRET
@@ -243,6 +209,40 @@ If this option is set to `true`, new user registration requests will receive the
 following error when attempting to register:
 
 > User registration has been temporarily disabled. Please contact your administrator.
+
+### RPM Package
+
+The Stoplight API configuration file is located at the location:
+
+```bash
+/etc/stoplight-api/stoplight-api.cfg
+```
+
+Be sure to customize any variables as needed to match your environment before
+starting the API service.
+
+> Any changes to the API configuration require a service restart in order to
+> take effect.
+
+### Docker
+
+To expose configuration variables to the Docker runtime, either write them to a
+file and use the `--env-file` argument:
+
+```bash
+cat <<EOF>api-env-vars
+SL_APP_HOST="..."
+...
+EOF
+
+docker run --env-file api-env-vars ...
+```
+
+Or you can expose them one at a time with the `-e` flag:
+
+```bash
+docker run -e SL_APP_HOST=https://stoplight.example.com ...
+```
 
 ## Running
 

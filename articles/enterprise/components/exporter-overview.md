@@ -89,7 +89,7 @@ sudo yum install stoplight-exporter -y
 
 ### Docker
 
-To install the API component with Docker, run the command below:
+To install the Exporter component with Docker, run the command below:
 
 ```bash
 docker pull quay.io/stoplight/exporter
@@ -107,39 +107,6 @@ environment.
 
 > The same configuration variables can be used regardless of installation type
 > (container or package-based).
-
-### RPM Package
-
-The Stoplight Exporter configuration is located at the location:
-
-```bash
-/etc/stoplight-exporter/stoplight-exporter.cfg
-```
-
-Be sure to customize any variables as needed to match your environment before
-starting the API service.
-
-> Any changes to the API configuration require a service restart in order to
-> take effect.
-
-### Docker
-
-To expose these to the Docker runtime, either write them to a file and use the `--env-file` argument:
-
-```bash
-cat <<EOF>exporter-env-vars
-SL_APP_HOST="..."
-...
-EOF
-
-docker run --env-file exporter-env-vars ...
-```
-
-Alternatively, you can expose them one at a time with the `-e` flag:
-
-```bash
-docker run -e SL_APP_HOST=https://stoplight.example.com ...
-```
 
 ### Variables
 
@@ -163,13 +130,48 @@ SL_API_HOST="https://stoplight-api.internal.example.com:3030"
 
 The `SL_EXPORTER_HOST` variable is the full URL to the Stoplight Exporter instance.
 
+```
 SL_EXPORTER_HOST="https://stoplight-exporter.internal.example.com"
+```
+
+### RPM Package
+
+The Stoplight Exporter configuration is located at the location:
+
+```bash
+/etc/stoplight-exporter/stoplight-exporter.cfg
+```
+
+Be sure to customize any variables as needed to match your environment before
+starting the Exporter service.
+
+> Any changes to the Exporter configuration require a service restart in order
+> to take effect.
+
+### Docker
+
+To expose these to the Docker runtime, either write them to a file and use the `--env-file` argument:
+
+```bash
+cat <<EOF>exporter-env-vars
+SL_APP_HOST="..."
+...
+EOF
+
+docker run --env-file exporter-env-vars ...
+```
+
+Alternatively, you can expose them one at a time with the `-e` flag:
+
+```bash
+docker run -e SL_APP_HOST=https://stoplight.example.com ...
+```
 
 ## Running
 
 ### RPM Package
 
-To start the API server, run the command:
+To start the Exporter server, run the command:
 
 ```bash
 sudo systemctl start stoplight-exporter
