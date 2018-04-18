@@ -114,7 +114,7 @@ either by the configuration file or through the environment.
 
 #### SL_APP_HOST
 
-The `SL_APP_HOST` is the public-facing URL for the stoplight application.
+The `SL_APP_HOST` is the public-facing URL for the Stoplight application.
 
 ```
 SL_APP_HOST="https://stoplight.example.com"
