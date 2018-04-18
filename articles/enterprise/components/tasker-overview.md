@@ -4,14 +4,6 @@ The **Tasker** component runs scheduled and on-demand tasks for the Stoplight pl
 
 > #### Networking Details
 >
-> The default port for the Tasker component is TCP port **9432**.
->
-> The port and bind address can be configured via the `TASKER_HTTP_BIND` environment variable or the `--listen` CLI flag.
->
-> Tasker requires a Redis instance to be available when starting. Be sure to setup Redis before installing Tasker.
-
-> #### Networking Details
->
 > The default port for the Tasker component is TCP port **9432**. This port can
 > be customzied via configuration variable.
 >
