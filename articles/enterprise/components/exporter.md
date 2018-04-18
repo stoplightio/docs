@@ -37,7 +37,7 @@ Prior to installing the RPM package, you will need to:
 
 #### Installing NodeJS
 
-To install NodeJS, please run the following commands:
+To install NodeJS, run the following commands:
 
 ```bash
 # make sure all current versions of nodejs are removed
@@ -54,7 +54,7 @@ $ node --version
 v8.9.4
 ```
 
-If you do not see a version starting `v8.9`, please contact Stoplight support for assistance.
+If you do not see a version starting `v8.9`, contact Stoplight support for assistance.
 
 #### Setting up the Package Repository
 

@@ -89,7 +89,8 @@ The Stoplight GitLab configuration is located at:
 
 The above file encompasses all of the different configuration options exposed by GitLab. This guide only covers those specific to Stoplight.
 
-> For documentation on other GitLab configuration options, please see the official documentation [here](https://docs.gitlab.com/omnibus/README.html#configuring)
+> For documentation on other GitLab configuration options, see the official
+> documentation [here](https://docs.gitlab.com/omnibus/README.html#configuring)
 
 #### Starting the Service
 
@@ -191,4 +192,5 @@ Once the configuration changes are made, issue a `gitlab-ctl reconfigure` for th
 
 > If running GitLab in Docker, be sure to expose the Redis/PostgreSQL ports with the `-p` command-line option
 
-For more information on configuring Redis, please see the official GitLab documentation [here](https://docs.gitlab.com/omnibus/settings/redis.html).
+For more information on configuring Redis, see the official GitLab documentation
+[here](https://docs.gitlab.com/omnibus/settings/redis.html).
