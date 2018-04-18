@@ -5,9 +5,6 @@
 ## What 
 Organizations are great for grouping people, data, and billing together in one convenient location. 
 
-## Who 
-* Only the Billing **Owner** or Organization **Administrators** can create Organizations 
-
 ## How 
 1. Click on **+ New**  to the right of Organizations 
 2. Fill in **Name** 
