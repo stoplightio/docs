@@ -32,9 +32,7 @@ datastore and other miscellaneous Stoplight services.
 
 ## Installation
 
-The Stoplight API can be installed with Docker or via RPM package.
-
-> Before starting, be sure to complete the GitLab installation.
+The Stoplight API can be installed with Docker or RPM package.
 
 ### RPM Package
 
