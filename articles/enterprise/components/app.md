@@ -105,7 +105,7 @@ docker pull quay.io/stoplight/app
 
 To configure the Stoplight App component, you will need to provide connection
 details to the other necessary Stoplight components. The API can be configured
-either by configuration file or through the environment.
+either by the configuration file or through the environment.
 
 > The same configuration variables can be used regardless of installation type
 > (container or package-based).

@@ -102,7 +102,7 @@ docker pull quay.io/stoplight/exporter
 
 To configure the Stoplight Exporter component, you will need to provide runtime
 values and connection details to the other necessary Stoplight components. The
-Exporter can be configured either by configuration file or through the
+Exporter can be configured either by the configuration file or through the
 environment.
 
 > The same configuration variables can be used regardless of installation type
