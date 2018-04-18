@@ -2,14 +2,14 @@
 
 ## Organizations 
 
-| **Organization Actions**        | **Guest** | **Member** | **Administrator** | **Owner** |
-|---------------------------------|:-----------:|:------------:|:-------------------:|:-----------:|
+| **Organization Actions**        | **Reader** | **Creator** | **Administrator** | **Owner** |
+|---------------------------------|:----------:|:-----------:|:-----------------:|:---------:|
 | Read Public Projects            |     X     |      X     |         X         |     X     |
 | View Organization Collaborators |           |      X     |         X         |     X     |
 | View Organization Teams         |           |      X     |         X         |     X     |
 | Create Projects                 |           |      X     |         X         |     X     |
 | Read Private Projects           |           |      X     |         X         |     X     |
-| Write Projects                  |           |            |         X         |     X     |
+| Write Projects                  |           |      X     |         X         |     X     |
 | Manage Collaborators            |           |            |         X         |     X     |
 | Manage Teams                    |           |            |         X         |     X     |
 | Manage Organization Settings    |           |            |                   |     X     |
