@@ -10,23 +10,42 @@ addition to storing files, GitLab is responsible for:
 * Tracking all changes between different files, and storing them within a Git
   repository
 
-Packaged within the GitLab CE is an installation of PostgreSQL and Redis. These
-two sub-components can be broken out into external services if your organization
-is already familiar with running these (or similar) services. You may also break
-out these services if you plan on using a managed hosting solution, for example,
-Amazon RDS (for PostgreSQL) or Amazon ElastiCache (for Redis).
+Packaged within the GitLab CE is an embedded installation of PostgreSQL and
+Redis. These two sub-components can be broken out into external services if your
+organization is already familiar with running these (or similar) services. You
+may also break out these services if you plan on using a managed hosting
+solution, for example, Amazon RDS (for PostgreSQL) or Amazon ElastiCache (for
+Redis).
 
-> ### Requirements
+> #### Storage Requirements
 >
-> #### Storage
+> GitLab requires persistent storage in order to store Stoplight file data (in
+> Git), and optionally PostgreSQL data (when using the omnibus package).
+
+> #### Networking Details
 >
-> GitLab requires persistent storage in order to store Stoplight file data (in Git), and optionally PostgreSQL data (when using the omnibus package).
+> The default GitLab ports are 80 (HTTP) and 443 (HTTPS). These ports can be
+> customized via the `gitlab.rb` configuration file (discussed below).
 >
-> #### Networking
+> GitLab must be able to receive incoming connections from the following components:
 >
-> The default port for GitLab's HTTP API is TCP port 8080. The port can be customized via the GitLab configuration file. The GitLab process must also be able to initiate communication to PostgreSQL and Redis.
+> * App
 >
-> _If not using the omnibus package, make sure that Redis and PostgreSQL are up and available prior to starting GitLab_
+> GitLab must be able to make outgoing connections to the following components:
+>
+> * PostgreSQL
+> * Redis
+
+> #### Component Dependencies
+>
+> Make sure the following components are available **before** starting the GitLab
+> service:
+>
+> * PostgreSQL
+> * Redis
+>
+> _Note, for Omnibus users using the embedded PostgreSQL and Redis instances,
+> these services will be started by the GitLab process._
 
 ## Installation
 
