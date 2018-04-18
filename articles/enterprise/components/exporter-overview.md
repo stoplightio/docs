@@ -1,12 +1,27 @@
 # The Stoplight Exporter
 
-The **Exporter** component de-references JSON specifications to ensure all referenced files and external data sources are resolved when needed.
+The **Exporter** component de-references JSON specifications to ensure all
+referenced files and external data sources are resolved when needed.
 
 > #### Networking Details
 >
-> The default port for the API component is TCP port **3031**. The port can be customized using the `PORT` environment variable.
+> The default port for the Exporter component is TCP port **3031**. The port can
+> be customized using the `PORT` configuration variable.
 >
-> The Exporter service is stateless and relies on no other components for operation.
+> The Exporter must be able to receive incoming connections from the following components:
+>
+> * User Clients (web browser or desktop application)
+> * App
+> * API
+> * Prism
+>
+> The Exporter must be able to make outgoing connections to the following components:
+>
+> * API
+
+> #### Component Dependencies
+>
+> The Exporter is stateless, and has no component dependencies.
 
 ## Installation
 
@@ -72,7 +87,7 @@ Once the repository is configured properly, you can install the Exporter compone
 sudo yum install stoplight-exporter -y
 ```
 
-### Docker Installation
+### Docker
 
 To install the API component with Docker, run the command below:
 
@@ -80,73 +95,34 @@ To install the API component with Docker, run the command below:
 docker pull quay.io/stoplight/exporter
 ```
 
-> Note, if you have not already authenticated with the Stoplight container registry, you will be prompted for credentials
+> Note, if you have not already authenticated with the Stoplight container
+> registry, you will be prompted for credentials
 
-## Configuring and Running
+## Configuration
 
-To configure the Stoplight Exporter component, you will need to provide connection details to the other necessary Stoplight components.
+To configure the Stoplight Exporter component, you will need to provide runtime
+values and connection details to the other necessary Stoplight components. The
+Exporter can be configured either by configuration file or through the
+environment.
 
-### Package-based Installations
+> The same configuration variables can be used regardless of installation type
+> (container or package-based).
 
-#### Configuring the Service
+### RPM Package
 
-The Stoplight API configuration is located at the location:
+The Stoplight Exporter configuration is located at the location:
 
 ```bash
 /etc/stoplight-exporter/stoplight-exporter.cfg
 ```
 
-The above file should contain the following entries:
+Be sure to customize any variables as needed to match your environment before
+starting the API service.
 
-```bash
-# SL_APP_HOST is the public-facing URL for the stoplight application
-SL_APP_HOST="https://stoplight.example.com"
+> Any changes to the API configuration require a service restart in order to
+> take effect.
 
-# SL_API_HOST is the URL to the Stoplight API
-SL_API_HOST="https://stoplight-api.internal.example.com:3030"
-
-# SL_EXPORTER_HOST is the full URL to the Stoplight GitLab instance
-SL_EXPORTER_HOST="https://stoplight-exporter.internal.example.com"
-
-# SL_PREVIEW_HOST is the full URL to the Stoplight Preview instance
-SL_PREVIEW_HOST="https://stoplight-preview.internal.example.com"
-```
-
-Be sure to customize any of the variables above as needed.
-
-#### Starting the Service
-
-To start the API server, run the command:
-
-```bash
-sudo systemctl start stoplight-exporter
-```
-
-Once started, you can see the status of the service using the command:
-
-```bash
-sudo systemctl status stoplight-exporter
-```
-
-### Docker Installations
-
-#### Configuring the Container
-
-The Stoplight Exporter container requires the following environment variables be exposed to the running instance:
-
-```bash
-# SL_APP_HOST is the public-facing URL for the stoplight application
-SL_APP_HOST="https://stoplight.example.com"
-
-# SL_API_HOST is the URL to the Stoplight API
-SL_API_HOST="https://stoplight-api.internal.example.com:3030"
-
-# SL_EXPORTER_HOST is the full URL to the Stoplight GitLab instance
-SL_EXPORTER_HOST="https://stoplight-exporter.internal.example.com"
-
-# SL_PREVIEW_HOST is the full URL to the Stoplight Preview instance
-SL_PREVIEW_HOST="https://stoplight-preview.internal.example.com"
-```
+### Docker
 
 To expose these to the Docker runtime, either write them to a file and use the `--env-file` argument:
 
@@ -165,27 +141,70 @@ Alternatively, you can expose them one at a time with the `-e` flag:
 docker run -e SL_APP_HOST=https://stoplight.example.com ...
 ```
 
-#### Starting the Container
+### Variables
 
-To start the API container, run the command:
+#### SL_APP_HOST
+
+The `SL_APP_HOST` is the public-facing URL for the Stoplight App.
+
+```
+SL_APP_HOST="https://stoplight.example.com"
+```
+
+#### SL_API_HOST
+
+The `SL_API_HOST` variable is the URL to the Stoplight API.
+
+```
+SL_API_HOST="https://stoplight-api.internal.example.com:3030"
+```
+
+#### SL_EXPORTER_HOST
+
+The `SL_EXPORTER_HOST` variable is the full URL to the Stoplight Exporter instance.
+
+SL_EXPORTER_HOST="https://stoplight-exporter.internal.example.com"
+
+## Running
+
+### RPM Package
+
+To start the API server, run the command:
+
+```bash
+sudo systemctl start stoplight-exporter
+```
+
+Once started, you can see the status of the service using the command:
+
+```bash
+sudo systemctl status stoplight-exporter
+```
+
+### Docker
+
+To start the Exporter container, run the command:
 
 ```bash
 docker run \
-    --restart on-failure \
-		--env-file exporter-env \
-		-p 2345:3031 \
-		quay.io/stoplight/exporter:latest
+	--restart on-failure \
+	--env-file exporter-env \
+	-p 2345:3031 \
+	quay.io/stoplight/exporter:latest
 ```
 
-If started properly, the container should be marked with a healthy status after 30 seconds. Use the `docker ps` command to verify the container was started and is running properly.
+If started properly, the container should be marked with a healthy status after
+30 seconds. Use the `docker ps` command to verify the container was started and
+is running properly.
 
 ## Post-install Validations
 
-Once the Exporter component is running, you can verify the installation was successful issuing an HTTP GET request to the root (`/`) endpoint:
+Once the Exporter component is running, you can verify the installation was
+successful issuing an `HTTP GET` request to the root (`/`) endpoint:
 
 ```bash
-# be sure to update the port here to match the installation port
+# be sure to update the scheme, host, and port to match the installation port
 curl -v http://localhost:3031/
 ```
 
-If the Exporter was installed and configured properly, you will receive an HTTP 200 reponse back.
+If the Exporter was installed and configured properly, you will receive an `HTTP 200` reponse back.
