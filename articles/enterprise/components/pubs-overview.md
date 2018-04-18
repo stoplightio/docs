@@ -1,10 +1,24 @@
-# Stoplight Pubs
+# Pubs
 
 The **Pubs** component serves and catalogs hubs published through Stoplight.
 
 > #### Networking Details
 >
-> The default ports for the Pubs component are TCP ports **8080** (HTTP), **8443** (HTTPS), and **9098** (HTTPS optional). All ports can be configured via configuration (see below).
+> The default ports for the Pubs component are TCP ports **8080** (HTTP),
+> **8443** (HTTPS), and **9098** (HTTPS optional). All ports can be customized.
+>
+> Pubs must be able to receive incoming connections from the following components:
+>
+> * User Clients (on the public-facing ports, which default to 8080 and 8443)
+> * API (on the private admin port, which defaults to 9098)
+>
+> Pubs must be able to make outgoing connections to the following components:
+>
+> * API
+
+> #### Component Dependencies
+>
+> Pubs has no component dependencies.
 
 ## Installation
 
@@ -12,9 +26,13 @@ Pubs can be installed with Docker or via RPM package.
 
 ### RPM Package
 
-Prior to installing the RPM package, you will need to have the Stoplight package repository installed and configured with your user-specific credentials.
+Prior to installing the RPM package, you will need to have the Stoplight package
+repository installed and configured with your user-specific credentials.
 
-You can do this by copying-and-pasting the contents below into a terminal:
+#### Setting up the Package Repository
+
+You can setup the Stoplight package repo by copying-and-pasting the contents
+below into a terminal:
 
 ```bash
 # expose credentials to environment first
@@ -35,7 +53,10 @@ EOF
 
 > Be sure to set your repository credentials before issuing the `cat` command
 
-Once the repository is configured properly, you can install the Pubs component using the command:
+#### Installing the Pubs Package
+
+Once the repository is configured properly, you can install the Pubs component
+using the command:
 
 ```bash
 sudo yum install pubs -y
@@ -49,60 +70,157 @@ To install the Pubs component with Docker, run the command below:
 docker pull quay.io/stoplight/pubs
 ```
 
-> Note, if you have not already authenticated with the Stoplight container registry, you will be prompted for credentials
+> Note, if you have not already authenticated with the Stoplight container
+> registry, you will be prompted for credentials
 
-## Configuring and Running
+## Configuration
 
-To configure the Pubs component, you will need to provide runtime settings and connection details to the Stoplight Pubs.
+To configure the Pubs component, you will need to provide connection details and
+runtime settings.
 
-> Pubs uses the Stoplight API for authentication if using SSO within your published documentation, however it is not required
+### Variables
 
-### Package-based Installations
+#### http_bind
 
-#### Configuring the Service
+The `http_bind` variable denotes the bind address/port to use when serving HTTP
+traffic.
 
-The Pubs configuration is located at:
+```yaml
+http_bind: "127.0.0.1:8080"
+```
+
+#### https_bind
+
+The `https_bind` variable denotes the bind address/port to use when serving
+HTTPS traffic.
+
+```yaml
+https_bind: "127.0.0.1:8443"
+```
+
+#### ssl_enabled
+
+The `ssl_enabled` variable denotes whether SSL should be enabled when serving
+hub requests.
+
+```yaml
+ssl_enabled: yes
+```
+
+> If `ssl_enabled` is set to `true`, then HTTP requests will automatically be
+> redirected to HTTPS.
+
+#### admin_bind
+
+The `admin_bind` variable denotes the address/port to bind to when serving the
+admin API.
+
+```yaml
+admin_bind: "127.0.0.1:9098"
+```
+
+#### admin_ssl_enabled
+
+The `admin_ssl_enabled` variable denotes whether the admin API should accept
+connections over HTTPS (as opposed to HTTP).
+
+```yaml
+admin_ssl_enabled: no
+```
+
+#### admin_ssl_cert_path
+
+The `admin_ssl_cert_path` variable is the path to the SSL certificate to use
+when serving TLS over the admin API.
+
+```yaml
+admin_ssl_cert_path: /path/to/cert
+```
+
+> This configuration option has no effect if `admin_ssl_enabled` is not set to
+> `true`
+
+#### admin_ssl_key_path
+
+The `admin_ssl_key_path` variable is the path to the SSL key (matching the
+`admin_ssl_cert_path` option) to use when serving TLS over the admin API.
+
+```yaml
+admin_ssl_key_path: /path/to/key
+```
+
+> This configuration option has no effect if `admin_ssl_enabled` is not set to
+> `true`
+
+#### admin_ip_whitelist
+
+The `admin_ip_whitelist` variable is a list representing IP addresses that
+should be allowed to connect to the admin API.
+
+```yaml
+admin_ip_whitelist:
+  - 127.0.0.1
+```
+
+> If `admin_ip_whitelist` is not set, all IP addresses will be allowed to
+> connect to the API.
+
+#### data_dir
+
+The `data_dir` variable is the directory to use when storing builds, build
+metadata, and the pubs sqlite database.
+
+```yaml
+data_dir: /var/lib/pubs
+```
+
+#### static_ssl_domains
+
+The `static_ssl_domains` variable can be used to serve static SSL certificates
+for specific domain requests.
+
+```yaml
+static_ssl_domains:
+  - domain: "*.example.com"
+    cert-path: /path/to/example_com/certificate
+    key-path: /path/to/example_com/key
+```
+
+> Include a leading star (`*`) in the domain if the certificate is wildcarded
+> (ie, `*.example.com` for a wildcard certificate on the `example.com` domain).
+
+### RPM Package
+
+The Pubs default configuration is located at the path:
 
 ```bash
 /etc/pubs/pubs.yml
 ```
 
-The above file should contain the following entries:
+Be sure to customize any variables as needed to match your environment before
+starting the Pubs service.
+
+> Any changes to the Pubs configuration require a service restart in order to
+> take effect.
+
+### Docker
+
+The Pubs configuration can be mounted into a Docker container. As an example, if
+a Pubs configuration file is located on the host system at the path:
 
 ```bash
-# Bind address/port to serve HTTP traffic on
-http_bind: "127.0.0.1:8080"
-
-# Bind address/port to serve HTTPS traffic on, if enabled (see below)
-https_bind: "127.0.0.1:8443"
-
-# Whether to enable SSL, powered by LetsEncrypt. If true, HTTP serving is
-# disabled.
-ssl_enabled: yes
-
-# Bind address/port to server admin/management API
-admin_bind: "127.0.0.1:9098"
-
-# Whether to enable SSL when serving admin API
-admin_ssl_enabled: no
-# If SSL is enabled for the management API, a certificate and key must be
-# provided
-admin_ssl_cert_path:
-admin_ssl_key_path:
-
-# If set, only requests with the following IPs will be responded to by the admin
-# API
-admin_ip_whitelist:
-  # - 127.0.0.1
-
-# Directory to store builds, build metadata, and dynamically-generated
-# certificates
-data_dir: /var/lib/pubs
+/data/pubs.yml
 ```
 
-Be sure to customize any of the variables above as needed.
+This file can be mounted into the running Pubs container using the `-v` argument.
 
-#### Starting the Service
+```bash
+docker run -v /data/pubs.yml:/etc/pubs/pubs.yml ...
+```
+
+## Running
+
+### RPM Package
 
 To start the Pubs server, run the command:
 
@@ -118,54 +236,27 @@ sudo systemctl status pubs
 
 ### Docker Installations
 
-#### Configuring the Container
-
-The Pubs container can be configured either via file (see the package configuration above) or via environment variables. If you would like to configure Pubs via environment variable, use the variable naming conventions from the configuration file above and prepend a `PUBS_` prefix to them.
-
-For example, to set the HTTP bind address through the environment, use the variable:
-
-```
-PUBS_HTTP_BIND="localhost:8080"
-```
-
-> Be sure to capitalize all letters and prefix environment variables with `PUBS_` (ie, `ssl_enabled` becomes `PUBS_SSL_ENABLED`)
-
-To expose these to the Docker runtime, either write them to a file and use the `--env-file` argument:
-
-```bash
-cat <<EOF>pubs-env-vars
-PUBS_HTTP_BIND="..."
-...
-EOF
-
-docker run --env-file pubs-env-vars ...
-```
-
-Alternatively, you can expose them one at a time with the `-e` flag:
-
-```bash
-docker run -e PUBS_HTTP_BIND=0.0.0.0:80 ...
-```
-
-#### Starting the Container
-
 To start the Pubs container, use the command:
 
 ```bash
 docker run \
-    --restart on-failure \
-		--env-file pubs-env-vars \
-		-p 80:8080 \
-		-p 443:8443 \
-		-p 9098:9098 \
-		quay.io/stoplight/pubs:latest
+	--restart on-failure \
+	-v /path/to/pubs.yml:/etc/pubs/pubs.yml \
+	-p 80:8080 \
+	-p 443:8443 \
+	-p 9098:9098 \
+	quay.io/stoplight/pubs:latest
 ```
 
-If started properly, the container should be marked with a healthy status after 30 seconds. Use the `docker ps` command to verify the container was started and is running properly.
+If started properly, the container should be marked with a healthy status after
+30 seconds. Use the `docker ps` command to verify the container was started and
+is running properly.
 
 ## Post-install Validations
 
-Once the Pubs component is running, you can verify the installation was successful issuing an HTTP GET request to the `/health` URL on the HTTP admin port (set with `admin_bind`):
+Once the Pubs service is running, you can verify the installation was successful
+issuing an `HTTP GET` request to the `/health` URL on the HTTP admin port (set
+with `admin_bind`):
 
 ```bash
 curl -v http://localhost:9098/health
@@ -173,4 +264,5 @@ curl -v http://localhost:9098/health
 
 > Be sure to update the URL above to match your local installation
 
-If Pubs was installed and configured properly, you will receive an HTTP 200 response back.
+If Pubs was installed and configured properly, you will receive an `HTTP 200`
+response back.
