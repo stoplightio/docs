@@ -1,16 +1,15 @@
 # The Stoplight Hub Builder
 
-The __Hub Builder__ component converts a Stoplight Hub into a standalone static HTML website, suitable for viewing and distribution.
+The **Hub Builder** component converts a Stoplight Hub into a standalone static HTML website, suitable for viewing and distribution.
 
-> ### Requirements
-> 
-> #### Storage
-> 
-> The Hub Builder does not have any storage requirements.
-> 
-> #### Networking
+> #### Networking Details
 >
 > The Hub Builder does not have a listening service or external port configurations.
+
+> #### Component Dependencies
+>
+> The Hub Builder is started in an ad-hoc manner by **Tasker**, and does not have
+> any component dependencies.
 
 ## Installation
 
@@ -70,32 +69,43 @@ EOF
 
 #### Installing the Hub Builder Package
 
-Once the repository is configured properly, you can install the Hub Builder component using the command:
+Once the repository is configured properly, you can install the Hub Builder
+component using the command:
 
 ```bash
 sudo yum install stoplight-hub-builder -y
 ```
 
-### Docker Installation
+### Docker
 
-To install the API component with Docker, run the command below:
+To install the Hub Builder component with Docker, run the command below:
 
 ```bash
 docker pull quay.io/stoplight/hub-builder
 ```
 
-> Note, if you have not already authenticated with the Stoplight container registry, you will be prompted for credentials
+> Note, if you have not already authenticated with the Stoplight container
+> registry, you will be prompted for credentials
 
-## Configuring and Running
+## Configuration
 
-### Package-based Installations
+The Hub Builder component is an ad-hoc processing job, and does not have any
+required configuration that is not provided by the parent process (typically
+Tasker).
 
-The Hub Builder component is an ad-hoc processing job, and does not have an associated service. The Tasker component is responsible for running and managing the Hub Builder jobs.
+## Running
 
-To ensure Tasker is able to run the Hub Builder package correctly, be sure to set Tasker to `shell` mode in the Tasker configuration.
+## RPM Package
 
-### Docker Installations
+The Hub Builder component is an ad-hoc processing job, and does not have an
+associated service. The Tasker component is responsible for running and managing
+the Hub Builder jobs.
 
-The Hub Builder component is an ad-hoc processing job, and does not have an associated service. The Tasker component is responsible for running and managing the Hub Builder jobs.
+To ensure Tasker is able to run the Hub Builder package correctly, be sure to
+set Tasker to `shell` mode in the Tasker configuration.
 
-To ensure Tasker is able to run the Hub Builder container correctly, be sure to set Tasker to `docker` mode in the Tasker configuration.
+### Docker
+
+The Hub Builder component is an ad-hoc processing job, and does not have an
+associated service. The Tasker component is responsible for running and managing
+the Hub Builder container.
