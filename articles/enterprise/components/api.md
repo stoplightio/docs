@@ -44,7 +44,7 @@ Prior to installing the RPM package, you will need to:
 
 #### Installing NodeJS
 
-To install NodeJS, please run the following commands:
+To install NodeJS, run the following commands:
 
 ```bash
 # make sure all current versions of nodejs are removed
@@ -61,7 +61,7 @@ $ node --version
 v8.9.4
 ```
 
-If you do not see a version starting `v8.9`, please contact Stoplight support for assistance.
+If you do not see a version starting `v8.9`, contact Stoplight support for assistance.
 
 #### Setting up the Package Repository
 
@@ -111,7 +111,8 @@ docker pull quay.io/stoplight/api
 
 To configure the Stoplight API component, you will need to provide runtime
 values and connection details to the other necessary Stoplight components. The
-API can be configured either by configuration file or through the environment.
+API can be configured either by the configuration file or through the
+environment.
 
 > The same configuration variables can be used regardless of installation type
 > (container or package-based).
@@ -131,8 +132,8 @@ There is no minimum or maximum character requirement, however Stoplight
 recommends using a random string more than 32 characters in length for
 production environments.
 
-> Please note that the `SIGN_SECRET` configuration variable must remain static
-> between service restarts
+> Note that the `SIGN_SECRET` configuration variable must remain static between
+> service restarts
 
 #### POSTGRES_URL
 
