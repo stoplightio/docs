@@ -133,7 +133,7 @@ sudo gitlab-ctl status
 
 #### Configuring the Container
 
-The GitLab container should be configured nearly identically to the package installation described above, via file. The easiest way to do this is to mount the GitLab configuration directory inside the container.
+The GitLab container should be configured nearly identically to the package installation described above. The easiest way to do this is to mount the GitLab configuration directory inside the container.
 
 To mount the configuration inside the container, use the `-v` argument to the `docker run` command:
 
