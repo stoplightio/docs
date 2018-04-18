@@ -15,6 +15,11 @@ The **Prism** component powers scenarios and API orchestration.
 > Prism must be able to make outgoing connections to the following components:
 >
 > * Exporter
+>
+> In addition to the above requirements, Prism must be setup with a wildcard
+> subdomain (CNAME DNS record), for example `*.prism.example.com`. Each Prism
+> instance that is created gets a unique hostname associated with it, for example
+> `service1-mock.prism.example.com`.
 
 > #### Component Dependencies
 >

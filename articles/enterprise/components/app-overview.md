@@ -1,6 +1,9 @@
 # The Stoplight App
 
-The **App** component powers the Stoplight user interface by connecting users to the Stoplight API and other services.
+The **App** component powers the Stoplight user interface by connecting users to
+the Stoplight API and other services. This is the primary point of ingress for
+most users using Stoplight. It is what they will load in their web browser, and
+connect the desktop app to.
 
 > #### Networking Details
 >

@@ -1,6 +1,20 @@
 # GitLab CE
 
 GitLab CE powers the Stoplight backend, including file storage and database.
+GitLab is the backing datastore for all files stored within Stoplight. In
+addition to storing files, GitLab is responsible for:
+
+* Interfacing with the Stoplight API
+* User-facing notifications (including password reset emails, group/project
+  invitations, etc)
+* Tracking all changes between different files, and storing them within a Git
+  repository
+
+Packaged within the GitLab CE is an installation of PostgreSQL and Redis. These
+two sub-components can be broken out into external services if your organization
+is already familiar with running these (or similar) services. You may also break
+out these services if you plan on using a managed hosting solution, for example
+Amazon RDS (for PostgreSQL) or Amazon ElastiCache (for Redis).
 
 > ### Requirements
 >

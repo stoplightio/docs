@@ -1,4 +1,4 @@
-# Tasker
+# Tasker (Jobs Server)
 
 The **Tasker** component runs scheduled and on-demand tasks for the Stoplight platform.
 
@@ -15,6 +15,7 @@ The **Tasker** component runs scheduled and on-demand tasks for the Stoplight pl
 >
 > * API
 > * Redis
+> * Pubs
 
 > #### Component Dependencies
 >

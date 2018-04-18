@@ -1,4 +1,4 @@
-# Pubs
+# Pubs (Hubs Server)
 
 The **Pubs** component serves and catalogs hubs published through Stoplight.
 
@@ -11,6 +11,7 @@ The **Pubs** component serves and catalogs hubs published through Stoplight.
 >
 > * User Clients (on the public-facing ports, which default to 8080 and 8443)
 > * API (on the private admin port, which defaults to 9098)
+> * Tasker (on the private admin port, which defaults to 9098)
 >
 > Pubs must be able to make outgoing connections to the following components:
 >
