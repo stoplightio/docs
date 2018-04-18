@@ -13,14 +13,14 @@ addition to storing files, GitLab is responsible for:
 Packaged within the GitLab CE is an installation of PostgreSQL and Redis. These
 two sub-components can be broken out into external services if your organization
 is already familiar with running these (or similar) services. You may also break
-out these services if you plan on using a managed hosting solution, for example
+out these services if you plan on using a managed hosting solution, for example,
 Amazon RDS (for PostgreSQL) or Amazon ElastiCache (for Redis).
 
 > ### Requirements
 >
 > #### Storage
 >
-> GitLab requires persistent storage in order to store Stoplight file data (in git), and optionally PostgreSQL data (when using the omnibus package).
+> GitLab requires persistent storage in order to store Stoplight file data (in Git), and optionally PostgreSQL data (when using the omnibus package).
 >
 > #### Networking
 >

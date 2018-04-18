@@ -4,9 +4,9 @@ Backups are a critical component to ensuring the health of the Stoplight
 platform. When creating a backup and restore strategy for your on-premise
 installation, be sure to include the following locations:
 
-* The **GitLab data directory**, which includes the raw filesystem data backing each projects git repository.
+* The **GitLab data directory**, which includes the raw filesystem data backing each projects Git repository.
 * The **GitLab configuration directory**, which includes randomly-generated secrets and keys necessary for securing the GitLab runtime.
-* The **GitLab PostgreSQL database**, which includes user, group, permissions, and other relational data not included in the git repositories.
+* The **GitLab PostgreSQL database**, which includes user, group, permissions, and other relational data not included in the Git repositories.
 * The **Pubs data directory**, which includes published hubs and their corresponding configurations.
 
 Backing up all locations above will ensure you can properly restore a Stoplight
