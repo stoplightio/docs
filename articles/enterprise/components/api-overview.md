@@ -212,7 +212,7 @@ following error when attempting to register:
 
 ### RPM Package
 
-The Stoplight API configuration file is located at the location:
+The Stoplight API configuration file is located at the path:
 
 ```bash
 /etc/stoplight-api/stoplight-api.cfg
