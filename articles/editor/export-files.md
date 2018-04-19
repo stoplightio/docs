@@ -20,3 +20,13 @@ You can export any files in Stoplight to use as you see fit. Exported files are 
 1. Select the **project** that contains the file you wish to export 
 2. Hover over the file you wish to export and click on the **right facing arrow**
 3. A new tab will open containing your exported file 
+
+---
+**Related Articles**
+- [Read, Design, & Code View](/platform/editor-basics/read-design-code-view)
+- [Working with Files](/platform/editor-basics/working-with-files)
+- [Import Files](/platform/editor-basics/import-files)
+- [Change History](/platform/editor-basics/change-history)
+- [Editor Configuration](/platform/editor-basics/editor-configuration)
+- [Environments](/platform/editor-basics/environments)
+- [File Validation](/platform/editor-basics/file-validation)
