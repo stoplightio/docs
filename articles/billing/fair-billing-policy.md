@@ -8,4 +8,10 @@ To be considered an active user, you must perform one of the following actions:
 - Write or modify a file 
 - Publish documentation 
 
-> If you do not perform on of these actions durign a billing cycle, you will be considered inactive, and will not count towards your user count for that billing cycle. 
+> If you do not perform one of these actions durign a billing cycle, you will be considered inactive, and will not count towards your user count for that billing cycle. 
+
+---
+**Related Articles**
+- [Personal Plan Overview](/platform/getting-started/billing/plans-overview)
+- [Organization Plan Overview](/platform/getting-started/billing/organization-plan-overview)
+- [FAQs](/platform/getting-started/billing/faqs)
