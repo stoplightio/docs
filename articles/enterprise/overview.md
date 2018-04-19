@@ -33,8 +33,7 @@ Multi-server deployments run different Stoplight Enterprise components on
 separate Linux instances. This deployment option is much more resilient to
 system-level issues, though it does require more network configuration.
 
-Stoplight recommends multi-server deployments for all production-facing
-installations.
+Stoplight recommends multi-server deployments for all production installations.
 
 ### Native vs. Container-based Deployments
 
