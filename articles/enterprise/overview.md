@@ -95,5 +95,5 @@ applications:
 * [Mtail](https://github.com/google/mtail) v3.0 for whitebox monitoring of
   application logs
 
-Please note that the above recommendations are entirely optional if your
-organization already has a monitoring and alerting solution in place.
+> Please note that the above recommendations are entirely optional if your
+> organization already has a monitoring and alerting solution in place.
