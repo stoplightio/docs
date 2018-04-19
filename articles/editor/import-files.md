@@ -23,3 +23,13 @@ Copy and paste your markdown into Stoplight’s Modeling platform to add descrip
 1. Create a new file or choose an existing one 
 2. Select the **Design View**
 3. Copy and paste your Markdown into **Text Blocks** 
+
+---
+**Related Articles**
+- [Read, Design, & Code View](/platform/editor-basics/read-design-code-view)
+- [Working with Files](/platform/editor-basics/working-with-files)
+- [Export Files](/platform/editor-basics/export-files)
+- [Change History](/platform/editor-basics/change-history)
+- [Editor Configuration](/platform/editor-basics/editor-configuration)
+- [Environments](/platform/editor-basics/environments)
+- [File Validation](/platform/editor-basics/file-validation)
