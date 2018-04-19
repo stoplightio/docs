@@ -29,7 +29,7 @@ To accomodate a larger variety of writing workflows, we expanded the capabilitie
 We wanted to create a new, beautiful, minimalistic, efficient design for less design-oriented individuals while allowing for customization. Hubs was designed to display your documentation in a neat, efficient structure, designed specifically for displaying the real beauty, your API. On the other hand, we didn’t want to stifle the creativity that goes into documentation design so we added in [theming](/documentation/design/theming) and [custom CSS](/documentation/design/custom-css). We also made it easier to add navigation, different kinds of content, and a more robust search. 
 
 ---
-Related Links 
+**Related Links** 
 - [Documentation with Hubs](/documentation/introduction)
 - [Routing](/documentation/getting-started/routing)
 - [Headers](/documentation/getting-started/header-footer)
