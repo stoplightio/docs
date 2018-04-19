@@ -2,6 +2,8 @@
 
 ![Billing Overview](https://github.com/stoplightio/docs/blob/develop/assets/images/billing.png?raw=true)
 
+> Personal Plans are attached to your personal account
+
 ## Platform Plans 
 
 ### Open Source
