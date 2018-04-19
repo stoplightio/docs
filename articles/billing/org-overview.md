@@ -1,6 +1,9 @@
 # Organization Plan Overview 
 
 ![Organization Billing Overview](https://github.com/stoplightio/docs/blob/develop/assets/images/org-billing.png?raw=true)
+
+> Organization Plans are attached to an Organization, not an account. Only the **Owner** of the Organization can modify the billing settings 
+
 ## Platform Plans 
 
 ### Open Source 
