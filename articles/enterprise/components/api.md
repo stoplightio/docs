@@ -222,7 +222,7 @@ The Stoplight API configuration file is located at the path:
 Be sure to customize any variables as needed to match your environment before
 starting the API service.
 
-> Any changes to the API configuration require a service restart in order to
+> Any changes to the API configuration requires a service restart in order to
 > take effect.
 
 ### Docker

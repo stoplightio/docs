@@ -201,7 +201,7 @@ The Pubs default configuration is located at the path:
 Be sure to customize any variables as needed to match your environment before
 starting the Pubs service.
 
-> Any changes to the Pubs configuration require a service restart in order to
+> Any changes to the Pubs configuration requires a service restart in order to
 > take effect.
 
 ### Docker

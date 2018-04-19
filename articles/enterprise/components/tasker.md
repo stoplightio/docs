@@ -161,7 +161,7 @@ The Tasker configuration is located at:
 Be sure to customize any variables as needed to match your environment before
 starting the Tasker service.
 
-> Any changes to the Tasker configuration require a service restart in order to
+> Any changes to the Tasker configuration requires a service restart in order to
 > take effect.
 
 ### Docker

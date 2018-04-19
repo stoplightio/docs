@@ -145,7 +145,7 @@ The Stoplight Exporter configuration is located at the location:
 Be sure to customize any variables as needed to match your environment before
 starting the Exporter service.
 
-> Any changes to the Exporter configuration require a service restart in order
+> Any changes to the Exporter configuration requires a service restart in order
 > to take effect.
 
 ### Docker
