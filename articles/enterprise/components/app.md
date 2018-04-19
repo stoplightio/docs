@@ -176,8 +176,8 @@ The Stoplight App configuration is located at the location:
 /etc/stoplight-app/stoplight-app.cfg
 ```
 
-Be sure to customize any variables as needed to match your environment before
-starting the API service.
+Be sure to customize any variables as needed to match your environment
+**before** starting the API service.
 
 > Any changes to the API configuration requires a service restart in order to
 > take effect.

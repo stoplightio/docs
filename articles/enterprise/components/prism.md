@@ -179,8 +179,8 @@ The Prism configuration file is located at the location:
 /etc/prism/prism.cfg
 ```
 
-Be sure to customize any variables as needed to match your environment before
-starting the Prism service.
+Be sure to customize any variables as needed to match your environment
+**before** starting the Prism service.
 
 > Any changes to the Prism configuration requires a service restart in order to
 > take effect.

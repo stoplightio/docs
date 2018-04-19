@@ -142,8 +142,8 @@ The Stoplight Exporter configuration is located at the location:
 /etc/stoplight-exporter/stoplight-exporter.cfg
 ```
 
-Be sure to customize any variables as needed to match your environment before
-starting the Exporter service.
+Be sure to customize any variables as needed to match your environment
+**before** starting the Exporter service.
 
 > Any changes to the Exporter configuration requires a service restart in order
 > to take effect.

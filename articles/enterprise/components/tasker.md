@@ -158,8 +158,8 @@ The Tasker configuration is located at:
 /etc/tasker/tasker.cfg
 ```
 
-Be sure to customize any variables as needed to match your environment before
-starting the Tasker service.
+Be sure to customize any variables as needed to match your environment
+**before** starting the Tasker service.
 
 > Any changes to the Tasker configuration requires a service restart in order to
 > take effect.
