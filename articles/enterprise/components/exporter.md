@@ -209,4 +209,4 @@ successful issuing an `HTTP GET` request to the root (`/`) endpoint:
 curl -v http://localhost:3031/
 ```
 
-If the Exporter was installed and configured properly, you will receive an `HTTP 200` reponse back.
+If the Exporter was installed and configured properly, you will receive an `HTTP 200` response back.

@@ -5,7 +5,7 @@ The **Tasker** component runs scheduled and on-demand tasks for the Stoplight pl
 > #### Networking Details
 >
 > The default port for the Tasker component is TCP port **9432**. This port can
-> be customzied via configuration variable.
+> be customized via configuration.
 >
 > Tasker must be able to receive incoming connections from the following components:
 >
@@ -105,7 +105,8 @@ TASKER_MODE="shell"
 
 #### CORE_ROOT
 
-The `CORE_ROOT` denotes the absolutel path to stoplight-hub-builder package root.
+The `CORE_ROOT` denotes the absolute path to the stoplight-hub-builder package
+root.
 
 ```
 CORE_ROOT="/opt/stoplight-hub-builder"
@@ -166,8 +167,8 @@ Be sure to customize any variables as needed to match your environment
 
 ### Docker
 
-To expose these to the Docker runtime, either write them to a file and use the
-`--env-file` argument:
+To expose configuration variables to the Docker runtime, either write them to a
+file and use the `--env-file` argument:
 
 ```bash
 cat <<EOF>tasker-env-vars
@@ -227,4 +228,4 @@ curl -v http://localhost:9432/health
 ```
 
 If Tasker was installed and configured properly, you will receive an `HTTP 200`
-reponse back.
+response back.
