@@ -74,7 +74,7 @@ gpgkey=https://pkg.stoplight.io/stoplight.key
 EOF
 ```
 
-> Make sure that the repository credentials are set before issuing the `cat` command
+> Make sure that the repository credentials are set before issuing the `cat` command above.
 
 Once the repository is configured properly, you can install the GitLab component using the command:
 

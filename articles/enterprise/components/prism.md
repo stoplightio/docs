@@ -61,7 +61,7 @@ gpgkey=https://pkg.stoplight.io/stoplight.key
 EOF
 ```
 
-> Be sure to set your repository credentials before issuing the `cat` command
+> Make sure that the repository credentials are set before issuing the `cat` command above.
 
 #### Installing the Prism Package
 
@@ -244,12 +244,10 @@ is running properly.
 ## Post-install Validations
 
 Once the Prism component is running, you can verify the installation was
-successful issuing an HTTP GET request to the `/health` URL on the HTTP admin
-port (set with `admin_bind`):
+successful by issuing an `HTTP GET` request to the `/health` endpoint:
 
 ```bash
-$ curl -v localhost:4050/health
-Hello!
+curl -v localhost:4050/health
 ```
 
 > Be sure to update the URL above to match your local installation

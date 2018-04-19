@@ -1,6 +1,6 @@
 # Pubs (Hubs Server)
 
-The **Pubs** component serves and catalogs hubs published through Stoplight.
+The **Pubs** component serves and catalogs Hubs published through Stoplight.
 
 > #### Networking Details
 >
@@ -52,7 +52,7 @@ gpgkey=https://pkg.stoplight.io/stoplight.key
 EOF
 ```
 
-> Be sure to set your repository credentials before issuing the `cat` command
+> Make sure that the repository credentials are set before issuing the `cat` command above.
 
 #### Installing the Pubs Package
 
@@ -102,7 +102,7 @@ https_bind: "127.0.0.1:8443"
 #### ssl_enabled
 
 The `ssl_enabled` variable denotes whether SSL should be enabled when serving
-hub requests.
+Hub requests.
 
 ```yaml
 ssl_enabled: yes

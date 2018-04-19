@@ -85,7 +85,7 @@ gpgkey=https://pkg.stoplight.io/stoplight.key
 EOF
 ```
 
-> Be sure to set your repository credentials before issuing the `cat` command
+> Make sure that the repository credentials are set before issuing the `cat` command above.
 
 #### Installing the API Package
 
