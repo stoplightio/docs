@@ -43,3 +43,9 @@
     - Custom CSS
     - White Label 
     - Basic Auth & Auth0 Integration 
+
+---
+**Related Articles**
+- [Fair Billing Policy](/platform/getting-started/billing/fair-billing)
+- [Organization Plan Overview](/platform/getting-started/billing/organization-plan-overview)
+- [FAQs](/platform/getting-started/billing/faqs)
