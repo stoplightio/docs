@@ -1,10 +1,10 @@
 # Billing Overview 
 
 ## Personal Billing 
-Personal Billing Plans are attached to your account. For more information, visit [the billing page]().
+Personal Billing Plans are attached to your account. For more information, visit [the billing page](https://next.stoplight.io/pricing).
 
 ## Organization Billing
-Organization Billing Plans are attached to an Organization, not an account. Only the Owner of the Organization can modify the billing settings. For more information, visit [the billing page](). 
+Organization Billing Plans are attached to an Organization, not an account. Only the Owner of the Organization can modify the billing settings. For more information, visit [the billing page](https://next.stoplight.io/pricing). 
 
 ## Fair Billing Policy 
 
