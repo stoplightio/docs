@@ -94,15 +94,15 @@ connection details to the Stoplight App, API, and Exporter.
 The `SL_API_HOST` variable is the full URL to the Stoplight API.
 
 ```
-SL_API_HOST="http://localhost:3030"
+SL_API_HOST="http://api.example.com:3030"
 ```
 
 #### SL_HOST
 
-The `SL_HOST` variable is the full URL to the Stoplight App.
+The `SL_HOST` variable is the full URL to the Prism instance.
 
 ```
-SL_HOST="http://localhost:3100"
+SL_HOST="http://prism.example.com:4050"
 ```
 
 #### SL_EXPORTER_HOST
@@ -110,7 +110,7 @@ SL_HOST="http://localhost:3100"
 The `SL_EXPORTER_HOST` variable is the URL to the Stoplight Exporter.
 
 ```
-SL_EXPORTER_HOST="http://localhost:3031"
+SL_EXPORTER_HOST="http://exporter.example.com:3031"
 ```
 
 #### ENV_NAME
