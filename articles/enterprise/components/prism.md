@@ -89,20 +89,25 @@ connection details to the Stoplight App, API, and Exporter.
 
 ### Variables
 
+#### SL_HOST
+
+The `SL_HOST` variable is the full URL to the Prism instance.
+
+```
+SL_HOST="http://%sprism.example.com"
+```
+
+Where Prism is being served from the domain `prism.example.com`. Specifying a
+port is optional.
+
+> Note, the `%s` preceding the domain is **required**.
+
 #### SL_API_HOST
 
 The `SL_API_HOST` variable is the full URL to the Stoplight API.
 
 ```
 SL_API_HOST="http://api.example.com:3030"
-```
-
-#### SL_HOST
-
-The `SL_HOST` variable is the full URL to the Prism instance.
-
-```
-SL_HOST="http://prism.example.com:4050"
 ```
 
 #### SL_EXPORTER_HOST
