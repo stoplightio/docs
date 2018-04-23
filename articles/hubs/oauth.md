@@ -2,7 +2,7 @@
 
 ## What 
 
-OAuth provides a level of security to your documentation to restrict access to it. If your API is protected by OAuth, you will need to enable it for Try It Out. Enabling OAuth for Try It Out in Hubs can be accomplished through two different methods: via Modeling or directly into the Hubs code.
+OAuth provides a level of security to your documentation to restrict access to it. If your API is protected by OAuth, you will need to enable it for Try It Out. Enabling OAuth for Try It Out can be accomplished through two different methods: via Modeling or directly into the Hubs code.
 
 > Stoplight supports OAuth 1.0 and 2.0 
 
