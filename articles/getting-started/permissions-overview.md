@@ -1,4 +1,4 @@
-# Permissions & Governance Overview 
+# Roles & Permissions Overview 
 
 ## Organizations 
 
