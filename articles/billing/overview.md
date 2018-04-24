@@ -6,7 +6,7 @@ Personal Billing Plans are attached to your account. For more information, visit
 ## Organization Billing
 Organization Billing Plans are attached to an Organization, not an account. Only the Owner of the Organization can modify the billing settings. For more information, visit [the billing page](https://next.stoplight.io/pricing). 
 
-## Fair Billing Policy 
+## Fair Use Billing Policy 
 
 We believe you should only have to pay for members that are actively using Stoplight, so we offer a Fair Billing Policy. We go a step beyond traditional Fair Billing Policies and only count a member as active if they have taken a meaninful action inside of Stoplight in the last 30 days. Feel free to invite users to your Stoplight organization, and rest assured that they will not count towards billing until they have found the time to really get started.
 
