@@ -1,24 +1,21 @@
-# Export Static HTML & CSS
+# Download Static HTML & CSS
 
-![Export Static HTML and CSS](https://github.com/stoplightio/docs/blob/develop/assets/gifs/export-static-html.gif?raw=true)
+![Download Static HTML and CSS](https://github.com/stoplightio/docs/blob/develop/assets/gifs/export-static-html.gif?raw=true)
 
 > Requires a Pro Docs plan 
 
 ## What 
-If you want to host your documentation somewhere other than Stoplight, you can generate and download its Static HTML and CSS. The generated file will be a .zip file that has been minified to save space. 
+If you would rather host your documentation outside of Stoplight's hosted servers, you can download a built version of your Hub. Downloading a build will produce a `.zip` containing all of the minified assets necessary to load your Hub. These assets will include HTML, JAvascript, CSS, and JSON files. 
 
-## How 
-1. Select the Hub you wish to export 
-2. Click the **Publish** icon on the far left toolbar 
-3. Select or create a **domain** 
+## How to Download
+1. Click the **Publish** icon on the far left toolbar 
+2. Select or create a **domain**
+3. Choose a **Hub** or **OAS** file to create a build from 
+4. Click the **Build** button to start the build process. 
 
-### If New Domain 
-1. **Build and Publish** your Hub 
-2. Under **Builds** in the Publishing menu, click the download icon to the right of the Build you want to export 
+> If this is your first build, it will also publish to your selected domain 
 
-### If Already Published 
-1. Under **Builds** in the Publishing menu, click the download icon to the right of the Build you want to export
-
+5. Once your **Hub** has finished building, it will appear in the **Builds** section. Click the download icon to the right of the build 
 ---
 **Related Articles**
 - [Documentation with Hubs](/documentation/introduction)
