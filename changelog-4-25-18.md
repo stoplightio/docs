@@ -1,4 +1,4 @@
-# Stoplight v4.1.0 Release
+# Stoplight v4.1.0 Release
 
 This update includes fair use billing, magic links, custom css, and more.
 
