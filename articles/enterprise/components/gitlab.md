@@ -106,10 +106,23 @@ The Stoplight GitLab configuration is located at:
 /etc/gitlab/gitlab.rb
 ```
 
-The above file encompasses all of the different configuration options exposed by GitLab. This guide only covers those specific to Stoplight.
+The above file encompasses all of the different configuration options exposed by
+GitLab. This guide only covers those specific to Stoplight.
 
 > For documentation on other GitLab configuration options, see the official
 > documentation [here](https://docs.gitlab.com/omnibus/README.html#configuring)
+
+##### external_url
+
+`external_url` is the canonical URL for the Gitlab instance (scheme, hostname,
+and port included).
+
+```
+external_url 'http://stoplight.example.com:8080'
+```
+
+> If you are configuring GitLab to send emails, set the `external_url` to the
+> URL of the **Stoplight App** component, and not GitLab itself.
 
 #### Starting the Service
 
@@ -213,3 +226,24 @@ Once the configuration changes are made, issue a `gitlab-ctl reconfigure` for th
 
 For more information on configuring Redis, see the official GitLab documentation
 [here](https://docs.gitlab.com/omnibus/settings/redis.html).
+
+#### Can I specify GitLab users as administrators?
+
+Yes, GitLab administrators can be selected by editing the user you would like to
+assign as an admin. Administrative rights can be set under the "Access" section
+of the user modification screen in GitLab.
+
+> Please note, GitLab administrators have administrative rights in Stoplight as
+> well. Administrators can see and edit all projects hosted within Stoplight.
+
+#### Can I allow users created in GitLab to have access to Stoplight?
+
+Yes, in order for a GitLab-created user to have access to the Stoplight
+platform, an impersonation token must be created for their account. The
+impersonation token management screen can be found in the user administration
+screen, under the "Impersonation Tokens" tab.
+
+To create a Stoplight access token, make sure:
+
+* The name of the token is equal to `stoplight`
+* The token must have `api` scope
