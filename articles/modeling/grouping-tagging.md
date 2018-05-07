@@ -4,9 +4,7 @@
 
 ## What
 
-Use tags to group API endpoints and provide an additional layer of organization in your OpenAPI files.
-
-When rendering your OpenAPI in read view, Stoplight will group API endpoints by their first tag.
+Use tags to group API endpoints and provide an additional layer of organization in your OpenAPI files. When rendering your OpenAPI in read view, Stoplight will group API endpoints by their first tag.
 
 ## How
 
