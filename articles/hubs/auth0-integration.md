@@ -4,7 +4,7 @@
 Auth0 allows you to add a login form with user access management to your documentation. 
 
 ## How 
-1. Create an account or login to [Auth0]((https://auth0.com/)
+1. Create an account or login to [Auth0](https://auth0.com/)
 2. Select **Applications** in the Auth0 menu
 
 ![Auth0 Dashboard](https://github.com/stoplightio/docs/blob/develop/assets/images/auth0-dashboard.png?raw=true)
@@ -15,17 +15,20 @@ Auth0 allows you to add a login form with user access management to your documen
 
 4. Input a **Name** for your application
 
-![Create Application Details](https://github.com/stoplightio/docs/blob/develop/assets/images/application-name-single-page.png?raw=true)
+![Create Application Details](https://github.com/stoplightio/docs/blob/develop/assets/images/application-create.png?raw=true)
 
-5. Select **Single Page Web Applications**
+5. Select **Regular Web Applications**
 6. Click **Create** 
 7. Select **Application Settings**
 
-![Auth0 Settings](https://github.com/stoplightio/docs/blob/develop/assets/images/auth0-settings.png?raw=true)
+![Auth0 Settings](https://github.com/stoplightio/docs/blob/develop/assets/images/auth0-new-settings.png?raw=true)
 
 8. Copy the **Domain** and paste it in **Hosted Login Page** 
-9. Input a **?** at the end of the pasted **Domain** from above 
-10. Copy the **Client ID** and paste it after the **?** in  **Hosted Login Page** from above 
+9. Input a **?client=** at the end of the pasted **Domain** from above 
+10. Copy the **Client ID** and paste it after the **?client=** in  **Hosted Login Page** from above 
+
+> Example Hosted Login Page: robertwallach.auth0.com?client=XwYWVMLp7rJOkJ6iU51MwJHm2w2AAfGl
+
 11. Copy the **Client Secret** and paste it in **Client Secrets** in Hubs 
 
 ![Hubs Authorizations](https://github.com/stoplightio/docs/blob/develop/assets/images/hubs-authorization.png?raw=true)
@@ -37,8 +40,9 @@ Auth0 allows you to add a login form with user access management to your documen
 ![Allowed Callback URL](https://github.com/stoplightio/docs/blob/develop/assets/images/callback-urls.png?raw=true)
 
 13. Select **Hosted Pages** in the Auth0 menu 
+
 >  Make sure **Customize Login Page** is turned on 
 
-![Hosted Pages](https://github.com/stoplightio/docs/blob/develop/assets/images/auth0-hosted-pages.png?raw=true)
-
 14. Click on **Build** to start the Publishing process 
+
+> To login to your Hub with Auth0, make sure you add users in the Auth0 Dashboard 
