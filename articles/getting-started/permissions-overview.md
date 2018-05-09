@@ -2,7 +2,7 @@
 
 ## Organizations 
 
-| **Organization Actions**        | **Reader** | **Creator** | **Administrator** | **Owner** |
+| **Organization Actions**        | **Reader** | **Contributor** | **Administrator** | **Owner** |
 |---------------------------------|:----------:|:-----------:|:-----------------:|:---------:|
 | Read Public Projects            |     X     |      X     |         X         |     X     |
 | View Organization Collaborators |           |      X     |         X         |     X     |
