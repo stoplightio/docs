@@ -20,13 +20,13 @@ Adding people to your Organization is the first step towards collaboration withi
 
 ### Magic Link 
 
-> Magic Link grants either Creator or Reader Permissions. Set accordingly 
+> Magic Link grants either Contributor or Reader Permissions. Set accordingly 
 
 #### Generating and Sending Magic Link 
 1. Select the **Organization** you wish to invite people to 
 2. Select the **People** tab 
 3. Click **Invite Member**
-4. Select a role, either **Creator** or **Reader**
+4. Select a role, either **Contributor** or **Reader**
 5. Click **Generate Link**
 6. Send link to invitee 
 
