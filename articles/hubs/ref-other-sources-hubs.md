@@ -17,12 +17,10 @@ Hubs allows you to reference other sources to automatically populate your Hub wi
 
 1. Select the Hub you wish to modify 
 2. Select **Design** view
-3. Click on **Page Settings & TOC** at the top of the page
-    1. Select the **page** or **subpage** you wish to power
-    2. Under Page Type, select **Markdown**(for markdown files) or **OpenAPI** (for JSON or YAML files)
-    3. Input the specific data source or select from the drop-down menu
-    4. Input an inner data source (optional)  
-4. Click **Confirm**  
+3. Select the **page** or **subpage** you wish to power
+4. Under Page Type, select **Markdown**(for markdown files) or **OpenAPI** (for JSON or YAML files)
+5. Input the specific data source or select from the drop-down menu
+6. Click **Confirm**  
 
 >Try it Out! Power a Subpage with an API Spec from the same project.
 
