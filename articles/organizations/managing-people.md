@@ -34,7 +34,7 @@ Adding people to your Organization is the first step towards collaboration withi
 1. Click on the **magic link** 
 2. If new to Stoplight, click **Register**
 3. If you already have an account, **Login** 
-4. You now have Creator or Reader access to that Organization 
+4. You now have Contributor or Reader access to that Organization 
 
 ---
 **Related Articles**
