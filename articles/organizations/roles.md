@@ -10,7 +10,7 @@ Roles and Permissions for members of Organizations can be managed and modified w
         * Has access to Billing and Organization Settings
     * **Administrator** 
         * Admins can update the org, its connections, and its members 
-    * **Creator** 
+    * **Contributor** 
          * Creators can update the org and its connections. They can view its members 
 
 ## Who
