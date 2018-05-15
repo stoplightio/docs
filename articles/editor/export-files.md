@@ -6,7 +6,7 @@
 
 You can export any files in Stoplight to use as you see fit. Exported files are served up in a unique domain in its raw format. Current exported file formats include: 
 
-### YAML
+### JSON
 - Documentation 
 - Modeling 
 - Testing 
