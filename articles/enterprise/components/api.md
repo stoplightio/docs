@@ -29,6 +29,9 @@ datastore and other miscellaneous Stoplight services.
 > * Displaying editor notifications when multiple users are editing the same file
 > * Displaying build logs while a Hub or spec is being built
 > * Displaying notifications for when a Hub or spec build is completed
+>
+> If websockets are not supported within your environment, clients will revert
+> to HTTP polling.
 
 > #### Component Dependencies
 >

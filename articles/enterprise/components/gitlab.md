@@ -117,12 +117,81 @@ GitLab. This guide only covers those specific to Stoplight.
 `external_url` is the canonical URL for the Gitlab instance (scheme, hostname,
 and port included).
 
-```
+```ruby
 external_url 'http://stoplight.example.com:8080'
 ```
 
 > If you are configuring GitLab to send emails, set the `external_url` to the
 > URL of the **Stoplight App** component, and not GitLab itself.
+
+##### postgresql
+
+To configure GitLab to use an external database (ie, the database _not_ embedded
+within the GitLab package), use the following configuration:
+
+```ruby
+postgresql['enable'] = false
+gitlab_rails['db_database'] = "stoplight"
+gitlab_rails['db_username'] = "dbuser"
+gitlab_rails['db_password'] = "dbpassword"
+gitlab_rails['db_host'] = "postgres.example.com"
+gitlab_rails['db_port'] = 5432
+gitlab_rails['db_sslmode'] = "allow"
+```
+
+##### redis
+
+To configure GitLab to use an external redis (ie, the redis instance _not_
+embedded within the GitLab package), use the following configuration:
+
+```ruby
+redis['enable'] = false
+gitlab_rails['redis_host'] = "HOST"
+gitlab_rails['redis_port'] = PORT
+gitlab_rails['redis_database'] = "stoplight"
+redis['maxclients'] = "10"
+```
+
+##### email
+
+To configure email, update the GitLab configuration with the following entries:
+
+```ruby
+gitlab_rails['gitlab_email_enabled'] = true
+gitlab_rails['gitlab_email_from'] = 'email-from@example.com'
+gitlab_rails['gitlab_email_display_name'] = 'Stoplight'
+gitlab_rails['gitlab_email_reply_to'] = 'email-reply@example.com'
+```
+
+> If you would like for your Stoplight instance to send emails, be sure to
+> update the SMTP settings below in addition to the email settings.
+
+##### smtp
+
+To configure SMTP to enable email notifications, update the GitLab configuration
+with the following entries:
+
+```ruby
+gitlab_rails['smtp_enable'] = true
+gitlab_rails['smtp_address'] = "smtp.example.com"
+gitlab_rails['smtp_port'] = 25
+gitlab_rails['smtp_domain'] = "smtp.example.com"
+```
+
+If the SMTP server requires authentication:
+
+```ruby
+gitlab_rails['smtp_user_name'] = "USER"
+gitlab_rails['smtp_password'] = "PASSWORD"
+gitlab_rails['smtp_authentication'] = "login"
+gitlab_rails['smtp_enable_starttls_auto'] = true
+```
+
+If the SMTP server requires TLS:
+
+```ruby
+gitlab_rails['smtp_tls'] = true
+```
 
 #### Starting the Service
 
