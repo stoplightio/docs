@@ -141,18 +141,6 @@ MAX_QUEUE_SIZE=500
 > `MAX_QUEUE_SIZE` should be left as `500` unless instructed otherwise by the
 > Stoplight Support staff.
 
-#### MAX_RUNTIME_POOL_SIZE
-
-The `MAX_RUNTIME_POOL_SIZE` variable denotes the worker pool size used to
-service requests.
-
-```
-MAX_RUNTIME_POOL_SIZE=15
-```
-
-> `MAX_RUNTIME_POOL_SIZE` should be left as `15` unless instructed otherwise by
-> the Stoplight Support staff.
-
 #### MAX_WORKERS
 
 The `MAX_WORKERS` variable denotes the number of worker threads to use when

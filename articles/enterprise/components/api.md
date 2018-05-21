@@ -20,6 +20,15 @@ datastore and other miscellaneous Stoplight services.
 > * Gitlab
 > * Exporter
 > * Prism
+>
+> In addition, the API makes use of
+> [websocket](https://en.wikipedia.org/wiki/WebSocket) connections for real-time
+> notifications and updates to application users. In particular, websockets are
+> used for:
+>
+> * Displaying editor notifications when multiple users are editing the same file
+> * Displaying build logs while a Hub or spec is being built
+> * Displaying notifications for when a Hub or spec build is completed
 
 > #### Component Dependencies
 >
@@ -155,6 +164,11 @@ SL_COOKIE_DOMAIN="example.com"
 
 For example, if Stoplight is being served from the `stoplight.example.com`
 domain, set this variable to `example.com`.
+
+> This setting is used for
+> [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
+> verification. If you are unable to make requests to the API from the app, then
+> this is most likely the cause.
 
 #### SL_APP_HOST
 

@@ -89,7 +89,7 @@ The `TASKER_HTTP_BIND` variable is the bind address and port used for serving
 the Tasker HTTP API.
 
 ```
-TASKER_HTTP_BIND="localhost:9432"
+TASKER_HTTP_BIND="0.0.0.0:9432"
 ```
 
 #### TASKER_MODE
@@ -103,13 +103,13 @@ TASKER_MODE="shell"
 
 > If not specified, Tasker defaults to using `docker` mode.
 
-#### CORE_ROOT
+#### HUB_BUILDER_ROOT
 
-The `CORE_ROOT` denotes the absolute path to the stoplight-hub-builder package
-root.
+The `HUB_BUILDER_ROOT` denotes the absolute path to the stoplight-hub-builder
+package root.
 
 ```
-CORE_ROOT="/opt/stoplight-hub-builder"
+HUB_BUILDER_ROOT="/opt/stoplight-hub-builder"
 ```
 
 > This variable is only required when running in `shell` mode.
