@@ -29,7 +29,7 @@ Redis).
 >
 > GitLab must be able to receive incoming connections from the following components:
 >
-> * App
+> * API
 >
 > GitLab must be able to make outgoing connections to the following components:
 >
@@ -123,6 +123,24 @@ external_url 'http://stoplight.example.com:8080'
 
 > If you are configuring GitLab to send emails, set the `external_url` to the
 > URL of the **Stoplight App** component, and not GitLab itself.
+
+##### ssl
+
+To enable SSL, update the `external_url` setting with a `https://` prefix, which
+will enable SSL connections over port 443. Once updated, set the certificate and
+private key locations using the following configuration:
+
+```ruby
+nginx['ssl_certificate'] = "/etc/gitlab/ssl/gitlab.example.com.crt"
+nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/gitlab.example.com.key"
+```
+
+If you would like to _only_ serve requests over HTTPS, use the following
+configuration:
+
+```ruby
+nginx['redirect_http_to_https'] = true
+```
 
 ##### postgresql
 
