@@ -213,6 +213,24 @@ The `SL_REDIS_URL` variable is the full URL to a Redis instance.
 SL_REDIS_URL="redis://:password@example.com:6379"
 ```
 
+#### SL_PUBS_ADMIN_URL
+
+The `SL_PUBS_ADMIN_URL` variable is the full URL to the Pubs administrative API.
+
+```
+SL_PUBS_ADMIN_URL=http://localhost:9098
+```
+
+> This setting corresponds to the Pubs `admin_bind` configuration variable.
+
+#### SL_TASKER_HOST
+
+The `SL_TASKER_HOST` variable is the full URL to the Tasker API.
+
+```
+SL_TASKER_HOST=http://localhost:9432
+```
+
 #### DISABLE_REGISTRATION
 
 The `DISABLE_REGISTRATION` variable can be used to prevent new users from
