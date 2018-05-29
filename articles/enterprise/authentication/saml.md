@@ -1,8 +1,17 @@
 # Configuring SAML Authentication
 
-To configure Stoplight Enterprise to use SAML for user authentication,
-add the following variable to the Stoplight API
-configuration/environment:
+To configure Stoplight to use SAML authentication, follow the instructions
+below.
+
+> Please note, Stoplight's SAML integration does not currently use
+> SAML assertions for determining group/organization
+> membership. Group/organization membership should be managed through
+> the Stoplight application itself.
+
+## API
+
+To configure Stoplight to use SAML for user authentication, add the following
+variable to the Stoplight API configuration/environment:
 
 ```bash
 SL_SSO_ENTRYPOINT="https://your-saml-server.example.com/..."
@@ -21,13 +30,30 @@ sudo docker restart stoplight-api
 sudo systemctl restart stoplight-api
 ```
 
+## App
+
+To configure Stoplight to use SAML for user authentication, add the following
+variable to the Stoplight App configuration/environment:
+
+```bash
+SL_SSO_ENTRYPOINT="https://stoplight-api.example.com:3030/sso/global/saml/login"
+```
+
+Where `https://stoplight-api.example.com:3030` is the scheme, hostname, and port
+corresponding to your Stoplight API server.
+
+Once set in the app configuration, restart the app:
+
+```bash
+# docker installs
+sudo docker restart stoplight-api
+
+# package installs
+sudo systemctl restart stoplight-api
+```
+
 Once restarted, all login requests will be authenticated via the
 external SAML service.
-
-> Please note, Stoplight's SAML integration does not currently use
-  SAML assertions for determining group/organization
-  membership. Group/organization membership should be managed through
-  the Stoplight application itself.
 
 ## SAML IdP Metadata
 
