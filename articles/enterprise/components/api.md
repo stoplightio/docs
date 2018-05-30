@@ -20,6 +20,18 @@ datastore and other miscellaneous Stoplight services.
 > * Gitlab
 > * Exporter
 > * Prism
+>
+> In addition, the API makes use of
+> [websocket](https://en.wikipedia.org/wiki/WebSocket) connections for real-time
+> notifications and updates to application users. In particular, websockets are
+> used for:
+>
+> * Displaying editor notifications when multiple users are editing the same file
+> * Displaying build logs while a Hub or spec is being built
+> * Displaying notifications for when a Hub or spec build is completed
+>
+> If websockets are not supported within your environment, clients will revert
+> to HTTP polling.
 
 > #### Component Dependencies
 >
@@ -156,12 +168,17 @@ SL_COOKIE_DOMAIN="example.com"
 For example, if Stoplight is being served from the `stoplight.example.com`
 domain, set this variable to `example.com`.
 
+> This setting is used for
+> [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
+> verification. If you are unable to make requests to the API from the app, then
+> this is most likely the cause.
+
 #### SL_APP_HOST
 
 The `SL_APP_HOST` variable is the full URL to the Stoplight app component.
 
 ```
-SL_APP_HOST="http://localhost:3030"
+SL_APP_HOST="http://localhost:3100"
 ```
 
 #### SL_API_HOST
@@ -185,7 +202,7 @@ SL_EXPORTER_HOST="http://localhost:3031"
 The `SL_GITLAB_HOST` variable is the full URL to the Stoplight GitLab instances HTTP port.
 
 ```
-SL_GITLAB_HOST="http://localhost:8080"
+SL_GITLAB_HOST="http://localhost:8000"
 ```
 
 #### SL_REDIS_URL
@@ -193,7 +210,29 @@ SL_GITLAB_HOST="http://localhost:8080"
 The `SL_REDIS_URL` variable is the full URL to a Redis instance.
 
 ```
-SL_REDIS_URL="redis://:password@example.com:6379"
+SL_REDIS_URL="redis://localhost:6379"
+```
+
+> If your Redis instance requires a password, insert it into the URL before the
+> hostname followed with a `@` symbol. For example:
+> `redis://:mypassword@localhost:6379`
+
+#### SL_PUBS_ADMIN_URL
+
+The `SL_PUBS_ADMIN_URL` variable is the full URL to the Pubs administrative API.
+
+```
+SL_PUBS_ADMIN_URL=http://localhost:9098
+```
+
+> This setting corresponds to the Pubs `admin_bind` configuration variable.
+
+#### SL_TASKER_HOST
+
+The `SL_TASKER_HOST` variable is the full URL to the Tasker API.
+
+```
+SL_TASKER_HOST=http://localhost:9432
 ```
 
 #### DISABLE_REGISTRATION
