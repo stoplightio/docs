@@ -178,7 +178,7 @@ domain, set this variable to `example.com`.
 The `SL_APP_HOST` variable is the full URL to the Stoplight app component.
 
 ```
-SL_APP_HOST="http://localhost:3030"
+SL_APP_HOST="http://localhost:3100"
 ```
 
 #### SL_API_HOST
@@ -202,7 +202,7 @@ SL_EXPORTER_HOST="http://localhost:3031"
 The `SL_GITLAB_HOST` variable is the full URL to the Stoplight GitLab instances HTTP port.
 
 ```
-SL_GITLAB_HOST="http://localhost:8080"
+SL_GITLAB_HOST="http://localhost:8000"
 ```
 
 #### SL_REDIS_URL
@@ -210,8 +210,12 @@ SL_GITLAB_HOST="http://localhost:8080"
 The `SL_REDIS_URL` variable is the full URL to a Redis instance.
 
 ```
-SL_REDIS_URL="redis://:password@example.com:6379"
+SL_REDIS_URL="redis://localhost:6379"
 ```
+
+> If your Redis instance requires a password, insert it into the URL before the
+> hostname followed with a `@` symbol. For example:
+> `redis://:mypassword@localhost:6379`
 
 #### SL_PUBS_ADMIN_URL
 
