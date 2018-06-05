@@ -16,7 +16,7 @@ to be served from `https://example.com/docs/api` then you would set your base pa
 3. On the publish panel, scroll down to **Advanced** and input your base path (ex: `/docs/api`)
 4. At the top of the publish panel, click the **Build & Publish**
 
-![Self-hosted hub directory example](/assets/images/setting-hub-base-path.png)
+![Self-hosted hub directory example](https://github.com/stoplightio/docs/blob/rowa97-patch-12/assets/images/setting-hub-base-path.png?raw=true)
 
 ## Example of Self-Hosting
 
@@ -33,7 +33,7 @@ directory (ex. Move `~/Downloads/hub-files/...` to `~/Downloads/my-website/...` 
 
 This is how your website directory might look:
 
-![Self-hosted hub directory example](/assets/images/example-website.png)
+![Self-hosted hub directory example](https://github.com/stoplightio/docs/blob/rowa97-patch-12/assets/images/example-website.png?raw=true)
 
 ## Example of Reverse Proxying with AWS API Gateway
 
