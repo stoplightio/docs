@@ -1,12 +1,12 @@
 
-# Embed your Hub into an existing website
+# Embed your Hub into an Existing Website
 
 There are two methods that will allow you to embed your Hub into an existing website. If you want
 to host your published Hub on Stoplight's servers, you will need to set up a reverse proxy. If you want
 your Hub to live alongside your website's files, you will need to download your Hub's static assets and
 upload them with your website.
 
-## Setting up a base path
+## Setting Up a Base Path
 
 Your base path will determine the path to your Hub's landing page. For example if you want your Hub
 to be served from `https://example.com/docs/api` then you would set your base path to `/docs/api`.
@@ -18,7 +18,7 @@ to be served from `https://example.com/docs/api` then you would set your base pa
 
 ![Self-hosted hub directory example](/assets/images/setting-hub-base-path.png)
 
-## Example of self hosting
+## Example of Self-Hosting
 
 If you want to host your Hub on the same servers as your website's files, you will need to download
 your Hub's static asset files and save them with the rest of your website's files.
@@ -35,7 +35,7 @@ This is how your website directory might look:
 
 ![Self-hosted hub directory example](/assets/images/example-website.png)
 
-## Example of reverse proxying with AWS API Gateway
+## Example of Reverse Proxying with AWS API Gateway
 
 1. Go to API Gateway service and create a new API
 2. Create a path for `GET /` and `GET /{proxy+}` that proxies to your website.
