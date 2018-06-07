@@ -20,7 +20,7 @@ Depending on the focus of your project, we recommend following different version
 
 ### Product/API Release Cycle
 
-The simpliest and most common approach is to mirror your APIs release cycle. Everytime you release your API, you release your Project. Likewise, you should create a new version of your project when you are ready to start working on new or "breaking" changes to your API. This workflow is more sequential and will lead to a large amount of versions and releases.
+The simpliest and most common approach is to mirror your product or APIs release cycle. Everytime you release your product, you release your Project. Likewise, you should create a new version of your project when you are ready to start working on new or "breaking" changes to your API. This workflow is more sequential and will lead to a large amount of versions and releases.
 
 ### Different Workspaces
 
