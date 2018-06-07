@@ -1,6 +1,6 @@
 # Versioning and Release
 
-You can declare Versions and Releases within Stoplight to manage and track changes made to your Project over time. To identify the version/release that you are currently working with, you can see it in the top right of the editor screen. Versions will be marked with a **Branch** icon, while releases will be marked with a **Tag** icon. Stoplight follows the [Semantic Versioning](https://semver.org/) numbering conventions of MAJOR.MINOR.PATCH
+You can declare Versions and Releases within Stoplight to manage and track changes made to your Project over time. You can identify which version/release you are viewing in the top right of the editor. Versions will be marked with a **Branch** icon, while releases will be marked with a **Tag** icon. Stoplight follows the [Semantic Versioning](https://semver.org/) numbering conventions of MAJOR.MINOR.PATCH
 
 - Major Version: When incompatible API changes have been made
 - Minor Version: When backwards-compatible functionality have been added
@@ -20,11 +20,11 @@ Depending on the focus of your project, we recommend following different version
 
 ### Product/API Release Cycle
 
-The simpliest approach is when your project is connected to and follows your product's release cycle. We suggest that you version your project by mirroring that cycle accordingly. This means that you should release a project, everytime you also release your project/API. Likewise, you should create a new version in your project when you are ready to start working on new or "breaking" changes to your product. This workflow is more sequential and will lead to a large amount of versions and releases.
+The simpliest and most common approach is to mirror your APIs release cycle. Everytime you release your API, you release your Project. Likewise, you should create a new version of your project when you are ready to start working on new or "breaking" changes to your API. This workflow is more sequential and will lead to a large amount of versions and releases.
 
 ### Different Workspaces
 
-Sometimes a project may not follow a typical product release cycle. For example you may have a project where you want to manage different many different workspaces without needing to make different projects entirely! In this case we suggest creating one version for each major workspace, in the start, and then many releases to track the growth and progress of each. When using this approach it is important to note that you will not be able to move work back and forth between each version, unless you copy it over manually. The benifit of this approach is that it allows your team to manage to vastly different versions of a project at the same time and then document them under the same domain when publishing.
+Sometimes a project may not follow a typical product release cycle. For example, you may have a project where you want to manage multiple workspaces. For this case, we suggest creating one version for each major workspace, in the start, and then many releases to track the growth and progress of each. When using this approach, it is important to note that you will not be able to move work back and forth between each version, unless you copy it over manually. The benefit being that it allows your team to manage different versions of a project at the same time and then document them under the same domain when publishing.
 
 ## Icons and Tooltips
 
