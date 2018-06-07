@@ -16,9 +16,9 @@ If you want to take a permanent time stamped snapshot of a version, you can crea
 
 1.  The version or release you are currently viewing will be highlighted in blue in the tree
 2.  The item marked with the star is the highest released release within your your project
-3.  Select any release
+3.  Select any release, indetified by a **Tag** icon
 
-> To easily identify which items are releases, we use the tag icon. It is important to note that Releases are not editable. So when viewing a release, you may make changes in the editor, but features like saving and file deletion are disabled.
+> Releases are not editable. So when viewing a release, you may make changes in the editor, but features like saving and file deletion are disabled.
 
 ### Create a New Release
 
