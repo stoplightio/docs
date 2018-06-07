@@ -23,7 +23,7 @@ Publishing your documentation has never been easier. Stoplight has added:
     - Or input a **custom domain** (optional)
 3.  Once completed, click **Next ->**
 4.  Select the Hub you wish to publish under **Hub File**
-    > Publishing will use the version of this file from your latest version
+    > Publishing will use the latest version of the selected file (denoted by a star in the versions list) 
 5.  Add Integrations to **Segment**, **Intercom**, and **Google Analytics** under Integrations (optional)
 6.  Add security via **Username/Passwords Login**, **Auth0**, or **SAML** (optional)
 7.  Once completed, click **Publish** in the top left
