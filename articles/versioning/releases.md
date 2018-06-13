@@ -2,7 +2,7 @@
 
 ## What
 
-If you want to take a permanent time stamped snapshot of a version, you can create a Release. Once a Release is created, it can be viewed but is no longer editable. You should create releases when you want to mark your work as completely done. These are good for tracking the history and growth of your project.
+If you want to take a permanent time stamped snapshot of a version, you can create a Release. Once a Release is created, it can be viewed but is no longer editable. You should create releases when you want to mark your work as completely done. These are userful for tracking the history and growth of your project and to tie your Stoplight project to a specific sprint or product release cycle. 
 
 > Releases in Stoplight follow the [Semantic Versioning](https://semver.org/) number conventions and are marked by MAJOR.MINOR.PATCH.
 
