@@ -2,7 +2,7 @@
 
 You can declare Versions and Releases within Stoplight to manage and track changes made to your Project over time. You can identify which version/release you are viewing in the top right of the editor. Versions will be marked with a **Branch** icon, while releases will be marked with a **Tag** icon. Stoplight follows the [Semantic Versioning](https://semver.org/) numbering conventions of MAJOR.MINOR.PATCH
 
-- Major Version: When incompatible API changes have been made
+- Major Version: When incompatible breaking changes have been made
 - Minor Version: When backwards-compatible functionality have been added
 - Patch Version: When backwards-compatible bugs fixes have been added
 
@@ -16,15 +16,15 @@ If you want to take a permanent time stamped snapshot of a version, you can crea
 
 ## Best Practices
 
-Depending on the focus of your project, we recommend following different versioning patterns for the best work flow experience within Stoplight. For example, if you project's primary focus is documentation you may want to use a different approach than if the focus was modeling out an API, but feel free to use whatever pattern you feel works best for your team!
+Depending on the focus of your project, we recommend following different versioning patterns for the best workflow experience within Stoplight. For example, if your project's primary focus is documentation you may want to use a different approach than if the focus is modeling out an API, but feel free to use whatever pattern you feel works best for your team!
 
 ### Product/API Release Cycle
 
-The simpliest and most common approach is to mirror your product or APIs release cycle. Everytime you release your product, you release your Project. Likewise, you should create a new version of your project when you are ready to start working on new or "breaking" changes to your API. This workflow is more sequential and will lead to a large amount of versions and releases.
+The simpliest and most common approach is to mirror your product or APIs release cycle. The basic rule of thumb is when you release a new version of your API, you create a new release in Stoplight under the same version number. This release flow is one-to-one with your API, and will usually result in a large number of releases within Stoplight.
 
-### Different Workspaces
+### Platform Versions
 
-Sometimes a project may not follow a typical product release cycle. For example, you may have a project where you want to manage multiple workspaces. For this case, we suggest creating one version for each major workspace, in the start, and then many releases to track the growth and progress of each. When using this approach, it is important to note that you will not be able to move work back and forth between each version, unless you copy it over manually. The benefit being that it allows your team to manage different versions of a project at the same time and then document them under the same domain when publishing.
+If you are creating a documentation driven project, you can describe the major versions of your platform via versioning. This will allow you to document multiple versions of your platform under one domain. In this use case, it is not necessary to use releases. 
 
 ## Icons and Tooltips
 
