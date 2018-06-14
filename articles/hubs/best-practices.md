@@ -1,5 +1,7 @@
 # Hub’s Best Practices 
 
+![Hub of Hubs](https://github.com/stoplightio/docs/blob/develop/assets/images/hubofhubs.png?raw=true)
+
 ## Supplementary/Auxiliary Documentation 
 Documentation is a principal driving force for great UX. APIs require basic referential material for consumption, but great UX comes from all of the supplementary information you provide your users.  To support the creation of any number of different supplementary documents, images, videos, etc. we created Hubs, our documentation tool. We pushed the limits of API documentation beyond specifications and models to accommodate all of the secondary and tertiary information that can help drive good UX. 
 
