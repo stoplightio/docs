@@ -1,7 +1,7 @@
 # Linking 
 
 ## What 
-In your Stoplight Hub, linking to different [pages](/pages), [subpages](/subpages), section headers, and external sites allows you to help navigation across your docs.  
+In your Stoplight Hub, linking to different [pages](/pages), [subpages](/subpages), section headers, and external sites allows you to integrate navigation across your docs.  
 
 ## How 
 
@@ -31,7 +31,7 @@ If you want to link to a subpage from a page or another subpage, you will need t
 
 `[text](/path-to-page/path-to-subpage)`
 
-For example, if the Hello World page, had a subpage called Getting Started, and then another subpage within that subpage called SDKs that you want to link to: 
+For example, if the Hello World page had a subpage called Getting Started, and then another subpage within that subpage called SDKs that you want to link to: 
 
 ![Linking subpage](https://github.com/stoplightio/docs/blob/develop/assets/images/linking-subpage.png?raw=true)
 
