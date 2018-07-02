@@ -1,7 +1,7 @@
 # Linking 
 
 ## What 
-In your Stoplight Hub, linking to different [pages](/getting-started/pages), [subpages](/getting-started/subpages), section headers, and external sites allows you to integrate navigation across your docs.  
+In your Stoplight Hub, linking to different [pages](/documentation/getting-started/pages), [subpages](/documentation/getting-started/subpages), section headers, and external sites allows you to integrate navigation across your docs.  
 
 ## How 
 
