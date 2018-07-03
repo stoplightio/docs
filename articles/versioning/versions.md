@@ -2,27 +2,24 @@
 
 ## What
 
-Versions are editable snapshots of your current Project. When you create a new project, it will automatically start at version 1.0. You should create a new version within your project when you are ready to start working on large or "breaking" changes to your product. This allows for managing multiple projects, while still keeping the older ones available to edit. It is advisable to only have a few versions per project. 
+Versions are editable snapshots of your current Project. When you create a new project, it will automatically start at version 1.0. You should create a new version within your project when you are ready to start working on large or "breaking" changes to your product. This allows for managing multiple projects, while still keeping the older ones available to edit. It is advisable to only have a few versions per project.
 
 > Versions in Stoplight follow the [Semantic Versioning](https://semver.org/) number conventions and are marked by MAJOR.MINOR.
 
 ## How
 
 1.  Select the **Project** you wish to modify
-2.  In the top right, select the **Branch** or **Tag** icon with the version
+2.  In the top right, select the **Branch** icon with the version
     number
 
 ### Navigate to a Version
 
-1.  The version or release you are currently viewing will be highlighted in blue in the tree
-2.  The item marked as latest is the most recently created version, this will always be the version with the highest number
-3.  Select the highest release nested under a version folder
-
-> To easily identify which items are editable versions, we use the pencil icon as well as the word "unreleased"
+1.  The version you are currently viewing will be highlighted in blue in the tree
+2.  Select any version nested under the code branch folders
 
 ### To Create a New Version
 
-1.  Input a new Version Number, then click **+ Version x.x**
+1.  Input a new Version Number, then click **+ Version **
 
     - Invalid formats are anything that include non-number character and will result in an error upon creation
 

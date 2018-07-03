@@ -1,10 +1,9 @@
 # Versioning and Release
 
-You can declare Versions and Releases within Stoplight to manage and track changes made to your Project over time. You can identify which version/release you are viewing in the top right of the editor. Versions will be marked with a **Branch** icon, while releases will be marked with a **Tag** icon. Stoplight follows the [Semantic Versioning](https://semver.org/) numbering conventions of MAJOR.MINOR.PATCH
+You can declare Versions and Releases within Stoplight to manage and track changes made to your Project over time. You can identify which version you are viewing in the top right of the editor. Versions will be marked with a **Branch** icon, while releases will be marked with a **Tag** icon. Stoplight partially follows the [Semantic Versioning](https://semver.org/) numbering conventions of MAJOR.MINOR.PATCH, using only major and minor.
 
-- Major Version: When incompatible breaking changes have been made
+- Major Version: When large incompatible breaking changes have been made
 - Minor Version: When backwards-compatible functionality have been added
-- Patch Version: When backwards-compatible bugs fixes have been added
 
 ### Versions
 
@@ -12,7 +11,7 @@ Versions are editable snapshots of your current Project. When you create a new P
 
 ### Releases
 
-If you want to take a permanent time stamped snapshot of a version, you can create a Release. Once a Release is created, it can be viewed but is no longer editable. [More on Releases...](./releases.md)
+Creating a Release marks a version as ready to publish and takes a time stamped snapshot of a the most recent edit of a version. When publishing all released versions will be included in your documetation under a dropdown selector [More on Releases...](./releases.md)
 
 ## Best Practices
 
@@ -24,14 +23,13 @@ The simpliest and most common approach is to mirror your product or APIs release
 
 ### Platform Versions
 
-If you are creating a documentation driven project, you can describe the major versions of your platform via versioning. This will allow you to document multiple versions of your platform under one domain. In this use case, it is not necessary to use releases. 
+If you are creating a documentation driven project, you can describe the major versions of your platform via versioning. This will allow you to document multiple versions of your platform under one domain. In this use case, it is not necessary to use releases.
 
 ## Icons and Tooltips
 
-- Pencils: Most up to date work in that Version that has not been Released
-- Latest: Most recent version in your project, this is where you will primarily be working
-- Star: Highest Release (only one)
-- Tag: Released (not editable)
+- Solid Upload: A released Version
+- Outlined Upload: A Version that has not yet been released
+- Code: A sorted folder of versions of the same MAJOR
 
 ---
 
