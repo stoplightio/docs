@@ -1,6 +1,6 @@
 # Google Analytics Integration 
 
-[Google Analytics Integration]()
+![Google Analytics Integration](https://github.com/stoplightio/docs/blob/develop/assets/gifs/googleanalytics.gif?raw=true)
 
 ## What 
 Stoplight provides an easy to use integration with Google Analytics for your documentation.  
