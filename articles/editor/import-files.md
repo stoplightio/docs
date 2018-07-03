@@ -1,6 +1,6 @@
 # Import Files
 
-![Import File Form](https://github.com/stoplightio/docs/blob/rowa97-patch-12/assets/gifs/platform-import.png?raw=true)
+![Import File](https://github.com/stoplightio/docs/blob/develop/assets/gifs/import.gif?raw=true)
 
 ## What 
 
@@ -8,12 +8,12 @@ If you already have existing OpenAPI (Swagger) or Markdown files, you can import
 
 ## How 
 
-1. Navigate to the project designer landing screen.
-2. Select the **Import Existing** tab in the **New File** form.
-3. Click the **Upload File** button, and select your OpenAPI or Markdown file.
-4. Make sure the correct type is selected (**API Reference** for OpenAPI, **Article** for Markdown).
-5. Type a short, memorable title for the new reference/article.
-6. Click **+ Add** and you're done!
+1. Navigate to an existing **Project** or create a new Project 
+2. By default, the **New File screen** will be open 
+3. Select **Import Existing** 
+4. Click **Upload OpenAPI (Swagger) or Markdown File** 
+5. Select the file you wish to upload 
+6. Select the **+** in the file explorer to return to this screen (optional) 
 
 ---
 **Related Articles**
