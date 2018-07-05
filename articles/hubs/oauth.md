@@ -33,6 +33,7 @@ If your API is protected by OAuth, you will need to enable it for Try It Out. En
 ---
 **Related Articles**
 
+- [OAuth](/modeling/modeling-with-openapi/oauth)
 - [Digital Oceans: Introduction to OAuth2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
 - [Security Schemes](/modeling/modeling-with-openapi/security-schemes)
 
