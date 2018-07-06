@@ -1,5 +1,7 @@
 # Versions
 
+![Versioning](https://github.com/stoplightio/docs/blob/develop/assets/images/stoplight-versioning.png?raw=true)
+
 ## What
 
 Versions are editable snapshots of your current Project. When you create a new project, it will automatically start at version 1.0. You should create a new version within your project when you are ready to start working on large or "breaking" changes to your product. This allows for managing multiple states within a project, while still keeping the older ones available to edit.
