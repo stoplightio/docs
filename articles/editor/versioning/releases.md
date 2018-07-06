@@ -2,7 +2,7 @@
 
 ## What
 
-Creating a Release marks a version as ready to publish and takes a time stamped snapshot of a the most recent edit of a version. When publishing all released versions will be included in your documetation under a dropdown selector. These are useful for pointing to specific points of your project and allowing you to continue editing a version without altering published documentation.
+Creating a Release marks a version as ready to publish and takes a time stamped snapshot of a the most recent edit of a version. When publishing documentation, all released versions will be included in your documetation under a dropdown selector. These are useful for pointing to specific points of your project and allowing you to continue editing a version without altering published documentation.
 
 ## How
 
@@ -13,8 +13,7 @@ Creating a Release marks a version as ready to publish and takes a time stamped 
 ### Create a New Release
 
 1.  While editing a version, click **Release**
-
-    - Optional: Add Release Notes
+2.  Optional: Add Release Notes
 
 > If you only have read access to a project, the section will instead display your previous release notes if any were entered.
 
@@ -25,8 +24,7 @@ Creating a Release marks a version as ready to publish and takes a time stamped 
 ### Edit a Release
 
 1.  While editing a version, click **Rerelease** under the Edit a Release section
-
-    - Optional: Add/Change Release Notes
+2. Optional: Add/Change Release Notes
 
 > Rereleasing a version will update the git tag to point to the newest most recent commit/changes to your version.
 
@@ -40,8 +38,8 @@ It is important to note that a change in a released version will need to be re-r
 
 **Related Articles**
 
-- [Versioning & Releases](./introduction.md)
-- [Versions](./versions.md)
+- [Versioning & Releases](/platform/versioning/introduction)
+- [Versions](/platform/versioning/versions)
 - [Read, Design, & Code View](/platform/editor-basics/read-design-code-view)
 - [Working with Files](/platform/editor-basics/working-with-files)
 - [Import Files](/platform/editor-basics/import-files)
