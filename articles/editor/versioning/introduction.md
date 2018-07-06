@@ -1,5 +1,7 @@
 # Versioning and Releases
 
+![Versioning](https://github.com/stoplightio/docs/blob/develop/assets/images/stoplight-versioning.png?raw=true)
+
 You can declare Versions and Releases within Stoplight to manage and track changes made to your Project over time. You can identify which version you are viewing in the top right of the editor. Versions will be marked with a **Branch** icon, and will have a **Solid Upload** icon if it has been released. Stoplight uses the numbering system: v{MAJOR.MINOR}
 
 - Major Version: When large incompatible breaking changes have been made
