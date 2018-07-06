@@ -2,9 +2,9 @@
 
 ## What
 
-Versions are editable snapshots of your current Project. When you create a new project, it will automatically start at version 1.0. You should create a new version within your project when you are ready to start working on large or "breaking" changes to your product. This allows for managing multiple projects, while still keeping the older ones available to edit. It is advisable to only have a few versions per project.
+Versions are editable snapshots of your current Project. When you create a new project, it will automatically start at version 1.0. You should create a new version within your project when you are ready to start working on large or "breaking" changes to your product. This allows for managing multiple states within a project, while still keeping the older ones available to edit.
 
-> Versions in Stoplight follow the [Semantic Versioning](https://semver.org/) number conventions and are marked by MAJOR.MINOR.
+> Versions in Stoplight follow a numbering system and are marked by MAJOR.MINOR.
 
 ## How
 
@@ -19,11 +19,9 @@ Versions are editable snapshots of your current Project. When you create a new p
 
 ### To Create a New Version
 
-1.  Input a new Version Number, then click **+ Version **
-
-    - Invalid formats are anything that include non-number character and will result in an error upon creation
-
-2.  On successful creation of the new version, you will re-routed to it and you may continue working as normal, without concern of altering any work in other versions
+1. Input a new Version Number, then click **+ Version**
+> Invalid formats are anything that include non-number character and will result in an error upon creation
+2. On successful creation of the new version, you will re-routed to it and you may continue working as normal, without concern of altering any work in other versions
 
 > New versions will be generated from the nearest Version numerically lower than it
 
@@ -37,8 +35,8 @@ It is important to note that a change in a version release will only be refelect
 
 **Related Articles**
 
-- [Versioning & Releases](./introduction.md)
-- [Releases](./releases.md)
+- [Versioning & Releases](/platform/versioning/introduction)
+- [Releases](/platform/versioning/releases)
 - [Read, Design, & Code View](/platform/editor-basics/read-design-code-view)
 - [Working with Files](/platform/editor-basics/working-with-files)
 - [Import Files](/platform/editor-basics/import-files)
