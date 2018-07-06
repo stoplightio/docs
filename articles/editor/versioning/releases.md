@@ -1,5 +1,7 @@
 # Releases
 
+![Published Releases](https://github.com/stoplightio/docs/blob/develop/assets/images/stoplight-published-releases.png?raw=true)
+
 ## What
 
 Creating a Release marks a version as ready to publish and takes a time stamped snapshot of a the most recent edit of a version. When publishing documentation, all released versions will be included in your documetation under a dropdown selector. These are useful for pointing to specific points of your project and allowing you to continue editing a version without altering published documentation.
