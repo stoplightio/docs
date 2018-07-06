@@ -2,9 +2,9 @@
 
 ## What
 
-Versions are editable snapshots of your current Project. When you create a new project, it will automatically start at version 1.0. You should create a new version within your project when you are ready to start working on large or "breaking" changes to your product. This allows for managing multiple projects, while still keeping the older ones available to edit. It is advisable to only have a few versions per project.
+Versions are editable snapshots of your current Project. When you create a new project, it will automatically start at version 1.0. You should create a new version within your project when you are ready to start working on large or "breaking" changes to your product. This allows for managing multiple states within a project, while still keeping the older ones available to edit.
 
-> Versions in Stoplight follow the [Semantic Versioning](https://semver.org/) number conventions and are marked by MAJOR.MINOR.
+> Versions in Stoplight follow a numbering system and are marked by MAJOR.MINOR.
 
 ## How
 

@@ -1,6 +1,6 @@
-# Versioning and Release
+# Versioning and Releases
 
-You can declare Versions and Releases within Stoplight to manage and track changes made to your Project over time. You can identify which version you are viewing in the top right of the editor. Versions will be marked with a **Branch** icon, while releases will be marked with a **Tag** icon. Stoplight partially follows the [Semantic Versioning](https://semver.org/) numbering conventions of MAJOR.MINOR.PATCH, using only major and minor.
+You can declare Versions and Releases within Stoplight to manage and track changes made to your Project over time. You can identify which version you are viewing in the top right of the editor. Versions will be marked with a **Branch** icon, and will have a **Solid Upload** icon if it has been released. Stoplight uses a numbering system ex. v{MAJOR.MINOR}
 
 - Major Version: When large incompatible breaking changes have been made
 - Minor Version: When backwards-compatible functionality have been added
@@ -11,7 +11,7 @@ Versions are editable snapshots of your current Project. When you create a new P
 
 ### Releases
 
-Creating a Release marks a version as ready to publish and takes a time stamped snapshot of a the most recent edit of a version. When publishing all released versions will be included in your documetation under a dropdown selector [More on Releases...](./releases.md)
+Creating a Release marks a version as ready to publish and takes a time stamped snapshot of a the most recent edit of a version. When publishing, all released versions, from when they were released, will be included in your documetation under a dropdown selector. [More on Releases...](./releases.md)
 
 ## Best Practices
 
@@ -19,11 +19,11 @@ Depending on the focus of your project, we recommend following different version
 
 ### Product/API Release Cycle
 
-The simpliest and most common approach is to mirror your product or APIs release cycle. The basic rule of thumb is when you release a new version of your API, you create a new release in Stoplight under the same version number. This release flow is one-to-one with your API, and will usually result in a large number of releases within Stoplight.
+The simpliest and most common approach is to mirror your product or APIs release cycle. The basic rule of thumb is when you release a new version of your API, you release the same version in Stoplight. This release flow is one-to-one with your API, and will usually result in a large number of released versions within Stoplight.
 
 ### Platform Versions
 
-If you are creating a documentation driven project, you can describe the major versions of your platform via versioning. This will allow you to document multiple versions of your platform under one domain. In this use case, it is not necessary to use releases.
+If you are creating a documentation driven project, you can describe one or two major versions of your platform via versioning. Then re-release the same versions as you continue your work and want to display the newest updates in your published documentation.
 
 ## Icons and Tooltips
 

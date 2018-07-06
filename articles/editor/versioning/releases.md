@@ -12,11 +12,11 @@ Creating a Release marks a version as ready to publish and takes a time stamped 
 
 ### Create a New Release
 
-1.  While editing a version, click **Release x.x.x**
+1.  While editing a version, click **Release**
 
     - Optional: Add Release Notes
 
-> If you only have read access to a project , the section will instead display your previous release notes if any were entered.
+> If you only have read access to a project, the section will instead display your previous release notes if any were entered.
 
 ### Delete a Release
 
@@ -32,7 +32,7 @@ Creating a Release marks a version as ready to publish and takes a time stamped 
 
 ## Notes
 
-Git tags are used internally to manage releases. Under the hood for each release, a tag is created as `release/{VERSION}` and is a reference to the most recent commit in the version branch `version/{MAJOR.MINOR}`.
+Git tags are used internally to manage releases. Under the hood for each release, a tag is created as `release/{MAJOR.MINOR}` and is a reference to the most recent commit in the version branch `version/{MAJOR.MINOR}`.
 
 It is important to note that a change in a released version will need to be re-released and re-published if you want those changes to be reflected in your published documentation.
 
