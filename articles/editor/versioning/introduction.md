@@ -13,7 +13,7 @@ Versions are editable snapshots of your current Project. When you create a new P
 
 ### Releases
 
-Creating a Release marks a version as ready to publish and takes a time stamped snapshot of the most recent edit of a version. When publishing documentation, all released versions will be included in your documetation under a dropdown selector. [More on Releases...](/platform/versioning/releases)
+Creating a Release marks a version as ready to publish and takes a snapshot of the most recent edit of a version. When publishing documentation, all released versions will be included in your documetation under a dropdown selector. [More on Releases...](/platform/versioning/releases)
 
 ### Product/API Release Cycle
 
