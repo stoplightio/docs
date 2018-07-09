@@ -1,6 +1,6 @@
 # Read, Design, & Code Views
 
-![Read, Design, and Code View](https://github.com/stoplightio/docs/blob/develop/assets/gifs/editor-visual-toggle.gif?raw=true)
+![Read, Design, and Code View](https://github.com/stoplightio/docs/blob/develop/assets/gifs/view-toggles.gif?raw=true)
 
 Stoplight Next has a toggle for switching between Read, Design, and Code views. If you prefer working with code, need to paste in some OAS, or just want to make changes manually, switch over to the code view.  This new feature is included in all our editors including Hubs, Modeling, and Scenarios. 
 
