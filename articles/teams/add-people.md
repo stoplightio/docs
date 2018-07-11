@@ -1,6 +1,6 @@
 # Add People to a Team 
 
-![Add People to a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifs/teams-invite-member.gif?raw=true)
+![Add People to a Team](https://github.com/stoplightio/docs/blob/develop/assets/gifsv2/team-invite.gif?raw=true)
 
 ## What 
 
