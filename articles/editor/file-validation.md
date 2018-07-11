@@ -2,7 +2,7 @@
 
 File validation is the process of checking a file's syntax and structure to make sure it meets specific requirements. Stoplight's validation ensures file edits are in the correct format. This is especially helpful while editing structured file formats (e.g. OpenAPI documents) so that any errors can be resolved quickly and efficiently.
 
-![File Validation](https://github.com/stoplightio/docs/raw/develop/assets/gifs/file-validation-oas-spec.gif)
+![File Validation](https://github.com/stoplightio/docs/blob/develop/assets/gifsv2/file-validation.gif?raw=true)
 
 File validation is run after every file edit to make sure no errors were introduced. A notification will appear if validation errors were introduced so that they can be resolved before attempting to save. If a validation error is detected, an alert will appear with an explanation of the issue and where it occurred.
 
