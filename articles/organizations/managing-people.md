@@ -1,6 +1,6 @@
 # Invite People to an Organization
 
-![Invite People to an Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifs/org-invite-members.gif?raw=true)
+![Invite People to an Organization](https://github.com/stoplightio/docs/blob/develop/assets/gifsv2/invite-org.gif?raw=true)
 
 ## What 
 Adding people to your Organization is the first step towards collaboration within Stoplight. There are two methods of inviting people to your Organization: inputting email addresses or by generating Magic Links. Inputting email addresses send invitations directly to that person's email. Magic Links allow you to invite people via a simple link.
