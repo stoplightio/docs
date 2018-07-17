@@ -3,41 +3,37 @@
 
 ![Headers](https://github.com/stoplightio/docs/blob/develop/assets/gifs/headers.gif?raw=true)
 
+# Managing Headers 
+
+![Managing Headers](https://github.com/stoplightio/docs/blob/develop/assets/gifsv2/headers.gif?raw=true)
+
 ## What 
-You can customize the headers of your Hub to add additional navigation to your documentation. You can modify a header's: 
 
-- **Location on Page**
-- **Title**: What text is displayed on page
-- **Path to Page**: Specify path to page  
-- **Image URL**: If you want to display an image within the header 
+You can customize the headers of your Hub to add additional navigation and modify existing header navigation. By default, your Hub will have a Home header linking to your Hub’s root page in the top left corner. You can modify a header's: 
 
+### Default Home Header
+- Header Title for Home 
+- Header Logo for Home
+
+### Additional Headers
+- Left Header Links: Title, Page or Link, Location 
+- Right Header Links: TItle, Page or Link, Location  
 
 ## How 
 
-### Modify Existing Header 
-
-1. Select the Hub you wish to modify
-2. Click on the **Design toggle** at the top of the page 
-3. By default, there will already be three headers (Home, API Reference, Help) and a footer (Home) 
-4. Hover over **Settings** in the top right and select **Hub**
-5. Select **Header** in the left had sidebar of the modal 
-6. Input new text under **Title** to modify text 
-7. Input an image URL under **Image** to add an image 
-8. Input a new **Path** to modify the header's destination 
-
-> The location of the header is determined by the order of the list in **Settings**. The first header item in either category will be displayed at the left extreme. 
-
-### Create New Header
-
 1. Select the Hub you wish to modify 
-2. Click on the **Design toggle** at the top of the page
-3. By default, there will already be three headers (Home, API Reference, Help) and a footer (Home) 
-4. Hover over **Settings** in the top right and select **Hub**
-5. Select **Header** in the left had sidebar of the modal
-6. Click **+ Add** to add a new header in either the left or right navigation 
-7. Input new text under **Title** to modify text 
-8. Input an image URL under **Image** to add an image 
-9. Input a new **Path** to modify the header's destination 
+2. Select the Design View 
+3. Select **Settings**
+4. Under **Header Title**, input text to modify
+5. Under **Header Logo**, input a URL for a hosted image
+6. Under **Left Header Links**, add a **Title** and **Page or Link**
+
+> Select **+ Add** to add additional Headers 
+
+7. Under **Right Header Links**, add a **Title** and **Page or Link**
+
+> Adjust Header Locations by drag and drop via the hamburger icon to the left of Title 
+
 
 ---
 **Related Articles**
