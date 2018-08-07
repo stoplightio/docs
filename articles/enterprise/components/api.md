@@ -10,25 +10,25 @@ datastore and other miscellaneous Stoplight services.
 >
 > The API must be able to receive incoming connections from the following components:
 >
-> * User Clients (web browser or desktop application)
-> * App
+> - User Clients (web browser or desktop application)
+> - App
 >
 > The API must be able to make outgoing connections to the following components:
 >
-> * PostgreSQL
-> * Redis
-> * Gitlab
-> * Exporter
-> * Prism
+> - PostgreSQL
+> - Redis
+> - Gitlab
+> - Exporter
+> - Prism
 >
 > In addition, the API makes use of
 > [websocket](https://en.wikipedia.org/wiki/WebSocket) connections for real-time
 > notifications and updates to application users. In particular, websockets are
 > used for:
 >
-> * Displaying editor notifications when multiple users are editing the same file
-> * Displaying build logs while a Hub or spec is being built
-> * Displaying notifications for when a Hub or spec build is completed
+> - Displaying editor notifications when multiple users are editing the same file
+> - Displaying build logs while a Hub or spec is being built
+> - Displaying notifications for when a Hub or spec build is completed
 >
 > If websockets are not supported within your environment, clients will revert
 > to HTTP polling.
@@ -38,9 +38,9 @@ datastore and other miscellaneous Stoplight services.
 > Make sure the following components are available **before** starting the API
 > service:
 >
-> * PostgreSQL
-> * Redis
-> * Gitlab
+> - PostgreSQL
+> - Redis
+> - Gitlab
 
 ## Installation
 
@@ -50,9 +50,9 @@ The Stoplight API can be installed with Docker or RPM package.
 
 Prior to installing the RPM package, you will need to:
 
-* Install NodeJS
+- Install NodeJS
 
-* Have the Stoplight package repository installed and configured with your user-specific credentials
+- Have the Stoplight package repository installed and configured with your user-specific credentials
 
 #### Installing NodeJS
 
@@ -144,8 +144,23 @@ There is no minimum or maximum character requirement, however Stoplight
 recommends using a random string more than 32 characters in length for
 production environments.
 
-> Note that the `SIGN_SECRET` configuration variable must remain static between
-> service restarts
+> Note that the `SIGN_SECRET` configuration variable should remain static
+> between service restarts
+
+#### AUTH_SECRET
+
+The `AUTH_SECRET` variable is the server-side secret used for oauth2 handshakes.
+
+```
+AUTH_SECRET="CHANGE_ME_TO_SOMETHING_RANDOM"
+```
+
+There is no minimum or maximum character requirement, however Stoplight
+recommends using a random string more than 32 characters in length for
+production environments.
+
+> Note that the `AUTH_SECRET` configuration variable should remain static
+> between service restarts
 
 #### POSTGRES_URL
 
