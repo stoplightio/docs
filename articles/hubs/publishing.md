@@ -20,7 +20,7 @@ Publishing your documentation has never been easier. Stoplight has added:
 
 1.  From the Stoplight editor, click on the **Publish** icon in the far left-hand toolbar
 2.  Input a **subdomain** under Stoplight's ```.docs.stoplight.io``` domain
-    - Or input a **custom domain** (optional)
+    - Or input a **custom domain** as shown below (optional)
 3.  Once completed, click **Next ->**
 4.  Select the Hub you wish to publish under **Hub File**
     > Publishing will use the latest version of the selected file (denoted by a star in the versions list) 
@@ -34,6 +34,13 @@ Publishing your documentation has never been easier. Stoplight has added:
 11. Once a Hub is published, it will appear under **Builds**
 12. To unpublish a Hub, select **Unpublish** in the **Danger Zone** underneath **Builds**
     - If you wish to delete all builds and release the domain you are currently using, select **Remove Domain**
+    
+### Custom Domains 
+1. Click on the **Publish** icon in the far left-hand toolbar 
+2. Select the **Custom?** checkbox 
+3. Input your **custom domain** in the text field and click **Next**
+4. Create a **DNS CNAME** Record 
+3. Point your custom domain to ```ingress.docs.stoplight.io``` before you publish 
 
 ---
 
