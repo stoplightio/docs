@@ -19,7 +19,7 @@ Publishing your documentation has never been easier. Stoplight has added:
 ## How
 
 1.  From the Stoplight editor, click on the **Publish** icon in the far left-hand toolbar
-2.  Input a **subdomain** under Stoplight's tech-docs.io domain
+2.  Input a **subdomain** under Stoplight's ```.docs.stoplight.io``` domain
     - Or input a **custom domain** (optional)
 3.  Once completed, click **Next ->**
 4.  Select the Hub you wish to publish under **Hub File**
