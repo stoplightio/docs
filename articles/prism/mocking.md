@@ -13,7 +13,7 @@ If you are coming from Stoplight Classic (Version 2), you will notice that there
 
 ## Hosted Mock Server Steps
 
-_Note: We plan to introduce templates to the Stoplight editor file creation process soon. This feature will automate most of the steps below, and turn mock server creation into a one-click solution._
+_Note: Learn everything about modeling APIs [here](../modeling/modeling-introduction.md)._
 
 1. Create a **new Stoplight project**.
 2. Create a **OAS (Swagger 2) modeling file** within that project. Name it `hello.oas2`. 
@@ -24,7 +24,7 @@ _Note: We plan to introduce templates to the Stoplight editor file creation proc
 4. Add a **200 response** to the operation, with the example JSON described below. 
 ```json
 {
-  "mock": "api"
+  "hello": "api"
 }
 ```
 5. **Save** the OAS file.
@@ -45,8 +45,8 @@ _Note: We plan to introduce templates to the Stoplight editor file creation proc
 9. Connect the **rule** to the API by clicking on the  `apis` dropdown input and selecting the previously created API.   . 
 10. Add a **scenario** that will perform the mocking. We have an official Stoplight mock scenario [here](https://next.stoplight.io/stoplight/prism?edit=%23%2Fscenarios%2Fmock), which makes it easy to get started.
     1. Add a scenario to the `before` section of your rule.
-    2. Select `another project` in the first dropdown and  search for `prism`. 
-    3. Locate the file `helpers.prism.yml` and select the scenario `mock`. 
+    2. Select `Common / Shared` and set the target to `Before Mock Scenario`.
+    3. Add a scenario to the `after` section of your rule, select `Common / Shared` and set the target to `After Mock Scenario`.
 
 <callout> This mock scenario should suit most of your mocking use cases. For advanced use cases, please send us a message and we would love to help out. </>
 
@@ -64,7 +64,7 @@ In the previous section, you learned how to create a simple Prism instance that 
 
 ## Local Mock Server Steps
 
-1. Install [Prism](https://github.com/stoplightio/prism). Make sure to install Prism Next. The version should be >= `2.0.0-beta.x`.
+1. Install [Prism](https://github.com/stoplightio/prism). Make sure to install Prism Next. The version should be >= `2.0.0`.
 2. Open up your terminal. 
 3. Log into Stoplight Next with the `prism login` command and enter your Stoplight Next credentials. Once you are logged in, you will have access to your private and all public projects.
 4. Get the export link for the Prism mock instance you created above.
