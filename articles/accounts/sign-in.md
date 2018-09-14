@@ -1,9 +1,9 @@
 # Sign In To Stoplight 
 
 ## What
-* There are two separate options for creating your snazzy new Stoplight account: 
-    * Login with GitHub 
-    * Create a new account 
+There are two separate options for creating your snazzy new Stoplight account: 
+* Login with GitHub 
+* Create a new account 
   
 ## How
 
@@ -23,3 +23,10 @@
     * Password must be more than 6 characters 
 6. Click **Join Stoplight**
 
+---
+**Related Articles**
+- [Edit Your Profile](/platform/getting-started/account-basics/edit-profile)
+- [Manage Your Password](/platform/getting-started/account-basics/manage-password)
+- [Change Your Username](/platform/getting-started/account-basics/change-username) 
+- [Change Your Email Address](/platform/getting-started/account-basics/change-email) 
+- [Sign Out of Stoplight](/platform/getting-started/account-basics/sign-out) 

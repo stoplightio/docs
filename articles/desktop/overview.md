@@ -1,7 +1,7 @@
 # Web & Desktop App
 
 
-Stoplight has a desktop app! Download the appropriate version [here](https://stoplight.io/download) .
+Stoplight has a desktop app! Download the appropriate version [here](https://github.com/stoplightio/desktop/releases/latest).
 
 
 ## Web or Local?
@@ -22,12 +22,6 @@ When you start the Stoplight desktop app, it will start an instance of Prism on 
 * The Stoplight desktop app can read/write specification files on your local file system. This is perfect for generating specification outside of Stoplight (like from code), want to use version control systems like Git, or want to use your favorite IDE to work on a spec. 
 * This feature is **NOT** available in the web app 
 
-
-
-
- the web app 
-
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NDc5MjY0XX0=
--->
+---
+**Related Articles**
+- [Mocking Introduction](/mocking/introduction) 

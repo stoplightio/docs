@@ -1,32 +1,34 @@
 # Reference Other Sources
 
-![](../../assets/gifs/ref-other-sources-hubs.gif)
+![Power a Page](https://github.com/stoplightio/docs/blob/develop/assets/gifs/hubs-power-page.gif?raw=true)
 
 ## What
-Hubs allows you to reference other sources to automatically populate your Hub with content. We call this “powering” a building block. You can power a building block with a file from the current file, a file from the current project, a file from another project, or a file from an external source. 
+Hubs allows you to reference other sources to automatically populate your Hub with content. We call this “powering” a page, subpage, or block. You can power a page, subpage, or block with a markdown or specification file from the current file, a file from the current project, a file from another project, or a file from an external source. 
 
-### What can I Power
+### What Can I Power
 
 - Pages 
 - Subpages 
-- Text Blocks 
+- Blocks 
 
 ## How
 
 ### Power a Subpage 
 
 1. Select the Hub you wish to modify 
-2. Select (or create a new) Subpage 
-3. Click on the gear icon in the center of the editor toolbar (If new, this window automatically opens)  
-    1. Select Power this Subpage with an External Data Source
-    2. Select the data source from the drop-down menu 
-    3. Input the specific data source or select from the drop-down menu
-    4. Input an inner data source (optional)  
-4. Click Confirm  
+2. Select **Design** view
+3. Select the **page** or **subpage** you wish to power
+4. Under Page Type, select **Markdown**(for markdown files) or **OpenAPI** (for JSON or YAML files)
+5. Input the specific data source or select from the drop-down menu
+6. Click **Confirm**  
 
+>Try it Out! Power a Subpage with an API Spec from the same project.
 
-
- 
-
-<callout> Try it Out! Power a Subpage with an API Spec from the same project </>
-
+---
+**Related Articles**
+- [Documentation with Hubs](/documentation/introduction)
+- [Routing](/documentation/getting-started/routing)
+- [Headers & Footers](/documentation/getting-started/header-footer)
+- [Pages](/documentation/getting-started/pages)
+- [Subpages](/documentation/getting-started/subpages)
+- [Blocks](/documentation/blocks)

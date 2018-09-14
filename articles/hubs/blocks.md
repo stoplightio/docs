@@ -1,11 +1,11 @@
 # Blocks 
 
-![](../../assets/gifs/Blocks.gif)
+![Blocks](https://github.com/stoplightio/docs/blob/develop/assets/gifs/Blocks.gif?raw=true)
 
 ## What
 Blocks are the micro-level building blocks of Hubs. They house multiple forms of content and allow for simple restructuring and modification. 
 
-<callout> Hovering over a Block reveals additional tooling including: Preview, Cut, Copy, Reference External Source, and Delete </>
+>Hovering over a Block reveals additional tooling including: Preview, Cut, Copy, Reference External Source, and Delete
 
 ## Block Types 
 ### Text Block 
@@ -22,12 +22,16 @@ Blocks are the micro-level building blocks of Hubs. They house multiple forms of
 * An upper level block for organizing text within tabs 
 ### Callout 
 * A text block with color for emphasis 
-### Hero 
-* A large stylized text block with additional functionality typically found on landing pages 
-### Bar List 
-* A navigational block composed of bars with buttons 
-### Card List 
-* A navigational block composed of cards with text, buttons, and optional images
 ### HTML 
 * Include arbitrary HTML in your hubs when the other base block types don't quite do the trick
+
+---
+**Related Articles**
+- [Documentation with Hubs](/documentation/introduction)
+- [Routing](/documentation/getting-started/routing)
+- [Headers](/documentation/getting-started/header-footer)
+- [Pages](/documentation/getting-started/pages)
+- [Subpages](/documentation/getting-started/subpages)
+- [Referencing Other Data Sources](/documentation/referencing-other-data-sources)
+- [Publishing](/documentation/publishing)
 

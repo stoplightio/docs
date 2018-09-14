@@ -1,8 +1,8 @@
 # Working with Files 
 
-![](../../assets/gifs/fileexplorer.gif)
+![File Explorer](https://github.com/stoplightio/docs/blob/develop/assets/gifs/file-explorer.gif?raw=true)
 
-As part of our effort to make the Stoplight platform more flexible and familiar we added a file explorer to Stoplight NEXT. You can now see all your files sorted by filetype in one central location within Projects. File types include: 
+As part of our effort to make the Stoplight platform more flexible and familiar we added a file explorer to Stoplight Next. You can now see all your files sorted by filetype in one central location within Projects. File types include: 
 
 * .hub (Hub/Docs Files)
 * .oas2 (Modeling Files)
@@ -22,3 +22,10 @@ Within the file explorer you can:
 	* Hover to the right of a file and click the **arrow** to export files into OAS
 * **Delete Files** 
 	* Hover to the right of a file and click the **trash can** to delete files
+
+---
+**Related Articles**
+- [Change History](/platform/editor-basics/change-history)
+- [Editor Configuration](/platform/editor-basics/editor-configuration)
+- [Environments](/platform/editor-basics/environments)
+- [File Validation](/platform/editor-basics/file-validation)
