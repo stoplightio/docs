@@ -13,7 +13,7 @@ If you are coming from Stoplight Classic (Version 2), you will notice that there
 
 ## Hosted Mock Server Steps
 
-_Note: Learn everything about modeling APIs [here](../modeling/modeling-introduction.md)._
+_Note: Learn everything about modeling APIs [here](../modeling/modeling-introduction.md). If you are familar with modeling skip to step 6._
 
 1. Create a **new Stoplight project**.
 2. Create a **OAS (Swagger 2) modeling file** within that project. Name it `hello.oas2`. 
@@ -33,8 +33,6 @@ _Note: Learn everything about modeling APIs [here](../modeling/modeling-introduc
 
 6. Create a new **Prism instance file** in the project. Name it `hello-mock.prism`.
 7.  Add an API to the Prism instance and connect the `hello.oas2` specification that you created earlier.
-
-<callout> Prism instances are made up of APIs and Rules, you can learn more about them here. </>
 
 ![](../../assets/gifs/mock-hello-prism-api.gif)
 
