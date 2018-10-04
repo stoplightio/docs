@@ -75,3 +75,9 @@ In the previous section, you learned how to create a simple Prism instance that 
 You now have a fully functional prism mock server. We have created a public project full of useful prism resources. We encourage you to explore the other prism helpers which are located [here](https://next.stoplight.io/stoplight/prism/blob/master/helpers.scenarios.yml). Let us know what you think. We are excited to see what you do.
 
 For the more experienced Prism user, we have set up some advanced prism instances in the official Stoplight Next [Prism Project](https://next.stoplight.io/stoplight/prism).
+
+---
+**Related Articles**
+- [Mocking Introduction](/mocking/introduction)
+- [Javascript Runtime](/mocking/javascript-runtime)
+
