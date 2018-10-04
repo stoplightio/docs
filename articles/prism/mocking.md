@@ -13,12 +13,12 @@ If you are coming from Stoplight Classic (Version 2), you will notice that there
 
 ## Hosted Mock Server Steps
 
-_Note: Learn everything about modeling APIs [here](../modeling/modeling-introduction.md). If you are familar with modeling skip to step 6._
+_Note: Learn everything about modeling APIs [here](https://docs.stoplight.io/modeling/introduction). If you are familar with modeling skip to step 6._
 
 1. Create a **new Stoplight project**.
 2. Create a **OAS (Swagger 2) modeling file** within that project. Name it `hello.oas2`. 
 
-![](../../assets/gifs/mock-hello-oas2.gif)
+![Mock Hello](https://github.com/stoplightio/docs/blob/develop/assets/gifs/mock-hello-oas2.gif?raw=true)
 
 3. Add a `GET /hello` operation to your new OAS specification.
 4. Add a **200 response** to the operation, with the example JSON described below. 
@@ -29,12 +29,12 @@ _Note: Learn everything about modeling APIs [here](../modeling/modeling-introduc
 ```
 5. **Save** the OAS file.
 
-![](../../assets/gifs/mock-get-hello-200.gif)
+![Mock Get Hello](https://github.com/stoplightio/docs/blob/develop/assets/gifs/mock-get-hello-200.gif?raw=true)
 
 6. Create a new **Prism instance file** in the project. Name it `hello-mock.prism`.
 7.  Add an API to the Prism instance and connect the `hello.oas2` specification that you created earlier.
 
-![](../../assets/gifs/mock-hello-prism-api.gif)
+![Mock Hello Prism API](https://github.com/stoplightio/docs/blob/develop/assets/gifs/mock-hello-prism-api.gif?raw=true)
 
 8. Add a **new rule** that you will setup to power mocking. 
 
@@ -48,13 +48,13 @@ _Note: Learn everything about modeling APIs [here](../modeling/modeling-introduc
 
 <callout> This mock scenario should suit most of your mocking use cases. For advanced use cases, please send us a message and we would love to help out. </>
 
-![](../../assets/gifs/mock-hello-prism-rule.gif)
+![Prism Rules](https://github.com/stoplightio/docs/blob/develop/assets/gifs/mock-hello-prism-rule.gif?raw=true)
 
 11. **Save** your Prism instance. 
 
 <callout> To verify your mock server is working, click on the `Home` link at the top of the Prism instance sidebar and send a test request to `GET /hello`. You should see a 200 response that equals the example you set in your OAS file earlier! </>
 
-![](../../assets/gifs/mock-hello-prism.gif)
+![Hello Prism](https://github.com/stoplightio/docs/blob/develop/assets/gifs/mock-hello-prism.gif?raw=true)
 
 # Running Your Prism Server Locally
 
@@ -68,7 +68,7 @@ In the previous section, you learned how to create a simple Prism instance that 
 4. Get the export link for the Prism mock instance you created above.
 5. Run `prism serve {export-link} --debug` and open this [link](http://localhost:4010/helloWorld).
 
-![](../../assets/gifs/mock-hello-prism-local.gif)
+![Local Prism](https://github.com/stoplightio/docs/blob/develop/assets/gifs/mock-hello-prism-local.gif?raw=true)
 
 # Recap
 
