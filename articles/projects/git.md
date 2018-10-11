@@ -34,10 +34,10 @@ For example, on Mac/Linux:
 export STOPLIGHT_TOKEN="1234567890"
 ```
 
-4. You can then `git clone` the repo, replace `{stoplight-username}`, `{username}`, and `{project-name}` with the appropriate information: 
+4. For **personal projects**, you can then `git clone` the repo, replace `{stoplight-username}` and `{project-name}` with the appropriate information: 
 
 ```
-git clone https://{stoplight-username}:$STOPLIGHT_TOKEN@git.stoplight.io/{username}/{project-name}.git
+git clone https://{stoplight-username}:$STOPLIGHT_TOKEN@git.stoplight.io/{stoplight-username}/{project-name}.git
 ```
 
 For example: 
@@ -46,7 +46,17 @@ For example:
 git clone https://taylor:$STOPLIGHT_TOKEN@git.stoplight.io/taylor/test-new.git
 ```
 
-> If the project is associated with an organization and not a personal project, replace `username` with `organization-name` 
+For **projects in an organization**, you can then `git clone` the repo, replace `{stoplight-username}`, `{organization-name}`, and `{project-name}` with the appropriate information: 
+
+```
+git clone https://{stoplight-username}:$STOPLIGHT_TOKEN@git.stoplight.io/{organization-name}/{project-name}.git
+``` 
+
+For example: 
+
+```
+git clone https://taylor:$STOPLIGHT_TOKEN@git.stoplight.io/stoplight/test-new.git
+```
 
 5. Now you can make changes to your files, commit, and push to your master branch. You can see these changes in the Stoplight UI as well as the "History of Changes" 
 
