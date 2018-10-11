@@ -1,6 +1,6 @@
 # Customize Style & Validation Rules 
 
-![]()
+![Customize Style and Validation Rules](https://github.com/stoplightio/docs/blob/develop/assets/imagesv2/style-validation-rules.png?raw=true)
 
 ## What 
 
