@@ -100,11 +100,11 @@ specified so that the request can be authenticated properly. To generate a new
 API token for your Stoplight acccount, see
 [here](https://next.stoplight.io/profile/access-tokens).
 
-Once you have an API token, set it under the `Private-Token` header in order for
+Once you have an API token, set it under the `JWT Token` header in order for
 it to be used to authenticate with the Stoplight API. For example:
 
 ```bash
-$ curl -H 'Private-Token: H4BTDASDf5sGHMWJSfE32' ...
+$ curl -H 'Authentication Header: H4BTDASDf5sGHMWJSfE32' ...
 ```
 
 > Be sure to keep all private tokens safe! They can be used to authenticate
