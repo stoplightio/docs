@@ -46,14 +46,20 @@ Below is a quick reference of all the Markdown syntax that is supported by Stopl
 
 ```
 Emphasis, aka italics, with *asterisks* or _underscores_. 
+
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
 Combined emphasis with **asterisks and _underscores_**.
+
 Strikethrough uses two tildes. ~~Scratch this.~~
 ```
 
 Emphasis, aka italics, with *asterisks* or _underscores_. 
+
 Strong emphasis, aka bold, with **asterisks** or __underscores__. 
+
 Combined emphasis with **asterisks and _underscores_**. 
+
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## Lists 
@@ -77,7 +83,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 * Unordered lists can use asterisks 
 - Or minuses 
 + Or pluses 
-``
+```
 1. First ordered list item 
 2. Another item 
    * Unordered sub-list
@@ -129,7 +135,7 @@ Some text to show that the reference links can follow later.
 
 [You can use numbers for reference-style link definitions](1)
 
-Or leave it empty and use the [link text itself]
+Or leave it empty and use the [link text itself]()
 
 URLs and URLs in angle brackets will automatically get turned into links. 
 http://www.example.com or <http://www.example.com> and sometimes example.com (but not on GitHub, for example). 
@@ -137,7 +143,9 @@ http://www.example.com or <http://www.example.com> and sometimes example.com (bu
 Some text to show that the reference links can follow later. 
 
 [arbitrary case-insensitive reference text] : https://www.mozilla.org 
+
 [1] : https://slashdot.org 
+
 [link text itself] : http://www.reddit.com
 
 ## Images 
@@ -146,22 +154,21 @@ Some text to show that the reference links can follow later.
 Here’s our logo (hover to see the title text) : 
 
 Inline-style :
-![alt text](https://pbs.twimg.com/profile_images/641056907474538498/qIbg0pZP_bigger.png “Stoplight is cool”)
+![alt text](//s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496 “Stoplight is cool”)
 
 Reference-style : 
 ![alt text](logo)
 
-[logo] : https://pbs.twimg.com/profile_images/641056907474538498/qIbg0pZP_bigger.png “API Docs are even cooler” 
+[logo] : https://s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496 “API Docs are even cooler” 
 ```
 Here’s our logo (hover to see the title text) : 
 
-Inline-style :
-![alt text](https://pbs.twimg.com/profile_images/641056907474538498/qIbg0pZP_bigger.png “Stoplight is cool”)
+Inline-style : ![alt text](https://s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496 “Stoplight is cool”)
 
 Reference-style : 
 ![alt text](logo)
 
-[logo] : https://pbs.twimg.com/profile_images/641056907474538498/qIbg0pZP_bigger.png “API Docs are even cooler” 
+[logo]:https://s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496 “API Docs are even cooler” 
 
 ## Code and Syntax Highlighting 
 
