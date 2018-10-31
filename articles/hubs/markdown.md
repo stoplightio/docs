@@ -113,8 +113,6 @@ There are two ways to create links
 
 [You can use numbers for reference-style link definitions](1)
 
-Or leave it empty and use the [link text itself]
-
 URLs and URLs in angle brackets will automatically get turned into links. 
 http://www.example.com or <http://www.example.com> and sometimes example.com (but not on GitHub, for example). 
 
@@ -127,15 +125,13 @@ Some text to show that the reference links can follow later.
 
 [I’m an inline-style link](https://www.google.com)
 
-[I’m an inline-style link with title](https://www.google.com“Google’s Homepage”)
+[I’m an inline-style link with title](https://www.google.com “Google’s Homepage”)
 
 [I’m a reference-style link](Arbitrary case-insensitive reference text)
 
 [I’m a relative reference to a repository file](../blob/master/LICENSE)
 
 [You can use numbers for reference-style link definitions](1)
-
-Or leave it empty and use the [link text itself]()
 
 URLs and URLs in angle brackets will automatically get turned into links. 
 http://www.example.com or <http://www.example.com> and sometimes example.com (but not on GitHub, for example). 
@@ -154,21 +150,12 @@ Some text to show that the reference links can follow later.
 Here’s our logo (hover to see the title text) : 
 
 Inline-style :
-![alt text](//s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496 “Stoplight is cool”)
-
-Reference-style : 
-![alt text](logo)
-
-[logo] : https://s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496 “API Docs are even cooler” 
+![alt text](https://s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496)
 ```
 Here’s our logo (hover to see the title text) : 
 
-Inline-style : ![alt text](https://s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496 “Stoplight is cool”)
+Inline-style : ![alt text](https://s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496)
 
-Reference-style : 
-![alt text](logo)
-
-[logo]:https://s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496 “API Docs are even cooler” 
 
 ## Code and Syntax Highlighting 
 
