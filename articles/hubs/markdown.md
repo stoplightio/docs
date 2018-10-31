@@ -150,11 +150,11 @@ Some text to show that the reference links can follow later.
 Here’s our logo (hover to see the title text) : 
 
 Inline-style :
-![alt text](https://s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496)
+![alt text](https://pbs.twimg.com/profile_images/641056907474538498/qIbg0pZP_bigger.png)
 ```
 Here’s our logo (hover to see the title text) : 
 
-Inline-style : ![alt text](https://s3.amazonaws.com/totem_production/assets/logos/10721/original/mark_light_bg.png?1441669496)
+Inline-style : ![alt text](https://pbs.twimg.com/profile_images/641056907474538498/qIbg0pZP_bigger.png)
 
 
 ## Code and Syntax Highlighting 
