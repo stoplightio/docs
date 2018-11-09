@@ -12,6 +12,8 @@ Roles and Permissions for members of Organizations can be managed and modified w
         * Admins can update the org, its connections, and its members 
     * **Contributor** 
          * Creators can update the org and its connections. They can view its members 
+    * **Guest**
+         * Guests are read-only members
 
 ## Who
 * Only an Organization **Owner** or **Administrator** can modify roles and permissions 
