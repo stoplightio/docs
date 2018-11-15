@@ -1,10 +1,10 @@
 # Billing Overview 
 
 ## Personal Billing 
-Personal plans are free! For more information, visit [the billing page](https://next.stoplight.io/pricing).
+Personal plans are free! For more information, visit [the billing page](https://stoplight.io/pricing).
 
 ## Organization Billing
-Organization Billing Plans are attached to an Organization, not an account. Only the Owner of the Organization can modify the billing settings. For more information, visit [the billing page](https://next.stoplight.io/pricing). 
+Organization Billing Plans are attached to an Organization, not an account. Only the Owner of the Organization can modify the billing settings. For more information, visit [the billing page](https://stoplight.io/pricing). 
 
 ## Fair Use Billing Policy 
 
