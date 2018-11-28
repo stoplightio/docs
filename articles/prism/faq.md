@@ -10,7 +10,7 @@
 - Invalid specification. Please see your specification validation errors at the top right when viewing your specification.
   - [Learn more here](/modeling/modeling-with-openapi/validating-your-api-spec)
 
-- Stoplight project is private, login with your stoplight credentials.
+- Stoplight project is private, login with your Stoplight credentials.
 
   *Command line only*
 
@@ -28,7 +28,7 @@
 - Invalid specification. Please see your specification validation errors at the top right when viewing your specification.
   - [Learn more here](/modeling/modeling-with-openapi/validating-your-api-spec)
 
-- Stoplight project is private, login with your stoplight credentials.
+- Stoplight project is private, login with your Stoplight credentials.
 
   *Command line only*
 
@@ -37,4 +37,4 @@
 
 - Email us at [support@stoplight.io](mailto:support@stoplight.io) or message us in Intercom, if the above solutions don't help.
 
-  *Please include a link to your Sceanrios with environment variables. If running Prism from the command line, please include the command as well with the prism version number.*
+  *Please include a link to your Sceanrios with environment variables. If running Prism from the command line, please include the command as well with the Prism version number.*
