@@ -2,12 +2,6 @@
 
 Now that you have the basics on what the [Stoplight Next Platform](/platform/what-is-stoplight) is, we can go over how to get started. 
 
-First things first, are you using Stoplight for Personal Projects or as part of an Organization?
-
-## Personal Projects 
-1. [Sign In](/platform/getting-started/account-basics/sign-in)
-2. [Create a Project](/platform/projects/creating-a-project) 
-
 ## Organization 
 1. [Sign In](/platform/getting-started/account-basics/sign-in)
 2. [Create an Organization](/platform/organizations/create-org) 
