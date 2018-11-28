@@ -35,7 +35,7 @@ We’ll keep track of this for you, and bill you at the end of each month. We al
 
 **Organizations: What counts as an active member?**
 
-A member is considered active if they have updated any projects or project files in the past 30 days. Otherwise, they are considered a passive member.
+A member is considered active if they have updated any projects or project files in the past 90 days. Otherwise, they are considered a passive member.
 
 **Will my billing automatically adjust as members change between passive and active?**
 
