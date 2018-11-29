@@ -7,7 +7,7 @@
     - Make sure you connected your specification correctly.
     - Make sure before and after rules are set up correctly, we recommend using the Stoplight Shared/Common scenarios.
 
-- Invalid specification. Please see your specification validation errors at the top right when viewing your specification.
+- Invalid specification. Please see your specification validation errors in the top right of the application when viewing your specification.
   - [Learn more here](/modeling/modeling-with-openapi/validating-your-api-spec)
 
 - Stoplight project is private, login with your Stoplight credentials.
