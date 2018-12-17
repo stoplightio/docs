@@ -296,7 +296,7 @@ ___
 Underscores
 
 ## Line Breaks 
-Our basic recommendation for learning how line breaks work is to experiment and discover -- hit once (i.e., insert one newline), then hit it twice (i.e., insert two new lines), see what happens. You'll soon learn to get what you want. 
+Our basic recommendation for learning how line breaks work is to experiment and discover -- hit return twice. You'll soon learn to get what you want. 
 
 Here are some things to try out: 
 ```
@@ -304,15 +304,10 @@ Here's a line for us to start with.
 
 This line is separated from the one above by two new lines, so it will be a *separate paragraph*.
 
-This line is also a separate paragraph, but...
-This line is only separated by a single new line, so it's a separate line in the *same paragraph*. 
 ```
 Here's a line for us to start with. 
 
 This line is separated from the one above by two new lines, so it will be a *separate paragraph*.
-
-This line is also a separate paragraph, but...
-This line is only separated by a single new line, so it's a separate line in the *same paragraph*.
 
 ---
 ### Credits 
