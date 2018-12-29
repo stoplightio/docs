@@ -12,17 +12,17 @@ Below is a quick reference of all the Markdown syntax that is supported by Stopl
 
 ### Table of Contents 
 
-- Headers
-- Emphasis 
-- Lists 
-- Images 
-- Code and Syntax Highlighting 
-- Tables 
-- Blockquotes 
-- Inline HTML 
-- Horizontal Rule 
-- Line Breaks 
-- Videos 
+- [Headers](#headers)
+- [Emphasis](#emphasis)
+- [Lists](#lists) 
+- [Images](#images)
+- [Code and Syntax Highlighting](#code-and-syntax-highlighting)
+- [Tables](#tables)
+- [Blockquotes](#blockquotes)
+- [Inline HTML](#inline-html)
+- [Horizontal Rule](#horizontal-rule)
+- [Line Breaks](#line-breaks)
+- [Videos](#videos)
 
 ## Headers 
 
