@@ -1,4 +1,4 @@
-# Documentation Add-On 
+# Documentation Add-Ons
 
 ## Basic 
 
