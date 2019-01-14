@@ -12,7 +12,7 @@ Use tokens to access the Stoplight API, authenticate Prism in a continuous integ
 3. Select **Access Tokens**
 4. Input a unique name into the text field 
 5. Copy the first token to authenticate with the Stoplight API and Prism  
-6. Copy the second token to git clone projects to your computer 
+6. Copy the second token to [git clone projects to your computer](/platform/projects/git-repo) 
 
 > Save your access tokens in a secure location - you won’t be able to see them again 
 
