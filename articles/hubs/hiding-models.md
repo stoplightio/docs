@@ -17,7 +17,7 @@ Remove OAS models from your documentation and Read View.
     }
   },
 ```
-
+4. Refresh the web app to see the changes take effect 
 ---
 **Related Articles**
 - [Documentation with Hubs](/documentation/introduction)
