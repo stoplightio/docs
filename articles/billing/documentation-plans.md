@@ -34,4 +34,4 @@
 
 ---
 **Related Articles**
-- [Billing Overview](/platform/getting-started/billing/plans-overview)
+- [Billing Overview](/platform/getting-started/billing)
