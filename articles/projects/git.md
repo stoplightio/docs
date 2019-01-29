@@ -3,7 +3,7 @@
 ## What 
 The Stoplight Platform is built on top of Git. This means that all your projects are Git repositories and that our platform benefits from all the additonal functionality provided by Git. To access the Git funtionality, you will need to clone your Git repository by generating an Access Token.  
 
-> You can also use Access Tokens to access the Stoplight API, authenticate Prism in a continuous integration enviornment, and access the underlying Git repositories for projects. You can make this part of your Git workflow, add it to scripts, or your CI/CD process
+> You can also use Access Tokens to access the Stoplight API, authenticate Prism in a continuous integration environment, and access the underlying Git repositories for projects. You can make this part of your Git workflow, add it to scripts, or your CI/CD process
 
 ## Who 
 
