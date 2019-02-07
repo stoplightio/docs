@@ -15,13 +15,6 @@ The main difference between the Stoplight desktop app and the web app is that th
 
 When you start the Stoplight desktop app, it will start an instance of Prism on http://localhost:4010. The desktop Prism instance is identical to the downloadable Prism binary run manually from your terminal. When you run local tests in the desktop app, it automatically calls a local Prism instance with the correct arguments and spec files.
 
-
-## Local Save
-
-
-* The Stoplight desktop app can read/write specification files on your local file system. This is perfect for generating specification outside of Stoplight (like from code), want to use version control systems like Git, or want to use your favorite IDE to work on a spec. 
-* This feature is **NOT** available in the web app 
-
 ---
 **Related Articles**
 - [Mocking Introduction](/mocking/introduction) 
