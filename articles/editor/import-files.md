@@ -4,7 +4,7 @@
 
 ## What 
 
-If you already have existing OpenAPI (Swagger) or Markdown files, you can import them into Stoplight. 
+If you already have existing JSON, YAML, or Markdown file, you can import them into Stoplight. 
 
 ## How 
 
