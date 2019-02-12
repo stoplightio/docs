@@ -17,7 +17,6 @@ If you have endpoints that you don’t wish to expose publicly, you can make you
 - [Hiding Models](https://docs.stoplight.io/documentation/hiding-models)
 - [Documentation with Hubs](/documentation/introduction)
 - [Routing](/documentation/getting-started/routing)
-- [Headers](/documentation/getting-started/header-footer)
 - [Pages](/documentation/getting-started/pages)
 - [Subpages](/documentation/getting-started/subpages)
 - [Blocks](/documentation/blocks)
