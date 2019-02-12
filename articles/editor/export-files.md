@@ -21,6 +21,8 @@ You can export any files in Stoplight to use as you see fit. Exported files are 
 2. Hover over the file you wish to export and click on the **right facing arrow**
 3. A new tab will open containing your exported file 
 
+>Want a YAML file instead of JSON? Add ```&format=yaml``` to the end of your exported URL. E.g. https://next-api.stoplight.io/files.export?projectId=10198&branch=version%2F1.0&path=main.oas2.yml&format=yaml
+
 ---
 **Related Articles**
 - [Read, Design, & Code View](/platform/editor-basics/read-design-code-view)
