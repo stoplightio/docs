@@ -18,7 +18,7 @@
 
 ## Teams 
 
-|      **Team Actions**     | **Member** | **Administrator** | **Owner** |
+|      **Team Actions**     | **Contributor** | **Administrator** | **Owner** |
 |-------------------------|:------------:|:-------------------:|:-----------:|
 | View Team Collaborators   | X          | X                 | X         |
 | Add Team to Projects      | X          | X                 | X         |
