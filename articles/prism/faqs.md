@@ -1,6 +1,6 @@
 # Mocking FAQs
 
-## Why is my mock sever failing?
+## Why is my mock server failing?
 
 - Mock server, powered by Prism, isn't configured properly.
   - [Learn more here](/mocking/introduction)
