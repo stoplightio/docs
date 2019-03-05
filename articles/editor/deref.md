@@ -15,21 +15,21 @@ By default, Stoplight exports files with references unresolved. References withi
 
 ### Resolve Remote References
 
-![Sample URL Deref Remote](https://github.com/stoplightio/docs/blob/develop/assets/imagesv2/deref-url-remote.png?raw=true)
+Sample URL Deref Remote: ```https://next-api.stoplight.io/files.export?projectId=5242&branch=version%2F1.2&path=PetStore.oas2.yml&deref=remote```
 
-```?deref=remote```
+```&deref=remote```
 
 ### Resolve References within the File
 
-![Sample URL Deref Local](https://github.com/stoplightio/docs/blob/develop/assets/imagesv2/deref-url-local.png?raw=true)
+Sample URL Deref Local: ```https://next-api.stoplight.io/files.export?projectId=5242&branch=version%2F1.2&path=PetStore.oas2.yml&deref=local```
 
-```?deref=local```
+```&deref=local```
 
 ### Resolve Both
 
-![Sample URL Deref All](https://github.com/stoplightio/docs/blob/develop/assets/imagesv2/deref-url.png?raw=true)
+Sample URL Deref All: ```https://next-api.stoplight.io/files.export?projectId=5242&branch=version%2F1.2&path=PetStore.oas2.yml&deref=all```
 
-```?deref=all```
+```&deref=all```
 
 ---
 **Related Articles**
