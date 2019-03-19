@@ -26,7 +26,7 @@ If you have read access to a project, you will be able to:
 
 > You can name your token whatever you want. Once you have created the token, copy it, and only store it in a safe location. Once you close the window, you will not see it again
 
-3. On your machine, store your access token as an environmental variable (recommended)
+4. On your machine, store your access token as an environmental variable (recommended)
 
 For example, on Mac/Linux:
 
@@ -34,7 +34,7 @@ For example, on Mac/Linux:
 export STOPLIGHT_TOKEN="1234567890"
 ```
 
-4. For **personal projects**, you can then `git clone` the repo, replace `{stoplight-username}` and `{project-name}` with the appropriate information: 
+5. For **personal projects**, you can then `git clone` the repo, replace `{stoplight-username}` and `{project-name}` with the appropriate information: 
 
 ```
 git clone https://{stoplight-username}:$STOPLIGHT_TOKEN@git.stoplight.io/{stoplight-username}/{project-name}.git
@@ -58,7 +58,7 @@ For example:
 git clone https://taylor:$STOPLIGHT_TOKEN@git.stoplight.io/stoplight/test-new.git
 ```
 
-5. Now you can make changes to your files, commit, and push to your master branch. You can see these changes in the Stoplight UI as well as the "History of Changes" 
+6. Now you can make changes to your files, commit, and push to your master branch. You can see these changes in the Stoplight UI as well as the "History of Changes" 
 
 > Remember: You will only see changes on the master branch in the UI at this time. 
 
