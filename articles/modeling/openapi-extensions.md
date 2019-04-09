@@ -1,12 +1,12 @@
-# OAS Extensions 
+# OpenAPI Extensions 
 
-![OAS Extensions](https://github.com/stoplightio/docs/blob/develop/assets/imagesv2/extensions.png?raw=true)
+![OpenAPI extensions](https://github.com/stoplightio/docs/blob/develop/assets/imagesv2/extensions.png?raw=true)
 
 ## What 
 
-OAS Extensions are reusable components that describe additional functionality beyond what is covered in the OAS Specification. They are generally vendor specific, such as Amazon API Gateways extension. All OAS Extensions begin with ```x-```.
+OpenAPI extensions are reusable components that describe additional functionality beyond what is covered in the OpenAPI Specification. They are generally vendor specific, such as Amazon API Gateways extension. All OpenAPI extensions begin with ```x-```.
 
-> OAS Extensions are supported at the Root and Operation level, Security definitions, Shared Parameters, and Shared Responses 
+> OpenAPI extensions are supported at the Root and Operation level, Security definitions, Shared Parameters, and Shared Responses 
 
 ## How 
 1. Select the **modeling file** you want to modify 
