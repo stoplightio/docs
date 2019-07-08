@@ -37,7 +37,6 @@ Stoplight’s Hubs features an easy to use routing system to make sure your docs
 
 ---
 **Related Articles**
-- [Headers](/documentation/getting-started/header-footer)
 - [Pages](/documentation/getting-started/pages)
 - [Subpages](/documentation/getting-started/subpages)
 
