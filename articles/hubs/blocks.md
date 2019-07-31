@@ -1,4 +1,4 @@
-# Blocks 
+# Blocks (Deprecated)
 
 ![Blocks](https://github.com/stoplightio/docs/blob/develop/assets/gifs/Blocks.gif?raw=true)
 
