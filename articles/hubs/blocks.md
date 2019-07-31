@@ -1,4 +1,6 @@
-# Blocks (Deprecated)
+# Blocks
+>Blocks are currently running slowly on Chrome due to a recent update. IE, Firefox, and Safari still function normally 
+
 >Stoplight recommends creating and [referencing](/documentation/referencing-other-data-sources) Markdown files instead of using blocks
 
 ![Blocks](https://github.com/stoplightio/docs/blob/develop/assets/gifs/Blocks.gif?raw=true)
