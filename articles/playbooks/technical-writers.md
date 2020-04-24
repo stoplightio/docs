@@ -32,7 +32,6 @@ We wanted to create a new, beautiful, minimalistic, efficient design for less de
 **Related Links** 
 - [Documentation with Hubs](/documentation/introduction)
 - [Routing](/documentation/getting-started/routing)
-- [Headers](/documentation/getting-started/header-footer)
 - [Pages](/documentation/getting-started/pages)
 - [Subpages](/documentation/getting-started/subpages)
 - [Blocks](/documentation/blocks)

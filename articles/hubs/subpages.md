@@ -30,6 +30,5 @@ Subpages are the second tier macro building blocks of Hubs. They function as a c
 ---
 **Related Articles**
 - [Routing](/documentation/getting-started/routing)
-- [Headers](/documentation/getting-started/header-footer)
 - [Pages](/documentation/getting-started/pages)
 - [Publishing](/documentation/publishing)

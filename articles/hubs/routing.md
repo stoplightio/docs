@@ -9,7 +9,6 @@ Stoplight’s Hubs features an easy to use routing system to make sure your docs
 - Your Hub 
 - [Pages within a Hub](/documentation/getting-started/pages) 
 - [Subpages within a Hub](/documentation/getting-started/subpages) 
-- [Headers](/documentation/getting-started/header-footer)
 - Links 
 
 

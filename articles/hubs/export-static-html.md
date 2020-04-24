@@ -27,7 +27,6 @@ If you would rather host your documentation outside of Stoplight's hosted server
 **Related Articles**
 - [Documentation with Hubs](/documentation/introduction)
 - [Routing](/documentation/getting-started/routing)
-- [Headers](/documentation/getting-started/header-footer)
 - [Pages](/documentation/getting-started/pages)
 - [Subpages](/documentation/getting-started/subpages)
 - [Blocks](/documentation/blocks)

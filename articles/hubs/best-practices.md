@@ -35,7 +35,6 @@ Documentation design is not just a pretty package for your content. It impacts a
 **Related Links**
 - [Documentation with Hubs](/documentation/introduction)
 - [Routing](/documentation/getting-started/routing)
-- [Headers](/documentation/getting-started/header-footer)
 - [Pages](/documentation/getting-started/pages)
 - [Subpages](/documentation/getting-started/subpages)
 - [Blocks](/documentation/blocks)

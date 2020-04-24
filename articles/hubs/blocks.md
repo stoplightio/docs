@@ -32,7 +32,6 @@ Blocks are the micro-level building blocks of Hubs. They house multiple forms of
 **Related Articles**
 - [Documentation with Hubs](/documentation/introduction)
 - [Routing](/documentation/getting-started/routing)
-- [Headers](/documentation/getting-started/header-footer)
 - [Pages](/documentation/getting-started/pages)
 - [Subpages](/documentation/getting-started/subpages)
 - [Referencing Other Data Sources](/documentation/referencing-other-data-sources)
