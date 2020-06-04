@@ -18,7 +18,7 @@ see [here](/testing/using-variables/environment).
 
 ## Limitations
 
-At this time, variable key names cannot include either punctuation or other special characters. For example, the following variable names are not supported within editor:
+At this time, variable key names cannot include either punctuation or other special characters. For example, the following variable names are not supported within the editor:
 
 ```
 "a.b"
