@@ -16,6 +16,19 @@ Environments, and their default data, are defined in the [Stoplight configuratio
 For more information on environment variables and how they can be used during API testing, please
 see [here](/testing/using-variables/environment).
 
+## Limitations
+
+At this time, variable key names cannot include either punctuation or other special characters. For example, the following variable names are not supported within editor:
+
+```
+"a.b"
+"a:b"
+"$a"
+"{a}"
+"${a::example}"
+"${a.example}"
+```
+
 ## Private Variables
 
 Private Variables are _only_ stored locally on your system,
