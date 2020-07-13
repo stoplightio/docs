@@ -17,16 +17,15 @@ If you have read access to a project, you will be able to:
 
 ## How to Clone Your Stoplight Git Repository 
   
-1. Select the **Settings** tab on the platform homepage
-2. Select **Access Tokens** from the left  
+1. Navigate to the "[Access Tokens](https://next.stoplight.io/profile/access-tokens)" tab from your [user settings](https://next.stoplight.io/profile)
 
 ![Access Tokens](https://github.com/stoplightio/docs/blob/develop/assets/images/access-tokens.png?raw=true)
 
-3. Create a token to access projects that your Stoplight account has proper permissions for (These permissions match the ones in the Stoplight UI) 
+2. Create a token to access projects that your Stoplight account has proper permissions for (These permissions match the ones in the Stoplight UI) 
 
 > You can name your token whatever you want. Once you have created the token, copy it, and only store it in a safe location. Once you close the window, you will not see it again
 
-4. On your machine, store your access token as an environmental variable (recommended)
+3. On your machine, store your access token as an environmental variable (recommended)
 
 For example, on Mac/Linux:
 
@@ -34,7 +33,7 @@ For example, on Mac/Linux:
 export STOPLIGHT_TOKEN="1234567890"
 ```
 
-5. For **personal projects**, you can then `git clone` the repo, replace `{stoplight-username}` and `{project-name}` with the appropriate information: 
+4. For **personal projects**, you can then `git clone` the repo, replace `{stoplight-username}` and `{project-name}` with the appropriate information: 
 
 ```
 git clone https://{stoplight-username}:$STOPLIGHT_TOKEN@git.stoplight.io/{stoplight-username}/{project-name}.git
@@ -58,7 +57,7 @@ For example:
 git clone https://taylor:$STOPLIGHT_TOKEN@git.stoplight.io/stoplight/test-new.git
 ```
 
-6. Now you can make changes to your files, commit, and push to your master branch. You can see these changes in the Stoplight UI as well as the "History of Changes" 
+5. Now you can make changes to your files, commit, and push to your master branch. You can see these changes in the Stoplight UI as well as the "History of Changes" 
 
 > Remember: You will only see changes on the master branch in the UI at this time. 
 
