@@ -1,8 +1,22 @@
 # Using Custom Validations
 
+> **NOTE** Stoplight Next uses an older version of
+> [Spectral](https://github.com/stoplightio/spectral)
+> ([v2.0.6](https://github.com/stoplightio/spectral/releases/v2.0.6)), which is
+> several major versions behind the latest. In order to take advantage of the
+> latest Spectral enhancements, consider using [Stoplight
+> Studio](https://stoplight.io/studio). 
+>
+> See
+> [here](https://support.stoplight.io/hc/en-us/articles/360035390511-What-are-the-differences-between-the-Stoplight-products-)
+> for more information on the differences between the products.
+
 Behind the Stoplight API design interface is
 [Spectral](https://github.com/stoplightio/spectral), Stoplight's open source
-validation engine. Spectral was built from the ground up to be fast, easy-to-use, and, most importantly, extensible. This article discusses how to customize the rules that power Spectral for your own purposes, including how to create your own rules.
+validation engine. Spectral was built from the ground up to be fast,
+easy-to-use, and, most importantly, extensible. This article discusses how to
+customize the rules that power Spectral for your own purposes, including how to
+create your own rules.
 
 ## Accessing Your Project's Git Repository
 
@@ -34,7 +48,8 @@ rules:
 ```
 
 Where `my-custom-rule` is the key for the new rule, which will contain the
-contents of the rule. The contents of the rule object can vary depending on the rule's `function` member.
+contents of the rule. The contents of the rule object can vary depending on the
+rule's `function` member.
 
 As a simple example, let's say we want to ensure that a special spec extension
 `x-partner-segment` is present in all of our OpenAPI v2 APIs. To enforce this,
